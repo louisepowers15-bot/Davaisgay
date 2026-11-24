@@ -1,7 +1,7 @@
 {
   "start_date": "2026-11-24",
   "days": 3,
-  "scraped_at": "2026-11-24T18:35:13.407211+00:00",
+  "scraped_at": "2026-11-24T18:58:46.365698+00:00",
   "source": "espn",
   "match_count": 75,
   "matches": [
@@ -17,20 +17,23 @@
         "name": "Bristol City",
         "short": "BRC",
         "form": "LLLWD",
-        "record": "5-3-8"
+        "record": "5-3-8",
+        "recent": []
       },
       "away": {
         "id": "352",
         "name": "Wrexham",
         "short": "WXM",
         "form": "WDWLL",
-        "record": "5-6-5"
+        "record": "5-6-5",
+        "recent": []
       },
       "venue": "Ashton Gate",
       "city": "Bristol",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880147",
@@ -44,20 +47,23 @@
         "name": "Cardiff City",
         "short": "CAR",
         "form": "LWDLW",
-        "record": "4-6-6"
+        "record": "4-6-6",
+        "recent": []
       },
       "away": {
         "id": "394",
         "name": "Preston North End",
         "short": "PNE",
         "form": "DWLLD",
-        "record": "2-3-11"
+        "record": "2-3-11",
+        "recent": []
       },
       "venue": "Cardiff City Stadium",
       "city": "Cardiff",
       "country": "Wales",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880146",
@@ -71,20 +77,23 @@
         "name": "Charlton Athletic",
         "short": "CHA",
         "form": "DWLLL",
-        "record": "4-5-7"
+        "record": "4-5-7",
+        "recent": []
       },
       "away": {
         "id": "314",
         "name": "Lincoln City",
         "short": "LCN",
         "form": "LLLLW",
-        "record": "4-3-9"
+        "record": "4-3-9",
+        "recent": []
       },
       "venue": "The Valley",
       "city": "London",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880145",
@@ -98,20 +107,23 @@
         "name": "Middlesbrough",
         "short": "MID",
         "form": "WDLWW",
-        "record": "9-5-2"
+        "record": "9-5-2",
+        "recent": []
       },
       "away": {
         "id": "318",
         "name": "Swansea City",
         "short": "SWA",
         "form": "DLLWL",
-        "record": "8-3-5"
+        "record": "8-3-5",
+        "recent": []
       },
       "venue": "Riverside Stadium",
       "city": "Middlesbrough",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880144",
@@ -125,20 +137,23 @@
         "name": "Norwich City",
         "short": "NOR",
         "form": "WWWWW",
-        "record": "8-0-8"
+        "record": "8-0-8",
+        "recent": []
       },
       "away": {
         "id": "334",
         "name": "Queens Park Rangers",
         "short": "QPR",
         "form": "WWDLW",
-        "record": "7-6-3"
+        "record": "7-6-3",
+        "recent": []
       },
       "venue": "Carrow Road",
       "city": "Norwich",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880143",
@@ -152,20 +167,23 @@
         "name": "Portsmouth",
         "short": "POR",
         "form": "DLWDW",
-        "record": "6-5-5"
+        "record": "6-5-5",
+        "recent": []
       },
       "away": {
         "id": "371",
         "name": "West Ham United",
         "short": "WHU",
         "form": "DLDLL",
-        "record": "6-6-4"
+        "record": "6-6-4",
+        "recent": []
       },
       "venue": "Fratton Park",
       "city": "Portsmouth",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880142",
@@ -179,20 +197,23 @@
         "name": "Sheffield United",
         "short": "SHU",
         "form": "WLWWD",
-        "record": "7-4-5"
+        "record": "7-4-5",
+        "recent": []
       },
       "away": {
         "id": "376",
         "name": "Southampton",
         "short": "SOU",
         "form": "WLDWW",
-        "record": "9-4-3"
+        "record": "9-4-3",
+        "recent": []
       },
       "venue": "Bramall Lane",
       "city": "Sheffield",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880141",
@@ -206,20 +227,23 @@
         "name": "Wolverhampton Wanderers",
         "short": "WOL",
         "form": "DDWWW",
-        "record": "9-4-3"
+        "record": "9-4-3",
+        "recent": []
       },
       "away": {
         "id": "374",
         "name": "Derby County",
         "short": "DER",
         "form": "LWLLD",
-        "record": "2-4-10"
+        "record": "2-4-10",
+        "recent": []
       },
       "venue": "Molineux Stadium",
       "city": "Wolverhampton",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880824",
@@ -233,20 +257,23 @@
         "name": "Blackpool",
         "short": "BLP",
         "form": "DLWDW",
-        "record": "3-3-8"
+        "record": "3-3-8",
+        "recent": []
       },
       "away": {
         "id": "375",
         "name": "Leicester City",
         "short": "LEI",
         "form": "DWWDW",
-        "record": "6-4-4"
+        "record": "6-4-4",
+        "recent": []
       },
       "venue": "Bloomfield Road",
       "city": "Blackpool",
       "country": "England",
       "league": "League One",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880838",
@@ -260,20 +287,23 @@
         "name": "Bradford City",
         "short": "BRD",
         "form": "DWWLW",
-        "record": "6-5-3"
+        "record": "6-5-3",
+        "recent": []
       },
       "away": {
         "id": "397",
         "name": "Barnsley",
         "short": "BAR",
         "form": "LLWWD",
-        "record": "2-3-9"
+        "record": "2-3-9",
+        "recent": []
       },
       "venue": "Valley Parade",
       "city": "Bradford",
       "country": "England",
       "league": "League One",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880823",
@@ -287,20 +317,23 @@
         "name": "Bromley",
         "short": "BRO",
         "form": "DLLLL",
-        "record": "3-3-8"
+        "record": "3-3-8",
+        "recent": []
       },
       "away": {
         "id": "344",
         "name": "Wycombe Wanderers",
         "short": "WYC",
         "form": "DWWDD",
-        "record": "4-6-4"
+        "record": "4-6-4",
+        "recent": []
       },
       "venue": "RELOC8 EM Community Stadium",
       "city": "Bromley",
       "country": "England",
       "league": "League One",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880829",
@@ -314,20 +347,23 @@
         "name": "Stevenage",
         "short": "STE",
         "form": "DWWDL",
-        "record": "5-4-4"
+        "record": "5-4-4",
+        "recent": []
       },
       "away": {
         "id": "399",
         "name": "Sheffield Wednesday",
         "short": "SHW",
         "form": "WWLLD",
-        "record": "7-5-3"
+        "record": "7-5-3",
+        "recent": []
       },
       "venue": "Lamex Stadium",
       "city": "Stevenage",
       "country": "England",
       "league": "League One",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401881358",
@@ -341,20 +377,23 @@
         "name": "Crawley Town",
         "short": "CRA",
         "form": "DLLWD",
-        "record": "3-3-7"
+        "record": "3-3-7",
+        "recent": []
       },
       "away": {
         "id": "280",
         "name": "Barnet",
         "short": "BAR",
         "form": "WWWDW",
-        "record": "8-5-1"
+        "record": "8-5-1",
+        "recent": []
       },
       "venue": "Broadfield Stadium",
       "city": "Crawley",
       "country": "England",
       "league": "League Two",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401881354",
@@ -368,20 +407,23 @@
         "name": "Port Vale",
         "short": "PTV",
         "form": "LWWWW",
-        "record": "5-3-6"
+        "record": "5-3-6",
+        "recent": []
       },
       "away": {
         "id": "353",
         "name": "Northampton Town",
         "short": "NHT",
         "form": "WDLLL",
-        "record": "4-6-5"
+        "record": "4-6-5",
+        "recent": []
       },
       "venue": "Vale Park",
       "city": "Stoke-on-Trent",
       "country": "England",
       "league": "League Two",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401878348",
@@ -395,20 +437,23 @@
         "name": "Hibernian",
         "short": "HIBS",
         "form": "DWWDL",
-        "record": "3-2-8"
+        "record": "3-2-8",
+        "recent": []
       },
       "away": {
         "id": "261",
         "name": "Dundee",
         "short": "DUN",
         "form": "DLWLD",
-        "record": "5-2-6"
+        "record": "5-2-6",
+        "recent": []
       },
       "venue": "Easter Road",
       "city": "Edinburgh",
       "country": "Scotland",
       "league": "Scottish Premiership",
-      "region": "Scotland"
+      "region": "Scotland",
+      "h2h": []
     },
     {
       "id": "401878345",
@@ -422,74 +467,83 @@
         "name": "Rangers",
         "short": "RAN",
         "form": "WWWDW",
-        "record": "9-3-1"
+        "record": "9-3-1",
+        "recent": []
       },
       "away": {
         "id": "263",
         "name": "Aberdeen",
         "short": "ABE",
         "form": "DLLLL",
-        "record": "4-2-7"
+        "record": "4-2-7",
+        "recent": []
       },
       "venue": "Ibrox Stadium",
       "city": "Glasgow",
       "country": "Scotland",
       "league": "Scottish Premiership",
-      "region": "Scotland"
+      "region": "Scotland",
+      "h2h": []
     },
     {
       "id": "401915380",
       "date": "2026-11-24",
       "kickoff": "2026-11-24T17:45Z",
       "league_code": "uefa.champions",
-      "status": "STATUS_HALFTIME",
-      "status_detail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "status_detail": "56'",
       "home": {
         "id": "2980",
         "name": "Bodo/Glimt",
         "short": "BODO",
         "form": "WWDWL",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "away": {
         "id": "4411",
         "name": "LASK Linz",
         "short": "LAS",
         "form": "WWWWL",
-        "record": "2-0-2"
+        "record": "2-0-2",
+        "recent": []
       },
       "venue": "Aspmyra Stadion",
       "city": "Bod\u00f8/Glimt",
       "country": "Norway",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915300",
       "date": "2026-11-24",
       "kickoff": "2026-11-24T17:45Z",
       "league_code": "uefa.champions",
-      "status": "STATUS_HALFTIME",
-      "status_detail": "HT",
+      "status": "STATUS_SECOND_HALF",
+      "status_detail": "56'",
       "home": {
         "id": "432",
         "name": "Galatasaray",
         "short": "GAL",
         "form": "WWWWW",
-        "record": "2-0-2"
+        "record": "2-0-2",
+        "recent": []
       },
       "away": {
         "id": "362",
         "name": "Aston Villa",
         "short": "AVL",
         "form": "DDLDL",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "venue": "RAMS Park",
       "city": "Istanbul",
       "country": "T\u00fcrkiye",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915295",
@@ -503,20 +557,23 @@
         "name": "Arsenal",
         "short": "ARS",
         "form": "DWWWL",
-        "record": "3-1-0"
+        "record": "3-1-0",
+        "recent": []
       },
       "away": {
         "id": "124",
         "name": "Borussia Dortmund",
         "short": "DOR",
         "form": "WWWDW",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "venue": "Emirates Stadium",
       "city": "London",
       "country": "England",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915296",
@@ -530,20 +587,23 @@
         "name": "Como",
         "short": "COMO",
         "form": "WLWWW",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "away": {
         "id": "887",
         "name": "AEK Athens",
         "short": "AEK",
         "form": "WWLLW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "venue": "Giuseppe Sinigaglia",
       "city": "Como",
       "country": "Italy",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915294",
@@ -557,20 +617,23 @@
         "name": "Feyenoord Rotterdam",
         "short": "FEY",
         "form": "LLLDD",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "away": {
         "id": "437",
         "name": "FC Porto",
         "short": "FCP",
         "form": "WWWWW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "venue": "De Kuip",
       "city": "Rotterdam",
       "country": "Netherlands",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915379",
@@ -584,20 +647,23 @@
         "name": "Manchester City",
         "short": "MNC",
         "form": "DLWLW",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "away": {
         "id": "114",
         "name": "Napoli",
         "short": "NAP",
         "form": "DDLLW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "venue": "Etihad Stadium",
       "city": "Manchester",
       "country": "England",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915299",
@@ -611,20 +677,23 @@
         "name": "RB Leipzig",
         "short": "RBL",
         "form": "WWLWW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "away": {
         "id": "175",
         "name": "Lens",
         "short": "RCL",
         "form": "DLLLW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "venue": "Red Bull Arena",
       "city": "Leipzig",
       "country": "Germany",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915298",
@@ -638,20 +707,23 @@
         "name": "Real Madrid",
         "short": "RMA",
         "form": "WWWWW",
-        "record": "4-0-0"
+        "record": "4-0-0",
+        "recent": []
       },
       "away": {
         "id": "148",
         "name": "PSV Eindhoven",
         "short": "PSV",
         "form": "WWLWD",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "venue": "Santiago Bernab\u00e9u",
       "city": "Madrid",
       "country": "Spain",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915297",
@@ -665,20 +737,23 @@
         "name": "Slovan Bratislava",
         "short": "SLB",
         "form": "LLLLW",
-        "record": "0-0-4"
+        "record": "0-0-4",
+        "recent": []
       },
       "away": {
         "id": "244",
         "name": "Real Betis",
         "short": "BET",
         "form": "DWWLW",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "venue": "N\u00e1rodny Futbalovy Stadi\u00f3n",
       "city": "Bratislava",
       "country": "Slovakia",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401880140",
@@ -692,20 +767,23 @@
         "name": "Bolton Wanderers",
         "short": "BOL",
         "form": "DLWLL",
-        "record": "5-3-8"
+        "record": "5-3-8",
+        "recent": []
       },
       "away": {
         "id": "383",
         "name": "West Bromwich Albion",
         "short": "WBA",
         "form": "DWDWD",
-        "record": "8-5-3"
+        "record": "8-5-3",
+        "recent": []
       },
       "venue": "Toughsheet Community Stadium",
       "city": "Bolton",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880139",
@@ -719,20 +797,23 @@
         "name": "Burnley",
         "short": "BUR",
         "form": "DLDDL",
-        "record": "1-8-7"
+        "record": "1-8-7",
+        "recent": []
       },
       "away": {
         "id": "392",
         "name": "Birmingham City",
         "short": "BIR",
         "form": "DWWWL",
-        "record": "8-5-3"
+        "record": "8-5-3",
+        "recent": []
       },
       "venue": "Turf Moor",
       "city": "Burnley",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880137",
@@ -746,20 +827,23 @@
         "name": "Watford",
         "short": "WAT",
         "form": "LDWLL",
-        "record": "4-3-9"
+        "record": "4-3-9",
+        "recent": []
       },
       "away": {
         "id": "365",
         "name": "Blackburn Rovers",
         "short": "BLK",
         "form": "DWLLW",
-        "record": "6-4-6"
+        "record": "6-4-6",
+        "recent": []
       },
       "venue": "Vicarage Road",
       "city": "Watford",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401880138",
@@ -773,20 +857,23 @@
         "name": "Stoke City",
         "short": "STK",
         "form": "DWWWD",
-        "record": "10-2-4"
+        "record": "10-2-4",
+        "recent": []
       },
       "away": {
         "id": "391",
         "name": "Millwall",
         "short": "MIL",
         "form": "LLLWL",
-        "record": "5-3-8"
+        "record": "5-3-8",
+        "recent": []
       },
       "venue": "bet365 Stadium",
       "city": "Stoke-on-Trent",
       "country": "England",
       "league": "Championship",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401915378",
@@ -800,20 +887,23 @@
         "name": "Sabah FK",
         "short": "SAB",
         "form": "LLWLW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "away": {
         "id": "83",
         "name": "Barcelona",
         "short": "BAR",
         "form": "WWWWL",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "venue": "Baku Olympic Stadium",
       "city": "Baku",
       "country": "Azerbaijan",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915293",
@@ -827,20 +917,23 @@
         "name": "Slavia Prague",
         "short": "SLP",
         "form": "LDLLL",
-        "record": "0-1-3"
+        "record": "0-1-3",
+        "recent": []
       },
       "away": {
         "id": "102",
         "name": "Villarreal",
         "short": "VIL",
         "form": "LWLLW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "venue": "Fortuna Arena",
       "city": "Prague",
       "country": "Czechia",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915291",
@@ -854,20 +947,23 @@
         "name": "Atl\u00e9tico Madrid",
         "short": "ATM",
         "form": "WLLWW",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "away": {
         "id": "510",
         "name": "Viking FK",
         "short": "VFK",
         "form": "DWWLW",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "venue": "Riyadh Air Metropolitano",
       "city": "Madrid",
       "country": "Spain",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915292",
@@ -881,20 +977,23 @@
         "name": "Club Brugge",
         "short": "BRU",
         "form": "WDWWW",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "away": {
         "id": "364",
         "name": "Liverpool",
         "short": "LIV",
         "form": "WWLLW",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "venue": "Jan Breydel Stadium",
       "city": "Brugge",
       "country": "Belgium",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915376",
@@ -908,20 +1007,23 @@
         "name": "Internazionale",
         "short": "INT",
         "form": "DWWLW",
-        "record": "2-0-2"
+        "record": "2-0-2",
+        "recent": []
       },
       "away": {
         "id": "134",
         "name": "VfB Stuttgart",
         "short": "VFB",
         "form": "DWLWW",
-        "record": "2-1-1"
+        "record": "2-1-1",
+        "recent": []
       },
       "venue": "San Siro",
       "city": "Milano",
       "country": "Italy",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915377",
@@ -935,20 +1037,23 @@
         "name": "Lille",
         "short": "LILL",
         "form": "LWDWD",
-        "record": "0-1-3"
+        "record": "0-1-3",
+        "recent": []
       },
       "away": {
         "id": "132",
         "name": "Bayern Munich",
         "short": "MUN",
         "form": "DWWDW",
-        "record": "2-2-0"
+        "record": "2-2-0",
+        "recent": []
       },
       "venue": "Decathlon Arena - Stade Pierre-Mauroy",
       "city": "Lille",
       "country": "France",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915374",
@@ -962,20 +1067,23 @@
         "name": "Paris Saint-Germain",
         "short": "PSG",
         "form": "DWWWW",
-        "record": "4-0-0"
+        "record": "4-0-0",
+        "recent": []
       },
       "away": {
         "id": "104",
         "name": "AS Roma",
         "short": "ROMA",
         "form": "WWLWW",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "venue": "Parc des Princes",
       "city": "Paris",
       "country": "France",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915375",
@@ -989,20 +1097,23 @@
         "name": "Shakhtar Donetsk",
         "short": "SHK",
         "form": "LLWDL",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "away": {
         "id": "436",
         "name": "Fenerbahce",
         "short": "FEN",
         "form": "DWWLL",
-        "record": "1-2-1"
+        "record": "1-2-1",
+        "recent": []
       },
       "venue": "Stamford Bridge",
       "city": "London",
       "country": "England",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915373",
@@ -1016,20 +1127,23 @@
         "name": "Sporting CP",
         "short": "SCP",
         "form": "WWWWL",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "away": {
         "id": "360",
         "name": "Manchester United",
         "short": "MAN",
         "form": "LDWLL",
-        "record": "2-0-2"
+        "record": "2-0-2",
+        "recent": []
       },
       "venue": "Est\u00e1dio Jos\u00e9 Alvalade",
       "city": "Lisbon",
       "country": "Portugal",
       "league": "Champions League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401880728",
@@ -1043,20 +1157,23 @@
         "name": "Doncaster Rovers",
         "short": "DON",
         "form": "DLWLL",
-        "record": "3-4-7"
+        "record": "3-4-7",
+        "recent": []
       },
       "away": {
         "id": "335",
         "name": "Huddersfield Town",
         "short": "HUD",
         "form": "DWLDW",
-        "record": "8-5-2"
+        "record": "8-5-2",
+        "recent": []
       },
       "venue": "Eco-Power Stadium",
       "city": "Doncaster",
       "country": "England",
       "league": "League One",
-      "region": "England"
+      "region": "England",
+      "h2h": []
     },
     {
       "id": "401915506",
@@ -1070,20 +1187,23 @@
         "name": "Besiktas",
         "short": "BES",
         "form": "WWLDW",
-        "record": "2-1-1"
+        "record": "2-1-1",
+        "recent": []
       },
       "away": {
         "id": "13083",
         "name": "Hapoel Be'er",
         "short": "HBE",
         "form": "DLLDL",
-        "record": "0-1-3"
+        "record": "0-1-3",
+        "recent": []
       },
       "venue": "Batumi Stadium (Adjarabet Arena)",
       "city": "Batumi",
       "country": "Georgia",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915519",
@@ -1097,20 +1217,23 @@
         "name": "Celta Vigo",
         "short": "CEL",
         "form": "LWDLL",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "away": {
         "id": "349",
         "name": "AFC Bournemouth",
         "short": "BOU",
         "form": "WWWWW",
-        "record": "4-0-0"
+        "record": "4-0-0",
+        "recent": []
       },
       "venue": "Balaidos",
       "city": "Vigo",
       "country": "Spain",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915517",
@@ -1124,20 +1247,23 @@
         "name": "Dinamo Zagreb",
         "short": "DZG",
         "form": "WLWDL",
-        "record": "2-1-1"
+        "record": "2-1-1",
+        "recent": []
       },
       "away": {
         "id": "131",
         "name": "Bayer Leverkusen",
         "short": "B04",
         "form": "WWLLW",
-        "record": "3-0-1"
+        "record": "3-0-1",
+        "recent": []
       },
       "venue": "Maksimir Stadium",
       "city": "Zagreb",
       "country": "Croatia",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915507",
@@ -1151,20 +1277,23 @@
         "name": "Marseille",
         "short": "OLM",
         "form": "LWWWW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "away": {
         "id": "490",
         "name": "Levski Sofia",
         "short": "LEV",
         "form": "WWDLL",
-        "record": "2-1-1"
+        "record": "2-1-1",
+        "recent": []
       },
       "venue": "Stade V\u00e9lodrome",
       "city": "Marseille",
       "country": "France",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915521",
@@ -1178,20 +1307,23 @@
         "name": "Olympiacos",
         "short": "OLY",
         "form": "WDDWW",
-        "record": "3-1-0"
+        "record": "3-1-0",
+        "recent": []
       },
       "away": {
         "id": "103",
         "name": "AC Milan",
         "short": "MIL",
         "form": "WWLWL",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "venue": "Georgios Karaiskakis Stadium",
       "city": "Piraeus",
       "country": "Greece",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915520",
@@ -1205,20 +1337,23 @@
         "name": "RB Salzburg",
         "short": "SLZ",
         "form": "LWLWW",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "away": {
         "id": "20024",
         "name": "Ararat-Armenia",
         "short": "ARA",
         "form": "LLLLW",
-        "record": "0-0-4"
+        "record": "0-0-4",
+        "recent": []
       },
       "venue": "Red Bull Arena Salzburg",
       "city": "Salzburg",
       "country": "Austria",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915508",
@@ -1232,20 +1367,23 @@
         "name": "Union St.-Gilloise",
         "short": "USG",
         "form": "WWWWW",
-        "record": "3-1-0"
+        "record": "3-1-0",
+        "recent": []
       },
       "away": {
         "id": "2990",
         "name": "Lech Poznan",
         "short": "LECH",
         "form": "LDLLD",
-        "record": "0-1-3"
+        "record": "0-1-3",
+        "recent": []
       },
       "venue": "King Power at Den Dreef Stadion",
       "city": "Leuven",
       "country": "Belgium",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915518",
@@ -1259,20 +1397,23 @@
         "name": "Viktoria Plzen",
         "short": "PLZ",
         "form": "WLLLW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "away": {
         "id": "1929",
         "name": "Benfica",
         "short": "SLB",
         "form": "WWWWW",
-        "record": "4-0-0"
+        "record": "4-0-0",
+        "recent": []
       },
       "venue": "Doosan Arena",
       "city": "Plzen",
       "country": "Czechia",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915504",
@@ -1286,20 +1427,23 @@
         "name": "Crystal Palace",
         "short": "CRY",
         "form": "LLDLW",
-        "record": "1-2-1"
+        "record": "1-2-1",
+        "recent": []
       },
       "away": {
         "id": "89",
         "name": "Real Sociedad",
         "short": "RSO",
         "form": "LWDLW",
-        "record": "1-2-1"
+        "record": "1-2-1",
+        "recent": []
       },
       "venue": "Selhurst Park",
       "city": "London",
       "country": "England",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915516",
@@ -1313,20 +1457,23 @@
         "name": "Ferencvaros",
         "short": "FER",
         "form": "WWWWW",
-        "record": "4-0-0"
+        "record": "4-0-0",
+        "recent": []
       },
       "away": {
         "id": "3362",
         "name": "NK Celje",
         "short": "NKC",
         "form": "WDLLL",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "venue": "Groupama Arena",
       "city": "Budapest",
       "country": "Hungary",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915502",
@@ -1340,20 +1487,23 @@
         "name": "Juventus",
         "short": "JUV",
         "form": "WDWWL",
-        "record": "3-1-0"
+        "record": "3-1-0",
+        "recent": []
       },
       "away": {
         "id": "617",
         "name": "Omonia Nicosia",
         "short": "OMON",
         "form": "LLWWW",
-        "record": "2-0-2"
+        "record": "2-0-2",
+        "recent": []
       },
       "venue": "Allianz Stadium",
       "city": "Torino",
       "country": "Italy",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915501",
@@ -1367,20 +1517,23 @@
         "name": "Lyon",
         "short": "LYON",
         "form": "WLDWL",
-        "record": "2-1-1"
+        "record": "2-1-1",
+        "recent": []
       },
       "away": {
         "id": "987",
         "name": "Lillestrom",
         "short": "LSK",
         "form": "WWLWW",
-        "record": "0-1-3"
+        "record": "0-1-3",
+        "recent": []
       },
       "venue": "Groupama Stadium",
       "city": "Lyon",
       "country": "France",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915505",
@@ -1394,20 +1547,23 @@
         "name": "NEC Nijmegen",
         "short": "NEC",
         "form": "LWWLD",
-        "record": "2-1-1"
+        "record": "2-1-1",
+        "recent": []
       },
       "away": {
         "id": "169",
         "name": "Stade Rennais",
         "short": "REN",
         "form": "DLDLW",
-        "record": "1-3-0"
+        "record": "1-3-0",
+        "recent": []
       },
       "venue": "Goffertstadion",
       "city": "Nijmegen",
       "country": "Netherlands",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915503",
@@ -1421,20 +1577,23 @@
         "name": "OFI Crete",
         "short": "OFI",
         "form": "DDWWW",
-        "record": "2-0-2"
+        "record": "2-0-2",
+        "recent": []
       },
       "away": {
         "id": "441",
         "name": "Anderlecht",
         "short": "AND",
         "form": "DDWWL",
-        "record": "2-0-2"
+        "record": "2-0-2",
+        "recent": []
       },
       "venue": "Pankritio Stadium",
       "city": "Crete",
       "country": "Greece",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915514",
@@ -1448,20 +1607,23 @@
         "name": "Sparta Prague",
         "short": "SPP",
         "form": "DLDWL",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "away": {
         "id": "140",
         "name": "AZ Alkmaar",
         "short": "AZ",
         "form": "WWLLL",
-        "record": "2-0-2"
+        "record": "2-0-2",
+        "recent": []
       },
       "venue": "Generali Arena",
       "city": "Prague",
       "country": "Czechia",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915513",
@@ -1475,20 +1637,23 @@
         "name": "Sunderland",
         "short": "SUN",
         "form": "DWLLW",
-        "record": "2-1-1"
+        "record": "2-1-1",
+        "recent": []
       },
       "away": {
         "id": "11505",
         "name": "Jagiellonia Bialystok",
         "short": "JAG",
         "form": "LLWLW",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "venue": "Stadium of Light",
       "city": "Sunderland",
       "country": "England",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915512",
@@ -1502,20 +1667,23 @@
         "name": "Torreense",
         "short": "TOR",
         "form": "LWLLW",
-        "record": "2-0-2"
+        "record": "2-0-2",
+        "recent": []
       },
       "away": {
         "id": "256",
         "name": "Celtic",
         "short": "CEL",
         "form": "WWWLD",
-        "record": "1-0-3"
+        "record": "1-0-3",
+        "recent": []
       },
       "venue": "Est\u00e1dio Dr. Magalhaes Pessoa",
       "city": "Leiria",
       "country": "Portugal",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915515",
@@ -1529,20 +1697,23 @@
         "name": "TSG Hoffenheim",
         "short": "TSG",
         "form": "LWDLL",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "away": {
         "id": "3746",
         "name": "SK Sturm Graz",
         "short": "STG",
         "form": "LLLDD",
-        "record": "1-1-2"
+        "record": "1-1-2",
+        "recent": []
       },
       "venue": "PreZero Arena",
       "city": "Sinsheim",
       "country": "Germany",
       "league": "Europa League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915816",
@@ -1556,20 +1727,23 @@
         "name": "Kairat Almaty",
         "short": "KAI",
         "form": "DLDLL",
-        "record": "0-2-1"
+        "record": "0-2-1",
+        "recent": []
       },
       "away": {
         "id": "20301",
         "name": "Mj\u00e4llby AIF",
         "short": "MJA",
         "form": "DDWDW",
-        "record": "2-1-0"
+        "record": "2-1-0",
+        "recent": []
       },
       "venue": "Almaty Ortalyk Stadium",
       "city": "Almaty",
       "country": "Kazakhstan",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915815",
@@ -1583,20 +1757,23 @@
         "name": "Ajax Amsterdam",
         "short": "AJA",
         "form": "WDWWW",
-        "record": "2-0-1"
+        "record": "2-0-1",
+        "recent": []
       },
       "away": {
         "id": "3024",
         "name": "FC Thun",
         "short": "THUN",
         "form": "WLLDL",
-        "record": "1-0-2"
+        "record": "1-0-2",
+        "recent": []
       },
       "venue": "Johan Cruijff Arena",
       "city": "Amsterdam",
       "country": "Netherlands",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915814",
@@ -1610,20 +1787,23 @@
         "name": "Brighton & Hove Albion",
         "short": "BHA",
         "form": "DWWWL",
-        "record": "2-1-0"
+        "record": "2-1-0",
+        "recent": []
       },
       "away": {
         "id": "8089",
         "name": "CSU Craiova",
         "short": "UCRA",
         "form": "WWDLD",
-        "record": "2-1-0"
+        "record": "2-1-0",
+        "recent": []
       },
       "venue": "American Express Stadium",
       "city": "Falmer",
       "country": "England",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915810",
@@ -1637,20 +1817,23 @@
         "name": "Egnatia",
         "short": "EGN",
         "form": "LDDLD",
-        "record": "0-2-1"
+        "record": "0-2-1",
+        "recent": []
       },
       "away": {
         "id": "17856",
         "name": "Lincoln Red Imps",
         "short": "LRI",
         "form": "WLLWL",
-        "record": "1-0-2"
+        "record": "1-0-2",
+        "recent": []
       },
       "venue": "Air Albania Stadium",
       "city": "Tirana",
       "country": "Albania",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915811",
@@ -1664,20 +1847,23 @@
         "name": "Heart of Midlothian",
         "short": "HOM",
         "form": "DLLLD",
-        "record": "0-1-2"
+        "record": "0-1-2",
+        "recent": []
       },
       "away": {
         "id": "174",
         "name": "AS Monaco",
         "short": "MON",
         "form": "DDWLD",
-        "record": "3-0-0"
+        "record": "3-0-0",
+        "recent": []
       },
       "venue": "Tynecastle Park",
       "city": "Edinburgh",
       "country": "Scotland",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915813",
@@ -1691,20 +1877,23 @@
         "name": "Iberia 1999",
         "short": "IBE",
         "form": "LDLLL",
-        "record": "0-1-2"
+        "record": "0-1-2",
+        "recent": []
       },
       "away": {
         "id": "2922",
         "name": "Getafe",
         "short": "GET",
         "form": "LLLWW",
-        "record": "0-1-2"
+        "record": "0-1-2",
+        "recent": []
       },
       "venue": "Mikheil Meskhi Stadioni",
       "city": "Tbilisi",
       "country": "Georgia",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915812",
@@ -1718,20 +1907,23 @@
         "name": "Jablonec",
         "short": "JABL",
         "form": "DDLWL",
-        "record": "0-2-1"
+        "record": "0-2-1",
+        "recent": []
       },
       "away": {
         "id": "7672",
         "name": "FC Lugano",
         "short": "LUG",
         "form": "WWWDW",
-        "record": "3-0-0"
+        "record": "3-0-0",
+        "recent": []
       },
       "venue": "Stadion Strelnice",
       "city": "Jablonec",
       "country": "Czechia",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915739",
@@ -1745,20 +1937,23 @@
         "name": "Kauno Zalgiris",
         "short": "ZAL",
         "form": "LLLWL",
-        "record": "0-0-3"
+        "record": "0-0-3",
+        "recent": []
       },
       "away": {
         "id": "19246",
         "name": "Riga FC",
         "short": "RIG",
         "form": "DDDWD",
-        "record": "0-3-0"
+        "record": "0-3-0",
+        "recent": []
       },
       "venue": "S. Darius and S. Gireno Stadium",
       "city": "Kaunas",
       "country": "Lithuania",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915809",
@@ -1772,20 +1967,23 @@
         "name": "Pafos",
         "short": "PAF",
         "form": "LDLWD",
-        "record": "0-1-2"
+        "record": "0-1-2",
+        "recent": []
       },
       "away": {
         "id": "572",
         "name": "FC Midtjylland",
         "short": "MID",
         "form": "WDLWW",
-        "record": "0-1-2"
+        "record": "0-1-2",
+        "recent": []
       },
       "venue": "Alphamega Stadium",
       "city": "Kolossi",
       "country": "Cyprus",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915808",
@@ -1799,20 +1997,23 @@
         "name": "SK Brann",
         "short": "SKBR",
         "form": "DDDWL",
-        "record": "2-1-0"
+        "record": "2-1-0",
+        "recent": []
       },
       "away": {
         "id": "7853",
         "name": "AGF",
         "short": "AGF",
         "form": "WWDLW",
-        "record": "0-2-1"
+        "record": "0-2-1",
+        "recent": []
       },
       "venue": "Brann Stadium",
       "city": "Bergen",
       "country": "Norway",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915806",
@@ -1826,20 +2027,23 @@
         "name": "Borac Banja Luka",
         "short": "BBL",
         "form": "LWLWW",
-        "record": "1-0-2"
+        "record": "1-0-2",
+        "recent": []
       },
       "away": {
         "id": "105",
         "name": "Atalanta",
         "short": "ATA",
         "form": "DWDLD",
-        "record": "1-1-1"
+        "record": "1-1-1",
+        "recent": []
       },
       "venue": "Gradski Stadion Banja Luka",
       "city": "Banja Luka",
       "country": "Bosnia and Herzegovina",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915802",
@@ -1853,20 +2057,23 @@
         "name": "Braga",
         "short": "SCB",
         "form": "WWDWL",
-        "record": "1-1-1"
+        "record": "1-1-1",
+        "recent": []
       },
       "away": {
         "id": "8169",
         "name": "KuPS Kuopio",
         "short": "KUPS",
         "form": "DLLWD",
-        "record": "0-1-2"
+        "record": "0-1-2",
+        "recent": []
       },
       "venue": "Est\u00e1dio Municipal de Braga",
       "city": "Braga",
       "country": "Portugal",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915803",
@@ -1880,20 +2087,23 @@
         "name": "CSKA Sofia",
         "short": "CSKA",
         "form": "LDLLL",
-        "record": "0-1-2"
+        "record": "0-1-2",
+        "recent": []
       },
       "away": {
         "id": "997",
         "name": "Trabzonspor",
         "short": "TRAB",
         "form": "WWLWW",
-        "record": "2-0-1"
+        "record": "2-0-1",
+        "recent": []
       },
       "venue": "Balgarska Armia Stadium",
       "city": "Sofia",
       "country": "Bulgaria",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915807",
@@ -1907,20 +2117,23 @@
         "name": "FC Nordsj\u00e6lland",
         "short": "FCN",
         "form": "WWLLD",
-        "record": "0-2-1"
+        "record": "0-2-1",
+        "recent": []
       },
       "away": {
         "id": "443",
         "name": "Panathinaikos",
         "short": "PAO",
         "form": "DWWWW",
-        "record": "3-0-0"
+        "record": "3-0-0",
+        "recent": []
       },
       "venue": "Right to Dream Park",
       "city": "Farum",
       "country": "Denmark",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915805",
@@ -1934,20 +2147,23 @@
         "name": "Hajduk Split",
         "short": "HAJ",
         "form": "LWWWD",
-        "record": "2-0-1"
+        "record": "2-0-1",
+        "recent": []
       },
       "away": {
         "id": "936",
         "name": "Sint-Truidense",
         "short": "STVV",
         "form": "DWDLL",
-        "record": "2-1-0"
+        "record": "2-1-0",
+        "recent": []
       },
       "venue": "Stadion Poljud",
       "city": "Split",
       "country": "Croatia",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915738",
@@ -1961,20 +2177,23 @@
         "name": "Inter D'Escaldes",
         "short": "IDE",
         "form": "LLLDD",
-        "record": "0-0-3"
+        "record": "0-0-3",
+        "recent": []
       },
       "away": {
         "id": "909",
         "name": "F.C. K\u00f8benhavn",
         "short": "KBH",
         "form": "LWWWD",
-        "record": "2-1-0"
+        "record": "2-1-0",
+        "recent": []
       },
       "venue": "Estadi de la FAF d'Encamp",
       "city": "Encamp",
       "country": "Andorra",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915804",
@@ -1988,20 +2207,23 @@
         "name": "KAA Gent",
         "short": "GENT",
         "form": "LWDLW",
-        "record": "1-1-1"
+        "record": "1-1-1",
+        "recent": []
       },
       "away": {
         "id": "2290",
         "name": "Red Star Belgrade",
         "short": "RSB",
         "form": "WDLLW",
-        "record": "1-1-1"
+        "record": "1-1-1",
+        "recent": []
       },
       "venue": "Ghelamco Arena",
       "city": "Ghent",
       "country": "Belgium",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     },
     {
       "id": "401915801",
@@ -2015,20 +2237,23 @@
         "name": "SC Freiburg",
         "short": "SCF",
         "form": "WWWWW",
-        "record": "2-0-1"
+        "record": "2-0-1",
+        "recent": []
       },
       "away": {
         "id": "152",
         "name": "FC Twente",
         "short": "TWE",
         "form": "WDWWW",
-        "record": "3-0-0"
+        "record": "3-0-0",
+        "recent": []
       },
       "venue": "Europa-Park Stadion",
       "city": "Freiburg im Breisgau",
       "country": "Germany",
       "league": "Conference League",
-      "region": "Europe"
+      "region": "Europe",
+      "h2h": []
     }
   ]
 }
