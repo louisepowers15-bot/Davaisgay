@@ -1,0 +1,35 @@
+name: Daily Football Fixtures & Tips
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Scrape + tips
+        run: |
+          python scrape_fixtures.py --date today --days 3 --enrich
+          python generate_tips.py --date today
+      - name: Commit
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add fixtures-*.json tips-*.json
+          if git diff --staged --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Auto-update football tips $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main || true
+          git push origin main
