@@ -1,41 +1,37 @@
 # Football Bot Tips
 
-Multi-bot football tipping board (same idea as the horse system).
+Horse-style UI: **region tab → league dropdown → match expand**.
 
-## Coverage
-- **England:** Premier League, Championship, League One, League Two, FA Cup, EFL Cup
-- **Scotland:** Premiership, Scottish Cup (when listed)
-- **Europe top leagues:** La Liga, Serie A, Bundesliga, Ligue 1, Eredivisie, Primeira Liga
-- **UEFA:** Champions League, Europa League, Conference League
+## What drives the tips
+**Primary (venue form)**  
+- Home team: last **5 home** games — goals scored, conceded, clean sheets  
+- Away team: last **5 away** games — same  
+- Corners / yellow cards / shots averages when ESPN match summaries exist  
 
-## What bots use (free ESPN feed)
-- Recent form string (e.g. `WDLWW`)
-- League record summary (W-D-L)
-- Home advantage
-- Recent results + H2H when `--enrich` is used
-- Simple Poisson-style score model
+**Secondary**  
+- Overall form string  
+- League position (standings)  
 
-**Not invented:** injuries, new signings, manager career stats (not on this free feed). Reasons say so.
+**When available**  
+- H2H from recent schedules  
+- Injuries only if ESPN injuries feed has data (often empty)
 
-## Bots
-| Bot | Angle |
-|-----|--------|
-| FormFox | Recent form |
-| HomeBanker | Home edge |
-| ValueHunter | Form vs record disagreement |
-| DrawSpecialist | Tight games / draws |
-| AttackMinded | Goals / scorelines |
-| H2HHistorian | Head-to-head |
+**Not invented**  
+Top scorers, injuries, and manager stats are **not faked** when the feed is empty.
 
-Each bot picks **home win / draw / away win**, a **predicted score**, written **reasoning**, and a **bet builder** leg list.
+## Bet builders
+Built from venue stats + predicted score, e.g. result, O/U goals, BTTS, corners, cards.
 
-## Run locally
+## Run
 ```bash
 pip install -r requirements.txt
-python scrape_fixtures.py --date today --days 3 --enrich
+# fixtures for a week (Europe weekends)
+python scrape_fixtures.py --date today --days 7 --no-enrich
+# enrich (venue form + corners/cards) — slower; optional max
+python scrape_fixtures.py --date today --days 7 --max-enrich 40
 python generate_tips.py --date today
 ```
-Open `index.html` (or serve the folder).
+Open `index.html`.
 
-## GitHub Actions
-Copy `update-tips.yml` into `.github/workflows/` on a new repo and enable Pages.
+## Bots
+FormFox, HomeBanker, ValueHunter, DrawSpecialist, AttackMinded, H2HHistorian — each picks independently (agreement allowed).

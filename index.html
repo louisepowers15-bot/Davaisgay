@@ -6,177 +6,148 @@
 <title>Football Bot Tips</title>
 <style>
   :root {
-    --bg: #0b1220;
-    --card: #141e33;
-    --card2: #1a2740;
-    --text: #e8eefc;
-    --muted: #94a3b8;
-    --accent: #38bdf8;
-    --win: #22c55e;
-    --draw: #eab308;
-    --away: #f97316;
-    --border: #243049;
+    --bg: #0b1220; --card: #141e33; --card2: #1a2740; --text: #e8eefc;
+    --muted: #94a3b8; --accent: #38bdf8; --border: #243049;
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0; font-family: "Segoe UI", system-ui, sans-serif;
-    background: var(--bg); color: var(--text); line-height: 1.45;
+  body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--text); }
+  header { text-align: center; padding: 1.2rem 1rem 0.4rem; border-bottom: 1px solid var(--border); }
+  header h1 { margin: 0; color: var(--accent); font-size: 1.55rem; }
+  header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.92rem; }
+  .tabs { display: flex; flex-wrap: wrap; gap: 0.45rem; justify-content: center; padding: 0.9rem; max-width: 1000px; margin: 0 auto; }
+  .tab { background: var(--card); border: 1px solid var(--border); color: var(--text); padding: 0.4rem 0.85rem; border-radius: 999px; cursor: pointer; font-size: 0.88rem; }
+  .tab.active { background: #0ea5e9; border-color: #0ea5e9; color: #042f2e; font-weight: 700; }
+  main { max-width: 1000px; margin: 0 auto; padding: 0 1rem 3rem; }
+  .note { background: #1e293b; border: 1px solid var(--border); border-radius: 10px; padding: 0.8rem 1rem; color: var(--muted); font-size: 0.88rem; margin-bottom: 1rem; }
+  .league {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px; margin-bottom: 0.65rem; overflow: hidden;
   }
-  header {
-    padding: 1.25rem 1.5rem 0.5rem; text-align: center;
-    border-bottom: 1px solid var(--border);
+  .league-head {
+    display: flex; justify-content: space-between; align-items: center; gap: 0.5rem;
+    padding: 0.85rem 1rem; cursor: pointer; background: var(--card2); font-weight: 700;
   }
-  header h1 { margin: 0; font-size: 1.6rem; color: var(--accent); }
-  header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.95rem; }
-  .tabs {
-    display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;
-    padding: 1rem; max-width: 1100px; margin: 0 auto;
-  }
-  .tab {
-    background: var(--card); border: 1px solid var(--border); color: var(--text);
-    padding: 0.45rem 0.9rem; border-radius: 999px; cursor: pointer; font-size: 0.9rem;
-  }
-  .tab.active { background: #0ea5e9; border-color: #0ea5e9; color: #042f2e; font-weight: 600; }
-  main { max-width: 1100px; margin: 0 auto; padding: 0 1rem 3rem; }
-  .note {
-    background: #1e293b; border: 1px solid var(--border); border-radius: 10px;
-    padding: 0.85rem 1rem; color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem;
-  }
-  .league-block { margin-bottom: 1.25rem; }
-  .league-title {
-    font-size: 1.05rem; font-weight: 700; padding: 0.6rem 0.2rem;
-    color: var(--accent); border-bottom: 1px solid var(--border); margin-bottom: 0.6rem;
-  }
+  .league-head:hover { filter: brightness(1.08); }
+  .league-head .count { color: var(--muted); font-weight: 500; font-size: 0.85rem; }
+  .league-body { display: none; padding: 0.25rem 0.75rem 0.75rem; }
+  .league.open .league-body { display: block; }
   .match {
-    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-    margin-bottom: 0.75rem; overflow: hidden;
+    border: 1px solid var(--border); border-radius: 10px; margin: 0.5rem 0; background: #0f172a;
   }
   .match-head {
-    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem;
-    padding: 0.85rem 1rem; background: var(--card2); cursor: pointer;
+    padding: 0.7rem 0.85rem; cursor: pointer; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.35rem;
   }
-  .match-head .teams { font-weight: 650; font-size: 1.02rem; }
-  .match-head .meta { color: var(--muted); font-size: 0.85rem; }
-  .badge {
-    display: inline-block; padding: 0.15rem 0.5rem; border-radius: 6px;
-    font-size: 0.75rem; font-weight: 700; margin-left: 0.35rem;
+  .match-head .teams { font-weight: 650; }
+  .match-head .meta { color: var(--muted); font-size: 0.82rem; }
+  .match-body { display: none; padding: 0 0.85rem 0.85rem; }
+  .match.open .match-body { display: block; }
+  .stats {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.4rem 0 0.7rem;
+    font-size: 0.82rem; color: #cbd5e1;
   }
+  .stats div { background: #1e293b; border-radius: 8px; padding: 0.45rem 0.55rem; }
+  .badge { font-size: 0.72rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 5px; margin-left: 0.3rem; }
   .badge-home { background: #14532d; color: #86efac; }
   .badge-draw { background: #713f12; color: #fde68a; }
   .badge-away { background: #7c2d12; color: #fdba74; }
-  .match-body { display: none; padding: 0.5rem 1rem 1rem; }
-  .match.open .match-body { display: block; }
-  .tip {
-    border-top: 1px solid var(--border); padding: 0.75rem 0;
-  }
-  .tip-row {
-    display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 0.35rem;
-  }
-  .bot {
-    font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.55rem; border-radius: 999px;
-  }
+  .tip { border-top: 1px solid var(--border); padding: 0.65rem 0; }
+  .tip-row { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+  .bot { font-size: 0.72rem; font-weight: 700; padding: 0.18rem 0.5rem; border-radius: 999px; }
   .bot-FormFox { background: #1d4ed8; }
   .bot-HomeBanker { background: #0f766e; }
   .bot-ValueHunter { background: #15803d; }
   .bot-DrawSpecialist { background: #a16207; }
   .bot-AttackMinded { background: #b91c1c; }
   .bot-H2HHistorian { background: #6d28d9; }
-  .conf {
-    margin-left: auto; font-size: 0.8rem; font-weight: 700;
-    background: #334155; padding: 0.15rem 0.45rem; border-radius: 6px;
-  }
-  .reason { color: #cbd5e1; font-size: 0.9rem; margin: 0.35rem 0; }
-  .builder {
-    background: #0f172a; border: 1px dashed #334155; border-radius: 8px;
-    padding: 0.55rem 0.75rem; font-size: 0.85rem; color: #94a3b8;
-  }
+  .conf { margin-left: auto; font-size: 0.78rem; font-weight: 700; background: #334155; padding: 0.12rem 0.4rem; border-radius: 6px; }
+  .reason { color: #cbd5e1; font-size: 0.88rem; margin: 0.35rem 0; }
+  .builder { background: #020617; border: 1px dashed #334155; border-radius: 8px; padding: 0.5rem 0.65rem; font-size: 0.82rem; color: #94a3b8; }
   .builder strong { color: #e2e8f0; }
-  .stars { color: #fbbf24; letter-spacing: 1px; font-size: 0.85rem; }
+  .stars { color: #fbbf24; font-size: 0.82rem; }
+  .chev { color: var(--muted); font-size: 0.8rem; }
 </style>
 </head>
 <body>
 <header>
   <h1>Football Bot Tips</h1>
-  <p id="header-meta">UK · Scotland · Europe · Cups &amp; Champions League</p>
+  <p id="header-meta">Region → league → match · venue form first</p>
 </header>
-<div class="tabs" id="tabs">
-  <button class="tab active" data-filter="all">All</button>
-  <button class="tab" data-filter="England">England</button>
-  <button class="tab" data-filter="Scotland">Scotland</button>
-  <button class="tab" data-filter="Europe">Europe</button>
-  <button class="tab" data-filter="Spain">Spain</button>
-  <button class="tab" data-filter="Italy">Italy</button>
-  <button class="tab" data-filter="Germany">Germany</button>
-  <button class="tab" data-filter="France">France</button>
-</div>
+<div class="tabs" id="region-tabs"></div>
 <main>
-  <div class="note" id="global-note">Loading fixtures…</div>
+  <div class="note" id="global-note">Loading…</div>
   <div id="content"></div>
 </main>
 <script>
 let tipsData = null;
-let filter = "all";
+let region = "all";
 
 function getDateOffset(days) {
-  const d = new Date();
-  d.setDate(d.getDate() + days);
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
+  const d = new Date(); d.setDate(d.getDate() + days);
+  return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
 }
 
 async function loadTips() {
-  const dateStr = getDateOffset(0);
-  const paths = [`./tips-${dateStr}.json`, `tips-${dateStr}.json`];
-  for (const p of paths) {
-    try {
-      const res = await fetch(p, { cache: "no-store" });
-      if (!res.ok) continue;
-      tipsData = await res.json();
-      break;
-    } catch (e) {}
-  }
-  // fallback: try tomorrow file if today empty
-  if (!tipsData || !(tipsData.matches || []).length) {
-    const t2 = getDateOffset(1);
-    for (const p of [`./tips-${t2}.json`, `tips-${t2}.json`]) {
+  const dates = [getDateOffset(0), getDateOffset(1)];
+  for (const dateStr of dates) {
+    for (const p of [`./tips-${dateStr}.json`, `tips-${dateStr}.json`]) {
       try {
         const res = await fetch(p, { cache: "no-store" });
         if (!res.ok) continue;
         tipsData = await res.json();
-        break;
+        if ((tipsData.matches || []).length) break;
       } catch (e) {}
     }
+    if (tipsData && (tipsData.matches || []).length) break;
   }
+  buildRegionTabs();
   render();
 }
 
-function badge(outcome) {
-  if (outcome === "home") return '<span class="badge badge-home">HOME</span>';
-  if (outcome === "away") return '<span class="badge badge-away">AWAY</span>';
+function buildRegionTabs() {
+  const tabs = document.getElementById("region-tabs");
+  const regions = new Set(["all"]);
+  (tipsData && tipsData.matches || []).forEach(m => regions.add(m.region || "Other"));
+  const order = ["all", "England", "Scotland", "Spain", "Italy", "Germany", "France", "Netherlands", "Portugal", "Europe", "Other"];
+  const list = order.filter(r => regions.has(r)).concat([...regions].filter(r => !order.includes(r)));
+  tabs.innerHTML = list.map(r =>
+    `<button class="tab ${r===region?"active":""}" data-region="${r}">${r === "all" ? "All" : r}</button>`
+  ).join("");
+  tabs.onclick = (e) => {
+    if (!e.target.classList.contains("tab")) return;
+    region = e.target.getAttribute("data-region");
+    [...tabs.children].forEach(t => t.classList.toggle("active", t.getAttribute("data-region") === region));
+    render();
+  };
+}
+
+function badge(o) {
+  if (o === "home") return '<span class="badge badge-home">HOME</span>';
+  if (o === "away") return '<span class="badge badge-away">AWAY</span>';
   return '<span class="badge badge-draw">DRAW</span>';
+}
+
+function venueBlock(label, v) {
+  if (!v || !v.played) return `<div><strong>${label}</strong><br>No venue sample yet</div>`;
+  return `<div><strong>${label}</strong> (${v.played} games)<br>
+    GF ${v.gf_avg ?? "–"} · GA ${v.ga_avg ?? "–"} · CS ${v.cs ?? 0}<br>
+    Corners ${v.corners_avg ?? "–"} · Yellows ${v.yellows_avg ?? "–"} · Shots ${v.shots_avg ?? "–"}</div>`;
 }
 
 function render() {
   const note = document.getElementById("global-note");
   const content = document.getElementById("content");
   if (!tipsData || !(tipsData.matches || []).length) {
-    note.textContent = (tipsData && tipsData.note) || "No tips available yet. Run scrape_fixtures.py && generate_tips.py";
+    note.textContent = (tipsData && tipsData.note) || "No tips yet. Run scrape_fixtures.py && generate_tips.py";
     content.innerHTML = "";
     return;
   }
-  note.textContent = tipsData.note || `Matches: ${tipsData.match_count}`;
-  if (tipsData.start_date) {
-    document.getElementById("header-meta").textContent =
-      `From ${tipsData.start_date} · ${tipsData.match_count} matches · form & H2H when available`;
-  }
+  note.textContent = tipsData.note || "";
+  document.getElementById("header-meta").textContent =
+    `From ${tipsData.start_date || "–"} · ${tipsData.match_count} matches · click league, then match`;
 
   let matches = tipsData.matches || [];
-  if (filter !== "all") {
-    matches = matches.filter(m => (m.region || "") === filter || (m.league || "").includes(filter));
-  }
+  if (region !== "all") matches = matches.filter(m => (m.region || "Other") === region);
 
+  // group by league
   const byLeague = {};
   matches.forEach(m => {
     const k = m.league || "Other";
@@ -186,26 +157,34 @@ function render() {
 
   let html = "";
   Object.keys(byLeague).sort().forEach(league => {
-    html += `<div class="league-block"><div class="league-title">${league}</div>`;
-    byLeague[league].forEach((m, idx) => {
-      const id = `m-${league}-${idx}`.replace(/\s+/g, "");
-      const cons = m.consensus || "";
-      html += `<div class="match" id="${id}">
+    const list = byLeague[league];
+    html += `<div class="league">
+      <div class="league-head" onclick="this.parentElement.classList.toggle('open')">
+        <span>${league}</span>
+        <span class="count">${list.length} matches <span class="chev">▼</span></span>
+      </div>
+      <div class="league-body">`;
+    list.forEach((m, idx) => {
+      html += `<div class="match">
         <div class="match-head" onclick="this.parentElement.classList.toggle('open')">
-          <div class="teams">${m.home} <span style="color:#64748b">vs</span> ${m.away} ${badge(cons)}</div>
-          <div class="meta">${(m.kickoff || m.date || "").replace("T", " ").replace("Z", " UTC")}
+          <div class="teams">${m.home} <span style="color:#64748b">vs</span> ${m.away} ${badge(m.consensus)}</div>
+          <div class="meta">${(m.kickoff || m.date || "").replace("T"," ").replace("Z"," UTC")}
             · model ${m.model_score || "–"}
+            · #${m.home_rank ?? "?"}/#${m.away_rank ?? "?"}
             · form ${m.home_form || "–"} / ${m.away_form || "–"}</div>
         </div>
-        <div class="match-body">`;
+        <div class="match-body">
+          <div class="stats">
+            ${venueBlock(m.home + " (last 5 home)", m.home_venue)}
+            ${venueBlock(m.away + " (last 5 away)", m.away_venue)}
+          </div>`;
       (m.tips || []).forEach(t => {
-        const stars = (t.stars && t.stars > 1) ? `<span class="stars">${"★".repeat(Math.min(t.stars, 6))}</span>` : "";
-        const legs = (t.bet_builder && t.bet_builder.primary_legs) ? t.bet_builder.primary_legs.join(" · ") : "";
+        const stars = t.stars > 1 ? `<span class="stars">${"★".repeat(Math.min(t.stars,6))}</span>` : "";
+        const legs = (t.bet_builder && t.bet_builder.primary_legs || []).join(" · ");
         html += `<div class="tip">
           <div class="tip-row">
             <span class="bot bot-${t.bot}">${t.bot}</span>
-            <strong>${t.selection}</strong> (${t.market})
-            <span>Score ${t.predicted_score}</span>
+            <strong>${t.selection}</strong> · ${t.predicted_score}
             ${stars}
             <span class="conf">${t.conf}%</span>
           </div>
@@ -217,18 +196,10 @@ function render() {
       });
       html += `</div></div>`;
     });
-    html += `</div>`;
+    html += `</div></div>`;
   });
-  content.innerHTML = html || "<p style='color:#94a3b8'>No matches for this filter.</p>";
+  content.innerHTML = html || "<p style='color:#94a3b8'>No matches in this region.</p>";
 }
-
-document.getElementById("tabs").addEventListener("click", (e) => {
-  if (!e.target.classList.contains("tab")) return;
-  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-  e.target.classList.add("active");
-  filter = e.target.getAttribute("data-filter") || "all";
-  render();
-});
 
 loadTips();
 </script>

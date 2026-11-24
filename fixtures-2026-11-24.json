@@ -1,9 +1,10 @@
 {
   "start_date": "2026-11-24",
-  "days": 3,
-  "scraped_at": "2026-11-24T18:58:46.365698+00:00",
+  "days": 7,
+  "scraped_at": "2026-11-24T19:05:14.688299+00:00",
   "source": "espn",
-  "match_count": 75,
+  "enriched": false,
+  "match_count": 182,
   "matches": [
     {
       "id": "401880148",
@@ -11,29 +12,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "333",
         "name": "Bristol City",
         "short": "BRC",
         "form": "LLLWD",
-        "record": "5-3-8",
-        "recent": []
+        "record": "5-3-8"
       },
       "away": {
         "id": "352",
         "name": "Wrexham",
         "short": "WXM",
         "form": "WDWLL",
-        "record": "5-6-5",
-        "recent": []
+        "record": "5-6-5"
       },
       "venue": "Ashton Gate",
       "city": "Bristol",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880147",
@@ -41,29 +38,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "347",
         "name": "Cardiff City",
         "short": "CAR",
         "form": "LWDLW",
-        "record": "4-6-6",
-        "recent": []
+        "record": "4-6-6"
       },
       "away": {
         "id": "394",
         "name": "Preston North End",
         "short": "PNE",
         "form": "DWLLD",
-        "record": "2-3-11",
-        "recent": []
+        "record": "2-3-11"
       },
       "venue": "Cardiff City Stadium",
       "city": "Cardiff",
       "country": "Wales",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880146",
@@ -71,29 +64,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "372",
         "name": "Charlton Athletic",
         "short": "CHA",
         "form": "DWLLL",
-        "record": "4-5-7",
-        "recent": []
+        "record": "4-5-7"
       },
       "away": {
         "id": "314",
         "name": "Lincoln City",
         "short": "LCN",
         "form": "LLLLW",
-        "record": "4-3-9",
-        "recent": []
+        "record": "4-3-9"
       },
       "venue": "The Valley",
       "city": "London",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880145",
@@ -101,29 +90,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "369",
         "name": "Middlesbrough",
         "short": "MID",
         "form": "WDLWW",
-        "record": "9-5-2",
-        "recent": []
+        "record": "9-5-2"
       },
       "away": {
         "id": "318",
         "name": "Swansea City",
         "short": "SWA",
         "form": "DLLWL",
-        "record": "8-3-5",
-        "recent": []
+        "record": "8-3-5"
       },
       "venue": "Riverside Stadium",
       "city": "Middlesbrough",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880144",
@@ -131,29 +116,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "381",
         "name": "Norwich City",
         "short": "NOR",
         "form": "WWWWW",
-        "record": "8-0-8",
-        "recent": []
+        "record": "8-0-8"
       },
       "away": {
         "id": "334",
         "name": "Queens Park Rangers",
         "short": "QPR",
         "form": "WWDLW",
-        "record": "7-6-3",
-        "recent": []
+        "record": "7-6-3"
       },
       "venue": "Carrow Road",
       "city": "Norwich",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880143",
@@ -161,29 +142,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "385",
         "name": "Portsmouth",
         "short": "POR",
         "form": "DLWDW",
-        "record": "6-5-5",
-        "recent": []
+        "record": "6-5-5"
       },
       "away": {
         "id": "371",
         "name": "West Ham United",
         "short": "WHU",
         "form": "DLDLL",
-        "record": "6-6-4",
-        "recent": []
+        "record": "6-6-4"
       },
       "venue": "Fratton Park",
       "city": "Portsmouth",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880142",
@@ -191,29 +168,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "398",
         "name": "Sheffield United",
         "short": "SHU",
         "form": "WLWWD",
-        "record": "7-4-5",
-        "recent": []
+        "record": "7-4-5"
       },
       "away": {
         "id": "376",
         "name": "Southampton",
         "short": "SOU",
         "form": "WLDWW",
-        "record": "9-4-3",
-        "recent": []
+        "record": "9-4-3"
       },
       "venue": "Bramall Lane",
       "city": "Sheffield",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880141",
@@ -221,29 +194,25 @@
       "kickoff": "2026-11-24T20:00Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "380",
         "name": "Wolverhampton Wanderers",
         "short": "WOL",
         "form": "DDWWW",
-        "record": "9-4-3",
-        "recent": []
+        "record": "9-4-3"
       },
       "away": {
         "id": "374",
         "name": "Derby County",
         "short": "DER",
         "form": "LWLLD",
-        "record": "2-4-10",
-        "recent": []
+        "record": "2-4-10"
       },
       "venue": "Molineux Stadium",
       "city": "Wolverhampton",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880824",
@@ -251,29 +220,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.3",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "346",
         "name": "Blackpool",
         "short": "BLP",
         "form": "DLWDW",
-        "record": "3-3-8",
-        "recent": []
+        "record": "3-3-8"
       },
       "away": {
         "id": "375",
         "name": "Leicester City",
         "short": "LEI",
         "form": "DWWDW",
-        "record": "6-4-4",
-        "recent": []
+        "record": "6-4-4"
       },
       "venue": "Bloomfield Road",
       "city": "Blackpool",
       "country": "England",
       "league": "League One",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880838",
@@ -281,29 +246,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.3",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "387",
         "name": "Bradford City",
         "short": "BRD",
         "form": "DWWLW",
-        "record": "6-5-3",
-        "recent": []
+        "record": "6-5-3"
       },
       "away": {
         "id": "397",
         "name": "Barnsley",
         "short": "BAR",
         "form": "LLWWD",
-        "record": "2-3-9",
-        "recent": []
+        "record": "2-3-9"
       },
       "venue": "Valley Parade",
       "city": "Bradford",
       "country": "England",
       "league": "League One",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880823",
@@ -311,29 +272,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.3",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "3129",
         "name": "Bromley",
         "short": "BRO",
         "form": "DLLLL",
-        "record": "3-3-8",
-        "recent": []
+        "record": "3-3-8"
       },
       "away": {
         "id": "344",
         "name": "Wycombe Wanderers",
         "short": "WYC",
         "form": "DWWDD",
-        "record": "4-6-4",
-        "recent": []
+        "record": "4-6-4"
       },
       "venue": "RELOC8 EM Community Stadium",
       "city": "Bromley",
       "country": "England",
       "league": "League One",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880829",
@@ -341,29 +298,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.3",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "285",
         "name": "Stevenage",
         "short": "STE",
         "form": "DWWDL",
-        "record": "5-4-4",
-        "recent": []
+        "record": "5-4-4"
       },
       "away": {
         "id": "399",
         "name": "Sheffield Wednesday",
         "short": "SHW",
         "form": "WWLLD",
-        "record": "7-5-3",
-        "recent": []
+        "record": "7-5-3"
       },
       "venue": "Lamex Stadium",
       "city": "Stevenage",
       "country": "England",
       "league": "League One",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401881358",
@@ -371,29 +324,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.4",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "2594",
         "name": "Crawley Town",
         "short": "CRA",
         "form": "DLLWD",
-        "record": "3-3-7",
-        "recent": []
+        "record": "3-3-7"
       },
       "away": {
         "id": "280",
         "name": "Barnet",
         "short": "BAR",
         "form": "WWWDW",
-        "record": "8-5-1",
-        "recent": []
+        "record": "8-5-1"
       },
       "venue": "Broadfield Stadium",
       "city": "Crawley",
       "country": "England",
       "league": "League Two",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401881354",
@@ -401,29 +350,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "eng.4",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "348",
         "name": "Port Vale",
         "short": "PTV",
         "form": "LWWWW",
-        "record": "5-3-6",
-        "recent": []
+        "record": "5-3-6"
       },
       "away": {
         "id": "353",
         "name": "Northampton Town",
         "short": "NHT",
         "form": "WDLLL",
-        "record": "4-6-5",
-        "recent": []
+        "record": "4-6-5"
       },
       "venue": "Vale Park",
       "city": "Stoke-on-Trent",
       "country": "England",
       "league": "League Two",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401878348",
@@ -431,29 +376,25 @@
       "kickoff": "2026-11-24T19:45Z",
       "league_code": "sco.1",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "258",
         "name": "Hibernian",
         "short": "HIBS",
         "form": "DWWDL",
-        "record": "3-2-8",
-        "recent": []
+        "record": "3-2-8"
       },
       "away": {
         "id": "261",
         "name": "Dundee",
         "short": "DUN",
         "form": "DLWLD",
-        "record": "5-2-6",
-        "recent": []
+        "record": "5-2-6"
       },
       "venue": "Easter Road",
       "city": "Edinburgh",
       "country": "Scotland",
       "league": "Scottish Premiership",
-      "region": "Scotland",
-      "h2h": []
+      "region": "Scotland"
     },
     {
       "id": "401878345",
@@ -461,59 +402,51 @@
       "kickoff": "2026-11-24T20:00Z",
       "league_code": "sco.1",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "257",
         "name": "Rangers",
         "short": "RAN",
         "form": "WWWDW",
-        "record": "9-3-1",
-        "recent": []
+        "record": "9-3-1"
       },
       "away": {
         "id": "263",
         "name": "Aberdeen",
         "short": "ABE",
         "form": "DLLLL",
-        "record": "4-2-7",
-        "recent": []
+        "record": "4-2-7"
       },
       "venue": "Ibrox Stadium",
       "city": "Glasgow",
       "country": "Scotland",
       "league": "Scottish Premiership",
-      "region": "Scotland",
-      "h2h": []
+      "region": "Scotland"
     },
     {
       "id": "401915380",
       "date": "2026-11-24",
       "kickoff": "2026-11-24T17:45Z",
       "league_code": "uefa.champions",
-      "status": "STATUS_SECOND_HALF",
-      "status_detail": "56'",
+      "status": "STATUS_IN_PROGRESS",
       "home": {
         "id": "2980",
         "name": "Bodo/Glimt",
         "short": "BODO",
         "form": "WWDWL",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "away": {
         "id": "4411",
         "name": "LASK Linz",
         "short": "LAS",
         "form": "WWWWL",
-        "record": "2-0-2",
-        "recent": []
+        "record": "2-0-2"
       },
       "venue": "Aspmyra Stadion",
       "city": "Bod\u00f8/Glimt",
       "country": "Norway",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915300",
@@ -521,29 +454,25 @@
       "kickoff": "2026-11-24T17:45Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SECOND_HALF",
-      "status_detail": "56'",
       "home": {
         "id": "432",
         "name": "Galatasaray",
         "short": "GAL",
         "form": "WWWWW",
-        "record": "2-0-2",
-        "recent": []
+        "record": "2-0-2"
       },
       "away": {
         "id": "362",
         "name": "Aston Villa",
         "short": "AVL",
         "form": "DDLDL",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "venue": "RAMS Park",
       "city": "Istanbul",
       "country": "T\u00fcrkiye",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915295",
@@ -551,29 +480,25 @@
       "kickoff": "2026-11-24T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "359",
         "name": "Arsenal",
         "short": "ARS",
         "form": "DWWWL",
-        "record": "3-1-0",
-        "recent": []
+        "record": "3-1-0"
       },
       "away": {
         "id": "124",
         "name": "Borussia Dortmund",
         "short": "DOR",
         "form": "WWWDW",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "venue": "Emirates Stadium",
       "city": "London",
       "country": "England",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915296",
@@ -581,29 +506,25 @@
       "kickoff": "2026-11-24T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "2572",
         "name": "Como",
         "short": "COMO",
         "form": "WLWWW",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "away": {
         "id": "887",
         "name": "AEK Athens",
         "short": "AEK",
         "form": "WWLLW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "venue": "Giuseppe Sinigaglia",
       "city": "Como",
       "country": "Italy",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915294",
@@ -611,29 +532,25 @@
       "kickoff": "2026-11-24T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "142",
         "name": "Feyenoord Rotterdam",
         "short": "FEY",
         "form": "LLLDD",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "away": {
         "id": "437",
         "name": "FC Porto",
         "short": "FCP",
         "form": "WWWWW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "venue": "De Kuip",
       "city": "Rotterdam",
       "country": "Netherlands",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915379",
@@ -641,29 +558,25 @@
       "kickoff": "2026-11-24T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "382",
         "name": "Manchester City",
         "short": "MNC",
         "form": "DLWLW",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "away": {
         "id": "114",
         "name": "Napoli",
         "short": "NAP",
         "form": "DDLLW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "venue": "Etihad Stadium",
       "city": "Manchester",
       "country": "England",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915299",
@@ -671,29 +584,25 @@
       "kickoff": "2026-11-24T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "11420",
         "name": "RB Leipzig",
         "short": "RBL",
         "form": "WWLWW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "away": {
         "id": "175",
         "name": "Lens",
         "short": "RCL",
         "form": "DLLLW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "venue": "Red Bull Arena",
       "city": "Leipzig",
       "country": "Germany",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915298",
@@ -701,29 +610,25 @@
       "kickoff": "2026-11-24T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "86",
         "name": "Real Madrid",
         "short": "RMA",
         "form": "WWWWW",
-        "record": "4-0-0",
-        "recent": []
+        "record": "4-0-0"
       },
       "away": {
         "id": "148",
         "name": "PSV Eindhoven",
         "short": "PSV",
         "form": "WWLWD",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "venue": "Santiago Bernab\u00e9u",
       "city": "Madrid",
       "country": "Spain",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915297",
@@ -731,29 +636,25 @@
       "kickoff": "2026-11-24T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "521",
         "name": "Slovan Bratislava",
         "short": "SLB",
         "form": "LLLLW",
-        "record": "0-0-4",
-        "recent": []
+        "record": "0-0-4"
       },
       "away": {
         "id": "244",
         "name": "Real Betis",
         "short": "BET",
         "form": "DWWLW",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "venue": "N\u00e1rodny Futbalovy Stadi\u00f3n",
       "city": "Bratislava",
       "country": "Slovakia",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401880140",
@@ -761,29 +662,25 @@
       "kickoff": "2026-11-25T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "358",
         "name": "Bolton Wanderers",
         "short": "BOL",
         "form": "DLWLL",
-        "record": "5-3-8",
-        "recent": []
+        "record": "5-3-8"
       },
       "away": {
         "id": "383",
         "name": "West Bromwich Albion",
         "short": "WBA",
         "form": "DWDWD",
-        "record": "8-5-3",
-        "recent": []
+        "record": "8-5-3"
       },
       "venue": "Toughsheet Community Stadium",
       "city": "Bolton",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880139",
@@ -791,29 +688,25 @@
       "kickoff": "2026-11-25T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "379",
         "name": "Burnley",
         "short": "BUR",
         "form": "DLDDL",
-        "record": "1-8-7",
-        "recent": []
+        "record": "1-8-7"
       },
       "away": {
         "id": "392",
         "name": "Birmingham City",
         "short": "BIR",
         "form": "DWWWL",
-        "record": "8-5-3",
-        "recent": []
+        "record": "8-5-3"
       },
       "venue": "Turf Moor",
       "city": "Burnley",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880137",
@@ -821,29 +714,25 @@
       "kickoff": "2026-11-25T19:45Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "395",
         "name": "Watford",
         "short": "WAT",
         "form": "LDWLL",
-        "record": "4-3-9",
-        "recent": []
+        "record": "4-3-9"
       },
       "away": {
         "id": "365",
         "name": "Blackburn Rovers",
         "short": "BLK",
         "form": "DWLLW",
-        "record": "6-4-6",
-        "recent": []
+        "record": "6-4-6"
       },
       "venue": "Vicarage Road",
       "city": "Watford",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401880138",
@@ -851,29 +740,25 @@
       "kickoff": "2026-11-25T20:00Z",
       "league_code": "eng.2",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "336",
         "name": "Stoke City",
         "short": "STK",
         "form": "DWWWD",
-        "record": "10-2-4",
-        "recent": []
+        "record": "10-2-4"
       },
       "away": {
         "id": "391",
         "name": "Millwall",
         "short": "MIL",
         "form": "LLLWL",
-        "record": "5-3-8",
-        "recent": []
+        "record": "5-3-8"
       },
       "venue": "bet365 Stadium",
       "city": "Stoke-on-Trent",
       "country": "England",
       "league": "Championship",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401915378",
@@ -881,29 +766,25 @@
       "kickoff": "2026-11-25T17:45Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "21922",
         "name": "Sabah FK",
         "short": "SAB",
         "form": "LLWLW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "away": {
         "id": "83",
         "name": "Barcelona",
         "short": "BAR",
         "form": "WWWWL",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "venue": "Baku Olympic Stadium",
       "city": "Baku",
       "country": "Azerbaijan",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915293",
@@ -911,29 +792,25 @@
       "kickoff": "2026-11-25T17:45Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "494",
         "name": "Slavia Prague",
         "short": "SLP",
         "form": "LDLLL",
-        "record": "0-1-3",
-        "recent": []
+        "record": "0-1-3"
       },
       "away": {
         "id": "102",
         "name": "Villarreal",
         "short": "VIL",
         "form": "LWLLW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "venue": "Fortuna Arena",
       "city": "Prague",
       "country": "Czechia",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915291",
@@ -941,29 +818,25 @@
       "kickoff": "2026-11-25T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "1068",
         "name": "Atl\u00e9tico Madrid",
         "short": "ATM",
         "form": "WLLWW",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "away": {
         "id": "510",
         "name": "Viking FK",
         "short": "VFK",
         "form": "DWWLW",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "venue": "Riyadh Air Metropolitano",
       "city": "Madrid",
       "country": "Spain",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915292",
@@ -971,29 +844,25 @@
       "kickoff": "2026-11-25T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "570",
         "name": "Club Brugge",
         "short": "BRU",
         "form": "WDWWW",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "away": {
         "id": "364",
         "name": "Liverpool",
         "short": "LIV",
         "form": "WWLLW",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "venue": "Jan Breydel Stadium",
       "city": "Brugge",
       "country": "Belgium",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915376",
@@ -1001,29 +870,25 @@
       "kickoff": "2026-11-25T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "110",
         "name": "Internazionale",
         "short": "INT",
         "form": "DWWLW",
-        "record": "2-0-2",
-        "recent": []
+        "record": "2-0-2"
       },
       "away": {
         "id": "134",
         "name": "VfB Stuttgart",
         "short": "VFB",
         "form": "DWLWW",
-        "record": "2-1-1",
-        "recent": []
+        "record": "2-1-1"
       },
       "venue": "San Siro",
       "city": "Milano",
       "country": "Italy",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915377",
@@ -1031,29 +896,25 @@
       "kickoff": "2026-11-25T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "166",
         "name": "Lille",
         "short": "LILL",
         "form": "LWDWD",
-        "record": "0-1-3",
-        "recent": []
+        "record": "0-1-3"
       },
       "away": {
         "id": "132",
         "name": "Bayern Munich",
         "short": "MUN",
         "form": "DWWDW",
-        "record": "2-2-0",
-        "recent": []
+        "record": "2-2-0"
       },
       "venue": "Decathlon Arena - Stade Pierre-Mauroy",
       "city": "Lille",
       "country": "France",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915374",
@@ -1061,29 +922,25 @@
       "kickoff": "2026-11-25T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "160",
         "name": "Paris Saint-Germain",
         "short": "PSG",
         "form": "DWWWW",
-        "record": "4-0-0",
-        "recent": []
+        "record": "4-0-0"
       },
       "away": {
         "id": "104",
         "name": "AS Roma",
         "short": "ROMA",
         "form": "WWLWW",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "venue": "Parc des Princes",
       "city": "Paris",
       "country": "France",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915375",
@@ -1091,29 +948,25 @@
       "kickoff": "2026-11-25T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "493",
         "name": "Shakhtar Donetsk",
         "short": "SHK",
         "form": "LLWDL",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "away": {
         "id": "436",
         "name": "Fenerbahce",
         "short": "FEN",
         "form": "DWWLL",
-        "record": "1-2-1",
-        "recent": []
+        "record": "1-2-1"
       },
       "venue": "Stamford Bridge",
       "city": "London",
       "country": "England",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915373",
@@ -1121,29 +974,25 @@
       "kickoff": "2026-11-25T20:00Z",
       "league_code": "uefa.champions",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "2250",
         "name": "Sporting CP",
         "short": "SCP",
         "form": "WWWWL",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "away": {
         "id": "360",
         "name": "Manchester United",
         "short": "MAN",
         "form": "LDWLL",
-        "record": "2-0-2",
-        "recent": []
+        "record": "2-0-2"
       },
       "venue": "Est\u00e1dio Jos\u00e9 Alvalade",
       "city": "Lisbon",
       "country": "Portugal",
       "league": "Champions League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401880728",
@@ -1151,29 +1000,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "eng.3",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "279",
         "name": "Doncaster Rovers",
         "short": "DON",
         "form": "DLWLL",
-        "record": "3-4-7",
-        "recent": []
+        "record": "3-4-7"
       },
       "away": {
         "id": "335",
         "name": "Huddersfield Town",
         "short": "HUD",
         "form": "DWLDW",
-        "record": "8-5-2",
-        "recent": []
+        "record": "8-5-2"
       },
       "venue": "Eco-Power Stadium",
       "city": "Doncaster",
       "country": "England",
       "league": "League One",
-      "region": "England",
-      "h2h": []
+      "region": "England"
     },
     {
       "id": "401915506",
@@ -1181,29 +1026,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "1895",
         "name": "Besiktas",
         "short": "BES",
         "form": "WWLDW",
-        "record": "2-1-1",
-        "recent": []
+        "record": "2-1-1"
       },
       "away": {
         "id": "13083",
         "name": "Hapoel Be'er",
         "short": "HBE",
         "form": "DLLDL",
-        "record": "0-1-3",
-        "recent": []
+        "record": "0-1-3"
       },
       "venue": "Batumi Stadium (Adjarabet Arena)",
       "city": "Batumi",
       "country": "Georgia",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915519",
@@ -1211,29 +1052,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "85",
         "name": "Celta Vigo",
         "short": "CEL",
         "form": "LWDLL",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "away": {
         "id": "349",
         "name": "AFC Bournemouth",
         "short": "BOU",
         "form": "WWWWW",
-        "record": "4-0-0",
-        "recent": []
+        "record": "4-0-0"
       },
       "venue": "Balaidos",
       "city": "Vigo",
       "country": "Spain",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915517",
@@ -1241,29 +1078,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "597",
         "name": "Dinamo Zagreb",
         "short": "DZG",
         "form": "WLWDL",
-        "record": "2-1-1",
-        "recent": []
+        "record": "2-1-1"
       },
       "away": {
         "id": "131",
         "name": "Bayer Leverkusen",
         "short": "B04",
         "form": "WWLLW",
-        "record": "3-0-1",
-        "recent": []
+        "record": "3-0-1"
       },
       "venue": "Maksimir Stadium",
       "city": "Zagreb",
       "country": "Croatia",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915507",
@@ -1271,29 +1104,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "176",
         "name": "Marseille",
         "short": "OLM",
         "form": "LWWWW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "away": {
         "id": "490",
         "name": "Levski Sofia",
         "short": "LEV",
         "form": "WWDLL",
-        "record": "2-1-1",
-        "recent": []
+        "record": "2-1-1"
       },
       "venue": "Stade V\u00e9lodrome",
       "city": "Marseille",
       "country": "France",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915521",
@@ -1301,29 +1130,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "435",
         "name": "Olympiacos",
         "short": "OLY",
         "form": "WDDWW",
-        "record": "3-1-0",
-        "recent": []
+        "record": "3-1-0"
       },
       "away": {
         "id": "103",
         "name": "AC Milan",
         "short": "MIL",
         "form": "WWLWL",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "venue": "Georgios Karaiskakis Stadium",
       "city": "Piraeus",
       "country": "Greece",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915520",
@@ -1331,29 +1156,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "2790",
         "name": "RB Salzburg",
         "short": "SLZ",
         "form": "LWLWW",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "away": {
         "id": "20024",
         "name": "Ararat-Armenia",
         "short": "ARA",
         "form": "LLLLW",
-        "record": "0-0-4",
-        "recent": []
+        "record": "0-0-4"
       },
       "venue": "Red Bull Arena Salzburg",
       "city": "Salzburg",
       "country": "Austria",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915508",
@@ -1361,29 +1182,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "5807",
         "name": "Union St.-Gilloise",
         "short": "USG",
         "form": "WWWWW",
-        "record": "3-1-0",
-        "recent": []
+        "record": "3-1-0"
       },
       "away": {
         "id": "2990",
         "name": "Lech Poznan",
         "short": "LECH",
         "form": "LDLLD",
-        "record": "0-1-3",
-        "recent": []
+        "record": "0-1-3"
       },
       "venue": "King Power at Den Dreef Stadion",
       "city": "Leuven",
       "country": "Belgium",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915518",
@@ -1391,29 +1208,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "11706",
         "name": "Viktoria Plzen",
         "short": "PLZ",
         "form": "WLLLW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "away": {
         "id": "1929",
         "name": "Benfica",
         "short": "SLB",
         "form": "WWWWW",
-        "record": "4-0-0",
-        "recent": []
+        "record": "4-0-0"
       },
       "venue": "Doosan Arena",
       "city": "Plzen",
       "country": "Czechia",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915504",
@@ -1421,29 +1234,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "384",
         "name": "Crystal Palace",
         "short": "CRY",
         "form": "LLDLW",
-        "record": "1-2-1",
-        "recent": []
+        "record": "1-2-1"
       },
       "away": {
         "id": "89",
         "name": "Real Sociedad",
         "short": "RSO",
         "form": "LWDLW",
-        "record": "1-2-1",
-        "recent": []
+        "record": "1-2-1"
       },
       "venue": "Selhurst Park",
       "city": "London",
       "country": "England",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915516",
@@ -1451,29 +1260,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "622",
         "name": "Ferencvaros",
         "short": "FER",
         "form": "WWWWW",
-        "record": "4-0-0",
-        "recent": []
+        "record": "4-0-0"
       },
       "away": {
         "id": "3362",
         "name": "NK Celje",
         "short": "NKC",
         "form": "WDLLL",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "venue": "Groupama Arena",
       "city": "Budapest",
       "country": "Hungary",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915502",
@@ -1481,29 +1286,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "111",
         "name": "Juventus",
         "short": "JUV",
         "form": "WDWWL",
-        "record": "3-1-0",
-        "recent": []
+        "record": "3-1-0"
       },
       "away": {
         "id": "617",
         "name": "Omonia Nicosia",
         "short": "OMON",
         "form": "LLWWW",
-        "record": "2-0-2",
-        "recent": []
+        "record": "2-0-2"
       },
       "venue": "Allianz Stadium",
       "city": "Torino",
       "country": "Italy",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915501",
@@ -1511,29 +1312,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "167",
         "name": "Lyon",
         "short": "LYON",
         "form": "WLDWL",
-        "record": "2-1-1",
-        "recent": []
+        "record": "2-1-1"
       },
       "away": {
         "id": "987",
         "name": "Lillestrom",
         "short": "LSK",
         "form": "WWLWW",
-        "record": "0-1-3",
-        "recent": []
+        "record": "0-1-3"
       },
       "venue": "Groupama Stadium",
       "city": "Lyon",
       "country": "France",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915505",
@@ -1541,29 +1338,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "147",
         "name": "NEC Nijmegen",
         "short": "NEC",
         "form": "LWWLD",
-        "record": "2-1-1",
-        "recent": []
+        "record": "2-1-1"
       },
       "away": {
         "id": "169",
         "name": "Stade Rennais",
         "short": "REN",
         "form": "DLDLW",
-        "record": "1-3-0",
-        "recent": []
+        "record": "1-3-0"
       },
       "venue": "Goffertstadion",
       "city": "Nijmegen",
       "country": "Netherlands",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915503",
@@ -1571,29 +1364,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "1010",
         "name": "OFI Crete",
         "short": "OFI",
         "form": "DDWWW",
-        "record": "2-0-2",
-        "recent": []
+        "record": "2-0-2"
       },
       "away": {
         "id": "441",
         "name": "Anderlecht",
         "short": "AND",
         "form": "DDWWL",
-        "record": "2-0-2",
-        "recent": []
+        "record": "2-0-2"
       },
       "venue": "Pankritio Stadium",
       "city": "Crete",
       "country": "Greece",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915514",
@@ -1601,29 +1390,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "433",
         "name": "Sparta Prague",
         "short": "SPP",
         "form": "DLDWL",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "away": {
         "id": "140",
         "name": "AZ Alkmaar",
         "short": "AZ",
         "form": "WWLLL",
-        "record": "2-0-2",
-        "recent": []
+        "record": "2-0-2"
       },
       "venue": "Generali Arena",
       "city": "Prague",
       "country": "Czechia",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915513",
@@ -1631,29 +1416,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "366",
         "name": "Sunderland",
         "short": "SUN",
         "form": "DWLLW",
-        "record": "2-1-1",
-        "recent": []
+        "record": "2-1-1"
       },
       "away": {
         "id": "11505",
         "name": "Jagiellonia Bialystok",
         "short": "JAG",
         "form": "LLWLW",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "venue": "Stadium of Light",
       "city": "Sunderland",
       "country": "England",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915512",
@@ -1661,29 +1442,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "21615",
         "name": "Torreense",
         "short": "TOR",
         "form": "LWLLW",
-        "record": "2-0-2",
-        "recent": []
+        "record": "2-0-2"
       },
       "away": {
         "id": "256",
         "name": "Celtic",
         "short": "CEL",
         "form": "WWWLD",
-        "record": "1-0-3",
-        "recent": []
+        "record": "1-0-3"
       },
       "venue": "Est\u00e1dio Dr. Magalhaes Pessoa",
       "city": "Leiria",
       "country": "Portugal",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915515",
@@ -1691,29 +1468,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "7911",
         "name": "TSG Hoffenheim",
         "short": "TSG",
         "form": "LWDLL",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "away": {
         "id": "3746",
         "name": "SK Sturm Graz",
         "short": "STG",
         "form": "LLLDD",
-        "record": "1-1-2",
-        "recent": []
+        "record": "1-1-2"
       },
       "venue": "PreZero Arena",
       "city": "Sinsheim",
       "country": "Germany",
       "league": "Europa League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915816",
@@ -1721,29 +1494,25 @@
       "kickoff": "2026-11-26T15:30Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "2528",
         "name": "Kairat Almaty",
         "short": "KAI",
         "form": "DLDLL",
-        "record": "0-2-1",
-        "recent": []
+        "record": "0-2-1"
       },
       "away": {
         "id": "20301",
         "name": "Mj\u00e4llby AIF",
         "short": "MJA",
         "form": "DDWDW",
-        "record": "2-1-0",
-        "recent": []
+        "record": "2-1-0"
       },
       "venue": "Almaty Ortalyk Stadium",
       "city": "Almaty",
       "country": "Kazakhstan",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915815",
@@ -1751,29 +1520,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "139",
         "name": "Ajax Amsterdam",
         "short": "AJA",
         "form": "WDWWW",
-        "record": "2-0-1",
-        "recent": []
+        "record": "2-0-1"
       },
       "away": {
         "id": "3024",
         "name": "FC Thun",
         "short": "THUN",
         "form": "WLLDL",
-        "record": "1-0-2",
-        "recent": []
+        "record": "1-0-2"
       },
       "venue": "Johan Cruijff Arena",
       "city": "Amsterdam",
       "country": "Netherlands",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915814",
@@ -1781,29 +1546,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "331",
         "name": "Brighton & Hove Albion",
         "short": "BHA",
         "form": "DWWWL",
-        "record": "2-1-0",
-        "recent": []
+        "record": "2-1-0"
       },
       "away": {
         "id": "8089",
         "name": "CSU Craiova",
         "short": "UCRA",
         "form": "WWDLD",
-        "record": "2-1-0",
-        "recent": []
+        "record": "2-1-0"
       },
       "venue": "American Express Stadium",
       "city": "Falmer",
       "country": "England",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915810",
@@ -1811,29 +1572,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "21943",
         "name": "Egnatia",
         "short": "EGN",
         "form": "LDDLD",
-        "record": "0-2-1",
-        "recent": []
+        "record": "0-2-1"
       },
       "away": {
         "id": "17856",
         "name": "Lincoln Red Imps",
         "short": "LRI",
         "form": "WLLWL",
-        "record": "1-0-2",
-        "recent": []
+        "record": "1-0-2"
       },
       "venue": "Air Albania Stadium",
       "city": "Tirana",
       "country": "Albania",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915811",
@@ -1841,29 +1598,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "262",
         "name": "Heart of Midlothian",
         "short": "HOM",
         "form": "DLLLD",
-        "record": "0-1-2",
-        "recent": []
+        "record": "0-1-2"
       },
       "away": {
         "id": "174",
         "name": "AS Monaco",
         "short": "MON",
         "form": "DDWLD",
-        "record": "3-0-0",
-        "recent": []
+        "record": "3-0-0"
       },
       "venue": "Tynecastle Park",
       "city": "Edinburgh",
       "country": "Scotland",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915813",
@@ -1871,29 +1624,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "20025",
         "name": "Iberia 1999",
         "short": "IBE",
         "form": "LDLLL",
-        "record": "0-1-2",
-        "recent": []
+        "record": "0-1-2"
       },
       "away": {
         "id": "2922",
         "name": "Getafe",
         "short": "GET",
         "form": "LLLWW",
-        "record": "0-1-2",
-        "recent": []
+        "record": "0-1-2"
       },
       "venue": "Mikheil Meskhi Stadioni",
       "city": "Tbilisi",
       "country": "Georgia",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915812",
@@ -1901,29 +1650,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "7922",
         "name": "Jablonec",
         "short": "JABL",
         "form": "DDLWL",
-        "record": "0-2-1",
-        "recent": []
+        "record": "0-2-1"
       },
       "away": {
         "id": "7672",
         "name": "FC Lugano",
         "short": "LUG",
         "form": "WWWDW",
-        "record": "3-0-0",
-        "recent": []
+        "record": "3-0-0"
       },
       "venue": "Stadion Strelnice",
       "city": "Jablonec",
       "country": "Czechia",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915739",
@@ -1931,29 +1676,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "20028",
         "name": "Kauno Zalgiris",
         "short": "ZAL",
         "form": "LLLWL",
-        "record": "0-0-3",
-        "recent": []
+        "record": "0-0-3"
       },
       "away": {
         "id": "19246",
         "name": "Riga FC",
         "short": "RIG",
         "form": "DDDWD",
-        "record": "0-3-0",
-        "recent": []
+        "record": "0-3-0"
       },
       "venue": "S. Darius and S. Gireno Stadium",
       "city": "Kaunas",
       "country": "Lithuania",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915809",
@@ -1961,29 +1702,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "22281",
         "name": "Pafos",
         "short": "PAF",
         "form": "LDLWD",
-        "record": "0-1-2",
-        "recent": []
+        "record": "0-1-2"
       },
       "away": {
         "id": "572",
         "name": "FC Midtjylland",
         "short": "MID",
         "form": "WDLWW",
-        "record": "0-1-2",
-        "recent": []
+        "record": "0-1-2"
       },
       "venue": "Alphamega Stadium",
       "city": "Kolossi",
       "country": "Cyprus",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915808",
@@ -1991,29 +1728,25 @@
       "kickoff": "2026-11-26T17:45Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "620",
         "name": "SK Brann",
         "short": "SKBR",
         "form": "DDDWL",
-        "record": "2-1-0",
-        "recent": []
+        "record": "2-1-0"
       },
       "away": {
         "id": "7853",
         "name": "AGF",
         "short": "AGF",
         "form": "WWDLW",
-        "record": "0-2-1",
-        "recent": []
+        "record": "0-2-1"
       },
       "venue": "Brann Stadium",
       "city": "Bergen",
       "country": "Norway",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915806",
@@ -2021,29 +1754,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "20710",
         "name": "Borac Banja Luka",
         "short": "BBL",
         "form": "LWLWW",
-        "record": "1-0-2",
-        "recent": []
+        "record": "1-0-2"
       },
       "away": {
         "id": "105",
         "name": "Atalanta",
         "short": "ATA",
         "form": "DWDLD",
-        "record": "1-1-1",
-        "recent": []
+        "record": "1-1-1"
       },
       "venue": "Gradski Stadion Banja Luka",
       "city": "Banja Luka",
       "country": "Bosnia and Herzegovina",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915802",
@@ -2051,29 +1780,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "2994",
         "name": "Braga",
         "short": "SCB",
         "form": "WWDWL",
-        "record": "1-1-1",
-        "recent": []
+        "record": "1-1-1"
       },
       "away": {
         "id": "8169",
         "name": "KuPS Kuopio",
         "short": "KUPS",
         "form": "DLLWD",
-        "record": "0-1-2",
-        "recent": []
+        "record": "0-1-2"
       },
       "venue": "Est\u00e1dio Municipal de Braga",
       "city": "Braga",
       "country": "Portugal",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915803",
@@ -2081,29 +1806,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "10834",
         "name": "CSKA Sofia",
         "short": "CSKA",
         "form": "LDLLL",
-        "record": "0-1-2",
-        "recent": []
+        "record": "0-1-2"
       },
       "away": {
         "id": "997",
         "name": "Trabzonspor",
         "short": "TRAB",
         "form": "WWLWW",
-        "record": "2-0-1",
-        "recent": []
+        "record": "2-0-1"
       },
       "venue": "Balgarska Armia Stadium",
       "city": "Sofia",
       "country": "Bulgaria",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915807",
@@ -2111,29 +1832,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "3101",
         "name": "FC Nordsj\u00e6lland",
         "short": "FCN",
         "form": "WWLLD",
-        "record": "0-2-1",
-        "recent": []
+        "record": "0-2-1"
       },
       "away": {
         "id": "443",
         "name": "Panathinaikos",
         "short": "PAO",
         "form": "DWWWW",
-        "record": "3-0-0",
-        "recent": []
+        "record": "3-0-0"
       },
       "venue": "Right to Dream Park",
       "city": "Farum",
       "country": "Denmark",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915805",
@@ -2141,29 +1858,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "489",
         "name": "Hajduk Split",
         "short": "HAJ",
         "form": "LWWWD",
-        "record": "2-0-1",
-        "recent": []
+        "record": "2-0-1"
       },
       "away": {
         "id": "936",
         "name": "Sint-Truidense",
         "short": "STVV",
         "form": "DWDLL",
-        "record": "2-1-0",
-        "recent": []
+        "record": "2-1-0"
       },
       "venue": "Stadion Poljud",
       "city": "Split",
       "country": "Croatia",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915738",
@@ -2171,29 +1884,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "20703",
         "name": "Inter D'Escaldes",
         "short": "IDE",
         "form": "LLLDD",
-        "record": "0-0-3",
-        "recent": []
+        "record": "0-0-3"
       },
       "away": {
         "id": "909",
         "name": "F.C. K\u00f8benhavn",
         "short": "KBH",
         "form": "LWWWD",
-        "record": "2-1-0",
-        "recent": []
+        "record": "2-1-0"
       },
       "venue": "Estadi de la FAF d'Encamp",
       "city": "Encamp",
       "country": "Andorra",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915804",
@@ -2201,29 +1910,25 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "3611",
         "name": "KAA Gent",
         "short": "GENT",
         "form": "LWDLW",
-        "record": "1-1-1",
-        "recent": []
+        "record": "1-1-1"
       },
       "away": {
         "id": "2290",
         "name": "Red Star Belgrade",
         "short": "RSB",
         "form": "WDLLW",
-        "record": "1-1-1",
-        "recent": []
+        "record": "1-1-1"
       },
       "venue": "Ghelamco Arena",
       "city": "Ghent",
       "country": "Belgium",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
     },
     {
       "id": "401915801",
@@ -2231,29 +1936,2807 @@
       "kickoff": "2026-11-26T20:00Z",
       "league_code": "uefa.europa.conf",
       "status": "STATUS_SCHEDULED",
-      "status_detail": "Scheduled",
       "home": {
         "id": "126",
         "name": "SC Freiburg",
         "short": "SCF",
         "form": "WWWWW",
-        "record": "2-0-1",
-        "recent": []
+        "record": "2-0-1"
       },
       "away": {
         "id": "152",
         "name": "FC Twente",
         "short": "TWE",
         "form": "WDWWW",
-        "record": "3-0-0",
-        "recent": []
+        "record": "3-0-0"
       },
       "venue": "Europa-Park Stadion",
       "city": "Freiburg im Breisgau",
       "country": "Germany",
       "league": "Conference League",
-      "region": "Europe",
-      "h2h": []
+      "region": "Europe"
+    },
+    {
+      "id": "401879225",
+      "date": "2026-11-27",
+      "kickoff": "2026-11-27T20:00Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "393",
+        "name": "Nottingham Forest",
+        "short": "NFO",
+        "form": "LWLDL",
+        "record": "2-3-6"
+      },
+      "away": {
+        "id": "363",
+        "name": "Chelsea",
+        "short": "CHE",
+        "form": "DLWLL",
+        "record": "5-1-5"
+      },
+      "venue": "The City Ground",
+      "city": "Nottingham",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401880129",
+      "date": "2026-11-27",
+      "kickoff": "2026-11-27T20:00Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "376",
+        "name": "Southampton",
+        "short": "SOU",
+        "form": "WLDWW",
+        "record": "9-4-3"
+      },
+      "away": {
+        "id": "369",
+        "name": "Middlesbrough",
+        "short": "MID",
+        "form": "WDLWW",
+        "record": "9-5-2"
+      },
+      "venue": "St. Mary's Stadium",
+      "city": "Southampton",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401882791",
+      "date": "2026-11-27",
+      "kickoff": "2026-11-27T20:00Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "1538",
+        "name": "Levante",
+        "short": "LEV",
+        "form": "DWDLL",
+        "record": "2-6-5"
+      },
+      "away": {
+        "id": "87",
+        "name": "Racing Santander",
+        "short": "RAC",
+        "form": "WWLWW",
+        "record": "5-2-6"
+      },
+      "venue": "Estadi Ciutat de Val\u00e8ncia",
+      "city": "Manises",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401875004",
+      "date": "2026-11-27",
+      "kickoff": "2026-11-27T19:45Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "17530",
+        "name": "Venezia",
+        "short": "VEN",
+        "form": "LWLLL",
+        "record": "2-0-10"
+      },
+      "away": {
+        "id": "107",
+        "name": "Bologna",
+        "short": "BOL",
+        "form": "DWWWW",
+        "record": "5-3-4"
+      },
+      "venue": "Stadio Pier Luigi Penzo",
+      "city": "Venezia",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401884720",
+      "date": "2026-11-27",
+      "kickoff": "2026-11-27T19:30Z",
+      "league_code": "ger.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "137",
+        "name": "Werder Bremen",
+        "short": "SVW",
+        "form": "WLWLW",
+        "record": "5-3-2"
+      },
+      "away": {
+        "id": "268",
+        "name": "Borussia M\u00f6nchengladbach",
+        "short": "BMG",
+        "form": "LLDWW",
+        "record": "1-1-8"
+      },
+      "venue": "Weserstadion",
+      "city": "Bremen",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "region": "Germany"
+    },
+    {
+      "id": "401876392",
+      "date": "2026-11-27",
+      "kickoff": "2026-11-27T19:45Z",
+      "league_code": "fra.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "6997",
+        "name": "Brest",
+        "short": "BRE",
+        "form": "WWWLD",
+        "record": "5-3-3"
+      },
+      "away": {
+        "id": "6851",
+        "name": "Paris FC",
+        "short": "PAR",
+        "form": "WWWLW",
+        "record": "7-2-2"
+      },
+      "venue": "Stade Francis-Le Bl\u00e9",
+      "city": "Brest",
+      "country": "France",
+      "league": "Ligue 1",
+      "region": "France"
+    },
+    {
+      "id": "401875536",
+      "date": "2026-11-27",
+      "kickoff": "2026-11-27T19:00Z",
+      "league_code": "ned.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "145",
+        "name": "FC Groningen",
+        "short": "GRO",
+        "form": "LLLLD",
+        "record": "4-3-6"
+      },
+      "away": {
+        "id": "156",
+        "name": "Willem II",
+        "short": "WIL",
+        "form": "LDLWL",
+        "record": "0-3-10"
+      },
+      "venue": "Euroborg",
+      "city": "Groningen",
+      "country": "Netherlands",
+      "league": "Eredivisie",
+      "region": "Netherlands"
+    },
+    {
+      "id": "401885389",
+      "date": "2026-11-27",
+      "kickoff": "2026-11-27T20:15Z",
+      "league_code": "por.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "552",
+        "name": "Maritimo",
+        "short": "MAR",
+        "form": "WLLWL",
+        "record": "2-2-6"
+      },
+      "away": {
+        "id": "3472",
+        "name": "C.D. Nacional",
+        "short": "CDN",
+        "form": "WLWLL",
+        "record": "3-1-7"
+      },
+      "venue": "Est\u00e1dio do Mar\u00edtimo",
+      "city": "Funchal",
+      "country": "Portugal",
+      "league": "Primeira Liga",
+      "region": "Portugal"
+    },
+    {
+      "id": "401879227",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "357",
+        "name": "Leeds United",
+        "short": "LEE",
+        "form": "DWLDD",
+        "record": "4-5-2"
+      },
+      "away": {
+        "id": "388",
+        "name": "Coventry City",
+        "short": "COV",
+        "form": "WLWLL",
+        "record": "4-0-7"
+      },
+      "venue": "Elland Road",
+      "city": "Leeds",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401879226",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "360",
+        "name": "Manchester United",
+        "short": "MAN",
+        "form": "LDWLL",
+        "record": "1-5-5"
+      },
+      "away": {
+        "id": "337",
+        "name": "Brentford",
+        "short": "BRE",
+        "form": "WLWLD",
+        "record": "4-5-2"
+      },
+      "venue": "Old Trafford",
+      "city": "Manchester",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401878752",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T17:30Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "373",
+        "name": "Ipswich Town",
+        "short": "IPS",
+        "form": "LLDDL",
+        "record": "3-2-6"
+      },
+      "away": {
+        "id": "362",
+        "name": "Aston Villa",
+        "short": "AVL",
+        "form": "DDLDL",
+        "record": "3-5-3"
+      },
+      "venue": "Portman Road",
+      "city": "Ipswich",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401880135",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T12:30Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "365",
+        "name": "Blackburn Rovers",
+        "short": "BLK",
+        "form": "DWLLW",
+        "record": "6-4-6"
+      },
+      "away": {
+        "id": "372",
+        "name": "Charlton Athletic",
+        "short": "CHA",
+        "form": "DWLLL",
+        "record": "4-5-7"
+      },
+      "venue": "Ewood Park",
+      "city": "Blackburn",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880133",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T12:30Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "314",
+        "name": "Lincoln City",
+        "short": "LCN",
+        "form": "LLLLW",
+        "record": "4-3-9"
+      },
+      "away": {
+        "id": "380",
+        "name": "Wolverhampton Wanderers",
+        "short": "WOL",
+        "form": "DDWWW",
+        "record": "9-4-3"
+      },
+      "venue": "LNER Stadium",
+      "city": "Lincoln",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880131",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T12:30Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "394",
+        "name": "Preston North End",
+        "short": "PNE",
+        "form": "DWLLD",
+        "record": "2-3-11"
+      },
+      "away": {
+        "id": "381",
+        "name": "Norwich City",
+        "short": "NOR",
+        "form": "WWWWW",
+        "record": "8-0-8"
+      },
+      "venue": "Deepdale",
+      "city": "Preston",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880136",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "392",
+        "name": "Birmingham City",
+        "short": "BIR",
+        "form": "DWWWL",
+        "record": "8-5-3"
+      },
+      "away": {
+        "id": "358",
+        "name": "Bolton Wanderers",
+        "short": "BOL",
+        "form": "DLWLL",
+        "record": "5-3-8"
+      },
+      "venue": "St. Andrew's Stadium",
+      "city": "Birmingham",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880134",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "374",
+        "name": "Derby County",
+        "short": "DER",
+        "form": "LWLLD",
+        "record": "2-4-10"
+      },
+      "away": {
+        "id": "395",
+        "name": "Watford",
+        "short": "WAT",
+        "form": "LDWLL",
+        "record": "4-3-9"
+      },
+      "venue": "Pride Park",
+      "city": "Derby",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880132",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "391",
+        "name": "Millwall",
+        "short": "MIL",
+        "form": "LLLWL",
+        "record": "5-3-8"
+      },
+      "away": {
+        "id": "379",
+        "name": "Burnley",
+        "short": "BUR",
+        "form": "DLDDL",
+        "record": "1-8-7"
+      },
+      "venue": "The Den",
+      "city": "London",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880130",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "334",
+        "name": "Queens Park Rangers",
+        "short": "QPR",
+        "form": "WWDLW",
+        "record": "7-6-3"
+      },
+      "away": {
+        "id": "398",
+        "name": "Sheffield United",
+        "short": "SHU",
+        "form": "WLWWD",
+        "record": "7-4-5"
+      },
+      "venue": "MATRADE Loftus Road",
+      "city": "London",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880127",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "383",
+        "name": "West Bromwich Albion",
+        "short": "WBA",
+        "form": "DWDWD",
+        "record": "8-5-3"
+      },
+      "away": {
+        "id": "333",
+        "name": "Bristol City",
+        "short": "BRC",
+        "form": "LLLWD",
+        "record": "5-3-8"
+      },
+      "venue": "The Hawthorns",
+      "city": "West Bromwich",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880126",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "371",
+        "name": "West Ham United",
+        "short": "WHU",
+        "form": "DLDLL",
+        "record": "6-6-4"
+      },
+      "away": {
+        "id": "336",
+        "name": "Stoke City",
+        "short": "STK",
+        "form": "DWWWD",
+        "record": "10-2-4"
+      },
+      "venue": "London Stadium",
+      "city": "London",
+      "country": "England",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880125",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "352",
+        "name": "Wrexham",
+        "short": "WXM",
+        "form": "WDWLL",
+        "record": "5-6-5"
+      },
+      "away": {
+        "id": "385",
+        "name": "Portsmouth",
+        "short": "POR",
+        "form": "DLWDW",
+        "record": "6-5-5"
+      },
+      "venue": "ST\u014dK Cae Ras",
+      "city": "Wrexham",
+      "country": "Wales",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401880725",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T12:30Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "390",
+        "name": "Milton Keynes Dons",
+        "short": "MKD",
+        "form": "DWWWW",
+        "record": "5-7-3"
+      },
+      "away": {
+        "id": "340",
+        "name": "Notts County",
+        "short": "NCO",
+        "form": "DWWWD",
+        "record": "3-5-5"
+      },
+      "venue": "Stadium MK",
+      "city": "Milton Keynes",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880724",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T12:30Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "342",
+        "name": "Peterborough United",
+        "short": "PET",
+        "form": "DLLLL",
+        "record": "3-4-7"
+      },
+      "away": {
+        "id": "351",
+        "name": "Cambridge United",
+        "short": "CAM",
+        "form": "DLWLD",
+        "record": "5-6-4"
+      },
+      "venue": "London Road Stadium",
+      "city": "Peterborough",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880730",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3802",
+        "name": "AFC Wimbledon",
+        "short": "WIM",
+        "form": "LWLLL",
+        "record": "4-4-7"
+      },
+      "away": {
+        "id": "397",
+        "name": "Barnsley",
+        "short": "BAR",
+        "form": "LLWWD",
+        "record": "2-3-9"
+      },
+      "venue": "The Cherry Red Records Stadium",
+      "city": "London",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880729",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3129",
+        "name": "Bromley",
+        "short": "BRO",
+        "form": "DLLLL",
+        "record": "3-3-8"
+      },
+      "away": {
+        "id": "2567",
+        "name": "Burton Albion",
+        "short": "BRT",
+        "form": "DLLWL",
+        "record": "4-5-7"
+      },
+      "venue": "RELOC8 EM Community Stadium",
+      "city": "Bromley",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880727",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "375",
+        "name": "Leicester City",
+        "short": "LEI",
+        "form": "DWWDW",
+        "record": "6-4-4"
+      },
+      "away": {
+        "id": "304",
+        "name": "Mansfield Town",
+        "short": "MNF",
+        "form": "DLWDL",
+        "record": "5-5-4"
+      },
+      "venue": "King Power Stadium",
+      "city": "Leicester",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880726",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "301",
+        "name": "Luton Town",
+        "short": "LTN",
+        "form": "DWWDW",
+        "record": "8-3-4"
+      },
+      "away": {
+        "id": "311",
+        "name": "Oxford United",
+        "short": "OXF",
+        "form": "DWLWD",
+        "record": "8-5-1"
+      },
+      "venue": "Kenilworth Road",
+      "city": "Luton",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880723",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "399",
+        "name": "Sheffield Wednesday",
+        "short": "SHW",
+        "form": "WWLLD",
+        "record": "7-5-3"
+      },
+      "away": {
+        "id": "338",
+        "name": "Reading",
+        "short": "REA",
+        "form": "DLLWL",
+        "record": "6-4-6"
+      },
+      "venue": "Hillsborough",
+      "city": "Sheffield",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880722",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "285",
+        "name": "Stevenage",
+        "short": "STE",
+        "form": "DWWDL",
+        "record": "5-4-4"
+      },
+      "away": {
+        "id": "346",
+        "name": "Blackpool",
+        "short": "BLP",
+        "form": "DLWDW",
+        "record": "3-3-8"
+      },
+      "venue": "Lamex Stadium",
+      "city": "Stevenage",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880721",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "400",
+        "name": "Stockport County",
+        "short": "STO",
+        "form": "DWWWW",
+        "record": "10-2-4"
+      },
+      "away": {
+        "id": "309",
+        "name": "Leyton Orient",
+        "short": "LEY",
+        "form": "WLWWL",
+        "record": "6-2-6"
+      },
+      "venue": "Edgeley Park",
+      "city": "Stockport",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880720",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "350",
+        "name": "Wigan Athletic",
+        "short": "WGA",
+        "form": "DWWWD",
+        "record": "5-2-9"
+      },
+      "away": {
+        "id": "307",
+        "name": "Plymouth Argyle",
+        "short": "PLY",
+        "form": "DLWWD",
+        "record": "7-2-7"
+      },
+      "venue": "DW Stadium",
+      "city": "Wigan",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401880719",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.3",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "344",
+        "name": "Wycombe Wanderers",
+        "short": "WYC",
+        "form": "DWWDD",
+        "record": "4-6-4"
+      },
+      "away": {
+        "id": "387",
+        "name": "Bradford City",
+        "short": "BRD",
+        "form": "DWWLW",
+        "record": "6-5-3"
+      },
+      "venue": "Adams Park",
+      "city": "Wycombe",
+      "country": "England",
+      "league": "League One",
+      "region": "England"
+    },
+    {
+      "id": "401881252",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T12:30Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "308",
+        "name": "Bristol Rovers",
+        "short": "BRI",
+        "form": "WLWWL",
+        "record": "6-1-9"
+      },
+      "away": {
+        "id": "345",
+        "name": "Tranmere Rovers",
+        "short": "TRN",
+        "form": "WLLLW",
+        "record": "5-7-4"
+      },
+      "venue": "Memorial Stadium",
+      "city": "Bristol",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881249",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T12:30Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "324",
+        "name": "Exeter City",
+        "short": "EXE",
+        "form": "DWWLW",
+        "record": "6-5-5"
+      },
+      "away": {
+        "id": "2594",
+        "name": "Crawley Town",
+        "short": "CRA",
+        "form": "DLLWD",
+        "record": "3-3-7"
+      },
+      "venue": "St James Park",
+      "city": "Exeter",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881251",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "339",
+        "name": "Colchester United",
+        "short": "COL",
+        "form": "LWWWL",
+        "record": "3-6-6"
+      },
+      "away": {
+        "id": "315",
+        "name": "York City",
+        "short": "YORK",
+        "form": "DWLWL",
+        "record": "6-6-4"
+      },
+      "venue": "JobServe Community Stadium",
+      "city": "Colchester",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881250",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "396",
+        "name": "Crewe Alexandra",
+        "short": "CAX",
+        "form": "DDLWD",
+        "record": "5-9-2"
+      },
+      "away": {
+        "id": "386",
+        "name": "Grimsby Town",
+        "short": "GRI",
+        "form": "DWLWW",
+        "record": "6-6-4"
+      },
+      "venue": "Mornflake Stadium",
+      "city": "Crewe",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881248",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3891",
+        "name": "Fleetwood Town",
+        "short": "FLE",
+        "form": "DWLWW",
+        "record": "5-5-6"
+      },
+      "away": {
+        "id": "2731",
+        "name": "Accrington Stanley",
+        "short": "ACC",
+        "form": "DLWLD",
+        "record": "4-8-4"
+      },
+      "venue": "Highbury Stadium",
+      "city": "Fleetwood",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881247",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "348",
+        "name": "Port Vale",
+        "short": "PTV",
+        "form": "LWWWW",
+        "record": "5-3-6"
+      },
+      "away": {
+        "id": "635",
+        "name": "Newport County",
+        "short": "NEW",
+        "form": "DDWLW",
+        "record": "5-7-4"
+      },
+      "venue": "Vale Park",
+      "city": "Stoke-on-Trent",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881246",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "303",
+        "name": "Rochdale",
+        "short": "RCH",
+        "form": "LLWLL",
+        "record": "4-3-9"
+      },
+      "away": {
+        "id": "280",
+        "name": "Barnet",
+        "short": "BAR",
+        "form": "WWWDW",
+        "record": "8-5-1"
+      },
+      "venue": "Crown Oil Arena",
+      "city": "Rochdale",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881245",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "402",
+        "name": "Rotherham United",
+        "short": "ROT",
+        "form": "DWLLD",
+        "record": "2-7-6"
+      },
+      "away": {
+        "id": "332",
+        "name": "Oldham Athletic",
+        "short": "OLD",
+        "form": "DLLWW",
+        "record": "4-4-8"
+      },
+      "venue": "AESSEAL New York Stadium",
+      "city": "Rotherham",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881244",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "4703",
+        "name": "Salford City",
+        "short": "SAL",
+        "form": "DDLWW",
+        "record": "10-3-3"
+      },
+      "away": {
+        "id": "389",
+        "name": "Gillingham",
+        "short": "GIL",
+        "form": "DLWLW",
+        "record": "5-6-5"
+      },
+      "venue": "Peninsula Stadium",
+      "city": "Salford",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881243",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "302",
+        "name": "Shrewsbury Town",
+        "short": "SHR",
+        "form": "LWWLW",
+        "record": "6-3-7"
+      },
+      "away": {
+        "id": "320",
+        "name": "Cheltenham Town",
+        "short": "CHL",
+        "form": "LLLWL",
+        "record": "6-3-7"
+      },
+      "venue": "The Croud Meadow",
+      "city": "Shrewsbury",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881242",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "341",
+        "name": "Swindon Town",
+        "short": "SWI",
+        "form": "DLLLW",
+        "record": "5-4-7"
+      },
+      "away": {
+        "id": "343",
+        "name": "Chesterfield",
+        "short": "CHES",
+        "form": "WWWWL",
+        "record": "7-4-5"
+      },
+      "venue": "The County Ground",
+      "city": "Swindon",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401881241",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "eng.4",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "401",
+        "name": "Walsall",
+        "short": "WAL",
+        "form": "DLLWL",
+        "record": "5-8-1"
+      },
+      "away": {
+        "id": "353",
+        "name": "Northampton Town",
+        "short": "NHT",
+        "form": "WDLLL",
+        "record": "4-6-5"
+      },
+      "venue": "Bescot Stadium",
+      "city": "Walsall",
+      "country": "England",
+      "league": "League Two",
+      "region": "England"
+    },
+    {
+      "id": "401878332",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "sco.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "263",
+        "name": "Aberdeen",
+        "short": "ABE",
+        "form": "DLLLL",
+        "record": "4-2-7"
+      },
+      "away": {
+        "id": "261",
+        "name": "Dundee",
+        "short": "DUN",
+        "form": "DLWLD",
+        "record": "5-2-6"
+      },
+      "venue": "Pittodrie Stadium",
+      "city": "Aberdeen",
+      "country": "Scotland",
+      "league": "Scottish Premiership",
+      "region": "Scotland"
+    },
+    {
+      "id": "401878331",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "sco.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "264",
+        "name": "Dundee United",
+        "short": "DUN",
+        "form": "DDDWD",
+        "record": "5-5-3"
+      },
+      "away": {
+        "id": "267",
+        "name": "St Johnstone",
+        "short": "STJ",
+        "form": "DWDDL",
+        "record": "4-5-5"
+      },
+      "venue": "Tannadice Park",
+      "city": "Dundee",
+      "country": "Scotland",
+      "league": "Scottish Premiership",
+      "region": "Scotland"
+    },
+    {
+      "id": "401878328",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "sco.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "257",
+        "name": "Rangers",
+        "short": "RAN",
+        "form": "WWWDW",
+        "record": "9-3-1"
+      },
+      "away": {
+        "id": "254",
+        "name": "Falkirk",
+        "short": "FALK",
+        "form": "DWWWW",
+        "record": "7-3-4"
+      },
+      "venue": "Ibrox Stadium",
+      "city": "Glasgow",
+      "country": "Scotland",
+      "league": "Scottish Premiership",
+      "region": "Scotland"
+    },
+    {
+      "id": "401878327",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:00Z",
+      "league_code": "sco.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "250",
+        "name": "St Mirren",
+        "short": "STM",
+        "form": "LLLDW",
+        "record": "4-2-8"
+      },
+      "away": {
+        "id": "260",
+        "name": "Kilmarnock",
+        "short": "KIL",
+        "form": "DLDLL",
+        "record": "2-3-9"
+      },
+      "venue": "The SMISA Stadium",
+      "city": "Paisley",
+      "country": "Scotland",
+      "league": "Scottish Premiership",
+      "region": "Scotland"
+    },
+    {
+      "id": "401878329",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T17:45Z",
+      "league_code": "sco.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "266",
+        "name": "Motherwell",
+        "short": "MOT",
+        "form": "LDWDL",
+        "record": "3-4-7"
+      },
+      "away": {
+        "id": "258",
+        "name": "Hibernian",
+        "short": "HIBS",
+        "form": "DWWDL",
+        "record": "3-2-8"
+      },
+      "venue": "Fir Park",
+      "city": "Motherwell",
+      "country": "Scotland",
+      "league": "Scottish Premiership",
+      "region": "Scotland"
+    },
+    {
+      "id": "401882796",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T13:00Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "244",
+        "name": "Real Betis",
+        "short": "BET",
+        "form": "DWWLW",
+        "record": "8-3-2"
+      },
+      "away": {
+        "id": "101",
+        "name": "Rayo Vallecano",
+        "short": "RAY",
+        "form": "LLWWL",
+        "record": "3-3-6"
+      },
+      "venue": "Estadio La Cartuja",
+      "city": "Sevilla",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401882790",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:15Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "99",
+        "name": "M\u00e1laga",
+        "short": "MCF",
+        "form": "LLLWD",
+        "record": "0-5-8"
+      },
+      "away": {
+        "id": "93",
+        "name": "Athletic Club",
+        "short": "ATH",
+        "form": "LDWWW",
+        "record": "4-4-4"
+      },
+      "venue": "La Rosaleda",
+      "city": "Malaga",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401882793",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T17:30Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3751",
+        "name": "Elche",
+        "short": "ELC",
+        "form": "DLLWW",
+        "record": "2-5-6"
+      },
+      "away": {
+        "id": "1068",
+        "name": "Atl\u00e9tico Madrid",
+        "short": "ATM",
+        "form": "WLLWW",
+        "record": "10-1-2"
+      },
+      "venue": "Estadio Mart\u00ednez Valero",
+      "city": "Elche",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401882789",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T20:00Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "86",
+        "name": "Real Madrid",
+        "short": "RMA",
+        "form": "WWWWW",
+        "record": "11-0-2"
+      },
+      "away": {
+        "id": "96",
+        "name": "Alav\u00e9s",
+        "short": "ALA",
+        "form": "WWDLD",
+        "record": "4-4-5"
+      },
+      "venue": "Santiago Bernab\u00e9u",
+      "city": "Madrid",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401875081",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T14:00Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "4057",
+        "name": "Frosinone",
+        "short": "FRO",
+        "form": "LLWWD",
+        "record": "6-2-4"
+      },
+      "away": {
+        "id": "115",
+        "name": "Parma",
+        "short": "PAR",
+        "form": "LLWDL",
+        "record": "2-2-8"
+      },
+      "venue": "Stadio Benito Stirpe",
+      "city": "Frosinone",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401874826",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T17:00Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "239",
+        "name": "Torino",
+        "short": "TOR",
+        "form": "DDLLW",
+        "record": "4-2-6"
+      },
+      "away": {
+        "id": "112",
+        "name": "Lazio",
+        "short": "LAZ",
+        "form": "WDWWW",
+        "record": "10-2-0"
+      },
+      "venue": "Stadio Olimpico Grande Torino",
+      "city": "Torino",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401874977",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T19:45Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "110",
+        "name": "Internazionale",
+        "short": "INT",
+        "form": "DWWLW",
+        "record": "9-2-1"
+      },
+      "away": {
+        "id": "3263",
+        "name": "Genoa",
+        "short": "GEN",
+        "form": "WLWWW",
+        "record": "5-1-6"
+      },
+      "venue": "San Siro",
+      "city": "Milano",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401884721",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T14:30Z",
+      "league_code": "ger.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "122",
+        "name": "FC Cologne",
+        "short": "KOE",
+        "form": "DLDWD",
+        "record": "2-4-4"
+      },
+      "away": {
+        "id": "10388",
+        "name": "SV Elversberg",
+        "short": "ELV",
+        "form": "LLWLL",
+        "record": "4-1-5"
+      },
+      "venue": "RheinEnergieStadion",
+      "city": "Cologne",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "region": "Germany"
+    },
+    {
+      "id": "401884722",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T14:30Z",
+      "league_code": "ger.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "127",
+        "name": "Hamburg SV",
+        "short": "HSV",
+        "form": "LWLLL",
+        "record": "4-0-6"
+      },
+      "away": {
+        "id": "132",
+        "name": "Bayern Munich",
+        "short": "MUN",
+        "form": "DWWDW",
+        "record": "6-4-0"
+      },
+      "venue": "Volksparkstadion",
+      "city": "Hamburg Norderstedt",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "region": "Germany"
+    },
+    {
+      "id": "401884723",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T14:30Z",
+      "league_code": "ger.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "2950",
+        "name": "Mainz",
+        "short": "M05",
+        "form": "LLLLL",
+        "record": "3-1-6"
+      },
+      "away": {
+        "id": "598",
+        "name": "1. FC Union Berlin",
+        "short": "FCU",
+        "form": "LLDLD",
+        "record": "1-4-5"
+      },
+      "venue": "MEWA ARENA",
+      "city": "Mainz",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "region": "Germany"
+    },
+    {
+      "id": "401884719",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T14:30Z",
+      "league_code": "ger.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3307",
+        "name": "SC Paderborn 07",
+        "short": "SCP",
+        "form": "LDDLW",
+        "record": "2-4-4"
+      },
+      "away": {
+        "id": "133",
+        "name": "Schalke 04",
+        "short": "S04",
+        "form": "DLLLD",
+        "record": "1-4-5"
+      },
+      "venue": "Home Deluxe Arena",
+      "city": "Paderborn",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "region": "Germany"
+    },
+    {
+      "id": "401884726",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T17:30Z",
+      "league_code": "ger.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "134",
+        "name": "VfB Stuttgart",
+        "short": "VFB",
+        "form": "DWLWW",
+        "record": "4-1-5"
+      },
+      "away": {
+        "id": "125",
+        "name": "Eintracht Frankfurt",
+        "short": "SGE",
+        "form": "WDWWL",
+        "record": "4-3-3"
+      },
+      "venue": "MHPArena",
+      "city": "Stuttgart",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "region": "Germany"
+    },
+    {
+      "id": "401876394",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T16:15Z",
+      "league_code": "fra.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "7868",
+        "name": "Angers",
+        "short": "ANG",
+        "form": "LLLDL",
+        "record": "2-2-7"
+      },
+      "away": {
+        "id": "175",
+        "name": "Lens",
+        "short": "RCL",
+        "form": "DLLLW",
+        "record": "4-2-5"
+      },
+      "venue": "Stade Raymond Kopa",
+      "city": "Angers",
+      "country": "France",
+      "league": "Ligue 1",
+      "region": "France"
+    },
+    {
+      "id": "401876391",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T19:45Z",
+      "league_code": "fra.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3236",
+        "name": "Le Havre AC",
+        "short": "HAC",
+        "form": "DLLLL",
+        "record": "0-2-9"
+      },
+      "away": {
+        "id": "180",
+        "name": "Strasbourg",
+        "short": "STR",
+        "form": "LLWLL",
+        "record": "3-1-7"
+      },
+      "venue": "Stade Oc\u00e9ane",
+      "city": "Le Havre",
+      "country": "France",
+      "league": "Ligue 1",
+      "region": "France"
+    },
+    {
+      "id": "401876390",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T19:45Z",
+      "league_code": "fra.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "2697",
+        "name": "Le Mans",
+        "short": "MNS",
+        "form": "WDLDL",
+        "record": "2-5-4"
+      },
+      "away": {
+        "id": "166",
+        "name": "Lille",
+        "short": "LILL",
+        "form": "LWDWD",
+        "record": "6-3-2"
+      },
+      "venue": "Stade Marie-Marvingt",
+      "city": "Le Mans",
+      "country": "France",
+      "league": "Ligue 1",
+      "region": "France"
+    },
+    {
+      "id": "401876388",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T19:45Z",
+      "league_code": "fra.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "2502",
+        "name": "Nice",
+        "short": "NICE",
+        "form": "DWWWL",
+        "record": "5-2-4"
+      },
+      "away": {
+        "id": "170",
+        "name": "Troyes",
+        "short": "TRY",
+        "form": "DLWDL",
+        "record": "3-2-6"
+      },
+      "venue": "Allianz Riviera",
+      "city": "Nice",
+      "country": "France",
+      "league": "Ligue 1",
+      "region": "France"
+    },
+    {
+      "id": "401876387",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T19:45Z",
+      "league_code": "fra.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "160",
+        "name": "Paris Saint-Germain",
+        "short": "PSG",
+        "form": "DWWWW",
+        "record": "8-2-1"
+      },
+      "away": {
+        "id": "273",
+        "name": "Lorient",
+        "short": "LOR",
+        "form": "DWLDW",
+        "record": "4-4-3"
+      },
+      "venue": "Parc des Princes",
+      "city": "Paris",
+      "country": "France",
+      "league": "Ligue 1",
+      "region": "France"
+    },
+    {
+      "id": "401875537",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:30Z",
+      "league_code": "ned.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "2566",
+        "name": "Excelsior",
+        "short": "EXC",
+        "form": "WLLWL",
+        "record": "4-2-7"
+      },
+      "away": {
+        "id": "3735",
+        "name": "Telstar",
+        "short": "TEL",
+        "form": "LDWLL",
+        "record": "2-4-7"
+      },
+      "venue": "Stadion Woudestein",
+      "city": "Rotterdam",
+      "country": "Netherlands",
+      "league": "Eredivisie",
+      "region": "Netherlands"
+    },
+    {
+      "id": "401875531",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T17:45Z",
+      "league_code": "ned.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "148",
+        "name": "PSV Eindhoven",
+        "short": "PSV",
+        "form": "WWLWD",
+        "record": "9-2-2"
+      },
+      "away": {
+        "id": "3706",
+        "name": "Go Ahead Eagles",
+        "short": "GAE",
+        "form": "DWLWW",
+        "record": "4-5-4"
+      },
+      "venue": "Philips Stadion",
+      "city": "Eindhoven",
+      "country": "Netherlands",
+      "league": "Eredivisie",
+      "region": "Netherlands"
+    },
+    {
+      "id": "401875530",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T20:00Z",
+      "league_code": "ned.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3736",
+        "name": "SC Cambuur",
+        "short": "CAM",
+        "form": "WLWWW",
+        "record": "5-3-5"
+      },
+      "away": {
+        "id": "151",
+        "name": "Sparta Rotterdam",
+        "short": "SPA",
+        "form": "LLWLL",
+        "record": "3-3-7"
+      },
+      "venue": "Kooi Stadium",
+      "city": "Leeuwarden",
+      "country": "Netherlands",
+      "league": "Eredivisie",
+      "region": "Netherlands"
+    },
+    {
+      "id": "401885392",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:30Z",
+      "league_code": "por.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "15784",
+        "name": "Arouca",
+        "short": "FCA",
+        "form": "LLWWW",
+        "record": "6-2-3"
+      },
+      "away": {
+        "id": "3822",
+        "name": "Rio Ave",
+        "short": "RAFC",
+        "form": "LLLLW",
+        "record": "2-1-8"
+      },
+      "venue": "Est\u00e1dio Municipal de Arouca",
+      "city": "Arouca",
+      "country": "Portugal",
+      "league": "Primeira Liga",
+      "region": "Portugal"
+    },
+    {
+      "id": "401885388",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T15:30Z",
+      "league_code": "por.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3696",
+        "name": "Moreirense",
+        "short": "MFC",
+        "form": "DWWLL",
+        "record": "4-2-5"
+      },
+      "away": {
+        "id": "12215",
+        "name": "Santa Clara",
+        "short": "CDSC",
+        "form": "LWLLW",
+        "record": "6-3-2"
+      },
+      "venue": "Est\u00e1dio Comendador Joaquim de Almeida Freitas",
+      "city": "Moreira de Conegos",
+      "country": "Portugal",
+      "league": "Primeira Liga",
+      "region": "Portugal"
+    },
+    {
+      "id": "401885393",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T18:00Z",
+      "league_code": "por.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "21607",
+        "name": "Acad\u00e9mico de Viseu",
+        "short": "ACV",
+        "form": "LWWLW",
+        "record": "6-2-3"
+      },
+      "away": {
+        "id": "21613",
+        "name": "Alverca",
+        "short": "ALV",
+        "form": "DLLLW",
+        "record": "3-3-5"
+      },
+      "venue": "Est\u00e1dio do Fontelo",
+      "city": "Viseu",
+      "country": "Portugal",
+      "league": "Primeira Liga",
+      "region": "Portugal"
+    },
+    {
+      "id": "401885385",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T20:30Z",
+      "league_code": "por.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "5309",
+        "name": "Vit\u00f3ria de Guimaraes",
+        "short": "VSC",
+        "form": "LLDWW",
+        "record": "2-3-6"
+      },
+      "away": {
+        "id": "21610",
+        "name": "Estrela",
+        "short": "EST",
+        "form": "WLLLW",
+        "record": "2-4-5"
+      },
+      "venue": "Est\u00e1dio D. Afonso Henriques",
+      "city": "Guimar\u00e3es",
+      "country": "Portugal",
+      "league": "Primeira Liga",
+      "region": "Portugal"
+    },
+    {
+      "id": "401879229",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T12:00Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "368",
+        "name": "Everton",
+        "short": "EVE",
+        "form": "LWWWL",
+        "record": "4-4-3"
+      },
+      "away": {
+        "id": "364",
+        "name": "Liverpool",
+        "short": "LIV",
+        "form": "WWLLW",
+        "record": "6-3-2"
+      },
+      "venue": "Hill Dickinson Stadium",
+      "city": "Liverpool",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401879231",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T14:05Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "331",
+        "name": "Brighton & Hove Albion",
+        "short": "BHA",
+        "form": "DWWWL",
+        "record": "7-1-3"
+      },
+      "away": {
+        "id": "361",
+        "name": "Newcastle United",
+        "short": "NEW",
+        "form": "DDLLW",
+        "record": "3-4-4"
+      },
+      "venue": "American Express Stadium",
+      "city": "Falmer",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401879230",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T14:05Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "384",
+        "name": "Crystal Palace",
+        "short": "CRY",
+        "form": "LLDLW",
+        "record": "2-1-8"
+      },
+      "away": {
+        "id": "306",
+        "name": "Hull City",
+        "short": "HUL",
+        "form": "DLDDL",
+        "record": "3-5-3"
+      },
+      "venue": "Selhurst Park",
+      "city": "London",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401879228",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T14:05Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "370",
+        "name": "Fulham",
+        "short": "FUL",
+        "form": "DDDLW",
+        "record": "2-5-4"
+      },
+      "away": {
+        "id": "349",
+        "name": "AFC Bournemouth",
+        "short": "BOU",
+        "form": "WWWWW",
+        "record": "5-3-3"
+      },
+      "venue": "Craven Cottage",
+      "city": "London",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401879224",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T14:05Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "366",
+        "name": "Sunderland",
+        "short": "SUN",
+        "form": "DWLLW",
+        "record": "2-3-6"
+      },
+      "away": {
+        "id": "367",
+        "name": "Tottenham Hotspur",
+        "short": "TOT",
+        "form": "WLWWW",
+        "record": "4-3-4"
+      },
+      "venue": "Stadium of Light",
+      "city": "Sunderland",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401878753",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T16:30Z",
+      "league_code": "eng.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "359",
+        "name": "Arsenal",
+        "short": "ARS",
+        "form": "DWWWL",
+        "record": "9-1-1"
+      },
+      "away": {
+        "id": "382",
+        "name": "Manchester City",
+        "short": "MNC",
+        "form": "DLWLW",
+        "record": "7-1-3"
+      },
+      "venue": "Emirates Stadium",
+      "city": "London",
+      "country": "England",
+      "league": "Premier League",
+      "region": "England"
+    },
+    {
+      "id": "401880128",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T12:00Z",
+      "league_code": "eng.2",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "318",
+        "name": "Swansea City",
+        "short": "SWA",
+        "form": "DLLWL",
+        "record": "8-3-5"
+      },
+      "away": {
+        "id": "347",
+        "name": "Cardiff City",
+        "short": "CAR",
+        "form": "LWDLW",
+        "record": "4-6-6"
+      },
+      "venue": "Swansea.com Stadium",
+      "city": "Swansea",
+      "country": "Wales",
+      "league": "Championship",
+      "region": "England"
+    },
+    {
+      "id": "401878330",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T15:00Z",
+      "league_code": "sco.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "262",
+        "name": "Heart of Midlothian",
+        "short": "HOM",
+        "form": "DLLLD",
+        "record": "7-2-4"
+      },
+      "away": {
+        "id": "256",
+        "name": "Celtic",
+        "short": "CEL",
+        "form": "WWWLD",
+        "record": "11-1-2"
+      },
+      "venue": "Tynecastle Park",
+      "city": "Edinburgh",
+      "country": "Scotland",
+      "league": "Scottish Premiership",
+      "region": "Scotland"
+    },
+    {
+      "id": "401882787",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T13:00Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "94",
+        "name": "Valencia",
+        "short": "VAL",
+        "form": "WWLWL",
+        "record": "3-3-7"
+      },
+      "away": {
+        "id": "97",
+        "name": "Osasuna",
+        "short": "OSA",
+        "form": "WDLWL",
+        "record": "4-3-6"
+      },
+      "venue": "Mestalla Stadium",
+      "city": "Manises",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401882794",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T15:15Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "90",
+        "name": "Deportivo",
+        "short": "DEP",
+        "form": "LDWWL",
+        "record": "3-6-4"
+      },
+      "away": {
+        "id": "83",
+        "name": "Barcelona",
+        "short": "BAR",
+        "form": "WWWWL",
+        "record": "12-0-1"
+      },
+      "venue": "Riazor",
+      "city": "La Coru\u00f1a",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401882795",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T17:30Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "85",
+        "name": "Celta Vigo",
+        "short": "CEL",
+        "form": "LWDLL",
+        "record": "2-7-4"
+      },
+      "away": {
+        "id": "102",
+        "name": "Villarreal",
+        "short": "VIL",
+        "form": "LWLLW",
+        "record": "4-3-6"
+      },
+      "venue": "Balaidos",
+      "city": "Vigo",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401882788",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T20:00Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "89",
+        "name": "Real Sociedad",
+        "short": "RSO",
+        "form": "LWDLW",
+        "record": "7-1-5"
+      },
+      "away": {
+        "id": "243",
+        "name": "Sevilla",
+        "short": "SEV",
+        "form": "DDLWW",
+        "record": "5-4-4"
+      },
+      "venue": "Reale Arena",
+      "city": "San Sebastian",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401875031",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T11:30Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "118",
+        "name": "Udinese",
+        "short": "UDI",
+        "form": "DLLDL",
+        "record": "1-3-8"
+      },
+      "away": {
+        "id": "109",
+        "name": "Fiorentina",
+        "short": "FIO",
+        "form": "LDWDL",
+        "record": "2-3-7"
+      },
+      "venue": "Stadio Friuli",
+      "city": "Udine",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401874992",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T14:00Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3997",
+        "name": "Sassuolo",
+        "short": "SAS",
+        "form": "LLLLL",
+        "record": "2-2-8"
+      },
+      "away": {
+        "id": "114",
+        "name": "Napoli",
+        "short": "NAP",
+        "form": "DDLLW",
+        "record": "5-3-4"
+      },
+      "venue": "Mapei Stadium",
+      "city": "Reggio Emilia",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401874769",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T17:00Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "104",
+        "name": "AS Roma",
+        "short": "ROMA",
+        "form": "WWLWW",
+        "record": "9-3-0"
+      },
+      "away": {
+        "id": "4007",
+        "name": "Monza",
+        "short": "MON",
+        "form": "WLLLL",
+        "record": "3-1-8"
+      },
+      "venue": "Olimpico",
+      "city": "Roma",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401874994",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T19:45Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "2572",
+        "name": "Como",
+        "short": "COMO",
+        "form": "WLWWW",
+        "record": "8-2-2"
+      },
+      "away": {
+        "id": "111",
+        "name": "Juventus",
+        "short": "JUV",
+        "form": "WDWWL",
+        "record": "6-3-3"
+      },
+      "venue": "Giuseppe Sinigaglia",
+      "city": "Como",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401884724",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T14:30Z",
+      "league_code": "ger.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "126",
+        "name": "SC Freiburg",
+        "short": "SCF",
+        "form": "WWWWW",
+        "record": "7-1-2"
+      },
+      "away": {
+        "id": "11420",
+        "name": "RB Leipzig",
+        "short": "RBL",
+        "form": "WWLWW",
+        "record": "7-0-3"
+      },
+      "venue": "Europa-Park Stadion",
+      "city": "Freiburg im Breisgau",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "region": "Germany"
+    },
+    {
+      "id": "401884725",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T16:30Z",
+      "league_code": "ger.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "7911",
+        "name": "TSG Hoffenheim",
+        "short": "TSG",
+        "form": "LWDLL",
+        "record": "4-0-6"
+      },
+      "away": {
+        "id": "3841",
+        "name": "FC Augsburg",
+        "short": "FCA",
+        "form": "WLLWD",
+        "record": "3-3-4"
+      },
+      "venue": "PreZero Arena",
+      "city": "Sinsheim",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "region": "Germany"
+    },
+    {
+      "id": "401884727",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T18:30Z",
+      "league_code": "ger.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "124",
+        "name": "Borussia Dortmund",
+        "short": "DOR",
+        "form": "WWWDW",
+        "record": "7-3-0"
+      },
+      "away": {
+        "id": "131",
+        "name": "Bayer Leverkusen",
+        "short": "B04",
+        "form": "WWLLW",
+        "record": "6-1-3"
+      },
+      "venue": "Signal Iduna Park",
+      "city": "Aue",
+      "country": "Germany",
+      "league": "Bundesliga",
+      "region": "Germany"
+    },
+    {
+      "id": "401876393",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T14:00Z",
+      "league_code": "fra.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "172",
+        "name": "AJ Auxerre",
+        "short": "AUX",
+        "form": "DLLDW",
+        "record": "3-2-6"
+      },
+      "away": {
+        "id": "176",
+        "name": "Marseille",
+        "short": "OLM",
+        "form": "LWWWW",
+        "record": "6-0-5"
+      },
+      "venue": "Stade de l'Abb\u00e9-Deschamps",
+      "city": "Auxerre",
+      "country": "France",
+      "league": "Ligue 1",
+      "region": "France"
+    },
+    {
+      "id": "401876386",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T16:15Z",
+      "league_code": "fra.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "179",
+        "name": "Toulouse",
+        "short": "TOU",
+        "form": "DWLDW",
+        "record": "3-5-3"
+      },
+      "away": {
+        "id": "169",
+        "name": "Stade Rennais",
+        "short": "REN",
+        "form": "DLDLW",
+        "record": "5-2-4"
+      },
+      "venue": "Stadium Municipal de Toulouse",
+      "city": "Toulouse",
+      "country": "France",
+      "league": "Ligue 1",
+      "region": "France"
+    },
+    {
+      "id": "401876389",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T19:45Z",
+      "league_code": "fra.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "167",
+        "name": "Lyon",
+        "short": "LYON",
+        "form": "WLDWL",
+        "record": "6-2-3"
+      },
+      "away": {
+        "id": "174",
+        "name": "AS Monaco",
+        "short": "MON",
+        "form": "DDWLD",
+        "record": "4-5-2"
+      },
+      "venue": "Groupama Stadium",
+      "city": "Lyon",
+      "country": "France",
+      "league": "Ligue 1",
+      "region": "France"
+    },
+    {
+      "id": "401875538",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T11:15Z",
+      "league_code": "ned.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "2726",
+        "name": "ADO Den Haag",
+        "short": "ADO",
+        "form": "LWLLL",
+        "record": "2-3-8"
+      },
+      "away": {
+        "id": "153",
+        "name": "FC Utrecht",
+        "short": "UTR",
+        "form": "LLLWD",
+        "record": "3-3-7"
+      },
+      "venue": "ADO Den Haag Stadium",
+      "city": "Den Haag",
+      "country": "Netherlands",
+      "league": "Eredivisie",
+      "region": "Netherlands"
+    },
+    {
+      "id": "401875535",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T13:30Z",
+      "league_code": "ned.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "142",
+        "name": "Feyenoord Rotterdam",
+        "short": "FEY",
+        "form": "LLLDD",
+        "record": "7-4-2"
+      },
+      "away": {
+        "id": "139",
+        "name": "Ajax Amsterdam",
+        "short": "AJA",
+        "form": "WDWWW",
+        "record": "8-4-1"
+      },
+      "venue": "De Kuip",
+      "city": "Rotterdam",
+      "country": "Netherlands",
+      "league": "Eredivisie",
+      "region": "Netherlands"
+    },
+    {
+      "id": "401875534",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T13:30Z",
+      "league_code": "ned.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "143",
+        "name": "Fortuna Sittard",
+        "short": "FOR",
+        "form": "DDDWW",
+        "record": "6-5-2"
+      },
+      "away": {
+        "id": "146",
+        "name": "Heerenveen",
+        "short": "HEE",
+        "form": "WWWWW",
+        "record": "7-3-3"
+      },
+      "venue": "Fortuna Sittard Stadion",
+      "city": "Sittard",
+      "country": "Netherlands",
+      "league": "Eredivisie",
+      "region": "Netherlands"
+    },
+    {
+      "id": "401875532",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T15:45Z",
+      "league_code": "ned.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "2565",
+        "name": "PEC Zwolle",
+        "short": "PEC",
+        "form": "WDWLD",
+        "record": "4-3-6"
+      },
+      "away": {
+        "id": "140",
+        "name": "AZ Alkmaar",
+        "short": "AZ",
+        "form": "WWLLL",
+        "record": "8-2-3"
+      },
+      "venue": "MAC\u00b3PARK Stadion",
+      "city": "Zwolle",
+      "country": "Netherlands",
+      "league": "Eredivisie",
+      "region": "Netherlands"
+    },
+    {
+      "id": "401875533",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T19:00Z",
+      "league_code": "ned.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "147",
+        "name": "NEC Nijmegen",
+        "short": "NEC",
+        "form": "LWWLD",
+        "record": "3-5-5"
+      },
+      "away": {
+        "id": "152",
+        "name": "FC Twente",
+        "short": "TWE",
+        "form": "WDWWW",
+        "record": "8-3-2"
+      },
+      "venue": "Goffertstadion",
+      "city": "Nijmegen",
+      "country": "Netherlands",
+      "league": "Eredivisie",
+      "region": "Netherlands"
+    },
+    {
+      "id": "401885390",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T18:00Z",
+      "league_code": "por.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "3699",
+        "name": "Gil Vicente",
+        "short": "GVFC",
+        "form": "WWDLW",
+        "record": "5-3-3"
+      },
+      "away": {
+        "id": "12216",
+        "name": "Estoril",
+        "short": "EPF",
+        "form": "LLLWL",
+        "record": "0-2-8"
+      },
+      "venue": "Est\u00e1dio Cidade de Barcelos",
+      "city": "Barcelos",
+      "country": "Portugal",
+      "league": "Primeira Liga",
+      "region": "Portugal"
+    },
+    {
+      "id": "401885387",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T20:30Z",
+      "league_code": "por.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "437",
+        "name": "FC Porto",
+        "short": "FCP",
+        "form": "WWWWW",
+        "record": "11-0-0"
+      },
+      "away": {
+        "id": "2250",
+        "name": "Sporting CP",
+        "short": "SCP",
+        "form": "WWWWL",
+        "record": "7-3-1"
+      },
+      "venue": "Est\u00e1dio do Drag\u00e3o",
+      "city": "Porto",
+      "country": "Portugal",
+      "league": "Primeira Liga",
+      "region": "Portugal"
+    },
+    {
+      "id": "401882792",
+      "date": "2026-11-30",
+      "kickoff": "2026-11-30T20:00Z",
+      "league_code": "esp.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "88",
+        "name": "Espanyol",
+        "short": "ESP",
+        "form": "WDWLL",
+        "record": "4-3-6"
+      },
+      "away": {
+        "id": "2922",
+        "name": "Getafe",
+        "short": "GET",
+        "form": "LLLWW",
+        "record": "3-3-7"
+      },
+      "venue": "RCDE Stadium",
+      "city": "Barcelona",
+      "country": "Spain",
+      "league": "La Liga",
+      "region": "Spain"
+    },
+    {
+      "id": "401875095",
+      "date": "2026-11-30",
+      "kickoff": "2026-11-30T17:30Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "113",
+        "name": "Lecce",
+        "short": "LEC",
+        "form": "LDLLL",
+        "record": "3-1-8"
+      },
+      "away": {
+        "id": "105",
+        "name": "Atalanta",
+        "short": "ATA",
+        "form": "DWDLD",
+        "record": "4-3-5"
+      },
+      "venue": "Via Del Mare",
+      "city": "Lecce",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401875019",
+      "date": "2026-11-30",
+      "kickoff": "2026-11-30T19:45Z",
+      "league_code": "ita.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "2925",
+        "name": "Cagliari",
+        "short": "CAG",
+        "form": "LWLLL",
+        "record": "5-1-6"
+      },
+      "away": {
+        "id": "103",
+        "name": "AC Milan",
+        "short": "MIL",
+        "form": "WWLWL",
+        "record": "8-3-1"
+      },
+      "venue": "Unipol Domus",
+      "city": "Cagliari",
+      "country": "Italy",
+      "league": "Serie A",
+      "region": "Italy"
+    },
+    {
+      "id": "401885386",
+      "date": "2026-11-30",
+      "kickoff": "2026-11-30T20:15Z",
+      "league_code": "por.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "1929",
+        "name": "Benfica",
+        "short": "SLB",
+        "form": "WWWWW",
+        "record": "9-1-1"
+      },
+      "away": {
+        "id": "12698",
+        "name": "FC Famalicao",
+        "short": "FCF",
+        "form": "WLWLL",
+        "record": "3-4-4"
+      },
+      "venue": "Est\u00e1dio da Luz",
+      "city": "Lisbon",
+      "country": "Portugal",
+      "league": "Primeira Liga",
+      "region": "Portugal"
+    },
+    {
+      "id": "401885391",
+      "date": "2026-11-30",
+      "kickoff": "2026-11-30T20:15Z",
+      "league_code": "por.1",
+      "status": "STATUS_SCHEDULED",
+      "home": {
+        "id": "21581",
+        "name": "Casa Pia",
+        "short": "CPAC",
+        "form": "DDLWW",
+        "record": "2-2-7"
+      },
+      "away": {
+        "id": "2994",
+        "name": "Braga",
+        "short": "SCB",
+        "form": "WWDWL",
+        "record": "5-2-4"
+      },
+      "venue": "Est\u00e1dio Municipal de Rio Maior",
+      "city": "Rio Maior",
+      "country": "Portugal",
+      "league": "Primeira Liga",
+      "region": "Portugal"
     }
   ]
 }
