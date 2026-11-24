@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Football Bot Tips</title>
+<style>
+  :root {
+    --bg: #0b1220;
+    --card: #141e33;
+    --card2: #1a2740;
+    --text: #e8eefc;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+    --win: #22c55e;
+    --draw: #eab308;
+    --away: #f97316;
+    --border: #243049;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: "Segoe UI", system-ui, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.45;
+  }
+  header {
+    padding: 1.25rem 1.5rem 0.5rem; text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  header h1 { margin: 0; font-size: 1.6rem; color: var(--accent); }
+  header p { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.95rem; }
+  .tabs {
+    display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;
+    padding: 1rem; max-width: 1100px; margin: 0 auto;
+  }
+  .tab {
+    background: var(--card); border: 1px solid var(--border); color: var(--text);
+    padding: 0.45rem 0.9rem; border-radius: 999px; cursor: pointer; font-size: 0.9rem;
+  }
+  .tab.active { background: #0ea5e9; border-color: #0ea5e9; color: #042f2e; font-weight: 600; }
+  main { max-width: 1100px; margin: 0 auto; padding: 0 1rem 3rem; }
+  .note {
+    background: #1e293b; border: 1px solid var(--border); border-radius: 10px;
+    padding: 0.85rem 1rem; color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem;
+  }
+  .league-block { margin-bottom: 1.25rem; }
+  .league-title {
+    font-size: 1.05rem; font-weight: 700; padding: 0.6rem 0.2rem;
+    color: var(--accent); border-bottom: 1px solid var(--border); margin-bottom: 0.6rem;
+  }
+  .match {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 0.75rem; overflow: hidden;
+  }
+  .match-head {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem;
+    padding: 0.85rem 1rem; background: var(--card2); cursor: pointer;
+  }
+  .match-head .teams { font-weight: 650; font-size: 1.02rem; }
+  .match-head .meta { color: var(--muted); font-size: 0.85rem; }
+  .badge {
+    display: inline-block; padding: 0.15rem 0.5rem; border-radius: 6px;
+    font-size: 0.75rem; font-weight: 700; margin-left: 0.35rem;
+  }
+  .badge-home { background: #14532d; color: #86efac; }
+  .badge-draw { background: #713f12; color: #fde68a; }
+  .badge-away { background: #7c2d12; color: #fdba74; }
+  .match-body { display: none; padding: 0.5rem 1rem 1rem; }
+  .match.open .match-body { display: block; }
+  .tip {
+    border-top: 1px solid var(--border); padding: 0.75rem 0;
+  }
+  .tip-row {
+    display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin-bottom: 0.35rem;
+  }
+  .bot {
+    font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.55rem; border-radius: 999px;
+  }
+  .bot-FormFox { background: #1d4ed8; }
+  .bot-HomeBanker { background: #0f766e; }
+  .bot-ValueHunter { background: #15803d; }
+  .bot-DrawSpecialist { background: #a16207; }
+  .bot-AttackMinded { background: #b91c1c; }
+  .bot-H2HHistorian { background: #6d28d9; }
+  .conf {
+    margin-left: auto; font-size: 0.8rem; font-weight: 700;
+    background: #334155; padding: 0.15rem 0.45rem; border-radius: 6px;
+  }
+  .reason { color: #cbd5e1; font-size: 0.9rem; margin: 0.35rem 0; }
+  .builder {
+    background: #0f172a; border: 1px dashed #334155; border-radius: 8px;
+    padding: 0.55rem 0.75rem; font-size: 0.85rem; color: #94a3b8;
+  }
+  .builder strong { color: #e2e8f0; }
+  .stars { color: #fbbf24; letter-spacing: 1px; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Football Bot Tips</h1>
+  <p id="header-meta">UK · Scotland · Europe · Cups &amp; Champions League</p>
+</header>
+<div class="tabs" id="tabs">
+  <button class="tab active" data-filter="all">All</button>
+  <button class="tab" data-filter="England">England</button>
+  <button class="tab" data-filter="Scotland">Scotland</button>
+  <button class="tab" data-filter="Europe">Europe</button>
+  <button class="tab" data-filter="Spain">Spain</button>
+  <button class="tab" data-filter="Italy">Italy</button>
+  <button class="tab" data-filter="Germany">Germany</button>
+  <button class="tab" data-filter="France">France</button>
+</div>
+<main>
+  <div class="note" id="global-note">Loading fixtures…</div>
+  <div id="content"></div>
+</main>
+<script>
+let tipsData = null;
+let filter = "all";
+
+function getDateOffset(days) {
+  const d = new Date();
+  d.setDate(d.getDate() + days);
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
+async function loadTips() {
+  const dateStr = getDateOffset(0);
+  const paths = [`./tips-${dateStr}.json`, `tips-${dateStr}.json`];
+  for (const p of paths) {
+    try {
+      const res = await fetch(p, { cache: "no-store" });
+      if (!res.ok) continue;
+      tipsData = await res.json();
+      break;
+    } catch (e) {}
+  }
+  // fallback: try tomorrow file if today empty
+  if (!tipsData || !(tipsData.matches || []).length) {
+    const t2 = getDateOffset(1);
+    for (const p of [`./tips-${t2}.json`, `tips-${t2}.json`]) {
+      try {
+        const res = await fetch(p, { cache: "no-store" });
+        if (!res.ok) continue;
+        tipsData = await res.json();
+        break;
+      } catch (e) {}
+    }
+  }
+  render();
+}
+
+function badge(outcome) {
+  if (outcome === "home") return '<span class="badge badge-home">HOME</span>';
+  if (outcome === "away") return '<span class="badge badge-away">AWAY</span>';
+  return '<span class="badge badge-draw">DRAW</span>';
+}
+
+function render() {
+  const note = document.getElementById("global-note");
+  const content = document.getElementById("content");
+  if (!tipsData || !(tipsData.matches || []).length) {
+    note.textContent = (tipsData && tipsData.note) || "No tips available yet. Run scrape_fixtures.py && generate_tips.py";
+    content.innerHTML = "";
+    return;
+  }
+  note.textContent = tipsData.note || `Matches: ${tipsData.match_count}`;
+  if (tipsData.start_date) {
+    document.getElementById("header-meta").textContent =
+      `From ${tipsData.start_date} · ${tipsData.match_count} matches · form & H2H when available`;
+  }
+
+  let matches = tipsData.matches || [];
+  if (filter !== "all") {
+    matches = matches.filter(m => (m.region || "") === filter || (m.league || "").includes(filter));
+  }
+
+  const byLeague = {};
+  matches.forEach(m => {
+    const k = m.league || "Other";
+    if (!byLeague[k]) byLeague[k] = [];
+    byLeague[k].push(m);
+  });
+
+  let html = "";
+  Object.keys(byLeague).sort().forEach(league => {
+    html += `<div class="league-block"><div class="league-title">${league}</div>`;
+    byLeague[league].forEach((m, idx) => {
+      const id = `m-${league}-${idx}`.replace(/\s+/g, "");
+      const cons = m.consensus || "";
+      html += `<div class="match" id="${id}">
+        <div class="match-head" onclick="this.parentElement.classList.toggle('open')">
+          <div class="teams">${m.home} <span style="color:#64748b">vs</span> ${m.away} ${badge(cons)}</div>
+          <div class="meta">${(m.kickoff || m.date || "").replace("T", " ").replace("Z", " UTC")}
+            · model ${m.model_score || "–"}
+            · form ${m.home_form || "–"} / ${m.away_form || "–"}</div>
+        </div>
+        <div class="match-body">`;
+      (m.tips || []).forEach(t => {
+        const stars = (t.stars && t.stars > 1) ? `<span class="stars">${"★".repeat(Math.min(t.stars, 6))}</span>` : "";
+        const legs = (t.bet_builder && t.bet_builder.primary_legs) ? t.bet_builder.primary_legs.join(" · ") : "";
+        html += `<div class="tip">
+          <div class="tip-row">
+            <span class="bot bot-${t.bot}">${t.bot}</span>
+            <strong>${t.selection}</strong> (${t.market})
+            <span>Score ${t.predicted_score}</span>
+            ${stars}
+            <span class="conf">${t.conf}%</span>
+          </div>
+          <p class="reason">${t.reason || ""}</p>
+          <div class="builder"><strong>Bet builder:</strong> ${legs}
+            <div style="margin-top:0.25rem">${(t.bet_builder && t.bet_builder.note) || ""}</div>
+          </div>
+        </div>`;
+      });
+      html += `</div></div>`;
+    });
+    html += `</div>`;
+  });
+  content.innerHTML = html || "<p style='color:#94a3b8'>No matches for this filter.</p>";
+}
+
+document.getElementById("tabs").addEventListener("click", (e) => {
+  if (!e.target.classList.contains("tab")) return;
+  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  e.target.classList.add("active");
+  filter = e.target.getAttribute("data-filter") || "all";
+  render();
+});
+
+loadTips();
+</script>
+</body>
+</html>
