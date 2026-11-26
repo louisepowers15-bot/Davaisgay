@@ -1,0 +1,404 @@
+{
+  "date": "2026-11-27",
+  "generated_at": "2026-11-26T14:34:55.958063+00:00",
+  "source": "espn_scoreboard",
+  "leagues": [
+    {
+      "name": "Premier League",
+      "code": "eng.1",
+      "region": "UK",
+      "priority": 1,
+      "matches": [
+        {
+          "id": "401879225",
+          "league": "Premier League",
+          "league_code": "eng.1",
+          "region": "UK",
+          "priority": 1,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-27T20:00Z",
+          "status": "pre",
+          "venue": "The City Ground",
+          "home": {
+            "name": "Nottingham Forest",
+            "short": "NFO",
+            "id": "393",
+            "record": "2-3-6",
+            "form": "LWLDL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Chelsea",
+            "short": "CHE",
+            "id": "363",
+            "record": "5-1-5",
+            "form": "DLWLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 235.0,
+            "away": null,
+            "raw": "NFO +150"
+          },
+          "name": "Nottingham Forest vs Chelsea"
+        }
+      ]
+    },
+    {
+      "name": "Championship",
+      "code": "eng.2",
+      "region": "UK",
+      "priority": 2,
+      "matches": [
+        {
+          "id": "401880129",
+          "league": "Championship",
+          "league_code": "eng.2",
+          "region": "UK",
+          "priority": 2,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-27T20:00Z",
+          "status": "pre",
+          "venue": "St. Mary's Stadium",
+          "home": {
+            "name": "Southampton",
+            "short": "SOU",
+            "id": "376",
+            "record": "9-5-3",
+            "form": "DWLDW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Middlesbrough",
+            "short": "MID",
+            "id": "369",
+            "record": "10-5-2",
+            "form": "DWDLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 285.0,
+            "away": null,
+            "raw": "MID +130"
+          },
+          "name": "Southampton vs Middlesbrough"
+        }
+      ]
+    },
+    {
+      "name": "National League",
+      "code": "eng.5",
+      "region": "UK",
+      "priority": 5,
+      "matches": [
+        {
+          "id": "401889179",
+          "league": "National League",
+          "league_code": "eng.5",
+          "region": "UK",
+          "priority": 5,
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-27T19:45Z",
+          "status": "pre",
+          "venue": "Attis Arena",
+          "home": {
+            "name": "Scunthorpe United",
+            "short": "SCU",
+            "id": "313",
+            "record": "3-2-13",
+            "form": "DLDLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Wealdstone",
+            "short": "WEA",
+            "id": "3887",
+            "record": "6-4-9",
+            "form": "DWDLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 280.0,
+            "away": null,
+            "raw": "SCU +115"
+          },
+          "name": "Scunthorpe United vs Wealdstone"
+        }
+      ]
+    },
+    {
+      "name": "La Liga",
+      "code": "esp.1",
+      "region": "Europe",
+      "priority": 20,
+      "matches": [
+        {
+          "id": "401882791",
+          "league": "La Liga",
+          "league_code": "esp.1",
+          "region": "Europe",
+          "priority": 20,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-27T20:00Z",
+          "status": "pre",
+          "venue": "Estadi Ciutat de Val\u00e8ncia",
+          "home": {
+            "name": "Levante",
+            "short": "LEV",
+            "id": "1538",
+            "record": "2-6-5",
+            "form": "DWDLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Racing Santander",
+            "short": "RAC",
+            "id": "87",
+            "record": "5-2-6",
+            "form": "WWLWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 290.0,
+            "away": null,
+            "raw": "LEV +110"
+          },
+          "name": "Levante vs Racing Santander"
+        }
+      ]
+    },
+    {
+      "name": "Serie A",
+      "code": "ita.1",
+      "region": "Europe",
+      "priority": 21,
+      "matches": [
+        {
+          "id": "401875004",
+          "league": "Serie A",
+          "league_code": "ita.1",
+          "region": "Europe",
+          "priority": 21,
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-27T19:45Z",
+          "status": "pre",
+          "venue": "Stadio Pier Luigi Penzo",
+          "home": {
+            "name": "Venezia",
+            "short": "VEN",
+            "id": "17530",
+            "record": "2-0-10",
+            "form": "LWLLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Bologna",
+            "short": "BOL",
+            "id": "107",
+            "record": "5-3-4",
+            "form": "DWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 215.0,
+            "away": null,
+            "raw": "BOL +120"
+          },
+          "name": "Venezia vs Bologna"
+        }
+      ]
+    },
+    {
+      "name": "Bundesliga",
+      "code": "ger.1",
+      "region": "Europe",
+      "priority": 22,
+      "matches": [
+        {
+          "id": "401884720",
+          "league": "Bundesliga",
+          "league_code": "ger.1",
+          "region": "Europe",
+          "priority": 22,
+          "kickoff": "19:30",
+          "kickoff_iso": "2026-11-27T19:30Z",
+          "status": "pre",
+          "venue": "Weserstadion",
+          "home": {
+            "name": "Werder Bremen",
+            "short": "SVW",
+            "id": "137",
+            "record": "5-3-2",
+            "form": "WLWLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Borussia M\u00f6nchengladbach",
+            "short": "BMG",
+            "id": "268",
+            "record": "1-1-8",
+            "form": "LLDWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 320.0,
+            "away": null,
+            "raw": "SVW -145"
+          },
+          "name": "Werder Bremen vs Borussia M\u00f6nchengladbach"
+        }
+      ]
+    },
+    {
+      "name": "Ligue 1",
+      "code": "fra.1",
+      "region": "Europe",
+      "priority": 23,
+      "matches": [
+        {
+          "id": "401876392",
+          "league": "Ligue 1",
+          "league_code": "fra.1",
+          "region": "Europe",
+          "priority": 23,
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-27T19:45Z",
+          "status": "pre",
+          "venue": "Stade Francis-Le Bl\u00e9",
+          "home": {
+            "name": "Brest",
+            "short": "BRE",
+            "id": "6997",
+            "record": "5-3-3",
+            "form": "WWWLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Paris FC",
+            "short": "PAR",
+            "id": "6851",
+            "record": "7-2-2",
+            "form": "WWWLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 240.0,
+            "away": null,
+            "raw": "PAR +120"
+          },
+          "name": "Brest vs Paris FC"
+        }
+      ]
+    },
+    {
+      "name": "Eredivisie",
+      "code": "ned.1",
+      "region": "Europe",
+      "priority": 24,
+      "matches": [
+        {
+          "id": "401875536",
+          "league": "Eredivisie",
+          "league_code": "ned.1",
+          "region": "Europe",
+          "priority": 24,
+          "kickoff": "19:00",
+          "kickoff_iso": "2026-11-27T19:00Z",
+          "status": "pre",
+          "venue": "Euroborg",
+          "home": {
+            "name": "FC Groningen",
+            "short": "GRO",
+            "id": "145",
+            "record": "4-3-6",
+            "form": "LLLLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Willem II",
+            "short": "WIL",
+            "id": "156",
+            "record": "0-3-10",
+            "form": "LDLWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 390.0,
+            "away": null,
+            "raw": "GRO -240"
+          },
+          "name": "FC Groningen vs Willem II"
+        }
+      ]
+    },
+    {
+      "name": "Primeira Liga",
+      "code": "por.1",
+      "region": "Europe",
+      "priority": 25,
+      "matches": [
+        {
+          "id": "401885389",
+          "league": "Primeira Liga",
+          "league_code": "por.1",
+          "region": "Europe",
+          "priority": 25,
+          "kickoff": "20:15",
+          "kickoff_iso": "2026-11-27T20:15Z",
+          "status": "pre",
+          "venue": "Est\u00e1dio do Mar\u00edtimo",
+          "home": {
+            "name": "Maritimo",
+            "short": "MAR",
+            "id": "552",
+            "record": "2-2-6",
+            "form": "WLLWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "C.D. Nacional",
+            "short": "CDN",
+            "id": "3472",
+            "record": "3-1-7",
+            "form": "WLWLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 230.0,
+            "away": null,
+            "raw": "MAR +105"
+          },
+          "name": "Maritimo vs C.D. Nacional"
+        }
+      ]
+    }
+  ],
+  "match_count": 9
+}

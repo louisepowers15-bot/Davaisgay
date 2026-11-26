@@ -1,0 +1,16 @@
+{
+  "start_date": null,
+  "generated_at": "2026-11-26T14:34:50.358229+00:00",
+  "match_count": 0,
+  "bots": [
+    "FormFox",
+    "HomeBanker",
+    "ValueHunter",
+    "DrawSpecialist",
+    "AttackMinded",
+    "H2HHistorian"
+  ],
+  "matches": [],
+  "by_region": {},
+  "note": "Primary: last-5 home form for the home side and last-5 away form for the away side (goals, conceded, clean sheets; corners/cards when match stats exist). Secondary: overall form string and league position. Injuries/top scorers only when the feed provides them."
+}

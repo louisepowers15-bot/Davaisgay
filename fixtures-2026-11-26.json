@@ -1,0 +1,1359 @@
+{
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T14:34:50.318683+00:00",
+  "source": "espn_scoreboard",
+  "leagues": [
+    {
+      "name": "League One",
+      "code": "eng.3",
+      "region": "UK",
+      "priority": 3,
+      "matches": [
+        {
+          "id": "401880728",
+          "league": "League One",
+          "league_code": "eng.3",
+          "region": "UK",
+          "priority": 3,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Eco-Power Stadium",
+          "home": {
+            "name": "Doncaster Rovers",
+            "short": "DON",
+            "id": "279",
+            "record": "3-4-7",
+            "form": "DLWLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Huddersfield Town",
+            "short": "HUD",
+            "id": "335",
+            "record": "8-5-2",
+            "form": "DWLDW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 330.0,
+            "away": null,
+            "raw": "HUD -155"
+          },
+          "name": "Doncaster Rovers vs Huddersfield Town"
+        }
+      ]
+    },
+    {
+      "name": "Europa League",
+      "code": "uefa.europa",
+      "region": "Europe",
+      "priority": 16,
+      "matches": [
+        {
+          "id": "401915506",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Batumi Stadium (Adjarabet Arena)",
+          "home": {
+            "name": "Besiktas",
+            "short": "BES",
+            "id": "1895",
+            "record": "2-1-1",
+            "form": "WWLDW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Hapoel Be'er",
+            "short": "HBE",
+            "id": "13083",
+            "record": "0-1-3",
+            "form": "DLLDL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 550.0,
+            "away": null,
+            "raw": "BES -400"
+          },
+          "name": "Besiktas vs Hapoel Be'er"
+        },
+        {
+          "id": "401915519",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Balaidos",
+          "home": {
+            "name": "Celta Vigo",
+            "short": "CEL",
+            "id": "85",
+            "record": "1-0-3",
+            "form": "LWDLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "AFC Bournemouth",
+            "short": "BOU",
+            "id": "349",
+            "record": "4-0-0",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 265.0,
+            "away": null,
+            "raw": "BOU -110"
+          },
+          "name": "Celta Vigo vs AFC Bournemouth"
+        },
+        {
+          "id": "401915517",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Maksimir Stadium",
+          "home": {
+            "name": "Dinamo Zagreb",
+            "short": "DZG",
+            "id": "597",
+            "record": "2-1-1",
+            "form": "WLWDL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Bayer Leverkusen",
+            "short": "B04",
+            "id": "131",
+            "record": "3-0-1",
+            "form": "WWLLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 350.0,
+            "away": null,
+            "raw": "B04 -165"
+          },
+          "name": "Dinamo Zagreb vs Bayer Leverkusen"
+        },
+        {
+          "id": "401915507",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Stade V\u00e9lodrome",
+          "home": {
+            "name": "Marseille",
+            "short": "OLM",
+            "id": "176",
+            "record": "1-0-3",
+            "form": "LWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Levski Sofia",
+            "short": "LEV",
+            "id": "490",
+            "record": "2-1-1",
+            "form": "WWDLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 400.0,
+            "away": null,
+            "raw": "OLM -255"
+          },
+          "name": "Marseille vs Levski Sofia"
+        },
+        {
+          "id": "401915521",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Georgios Karaiskakis Stadium",
+          "home": {
+            "name": "Olympiacos",
+            "short": "OLY",
+            "id": "435",
+            "record": "3-1-0",
+            "form": "WDDWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "AC Milan",
+            "short": "MIL",
+            "id": "103",
+            "record": "1-0-3",
+            "form": "WWLWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 245.0,
+            "away": null,
+            "raw": "MIL +150"
+          },
+          "name": "Olympiacos vs AC Milan"
+        },
+        {
+          "id": "401915520",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Red Bull Arena Salzburg",
+          "home": {
+            "name": "RB Salzburg",
+            "short": "SLZ",
+            "id": "2790",
+            "record": "1-1-2",
+            "form": "LWLWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Ararat-Armenia",
+            "short": "ARA",
+            "id": "20024",
+            "record": "0-0-4",
+            "form": "LLLLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 800.0,
+            "away": null,
+            "raw": "SLZ -700"
+          },
+          "name": "RB Salzburg vs Ararat-Armenia"
+        },
+        {
+          "id": "401915508",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "King Power at Den Dreef Stadion",
+          "home": {
+            "name": "Union St.-Gilloise",
+            "short": "USG",
+            "id": "5807",
+            "record": "3-1-0",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Lech Poznan",
+            "short": "LECH",
+            "id": "2990",
+            "record": "0-1-3",
+            "form": "LDLLD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 450.0,
+            "away": null,
+            "raw": "USG -280"
+          },
+          "name": "Union St.-Gilloise vs Lech Poznan"
+        },
+        {
+          "id": "401915518",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Doosan Arena",
+          "home": {
+            "name": "Viktoria Plzen",
+            "short": "PLZ",
+            "id": "11706",
+            "record": "1-0-3",
+            "form": "WLLLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Benfica",
+            "short": "SLB",
+            "id": "1929",
+            "record": "4-0-0",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 400.0,
+            "away": null,
+            "raw": "SLB -215"
+          },
+          "name": "Viktoria Plzen vs Benfica"
+        },
+        {
+          "id": "401915504",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Selhurst Park",
+          "home": {
+            "name": "Crystal Palace",
+            "short": "CRY",
+            "id": "384",
+            "record": "1-2-1",
+            "form": "LLDLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Real Sociedad",
+            "short": "RSO",
+            "id": "89",
+            "record": "1-2-1",
+            "form": "LWDLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 290.0,
+            "away": null,
+            "raw": "CRY +105"
+          },
+          "name": "Crystal Palace vs Real Sociedad"
+        },
+        {
+          "id": "401915516",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Groupama Arena",
+          "home": {
+            "name": "Ferencvaros",
+            "short": "FER",
+            "id": "622",
+            "record": "4-0-0",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "NK Celje",
+            "short": "NKC",
+            "id": "3362",
+            "record": "1-1-2",
+            "form": "WDLLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 425.0,
+            "away": null,
+            "raw": "FER -265"
+          },
+          "name": "Ferencvaros vs NK Celje"
+        },
+        {
+          "id": "401915502",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Allianz Stadium",
+          "home": {
+            "name": "Juventus",
+            "short": "JUV",
+            "id": "111",
+            "record": "3-1-0",
+            "form": "WDWWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Omonia Nicosia",
+            "short": "OMON",
+            "id": "617",
+            "record": "2-0-2",
+            "form": "LLWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 600.0,
+            "away": null,
+            "raw": "JUV -500"
+          },
+          "name": "Juventus vs Omonia Nicosia"
+        },
+        {
+          "id": "401915501",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Groupama Stadium",
+          "home": {
+            "name": "Lyon",
+            "short": "LYON",
+            "id": "167",
+            "record": "2-1-1",
+            "form": "WLDWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Lillestrom",
+            "short": "LSK",
+            "id": "987",
+            "record": "0-1-3",
+            "form": "WWLWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 650.0,
+            "away": null,
+            "raw": "LYON -500"
+          },
+          "name": "Lyon vs Lillestrom"
+        },
+        {
+          "id": "401915505",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Goffertstadion",
+          "home": {
+            "name": "NEC Nijmegen",
+            "short": "NEC",
+            "id": "147",
+            "record": "2-1-1",
+            "form": "LWWLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Stade Rennais",
+            "short": "REN",
+            "id": "169",
+            "record": "1-3-0",
+            "form": "DLDLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 290.0,
+            "away": null,
+            "raw": "REN +115"
+          },
+          "name": "NEC Nijmegen vs Stade Rennais"
+        },
+        {
+          "id": "401915503",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Pankritio Stadium",
+          "home": {
+            "name": "OFI Crete",
+            "short": "OFI",
+            "id": "1010",
+            "record": "2-0-2",
+            "form": "DDWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Anderlecht",
+            "short": "AND",
+            "id": "441",
+            "record": "2-0-2",
+            "form": "DDWWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 290.0,
+            "away": null,
+            "raw": "AND -130"
+          },
+          "name": "OFI Crete vs Anderlecht"
+        },
+        {
+          "id": "401915514",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Generali Arena",
+          "home": {
+            "name": "Sparta Prague",
+            "short": "SPP",
+            "id": "433",
+            "record": "1-1-2",
+            "form": "DLDWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "AZ Alkmaar",
+            "short": "AZ",
+            "id": "140",
+            "record": "2-0-2",
+            "form": "WWLLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 260.0,
+            "away": null,
+            "raw": "AZ +140"
+          },
+          "name": "Sparta Prague vs AZ Alkmaar"
+        },
+        {
+          "id": "401915513",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Stadium of Light",
+          "home": {
+            "name": "Sunderland",
+            "short": "SUN",
+            "id": "366",
+            "record": "2-1-1",
+            "form": "DWLLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Jagiellonia Bialystok",
+            "short": "JAG",
+            "id": "11505",
+            "record": "1-0-3",
+            "form": "LLWLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 500.0,
+            "away": null,
+            "raw": "SUN -400"
+          },
+          "name": "Sunderland vs Jagiellonia Bialystok"
+        },
+        {
+          "id": "401915512",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Est\u00e1dio Dr. Magalhaes Pessoa",
+          "home": {
+            "name": "Torreense",
+            "short": "TOR",
+            "id": "21615",
+            "record": "2-0-2",
+            "form": "LWLLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Celtic",
+            "short": "CEL",
+            "id": "256",
+            "record": "1-0-3",
+            "form": "WWWLD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 340.0,
+            "away": null,
+            "raw": "CEL -155"
+          },
+          "name": "Torreense vs Celtic"
+        },
+        {
+          "id": "401915515",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "priority": 16,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "PreZero Arena",
+          "home": {
+            "name": "TSG Hoffenheim",
+            "short": "TSG",
+            "id": "7911",
+            "record": "1-1-2",
+            "form": "LWDLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "SK Sturm Graz",
+            "short": "STG",
+            "id": "3746",
+            "record": "1-1-2",
+            "form": "LLLDD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 500.0,
+            "away": null,
+            "raw": "TSG -310"
+          },
+          "name": "TSG Hoffenheim vs SK Sturm Graz"
+        }
+      ]
+    },
+    {
+      "name": "Conference League",
+      "code": "uefa.europa.conf",
+      "region": "Europe",
+      "priority": 17,
+      "matches": [
+        {
+          "id": "401915816",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "15:30",
+          "kickoff_iso": "2026-11-26T15:30Z",
+          "status": "pre",
+          "venue": "Almaty Ortalyk Stadium",
+          "home": {
+            "name": "Kairat Almaty",
+            "short": "KAI",
+            "id": "2528",
+            "record": "0-2-1",
+            "form": "DLDLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Mj\u00e4llby AIF",
+            "short": "MJA",
+            "id": "20301",
+            "record": "2-1-0",
+            "form": "DDWDW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 240.0,
+            "away": null,
+            "raw": "KAI +120"
+          },
+          "name": "Kairat Almaty vs Mj\u00e4llby AIF"
+        },
+        {
+          "id": "401915815",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Johan Cruijff Arena",
+          "home": {
+            "name": "Ajax Amsterdam",
+            "short": "AJA",
+            "id": "139",
+            "record": "2-0-1",
+            "form": "WDWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "FC Thun",
+            "short": "THUN",
+            "id": "3024",
+            "record": "1-0-2",
+            "form": "WLLDL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 750.0,
+            "away": null,
+            "raw": "AJA -550"
+          },
+          "name": "Ajax Amsterdam vs FC Thun"
+        },
+        {
+          "id": "401915814",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "American Express Stadium",
+          "home": {
+            "name": "Brighton & Hove Albion",
+            "short": "BHA",
+            "id": "331",
+            "record": "2-1-0",
+            "form": "DWWWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "CSU Craiova",
+            "short": "UCRA",
+            "id": "8089",
+            "record": "2-1-0",
+            "form": "WWDLD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 850.0,
+            "away": null,
+            "raw": "BHA -800"
+          },
+          "name": "Brighton & Hove Albion vs CSU Craiova"
+        },
+        {
+          "id": "401915810",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Air Albania Stadium",
+          "home": {
+            "name": "Egnatia",
+            "short": "EGN",
+            "id": "21943",
+            "record": "0-2-1",
+            "form": "LDDLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Lincoln Red Imps",
+            "short": "LRI",
+            "id": "17856",
+            "record": "1-0-2",
+            "form": "WLLWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 350.0,
+            "away": null,
+            "raw": "EGN -165"
+          },
+          "name": "Egnatia vs Lincoln Red Imps"
+        },
+        {
+          "id": "401915811",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Tynecastle Park",
+          "home": {
+            "name": "Heart of Midlothian",
+            "short": "HOM",
+            "id": "262",
+            "record": "0-1-2",
+            "form": "DLLLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "AS Monaco",
+            "short": "MON",
+            "id": "174",
+            "record": "3-0-0",
+            "form": "DDWLD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 360.0,
+            "away": null,
+            "raw": "MON -195"
+          },
+          "name": "Heart of Midlothian vs AS Monaco"
+        },
+        {
+          "id": "401915813",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Mikheil Meskhi Stadioni",
+          "home": {
+            "name": "Iberia 1999",
+            "short": "IBE",
+            "id": "20025",
+            "record": "0-1-2",
+            "form": "LDLLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Getafe",
+            "short": "GET",
+            "id": "2922",
+            "record": "0-1-2",
+            "form": "LLLWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 330.0,
+            "away": null,
+            "raw": "GET -210"
+          },
+          "name": "Iberia 1999 vs Getafe"
+        },
+        {
+          "id": "401915812",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Stadion Strelnice",
+          "home": {
+            "name": "Jablonec",
+            "short": "JABL",
+            "id": "7922",
+            "record": "0-2-1",
+            "form": "DDLWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "FC Lugano",
+            "short": "LUG",
+            "id": "7672",
+            "record": "3-0-0",
+            "form": "WWWDW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 265.0,
+            "away": null,
+            "raw": "LUG +125"
+          },
+          "name": "Jablonec vs FC Lugano"
+        },
+        {
+          "id": "401915739",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "S. Darius and S. Gireno Stadium",
+          "home": {
+            "name": "Kauno Zalgiris",
+            "short": "ZAL",
+            "id": "20028",
+            "record": "0-0-3",
+            "form": "LLLWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Riga FC",
+            "short": "RIG",
+            "id": "19246",
+            "record": "0-3-0",
+            "form": "DDDWD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 245.0,
+            "away": null,
+            "raw": "RIG +105"
+          },
+          "name": "Kauno Zalgiris vs Riga FC"
+        },
+        {
+          "id": "401915809",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Alphamega Stadium",
+          "home": {
+            "name": "Pafos",
+            "short": "PAF",
+            "id": "22281",
+            "record": "0-1-2",
+            "form": "LDLWD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "FC Midtjylland",
+            "short": "MID",
+            "id": "572",
+            "record": "0-1-2",
+            "form": "WDLWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": null,
+          "name": "Pafos vs FC Midtjylland"
+        },
+        {
+          "id": "401915808",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "status": "pre",
+          "venue": "Brann Stadium",
+          "home": {
+            "name": "SK Brann",
+            "short": "SKBR",
+            "id": "620",
+            "record": "2-1-0",
+            "form": "DDDWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "AGF",
+            "short": "AGF",
+            "id": "7853",
+            "record": "0-2-1",
+            "form": "WWDLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 295.0,
+            "away": null,
+            "raw": "SKBR +105"
+          },
+          "name": "SK Brann vs AGF"
+        },
+        {
+          "id": "401915806",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Gradski Stadion Banja Luka",
+          "home": {
+            "name": "Borac Banja Luka",
+            "short": "BBL",
+            "id": "20710",
+            "record": "1-0-2",
+            "form": "LWLWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Atalanta",
+            "short": "ATA",
+            "id": "105",
+            "record": "1-1-1",
+            "form": "DWDLD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 400.0,
+            "away": null,
+            "raw": "ATA -240"
+          },
+          "name": "Borac Banja Luka vs Atalanta"
+        },
+        {
+          "id": "401915802",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Est\u00e1dio Municipal de Braga",
+          "home": {
+            "name": "Braga",
+            "short": "SCB",
+            "id": "2994",
+            "record": "1-1-1",
+            "form": "WWDWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "KuPS Kuopio",
+            "short": "KUPS",
+            "id": "8169",
+            "record": "0-1-2",
+            "form": "DLLWD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 700.0,
+            "away": null,
+            "raw": "SCB -650"
+          },
+          "name": "Braga vs KuPS Kuopio"
+        },
+        {
+          "id": "401915803",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Balgarska Armia Stadium",
+          "home": {
+            "name": "CSKA Sofia",
+            "short": "CSKA",
+            "id": "10834",
+            "record": "0-1-2",
+            "form": "LDLLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Trabzonspor",
+            "short": "TRAB",
+            "id": "997",
+            "record": "2-0-1",
+            "form": "WWLWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 310.0,
+            "away": null,
+            "raw": "TRAB -140"
+          },
+          "name": "CSKA Sofia vs Trabzonspor"
+        },
+        {
+          "id": "401915807",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Right to Dream Park",
+          "home": {
+            "name": "FC Nordsj\u00e6lland",
+            "short": "FCN",
+            "id": "3101",
+            "record": "0-2-1",
+            "form": "WWLLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Panathinaikos",
+            "short": "PAO",
+            "id": "443",
+            "record": "3-0-0",
+            "form": "DWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 260.0,
+            "away": null,
+            "raw": "FCN +140"
+          },
+          "name": "FC Nordsj\u00e6lland vs Panathinaikos"
+        },
+        {
+          "id": "401915805",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Stadion Poljud",
+          "home": {
+            "name": "Hajduk Split",
+            "short": "HAJ",
+            "id": "489",
+            "record": "2-0-1",
+            "form": "LWWWD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Sint-Truidense",
+            "short": "STVV",
+            "id": "936",
+            "record": "2-1-0",
+            "form": "DWDLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 270.0,
+            "away": null,
+            "raw": "HAJ +110"
+          },
+          "name": "Hajduk Split vs Sint-Truidense"
+        },
+        {
+          "id": "401915738",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Estadi de la FAF d'Encamp",
+          "home": {
+            "name": "Inter D'Escaldes",
+            "short": "IDE",
+            "id": "20703",
+            "record": "0-0-3",
+            "form": "LLLDD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "F.C. K\u00f8benhavn",
+            "short": "KBH",
+            "id": "909",
+            "record": "2-1-0",
+            "form": "LWWWD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 450.0,
+            "away": null,
+            "raw": "KBH -350"
+          },
+          "name": "Inter D'Escaldes vs F.C. K\u00f8benhavn"
+        },
+        {
+          "id": "401915804",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Ghelamco Arena",
+          "home": {
+            "name": "KAA Gent",
+            "short": "GENT",
+            "id": "3611",
+            "record": "1-1-1",
+            "form": "LWDLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Red Star Belgrade",
+            "short": "RSB",
+            "id": "2290",
+            "record": "1-1-1",
+            "form": "WDLLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 250.0,
+            "away": null,
+            "raw": "GENT +130"
+          },
+          "name": "KAA Gent vs Red Star Belgrade"
+        },
+        {
+          "id": "401915801",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "priority": 17,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "status": "pre",
+          "venue": "Europa-Park Stadion",
+          "home": {
+            "name": "SC Freiburg",
+            "short": "SCF",
+            "id": "126",
+            "record": "2-0-1",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "FC Twente",
+            "short": "TWE",
+            "id": "152",
+            "record": "3-0-0",
+            "form": "WDWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 300.0,
+            "away": null,
+            "raw": "SCF -130"
+          },
+          "name": "SC Freiburg vs FC Twente"
+        }
+      ]
+    }
+  ],
+  "match_count": 37
+}

@@ -1,0 +1,888 @@
+{
+  "date": "2026-11-25",
+  "generated_at": "2026-11-26T14:35:00.667722+00:00",
+  "source": "espn_scoreboard",
+  "leagues": [
+    {
+      "name": "Championship",
+      "code": "eng.2",
+      "region": "UK",
+      "matches": [
+        {
+          "id": "401880140",
+          "league": "Championship",
+          "league_code": "eng.2",
+          "region": "UK",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-25T19:45Z",
+          "home": {
+            "name": "Bolton Wanderers",
+            "id": "358",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "West Bromwich Albion",
+            "id": "383",
+            "score": 3,
+            "winner": true
+          },
+          "home_score": 1,
+          "away_score": 3,
+          "outcome": "away",
+          "name": "Bolton Wanderers vs West Bromwich Albion",
+          "ft": "1-3"
+        },
+        {
+          "id": "401880139",
+          "league": "Championship",
+          "league_code": "eng.2",
+          "region": "UK",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-25T19:45Z",
+          "home": {
+            "name": "Burnley",
+            "id": "379",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "Birmingham City",
+            "id": "392",
+            "score": 2,
+            "winner": true
+          },
+          "home_score": 0,
+          "away_score": 2,
+          "outcome": "away",
+          "name": "Burnley vs Birmingham City",
+          "ft": "0-2"
+        },
+        {
+          "id": "401880137",
+          "league": "Championship",
+          "league_code": "eng.2",
+          "region": "UK",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-25T19:45Z",
+          "home": {
+            "name": "Watford",
+            "id": "395",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "Blackburn Rovers",
+            "id": "365",
+            "score": 1,
+            "winner": true
+          },
+          "home_score": 0,
+          "away_score": 1,
+          "outcome": "away",
+          "name": "Watford vs Blackburn Rovers",
+          "ft": "0-1"
+        },
+        {
+          "id": "401880138",
+          "league": "Championship",
+          "league_code": "eng.2",
+          "region": "UK",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-25T20:00Z",
+          "home": {
+            "name": "Stoke City",
+            "id": "336",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Millwall",
+            "id": "391",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Stoke City vs Millwall",
+          "ft": "2-1"
+        }
+      ]
+    },
+    {
+      "name": "National League",
+      "code": "eng.5",
+      "region": "UK",
+      "matches": [
+        {
+          "id": "401889182",
+          "league": "National League",
+          "league_code": "eng.5",
+          "region": "UK",
+          "kickoff": "19:00",
+          "kickoff_iso": "2026-11-25T19:00Z",
+          "home": {
+            "name": "Boreham Wood",
+            "id": "2595",
+            "score": 4,
+            "winner": true
+          },
+          "away": {
+            "name": "Aldershot Town",
+            "id": "632",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 4,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Boreham Wood vs Aldershot Town",
+          "ft": "4-1"
+        },
+        {
+          "id": "401889181",
+          "league": "National League",
+          "league_code": "eng.5",
+          "region": "UK",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-25T19:45Z",
+          "home": {
+            "name": "Harrogate Town",
+            "id": "19262",
+            "score": 3,
+            "winner": true
+          },
+          "away": {
+            "name": "Kidderminster Harriers",
+            "id": "319",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 3,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Harrogate Town vs Kidderminster Harriers",
+          "ft": "3-1"
+        },
+        {
+          "id": "401889180",
+          "league": "National League",
+          "league_code": "eng.5",
+          "region": "UK",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-25T19:45Z",
+          "home": {
+            "name": "Hartlepool United",
+            "id": "323",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Solihull Moors",
+            "id": "13061",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Hartlepool United vs Solihull Moors",
+          "ft": "2-0"
+        }
+      ]
+    },
+    {
+      "name": "EFL Trophy",
+      "code": "eng.trophy",
+      "region": "UK",
+      "matches": [
+        {
+          "id": "401906325",
+          "league": "EFL Trophy",
+          "league_code": "eng.trophy",
+          "region": "UK",
+          "kickoff": "19:00",
+          "kickoff_iso": "2026-11-25T19:00Z",
+          "home": {
+            "name": "Fleetwood Town",
+            "id": "3891",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Leeds United U21",
+            "id": "20728",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Fleetwood Town vs Leeds United U21",
+          "ft": "2-1"
+        }
+      ]
+    },
+    {
+      "name": "Champions League",
+      "code": "uefa.champions",
+      "region": "Europe",
+      "matches": [
+        {
+          "id": "401915378",
+          "league": "Champions League",
+          "league_code": "uefa.champions",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-25T17:45Z",
+          "home": {
+            "name": "Sabah FK",
+            "id": "21922",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "Barcelona",
+            "id": "83",
+            "score": 4,
+            "winner": true
+          },
+          "home_score": 1,
+          "away_score": 4,
+          "outcome": "away",
+          "name": "Sabah FK vs Barcelona",
+          "ft": "1-4"
+        },
+        {
+          "id": "401915293",
+          "league": "Champions League",
+          "league_code": "uefa.champions",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-25T17:45Z",
+          "home": {
+            "name": "Slavia Prague",
+            "id": "494",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "Villarreal",
+            "id": "102",
+            "score": 1,
+            "winner": true
+          },
+          "home_score": 0,
+          "away_score": 1,
+          "outcome": "away",
+          "name": "Slavia Prague vs Villarreal",
+          "ft": "0-1"
+        },
+        {
+          "id": "401915291",
+          "league": "Champions League",
+          "league_code": "uefa.champions",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-25T20:00Z",
+          "home": {
+            "name": "Atl\u00e9tico Madrid",
+            "id": "1068",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Viking FK",
+            "id": "510",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Atl\u00e9tico Madrid vs Viking FK",
+          "ft": "2-0"
+        },
+        {
+          "id": "401915292",
+          "league": "Champions League",
+          "league_code": "uefa.champions",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-25T20:00Z",
+          "home": {
+            "name": "Club Brugge",
+            "id": "570",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "Liverpool",
+            "id": "364",
+            "score": 3,
+            "winner": true
+          },
+          "home_score": 0,
+          "away_score": 3,
+          "outcome": "away",
+          "name": "Club Brugge vs Liverpool",
+          "ft": "0-3"
+        },
+        {
+          "id": "401915376",
+          "league": "Champions League",
+          "league_code": "uefa.champions",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-25T20:00Z",
+          "home": {
+            "name": "Internazionale",
+            "id": "110",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "VfB Stuttgart",
+            "id": "134",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Internazionale vs VfB Stuttgart",
+          "ft": "2-0"
+        },
+        {
+          "id": "401915377",
+          "league": "Champions League",
+          "league_code": "uefa.champions",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-25T20:00Z",
+          "home": {
+            "name": "Lille",
+            "id": "166",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Bayern Munich",
+            "id": "132",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Lille vs Bayern Munich",
+          "ft": "2-1"
+        },
+        {
+          "id": "401915374",
+          "league": "Champions League",
+          "league_code": "uefa.champions",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-25T20:00Z",
+          "home": {
+            "name": "Paris Saint-Germain",
+            "id": "160",
+            "score": 2,
+            "winner": false
+          },
+          "away": {
+            "name": "AS Roma",
+            "id": "104",
+            "score": 2,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 2,
+          "outcome": "draw",
+          "name": "Paris Saint-Germain vs AS Roma",
+          "ft": "2-2"
+        },
+        {
+          "id": "401915375",
+          "league": "Champions League",
+          "league_code": "uefa.champions",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-25T20:00Z",
+          "home": {
+            "name": "Shakhtar Donetsk",
+            "id": "493",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "Fenerbahce",
+            "id": "436",
+            "score": 1,
+            "winner": true
+          },
+          "home_score": 0,
+          "away_score": 1,
+          "outcome": "away",
+          "name": "Shakhtar Donetsk vs Fenerbahce",
+          "ft": "0-1"
+        },
+        {
+          "id": "401915373",
+          "league": "Champions League",
+          "league_code": "uefa.champions",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-25T20:00Z",
+          "home": {
+            "name": "Sporting CP",
+            "id": "2250",
+            "score": 2,
+            "winner": false
+          },
+          "away": {
+            "name": "Manchester United",
+            "id": "360",
+            "score": 2,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 2,
+          "outcome": "draw",
+          "name": "Sporting CP vs Manchester United",
+          "ft": "2-2"
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "401880140",
+      "league": "Championship",
+      "league_code": "eng.2",
+      "region": "UK",
+      "kickoff": "19:45",
+      "kickoff_iso": "2026-11-25T19:45Z",
+      "home": {
+        "name": "Bolton Wanderers",
+        "id": "358",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "West Bromwich Albion",
+        "id": "383",
+        "score": 3,
+        "winner": true
+      },
+      "home_score": 1,
+      "away_score": 3,
+      "outcome": "away",
+      "name": "Bolton Wanderers vs West Bromwich Albion",
+      "ft": "1-3"
+    },
+    {
+      "id": "401880139",
+      "league": "Championship",
+      "league_code": "eng.2",
+      "region": "UK",
+      "kickoff": "19:45",
+      "kickoff_iso": "2026-11-25T19:45Z",
+      "home": {
+        "name": "Burnley",
+        "id": "379",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "Birmingham City",
+        "id": "392",
+        "score": 2,
+        "winner": true
+      },
+      "home_score": 0,
+      "away_score": 2,
+      "outcome": "away",
+      "name": "Burnley vs Birmingham City",
+      "ft": "0-2"
+    },
+    {
+      "id": "401880137",
+      "league": "Championship",
+      "league_code": "eng.2",
+      "region": "UK",
+      "kickoff": "19:45",
+      "kickoff_iso": "2026-11-25T19:45Z",
+      "home": {
+        "name": "Watford",
+        "id": "395",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "Blackburn Rovers",
+        "id": "365",
+        "score": 1,
+        "winner": true
+      },
+      "home_score": 0,
+      "away_score": 1,
+      "outcome": "away",
+      "name": "Watford vs Blackburn Rovers",
+      "ft": "0-1"
+    },
+    {
+      "id": "401880138",
+      "league": "Championship",
+      "league_code": "eng.2",
+      "region": "UK",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-25T20:00Z",
+      "home": {
+        "name": "Stoke City",
+        "id": "336",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Millwall",
+        "id": "391",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Stoke City vs Millwall",
+      "ft": "2-1"
+    },
+    {
+      "id": "401889182",
+      "league": "National League",
+      "league_code": "eng.5",
+      "region": "UK",
+      "kickoff": "19:00",
+      "kickoff_iso": "2026-11-25T19:00Z",
+      "home": {
+        "name": "Boreham Wood",
+        "id": "2595",
+        "score": 4,
+        "winner": true
+      },
+      "away": {
+        "name": "Aldershot Town",
+        "id": "632",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 4,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Boreham Wood vs Aldershot Town",
+      "ft": "4-1"
+    },
+    {
+      "id": "401889181",
+      "league": "National League",
+      "league_code": "eng.5",
+      "region": "UK",
+      "kickoff": "19:45",
+      "kickoff_iso": "2026-11-25T19:45Z",
+      "home": {
+        "name": "Harrogate Town",
+        "id": "19262",
+        "score": 3,
+        "winner": true
+      },
+      "away": {
+        "name": "Kidderminster Harriers",
+        "id": "319",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 3,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Harrogate Town vs Kidderminster Harriers",
+      "ft": "3-1"
+    },
+    {
+      "id": "401889180",
+      "league": "National League",
+      "league_code": "eng.5",
+      "region": "UK",
+      "kickoff": "19:45",
+      "kickoff_iso": "2026-11-25T19:45Z",
+      "home": {
+        "name": "Hartlepool United",
+        "id": "323",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Solihull Moors",
+        "id": "13061",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Hartlepool United vs Solihull Moors",
+      "ft": "2-0"
+    },
+    {
+      "id": "401906325",
+      "league": "EFL Trophy",
+      "league_code": "eng.trophy",
+      "region": "UK",
+      "kickoff": "19:00",
+      "kickoff_iso": "2026-11-25T19:00Z",
+      "home": {
+        "name": "Fleetwood Town",
+        "id": "3891",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Leeds United U21",
+        "id": "20728",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Fleetwood Town vs Leeds United U21",
+      "ft": "2-1"
+    },
+    {
+      "id": "401915378",
+      "league": "Champions League",
+      "league_code": "uefa.champions",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-25T17:45Z",
+      "home": {
+        "name": "Sabah FK",
+        "id": "21922",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "Barcelona",
+        "id": "83",
+        "score": 4,
+        "winner": true
+      },
+      "home_score": 1,
+      "away_score": 4,
+      "outcome": "away",
+      "name": "Sabah FK vs Barcelona",
+      "ft": "1-4"
+    },
+    {
+      "id": "401915293",
+      "league": "Champions League",
+      "league_code": "uefa.champions",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-25T17:45Z",
+      "home": {
+        "name": "Slavia Prague",
+        "id": "494",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "Villarreal",
+        "id": "102",
+        "score": 1,
+        "winner": true
+      },
+      "home_score": 0,
+      "away_score": 1,
+      "outcome": "away",
+      "name": "Slavia Prague vs Villarreal",
+      "ft": "0-1"
+    },
+    {
+      "id": "401915291",
+      "league": "Champions League",
+      "league_code": "uefa.champions",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-25T20:00Z",
+      "home": {
+        "name": "Atl\u00e9tico Madrid",
+        "id": "1068",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Viking FK",
+        "id": "510",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Atl\u00e9tico Madrid vs Viking FK",
+      "ft": "2-0"
+    },
+    {
+      "id": "401915292",
+      "league": "Champions League",
+      "league_code": "uefa.champions",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-25T20:00Z",
+      "home": {
+        "name": "Club Brugge",
+        "id": "570",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "Liverpool",
+        "id": "364",
+        "score": 3,
+        "winner": true
+      },
+      "home_score": 0,
+      "away_score": 3,
+      "outcome": "away",
+      "name": "Club Brugge vs Liverpool",
+      "ft": "0-3"
+    },
+    {
+      "id": "401915376",
+      "league": "Champions League",
+      "league_code": "uefa.champions",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-25T20:00Z",
+      "home": {
+        "name": "Internazionale",
+        "id": "110",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "VfB Stuttgart",
+        "id": "134",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Internazionale vs VfB Stuttgart",
+      "ft": "2-0"
+    },
+    {
+      "id": "401915377",
+      "league": "Champions League",
+      "league_code": "uefa.champions",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-25T20:00Z",
+      "home": {
+        "name": "Lille",
+        "id": "166",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Bayern Munich",
+        "id": "132",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Lille vs Bayern Munich",
+      "ft": "2-1"
+    },
+    {
+      "id": "401915374",
+      "league": "Champions League",
+      "league_code": "uefa.champions",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-25T20:00Z",
+      "home": {
+        "name": "Paris Saint-Germain",
+        "id": "160",
+        "score": 2,
+        "winner": false
+      },
+      "away": {
+        "name": "AS Roma",
+        "id": "104",
+        "score": 2,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 2,
+      "outcome": "draw",
+      "name": "Paris Saint-Germain vs AS Roma",
+      "ft": "2-2"
+    },
+    {
+      "id": "401915375",
+      "league": "Champions League",
+      "league_code": "uefa.champions",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-25T20:00Z",
+      "home": {
+        "name": "Shakhtar Donetsk",
+        "id": "493",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "Fenerbahce",
+        "id": "436",
+        "score": 1,
+        "winner": true
+      },
+      "home_score": 0,
+      "away_score": 1,
+      "outcome": "away",
+      "name": "Shakhtar Donetsk vs Fenerbahce",
+      "ft": "0-1"
+    },
+    {
+      "id": "401915373",
+      "league": "Champions League",
+      "league_code": "uefa.champions",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-25T20:00Z",
+      "home": {
+        "name": "Sporting CP",
+        "id": "2250",
+        "score": 2,
+        "winner": false
+      },
+      "away": {
+        "name": "Manchester United",
+        "id": "360",
+        "score": 2,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 2,
+      "outcome": "draw",
+      "name": "Sporting CP vs Manchester United",
+      "ft": "2-2"
+    }
+  ],
+  "match_count": 17
+}
