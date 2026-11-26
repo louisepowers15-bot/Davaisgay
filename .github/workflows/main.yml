@@ -29,11 +29,10 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: football-bot
+    # Files live at repo root (same as horse tips) — do NOT set working-directory: football-bot
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -51,9 +50,25 @@ jobs:
             echo "mode=results" >> $GITHUB_OUTPUT
           fi
           echo "UTC: $(date -u)"
+          echo "Repo root contents:"
+          ls -la
+          test -f scrape_fixtures.py || test -f football-bot/scrape_fixtures.py || {
+            echo "ERROR: scrape_fixtures.py not found at repo root or in football-bot/"
+            exit 1
+          }
+
+      - name: Use football-bot subfolder if present
+        id: dir
+        run: |
+          if [ -f football-bot/scrape_fixtures.py ]; then
+            echo "workdir=football-bot" >> $GITHUB_OUTPUT
+          else
+            echo "workdir=." >> $GITHUB_OUTPUT
+          fi
 
       - name: Morning – fixtures + first tips
         if: steps.mode.outputs.mode == 'tips' || steps.mode.outputs.mode == 'both'
+        working-directory: ${{ steps.dir.outputs.workdir }}
         run: |
           python scrape_fixtures.py --date today
           python generate_tips.py --date today
@@ -63,18 +78,21 @@ jobs:
 
       - name: Force regenerate tips
         if: steps.mode.outputs.mode == 'force-tips'
+        working-directory: ${{ steps.dir.outputs.workdir }}
         run: |
           python scrape_fixtures.py --date today
           python generate_tips.py --date today --force
 
       - name: Mid-morning – fixtures only
         if: steps.mode.outputs.mode == 'cards'
+        working-directory: ${{ steps.dir.outputs.workdir }}
         run: |
           python scrape_fixtures.py --date today || true
           echo "Fixtures refreshed; tips frozen"
 
       - name: Evening – results, settle, leaderboard
         if: steps.mode.outputs.mode == 'results' || steps.mode.outputs.mode == 'both'
+        working-directory: ${{ steps.dir.outputs.workdir }}
         run: |
           python scrape_results.py --date yesterday || true
           python settle_tips.py --date yesterday || true
@@ -84,14 +102,15 @@ jobs:
           python - <<'PY'
           import json, pathlib
           lb = json.loads(pathlib.Path("leaderboard.json").read_text())
-          print("last_settled=", lb.get("last_settled"), "bots=", list((lb.get("bots") or {}).keys()))
+          print("last_settled=", lb.get("last_settled"))
           PY
 
       - name: Commit and push
         run: |
-          cd ..
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
+          # Stage from either layout
+          git add fixtures-*.json tips-*.json results-*.json settled-*.json leaderboard.json 2>/dev/null || true
           git add football-bot/fixtures-*.json football-bot/tips-*.json \
                   football-bot/results-*.json football-bot/settled-*.json \
                   football-bot/leaderboard.json 2>/dev/null || true
@@ -100,5 +119,5 @@ jobs:
             exit 0
           fi
           git commit -m "Football auto-update $(date -u +%Y-%m-%dT%H:%MZ)"
-          git pull --rebase origin main
-          git push origin main
+          git pull --rebase origin main || git pull --rebase origin master || true
+          git push
