@@ -1,9 +1,27 @@
-name: Daily Football Fixtures & Tips
+name: Update football tips and results
 
 on:
   schedule:
+    # Morning: fixtures + first tips (frozen after write)
     - cron: "0 7 * * *"
+    # Mid-morning: fixtures refresh only (tips untouched)
+    - cron: "0 11 * * *"
+    # Evening: results + settle + leaderboard
+    - cron: "30 21 * * *"
+    - cron: "0 23 * * *"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "tips | cards | results | both | force-tips"
+        required: true
+        default: both
+        type: choice
+        options:
+          - tips
+          - cards
+          - results
+          - both
+          - force-tips
 
 permissions:
   contents: write
@@ -11,25 +29,76 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: football-bot
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install -r requirements.txt
-      - name: Scrape + tips
+
+      - name: Decide mode
+        id: mode
         run: |
-          python scrape_fixtures.py --date today --days 3 --enrich
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ github.event.inputs.mode }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 11 * * *" ]; then
+            echo "mode=cards" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event.schedule }}" = "0 7 * * *" ]; then
+            echo "mode=tips" >> $GITHUB_OUTPUT
+          else
+            echo "mode=results" >> $GITHUB_OUTPUT
+          fi
+          echo "UTC: $(date -u)"
+
+      - name: Morning – fixtures + first tips
+        if: steps.mode.outputs.mode == 'tips' || steps.mode.outputs.mode == 'both'
+        run: |
+          python scrape_fixtures.py --date today
           python generate_tips.py --date today
-      - name: Commit
+          python scrape_fixtures.py --date tomorrow || true
+          python generate_tips.py --date tomorrow || true
+          test -f tips-$(date -u +%Y-%m-%d).json
+
+      - name: Force regenerate tips
+        if: steps.mode.outputs.mode == 'force-tips'
         run: |
+          python scrape_fixtures.py --date today
+          python generate_tips.py --date today --force
+
+      - name: Mid-morning – fixtures only
+        if: steps.mode.outputs.mode == 'cards'
+        run: |
+          python scrape_fixtures.py --date today || true
+          echo "Fixtures refreshed; tips frozen"
+
+      - name: Evening – results, settle, leaderboard
+        if: steps.mode.outputs.mode == 'results' || steps.mode.outputs.mode == 'both'
+        run: |
+          python scrape_results.py --date yesterday || true
+          python settle_tips.py --date yesterday || true
+          python scrape_results.py --date today || true
+          python settle_tips.py --date today || true
+          test -f leaderboard.json
+          python - <<'PY'
+          import json, pathlib
+          lb = json.loads(pathlib.Path("leaderboard.json").read_text())
+          print("last_settled=", lb.get("last_settled"), "bots=", list((lb.get("bots") or {}).keys()))
+          PY
+
+      - name: Commit and push
+        run: |
+          cd ..
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add fixtures-*.json tips-*.json
+          git add football-bot/fixtures-*.json football-bot/tips-*.json \
+                  football-bot/results-*.json football-bot/settled-*.json \
+                  football-bot/leaderboard.json 2>/dev/null || true
           if git diff --staged --quiet; then
-            echo "No changes"
+            echo "No file changes"
             exit 0
           fi
-          git commit -m "Auto-update football tips $(date -u +%Y-%m-%dT%H:%MZ)"
-          git pull --rebase origin main || true
+          git commit -m "Football auto-update $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main
           git push origin main
