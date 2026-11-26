@@ -37,6 +37,12 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install dependencies
+        run: |
+          pip install requests
+          if [ -f requirements.txt ]; then pip install -r requirements.txt || true; fi
+          if [ -f football-bot/requirements.txt ]; then pip install -r football-bot/requirements.txt || true; fi
+
       - name: Decide mode
         id: mode
         run: |
