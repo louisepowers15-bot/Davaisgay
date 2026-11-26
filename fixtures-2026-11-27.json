@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated_at": "2026-11-26T14:34:55.958063+00:00",
+  "generated_at": "2026-11-26T17:34:33.191612+00:00",
   "source": "espn_scoreboard",
   "leagues": [
     {
@@ -83,7 +83,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 285.0,
+            "draw": 275.0,
             "away": null,
             "raw": "MID +130"
           },
@@ -171,9 +171,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 290.0,
+            "draw": 300.0,
             "away": null,
-            "raw": "LEV +110"
+            "raw": "LEV +105"
           },
           "name": "Levante vs Racing Santander"
         }
