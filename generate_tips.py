@@ -248,13 +248,26 @@ def score_match_sides(match: dict, hist_matches: list | None = None) -> dict:
         except Exception:
             home_pack = away_pack = None
 
-    home_str = 0.72 * hf["score"] + 0.28 * (0.35 + 0.5 * hr["win_pct"]) if hf.get("n") else (0.4 + 0.45 * hr["win_pct"])
-    away_str = 0.72 * af["score"] + 0.28 * (0.35 + 0.5 * ar["win_pct"]) if af.get("n") else (0.4 + 0.45 * ar["win_pct"])
+    # Season quality matters more when we have a real sample (stops 18% sides beating 45% sides on home alone)
+    def blend(l5, rec):
+        season = 0.25 + 0.7 * rec.get("win_pct", 0.33)  # maps 0%→0.25, 50%→0.60
+        if rec.get("n", 0) >= 8:
+            season_w, form_w = 0.55, 0.45  # enough games: trust table more
+        elif rec.get("n", 0) >= 4:
+            season_w, form_w = 0.40, 0.60
+        else:
+            season_w, form_w = 0.25, 0.75
+        if l5.get("n"):
+            return form_w * l5["score"] + season_w * season
+        return season
+
+    home_str = blend(hf, hr)
+    away_str = blend(af, ar)
 
     return {
         "home_form": max(0.12, min(0.9, home_str)),
         "away_form": max(0.12, min(0.9, away_str)),
-        "home_adv": 0.56,
+        "home_adv": 0.52,  # mild — must not override a large quality gap
         "home_rec": hr,
         "away_rec": ar,
         "home_l5": hf,
@@ -271,35 +284,44 @@ def bot_pick(bot: str, match: dict, factors: dict, dec_odds: dict, rng: random.R
     w = WEIGHTS[bot]
     imp = implied_probs(dec_odds)
     hf, af = factors["home_form"], factors["away_form"]
-    gap = hf - af  # +ve = home stronger
+    gap = hf - af  # +ve = home stronger on blended form/season
 
-    # Base: sides from form; draw rises when gap is small
-    h = 0.32 + 0.36 * hf + 0.10 * factors["home_adv"] + 0.08 * max(0, gap)
-    a = 0.32 + 0.36 * af + 0.08 * max(0, -gap)
-    # Draw base higher when evenly matched
-    closeness = max(0.0, 1.0 - abs(gap) * 2.8)
-    d = 0.20 + 0.22 * closeness
+    # Base from quality; home edge is small
+    h = 0.30 + 0.40 * hf + 0.06 * factors["home_adv"] + 0.10 * max(0, gap)
+    a = 0.30 + 0.40 * af + 0.10 * max(0, -gap)
+    closeness = max(0.0, 1.0 - abs(gap) * 2.5)
+    d = 0.20 + 0.20 * closeness
 
-    h += w["home_form"] * hf * 0.12 + w["home_adv"] * factors["home_adv"] * 0.08
-    a += w["away_form"] * af * 0.12
-    d += w["upset"] * 0.05
+    h += w["home_form"] * hf * 0.10 + w["home_adv"] * factors["home_adv"] * 0.05
+    a += w["away_form"] * af * 0.10
+    d += w["upset"] * 0.04
 
-    # H2H nudge when we have meetings
+    # If away is clearly better on season+form, do not let home edge invent a home win
+    if gap <= -0.12:
+        h *= 0.88
+        a *= 1.12
+        d *= 1.05
+    elif gap >= 0.12:
+        h *= 1.08
+        a *= 0.92
+
     h2h = factors.get("h2h") or {}
     if h2h.get("n", 0) >= 2:
-        # record is from home team's POV in head_to_head(home, away)
-        hw, hd, hl = h2h.get("wins", 0), h2h.get("draws", 0), h2h.get("losses", 0)
         n = h2h["n"]
-        h += 0.06 * (hw / n)
-        a += 0.06 * (hl / n)
-        d += 0.08 * (hd / n)
+        h += 0.05 * (h2h.get("wins", 0) / n)
+        a += 0.05 * (h2h.get("losses", 0) / n)
+        d += 0.07 * (h2h.get("draws", 0) / n)
 
     if bot == "HomeStrong":
-        h *= 1.12
-        d *= 0.95
+        # Only lean home if home is not clearly inferior
+        if gap >= -0.05:
+            h *= 1.10
+        else:
+            h *= 1.02  # weak home lean only
+        d *= 0.96
     if bot == "AwayHunter":
-        a *= 1.12
-        d *= 0.95
+        a *= 1.10
+        d *= 0.96
     if bot == "ValueSeeker":
         tot = h + d + a
         ph, pd, pa = h / tot, d / tot, a / tot
@@ -321,18 +343,16 @@ def bot_pick(bot: str, match: dict, factors: dict, dec_odds: dict, rng: random.R
             h *= 1.05
             a *= 1.05
     if bot == "GoalsGuru":
-        d *= 0.92
+        d *= 0.94
 
-    # Only suppress draw when form gap is clear
-    if abs(gap) >= 0.22:
-        d *= 0.75
+    if abs(gap) >= 0.20:
+        d *= 0.78
         if gap > 0:
-            h *= 1.07
+            h *= 1.06
         else:
-            a *= 1.07
-    elif abs(gap) <= 0.07:
-        # very close → boost draw slightly
-        d *= 1.12
+            a *= 1.06
+    elif abs(gap) <= 0.06:
+        d *= 1.10
         h *= 0.97
         a *= 0.97
 
@@ -462,11 +482,26 @@ def bet_builder(match: dict, factors: dict, consensus_pick: str, dec_odds: dict,
     else:
         legs.append({"market": "Total cards", "selection": "Under 4.5", "note": "One-sided lean may mean fewer cards (proxy)"})
 
-    # Scoreline suggestion
+    # Scoreline suggestion — keep humble when quality is thin
+    gap = factors["home_form"] - factors["away_form"]
     if consensus_pick == "home":
-        scoreline = "2-1" if factors["away_form"] >= 0.4 else "2-0"
+        if factors["home_form"] < 0.42:
+            scoreline = "1-0"
+        elif gap < 0.08:
+            scoreline = "1-1"  # not a thrashing
+        elif factors["away_form"] >= 0.45:
+            scoreline = "2-1"
+        else:
+            scoreline = "2-0"
     elif consensus_pick == "away":
-        scoreline = "1-2" if factors["home_form"] >= 0.4 else "0-2"
+        if factors["away_form"] < 0.42:
+            scoreline = "0-1"
+        elif gap > -0.08:
+            scoreline = "1-1"
+        elif factors["home_form"] >= 0.45:
+            scoreline = "1-2"
+        else:
+            scoreline = "0-2"
     else:
         scoreline = "1-1"
 

@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated_at": "2026-11-27T16:58:57.959270+00:00",
+  "generated_at": "2026-11-27T18:58:17.531421+00:00",
   "frozen": true,
   "leagues": [
     {
@@ -41,25 +41,27 @@
             "away": 2.9
           },
           "consensus": {
-            "pick": "home",
-            "pick_label": "Nottingham Forest win",
-            "bot_count": 4,
-            "avg_conf": 59.8,
-            "strength": "solid",
+            "pick": "away",
+            "pick_label": "Chelsea win",
+            "bot_count": 6,
+            "avg_conf": 60.5,
+            "strength": "strong",
             "bots": [
               "FormFox",
               "HomeStrong",
+              "AwayHunter",
               "ValueSeeker",
-              "GoalsGuru"
+              "GoalsGuru",
+              "DevilAdvocate"
             ],
-            "odds": 2.5,
+            "odds": 2.9,
             "tippable": true
           },
           "bet_builder": {
             "legs": [
               {
                 "market": "Match result",
-                "selection": "Nottingham Forest to win",
+                "selection": "Chelsea to win",
                 "note": "Consensus 1X2"
               },
               {
@@ -83,8 +85,8 @@
                 "note": "Even match often means more fouls/cards (proxy)"
               }
             ],
-            "scoreline": "2-0",
-            "safer_alternative": "Nottingham Forest win or draw (1X)",
+            "scoreline": "0-2",
+            "safer_alternative": "Chelsea win or draw (X2)",
             "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
           },
           "stats": {
@@ -154,87 +156,87 @@
           "tips": [
             {
               "bot": "FormFox",
-              "pick": "home",
-              "pick_label": "Nottingham Forest win",
-              "conf": 59,
-              "odds": 2.5,
+              "pick": "away",
+              "pick_label": "Chelsea win",
+              "conf": 60,
+              "odds": 2.9,
               "probs": {
-                "home": 0.352,
-                "draw": 0.31,
-                "away": 0.338
+                "home": 0.356,
+                "draw": 0.259,
+                "away": 0.385
               },
-              "reason": "FormFox leans Nottingham Forest win in Nottingham Forest vs Chelsea. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Nottingham Forest in Premier League (price about 2.50). Confidence 59%.",
-              "stars": 4
+              "reason": "FormFox leans Chelsea win in Nottingham Forest vs Chelsea. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 60%.",
+              "stars": 6
             },
             {
               "bot": "HomeStrong",
-              "pick": "home",
-              "pick_label": "Nottingham Forest win",
-              "conf": 61,
-              "odds": 2.5,
+              "pick": "away",
+              "pick_label": "Chelsea win",
+              "conf": 60,
+              "odds": 2.9,
               "probs": {
-                "home": 0.388,
-                "draw": 0.287,
-                "away": 0.325
+                "home": 0.366,
+                "draw": 0.249,
+                "away": 0.385
               },
-              "reason": "HomeStrong backs the home angle: Nottingham Forest win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Nottingham Forest in Premier League (price about 2.50). Confidence 61%.",
-              "stars": 4
+              "reason": "HomeStrong backs the home angle: Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 60%.",
+              "stars": 6
             },
             {
               "bot": "AwayHunter",
               "pick": "away",
               "pick_label": "Chelsea win",
-              "conf": 59,
+              "conf": 61,
               "odds": 2.9,
               "probs": {
-                "home": 0.343,
-                "draw": 0.298,
-                "away": 0.359
+                "home": 0.347,
+                "draw": 0.251,
+                "away": 0.402
               },
-              "reason": "AwayHunter's read is Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 59%.",
-              "stars": 2
+              "reason": "AwayHunter's read is Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 61%.",
+              "stars": 6
             },
             {
               "bot": "ValueSeeker",
-              "pick": "home",
-              "pick_label": "Nottingham Forest win",
-              "conf": 59,
-              "odds": 2.5,
+              "pick": "away",
+              "pick_label": "Chelsea win",
+              "conf": 60,
+              "odds": 2.9,
               "probs": {
-                "home": 0.357,
-                "draw": 0.325,
-                "away": 0.318
+                "home": 0.358,
+                "draw": 0.27,
+                "away": 0.372
               },
-              "reason": "ValueSeeker finds the price for Nottingham Forest win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Nottingham Forest in Premier League (price about 2.50). Confidence 59%.",
-              "stars": 4
+              "reason": "ValueSeeker finds the price for Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 60%.",
+              "stars": 6
             },
             {
               "bot": "GoalsGuru",
-              "pick": "home",
-              "pick_label": "Nottingham Forest win",
+              "pick": "away",
+              "pick_label": "Chelsea win",
               "conf": 60,
-              "odds": 2.5,
+              "odds": 2.9,
               "probs": {
-                "home": 0.366,
-                "draw": 0.309,
-                "away": 0.325
+                "home": 0.367,
+                "draw": 0.262,
+                "away": 0.37
               },
-              "reason": "GoalsGuru's 1X2 call is Nottingham Forest win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Nottingham Forest in Premier League (price about 2.50). Confidence 60%.",
-              "stars": 4
+              "reason": "GoalsGuru's 1X2 call is Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 60%.",
+              "stars": 6
             },
             {
               "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "Chelsea win",
-              "conf": 59,
+              "conf": 62,
               "odds": 2.9,
               "probs": {
-                "home": 0.319,
-                "draw": 0.326,
-                "away": 0.355
+                "home": 0.323,
+                "draw": 0.269,
+                "away": 0.408
               },
-              "reason": "DevilAdvocate goes against the obvious: Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 59%.",
-              "stars": 2
+              "reason": "DevilAdvocate goes against the obvious: Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 62%.",
+              "stars": 6
             }
           ]
         }
@@ -282,7 +284,7 @@
             "pick": "home",
             "pick_label": "Southampton win",
             "bot_count": 4,
-            "avg_conf": 60.8,
+            "avg_conf": 60.0,
             "strength": "solid",
             "bots": [
               "FormFox",
@@ -321,7 +323,7 @@
                 "note": "Even match often means more fouls/cards (proxy)"
               }
             ],
-            "scoreline": "2-1",
+            "scoreline": "1-1",
             "safer_alternative": "Southampton win or draw (1X)",
             "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
           },
@@ -394,42 +396,42 @@
               "bot": "FormFox",
               "pick": "home",
               "pick_label": "Southampton win",
-              "conf": 60,
+              "conf": 59,
               "odds": 2.5,
               "probs": {
-                "home": 0.366,
-                "draw": 0.294,
-                "away": 0.341
+                "home": 0.363,
+                "draw": 0.279,
+                "away": 0.359
               },
-              "reason": "FormFox leans Southampton win in Southampton vs Middlesbrough. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 60%.",
+              "reason": "FormFox leans Southampton win in Southampton vs Middlesbrough. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 59%.",
               "stars": 4
             },
             {
               "bot": "HomeStrong",
               "pick": "home",
               "pick_label": "Southampton win",
-              "conf": 62,
+              "conf": 61,
               "odds": 2.5,
               "probs": {
-                "home": 0.408,
-                "draw": 0.275,
-                "away": 0.317
+                "home": 0.397,
+                "draw": 0.266,
+                "away": 0.337
               },
-              "reason": "HomeStrong backs the home angle: Southampton win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 62%.",
+              "reason": "HomeStrong backs the home angle: Southampton win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 61%.",
               "stars": 4
             },
             {
               "bot": "AwayHunter",
               "pick": "away",
               "pick_label": "Middlesbrough win",
-              "conf": 60,
+              "conf": 61,
               "odds": 2.9,
               "probs": {
-                "home": 0.354,
-                "draw": 0.266,
-                "away": 0.38
+                "home": 0.353,
+                "draw": 0.254,
+                "away": 0.393
               },
-              "reason": "AwayHunter's read is Middlesbrough win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Middlesbrough away from home (price about 2.90). Confidence 60%.",
+              "reason": "AwayHunter's read is Middlesbrough win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Middlesbrough away from home (price about 2.90). Confidence 61%.",
               "stars": 2
             },
             {
@@ -439,9 +441,9 @@
               "conf": 60,
               "odds": 2.5,
               "probs": {
-                "home": 0.37,
-                "draw": 0.294,
-                "away": 0.336
+                "home": 0.367,
+                "draw": 0.277,
+                "away": 0.356
               },
               "reason": "ValueSeeker finds the price for Southampton win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 60%.",
               "stars": 4
@@ -450,28 +452,28 @@
               "bot": "GoalsGuru",
               "pick": "home",
               "pick_label": "Southampton win",
-              "conf": 61,
+              "conf": 60,
               "odds": 2.5,
               "probs": {
-                "home": 0.387,
-                "draw": 0.271,
-                "away": 0.342
+                "home": 0.382,
+                "draw": 0.26,
+                "away": 0.358
               },
-              "reason": "GoalsGuru's 1X2 call is Southampton win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 61%.",
+              "reason": "GoalsGuru's 1X2 call is Southampton win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 60%.",
               "stars": 4
             },
             {
               "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "Middlesbrough win",
-              "conf": 59,
+              "conf": 60,
               "odds": 2.9,
               "probs": {
-                "home": 0.33,
-                "draw": 0.307,
-                "away": 0.363
+                "home": 0.328,
+                "draw": 0.29,
+                "away": 0.382
               },
-              "reason": "DevilAdvocate goes against the obvious: Middlesbrough win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Middlesbrough away from home (price about 2.90). Confidence 59%.",
+              "reason": "DevilAdvocate goes against the obvious: Middlesbrough win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Middlesbrough away from home (price about 2.90). Confidence 60%.",
               "stars": 2
             }
           ]
@@ -520,7 +522,7 @@
             "pick": "away",
             "pick_label": "Wealdstone win",
             "bot_count": 6,
-            "avg_conf": 65.0,
+            "avg_conf": 66.2,
             "strength": "strong",
             "bots": [
               "FormFox",
@@ -634,84 +636,84 @@
               "bot": "FormFox",
               "pick": "away",
               "pick_label": "Wealdstone win",
-              "conf": 64,
+              "conf": 65,
               "odds": 2.9,
               "probs": {
-                "home": 0.385,
-                "draw": 0.159,
-                "away": 0.456
+                "home": 0.318,
+                "draw": 0.196,
+                "away": 0.486
               },
-              "reason": "FormFox leans Wealdstone win in Scunthorpe United vs Wealdstone. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 64%.",
+              "reason": "FormFox leans Wealdstone win in Scunthorpe United vs Wealdstone. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 65%.",
               "stars": 6
             },
             {
               "bot": "HomeStrong",
               "pick": "away",
               "pick_label": "Wealdstone win",
-              "conf": 63,
+              "conf": 65,
               "odds": 2.9,
               "probs": {
-                "home": 0.425,
-                "draw": 0.143,
-                "away": 0.432
+                "home": 0.33,
+                "draw": 0.187,
+                "away": 0.483
               },
-              "reason": "HomeStrong backs the home angle: Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 63%.",
+              "reason": "HomeStrong backs the home angle: Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 65%.",
               "stars": 6
             },
             {
               "bot": "AwayHunter",
               "pick": "away",
               "pick_label": "Wealdstone win",
-              "conf": 67,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.362,
-                "draw": 0.125,
-                "away": 0.513
+                "home": 0.299,
+                "draw": 0.162,
+                "away": 0.539
               },
-              "reason": "AwayHunter's read is Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 67%.",
+              "reason": "AwayHunter's read is Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "ValueSeeker",
               "pick": "away",
               "pick_label": "Wealdstone win",
-              "conf": 65,
+              "conf": 66,
               "odds": 2.9,
               "probs": {
-                "home": 0.383,
-                "draw": 0.141,
-                "away": 0.476
+                "home": 0.314,
+                "draw": 0.176,
+                "away": 0.51
               },
-              "reason": "ValueSeeker finds the price for Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 65%.",
+              "reason": "ValueSeeker finds the price for Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 66%.",
               "stars": 6
             },
             {
               "bot": "GoalsGuru",
               "pick": "away",
               "pick_label": "Wealdstone win",
-              "conf": 65,
+              "conf": 66,
               "odds": 2.9,
               "probs": {
-                "home": 0.391,
-                "draw": 0.131,
-                "away": 0.479
+                "home": 0.32,
+                "draw": 0.17,
+                "away": 0.51
               },
-              "reason": "GoalsGuru's 1X2 call is Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 65%.",
+              "reason": "GoalsGuru's 1X2 call is Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 66%.",
               "stars": 6
             },
             {
               "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "Wealdstone win",
-              "conf": 66,
+              "conf": 67,
               "odds": 2.9,
               "probs": {
-                "home": 0.349,
-                "draw": 0.149,
-                "away": 0.501
+                "home": 0.285,
+                "draw": 0.186,
+                "away": 0.529
               },
-              "reason": "DevilAdvocate goes against the obvious: Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 66%.",
+              "reason": "DevilAdvocate goes against the obvious: Wealdstone win. Scunthorpe United last 5 overall: DLDLL (0-2-3 in that run). Wealdstone last 5 overall: DWDLW (2-2-1). Scunthorpe United season record is 3-2-13 (wins-draws-losses overall), 17% wins, 0.61 pts/game. Wealdstone season record is 6-4-9 (W-D-L overall), 32% wins, 1.16 pts/game. Recent form edges toward Wealdstone away from home (price about 2.90). Confidence 67%.",
               "stars": 6
             }
           ]
@@ -760,7 +762,7 @@
             "pick": "away",
             "pick_label": "Racing Santander win",
             "bot_count": 6,
-            "avg_conf": 65.7,
+            "avg_conf": 67.7,
             "strength": "strong",
             "bots": [
               "FormFox",
@@ -801,7 +803,7 @@
                 "note": "One-sided lean may mean fewer cards (proxy)"
               }
             ],
-            "scoreline": "1-2",
+            "scoreline": "0-2",
             "safer_alternative": "Racing Santander win or draw (X2)",
             "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
           },
@@ -874,84 +876,84 @@
               "bot": "FormFox",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 65,
+              "conf": 67,
               "odds": 2.9,
               "probs": {
-                "home": 0.389,
-                "draw": 0.125,
-                "away": 0.486
+                "home": 0.316,
+                "draw": 0.16,
+                "away": 0.524
               },
-              "reason": "FormFox leans Racing Santander win in Levante vs Racing Santander. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 65%.",
+              "reason": "FormFox leans Racing Santander win in Levante vs Racing Santander. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 67%.",
               "stars": 6
             },
             {
               "bot": "HomeStrong",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 64,
+              "conf": 67,
               "odds": 2.9,
               "probs": {
-                "home": 0.43,
-                "draw": 0.109,
-                "away": 0.461
+                "home": 0.328,
+                "draw": 0.15,
+                "away": 0.522
               },
-              "reason": "HomeStrong backs the home angle: Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 64%.",
+              "reason": "HomeStrong backs the home angle: Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 67%.",
               "stars": 6
             },
             {
               "bot": "AwayHunter",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 67,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.364,
-                "draw": 0.121,
-                "away": 0.515
+                "home": 0.298,
+                "draw": 0.155,
+                "away": 0.547
               },
-              "reason": "AwayHunter's read is Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 67%.",
+              "reason": "AwayHunter's read is Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "ValueSeeker",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 66,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.373,
-                "draw": 0.126,
-                "away": 0.501
+                "home": 0.299,
+                "draw": 0.158,
+                "away": 0.543
               },
-              "reason": "ValueSeeker finds the price for Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 66%.",
+              "reason": "ValueSeeker finds the price for Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "GoalsGuru",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 66,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.384,
-                "draw": 0.119,
-                "away": 0.497
+                "home": 0.31,
+                "draw": 0.155,
+                "away": 0.535
               },
-              "reason": "GoalsGuru's 1X2 call is Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 66%.",
+              "reason": "GoalsGuru's 1X2 call is Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 66,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.363,
-                "draw": 0.128,
-                "away": 0.509
+                "home": 0.295,
+                "draw": 0.162,
+                "away": 0.543
               },
-              "reason": "DevilAdvocate goes against the obvious: Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 66%.",
+              "reason": "DevilAdvocate goes against the obvious: Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             }
           ]
@@ -1000,7 +1002,7 @@
             "pick": "away",
             "pick_label": "Bologna win",
             "bot_count": 6,
-            "avg_conf": 67.2,
+            "avg_conf": 69.2,
             "strength": "strong",
             "bots": [
               "FormFox",
@@ -1032,7 +1034,7 @@
               },
               {
                 "market": "Total corners",
-                "selection": "Over 9.5",
+                "selection": "Under 10.5",
                 "note": "Proxy only \u2014 free feed has no corner averages yet"
               },
               {
@@ -1114,84 +1116,84 @@
               "bot": "FormFox",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 67,
+              "conf": 69,
               "odds": 2.9,
               "probs": {
-                "home": 0.351,
-                "draw": 0.126,
-                "away": 0.523
+                "home": 0.291,
+                "draw": 0.149,
+                "away": 0.56
               },
-              "reason": "FormFox leans Bologna win in Venezia vs Bologna. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 67%.",
+              "reason": "FormFox leans Bologna win in Venezia vs Bologna. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 69%.",
               "stars": 6
             },
             {
               "bot": "HomeStrong",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 65,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.398,
-                "draw": 0.117,
-                "away": 0.485
+                "home": 0.313,
+                "draw": 0.144,
+                "away": 0.543
               },
-              "reason": "HomeStrong backs the home angle: Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 65%.",
+              "reason": "HomeStrong backs the home angle: Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "AwayHunter",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 68,
+              "conf": 69,
               "odds": 2.9,
               "probs": {
-                "home": 0.348,
-                "draw": 0.11,
-                "away": 0.542
+                "home": 0.295,
+                "draw": 0.132,
+                "away": 0.573
               },
-              "reason": "AwayHunter's read is Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 68%.",
+              "reason": "AwayHunter's read is Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 69%.",
               "stars": 6
             },
             {
               "bot": "ValueSeeker",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 68,
+              "conf": 70,
               "odds": 2.9,
               "probs": {
-                "home": 0.356,
-                "draw": 0.098,
-                "away": 0.546
+                "home": 0.295,
+                "draw": 0.118,
+                "away": 0.587
               },
-              "reason": "ValueSeeker finds the price for Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 68%.",
+              "reason": "ValueSeeker finds the price for Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 70%.",
               "stars": 6
             },
             {
               "bot": "GoalsGuru",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 66,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.38,
-                "draw": 0.11,
-                "away": 0.51
+                "home": 0.32,
+                "draw": 0.134,
+                "away": 0.547
               },
-              "reason": "GoalsGuru's 1X2 call is Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 66%.",
+              "reason": "GoalsGuru's 1X2 call is Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 69,
+              "conf": 71,
               "odds": 2.9,
               "probs": {
-                "home": 0.325,
-                "draw": 0.114,
-                "away": 0.561
+                "home": 0.269,
+                "draw": 0.135,
+                "away": 0.595
               },
-              "reason": "DevilAdvocate goes against the obvious: Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 69%.",
+              "reason": "DevilAdvocate goes against the obvious: Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 71%.",
               "stars": 6
             }
           ]
@@ -1240,7 +1242,7 @@
             "pick": "home",
             "pick_label": "Werder Bremen win",
             "bot_count": 6,
-            "avg_conf": 66.5,
+            "avg_conf": 67.5,
             "strength": "strong",
             "bots": [
               "FormFox",
@@ -1354,84 +1356,84 @@
               "bot": "FormFox",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 66,
+              "conf": 67,
               "odds": 2.5,
               "probs": {
-                "home": 0.498,
-                "draw": 0.158,
-                "away": 0.343
+                "home": 0.526,
+                "draw": 0.165,
+                "away": 0.309
               },
-              "reason": "FormFox leans Werder Bremen win in Werder Bremen vs Borussia M\u00f6nchengladbach. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 66%.",
+              "reason": "FormFox leans Werder Bremen win in Werder Bremen vs Borussia M\u00f6nchengladbach. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 67%.",
               "stars": 6
             },
             {
               "bot": "HomeStrong",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 68,
+              "conf": 69,
               "odds": 2.5,
               "probs": {
-                "home": 0.547,
-                "draw": 0.132,
-                "away": 0.321
+                "home": 0.568,
+                "draw": 0.141,
+                "away": 0.291
               },
-              "reason": "HomeStrong backs the home angle: Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 68%.",
+              "reason": "HomeStrong backs the home angle: Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 69%.",
               "stars": 6
             },
             {
               "bot": "AwayHunter",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 66,
+              "conf": 67,
               "odds": 2.5,
               "probs": {
-                "home": 0.493,
-                "draw": 0.14,
-                "away": 0.367
+                "home": 0.527,
+                "draw": 0.149,
+                "away": 0.324
               },
-              "reason": "AwayHunter's read is Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 66%.",
+              "reason": "AwayHunter's read is Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 67%.",
               "stars": 6
             },
             {
               "bot": "ValueSeeker",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 67,
+              "conf": 68,
               "odds": 2.5,
               "probs": {
-                "home": 0.511,
-                "draw": 0.157,
-                "away": 0.332
+                "home": 0.543,
+                "draw": 0.162,
+                "away": 0.294
               },
-              "reason": "ValueSeeker finds the price for Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 67%.",
+              "reason": "ValueSeeker finds the price for Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "GoalsGuru",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 67,
+              "conf": 68,
               "odds": 2.5,
               "probs": {
-                "home": 0.513,
-                "draw": 0.15,
-                "away": 0.337
+                "home": 0.541,
+                "draw": 0.159,
+                "away": 0.3
               },
-              "reason": "GoalsGuru's 1X2 call is Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 67%.",
+              "reason": "GoalsGuru's 1X2 call is Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "DevilAdvocate",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 65,
+              "conf": 66,
               "odds": 2.5,
               "probs": {
-                "home": 0.471,
-                "draw": 0.156,
-                "away": 0.373
+                "home": 0.5,
+                "draw": 0.164,
+                "away": 0.336
               },
-              "reason": "DevilAdvocate goes against the obvious: Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 65%.",
+              "reason": "DevilAdvocate goes against the obvious: Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 66%.",
               "stars": 6
             }
           ]
@@ -1477,25 +1479,26 @@
             "away": 2.9
           },
           "consensus": {
-            "pick": "home",
-            "pick_label": "Brest win",
-            "bot_count": 4,
-            "avg_conf": 61.5,
-            "strength": "solid",
+            "pick": "away",
+            "pick_label": "Paris FC win",
+            "bot_count": 5,
+            "avg_conf": 61.8,
+            "strength": "strong",
             "bots": [
               "FormFox",
-              "HomeStrong",
+              "AwayHunter",
               "ValueSeeker",
-              "GoalsGuru"
+              "GoalsGuru",
+              "DevilAdvocate"
             ],
-            "odds": 2.5,
+            "odds": 2.9,
             "tippable": true
           },
           "bet_builder": {
             "legs": [
               {
                 "market": "Match result",
-                "selection": "Brest to win",
+                "selection": "Paris FC to win",
                 "note": "Consensus 1X2"
               },
               {
@@ -1519,8 +1522,8 @@
                 "note": "Even match often means more fouls/cards (proxy)"
               }
             ],
-            "scoreline": "2-1",
-            "safer_alternative": "Brest win or draw (1X)",
+            "scoreline": "1-2",
+            "safer_alternative": "Paris FC win or draw (X2)",
             "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
           },
           "stats": {
@@ -1590,31 +1593,31 @@
           "tips": [
             {
               "bot": "FormFox",
-              "pick": "home",
-              "pick_label": "Brest win",
-              "conf": 61,
-              "odds": 2.5,
+              "pick": "away",
+              "pick_label": "Paris FC win",
+              "conf": 62,
+              "odds": 2.9,
               "probs": {
-                "home": 0.394,
-                "draw": 0.215,
-                "away": 0.391
+                "home": 0.383,
+                "draw": 0.209,
+                "away": 0.408
               },
-              "reason": "FormFox leans Brest win in Brest vs Paris FC. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Brest in Ligue 1 (price about 2.50). Confidence 61%.",
-              "stars": 4
+              "reason": "FormFox leans Paris FC win in Brest vs Paris FC. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 62%.",
+              "stars": 5
             },
             {
               "bot": "HomeStrong",
               "pick": "home",
               "pick_label": "Brest win",
-              "conf": 63,
+              "conf": 61,
               "odds": 2.5,
               "probs": {
-                "home": 0.437,
-                "draw": 0.208,
-                "away": 0.354
+                "home": 0.401,
+                "draw": 0.214,
+                "away": 0.386
               },
-              "reason": "HomeStrong backs the home angle: Brest win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Brest in Ligue 1 (price about 2.50). Confidence 63%.",
-              "stars": 4
+              "reason": "HomeStrong backs the home angle: Brest win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Brest in Ligue 1 (price about 2.50). Confidence 61%.",
+              "stars": 1
             },
             {
               "bot": "AwayHunter",
@@ -1623,54 +1626,54 @@
               "conf": 62,
               "odds": 2.9,
               "probs": {
-                "home": 0.376,
-                "draw": 0.215,
-                "away": 0.409
+                "home": 0.368,
+                "draw": 0.213,
+                "away": 0.419
               },
               "reason": "AwayHunter's read is Paris FC win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 62%.",
-              "stars": 2
+              "stars": 5
             },
             {
               "bot": "ValueSeeker",
-              "pick": "home",
-              "pick_label": "Brest win",
-              "conf": 61,
-              "odds": 2.5,
+              "pick": "away",
+              "pick_label": "Paris FC win",
+              "conf": 62,
+              "odds": 2.9,
               "probs": {
-                "home": 0.392,
-                "draw": 0.221,
-                "away": 0.386
+                "home": 0.379,
+                "draw": 0.215,
+                "away": 0.407
               },
-              "reason": "ValueSeeker finds the price for Brest win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Brest in Ligue 1 (price about 2.50). Confidence 61%.",
-              "stars": 4
+              "reason": "ValueSeeker finds the price for Paris FC win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 62%.",
+              "stars": 5
             },
             {
               "bot": "GoalsGuru",
-              "pick": "home",
-              "pick_label": "Brest win",
-              "conf": 61,
-              "odds": 2.5,
-              "probs": {
-                "home": 0.398,
-                "draw": 0.212,
-                "away": 0.39
-              },
-              "reason": "GoalsGuru's 1X2 call is Brest win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Brest in Ligue 1 (price about 2.50). Confidence 61%.",
-              "stars": 4
-            },
-            {
-              "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "Paris FC win",
               "conf": 61,
               "odds": 2.9,
               "probs": {
-                "home": 0.362,
-                "draw": 0.241,
-                "away": 0.397
+                "home": 0.385,
+                "draw": 0.21,
+                "away": 0.405
               },
-              "reason": "DevilAdvocate goes against the obvious: Paris FC win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 61%.",
-              "stars": 2
+              "reason": "GoalsGuru's 1X2 call is Paris FC win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 61%.",
+              "stars": 5
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "away",
+              "pick_label": "Paris FC win",
+              "conf": 62,
+              "odds": 2.9,
+              "probs": {
+                "home": 0.352,
+                "draw": 0.234,
+                "away": 0.414
+              },
+              "reason": "DevilAdvocate goes against the obvious: Paris FC win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 62%.",
+              "stars": 5
             }
           ]
         }
@@ -1717,13 +1720,14 @@
           "consensus": {
             "pick": "home",
             "pick_label": "FC Groningen win",
-            "bot_count": 4,
-            "avg_conf": 59.5,
-            "strength": "solid",
+            "bot_count": 5,
+            "avg_conf": 60.2,
+            "strength": "strong",
             "bots": [
               "FormFox",
               "HomeStrong",
               "AwayHunter",
+              "ValueSeeker",
               "GoalsGuru"
             ],
             "odds": 2.5,
@@ -1757,7 +1761,7 @@
                 "note": "Even match often means more fouls/cards (proxy)"
               }
             ],
-            "scoreline": "2-0",
+            "scoreline": "1-0",
             "safer_alternative": "FC Groningen win or draw (1X)",
             "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
           },
@@ -1830,85 +1834,85 @@
               "bot": "FormFox",
               "pick": "home",
               "pick_label": "FC Groningen win",
-              "conf": 59,
+              "conf": 60,
               "odds": 2.5,
               "probs": {
-                "home": 0.352,
-                "draw": 0.32,
-                "away": 0.328
+                "home": 0.383,
+                "draw": 0.283,
+                "away": 0.334
               },
-              "reason": "FormFox leans FC Groningen win in FC Groningen vs Willem II. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 59%.",
-              "stars": 4
+              "reason": "FormFox leans FC Groningen win in FC Groningen vs Willem II. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 60%.",
+              "stars": 5
             },
             {
               "bot": "HomeStrong",
               "pick": "home",
               "pick_label": "FC Groningen win",
-              "conf": 61,
+              "conf": 62,
               "odds": 2.5,
               "probs": {
-                "home": 0.388,
-                "draw": 0.309,
-                "away": 0.303
+                "home": 0.413,
+                "draw": 0.278,
+                "away": 0.309
               },
-              "reason": "HomeStrong backs the home angle: FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 61%.",
-              "stars": 4
+              "reason": "HomeStrong backs the home angle: FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 62%.",
+              "stars": 5
             },
             {
               "bot": "AwayHunter",
               "pick": "home",
               "pick_label": "FC Groningen win",
-              "conf": 59,
+              "conf": 60,
               "odds": 2.5,
               "probs": {
-                "home": 0.347,
-                "draw": 0.31,
+                "home": 0.378,
+                "draw": 0.279,
                 "away": 0.343
               },
-              "reason": "AwayHunter's read is FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 59%.",
-              "stars": 4
+              "reason": "AwayHunter's read is FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 60%.",
+              "stars": 5
             },
             {
               "bot": "ValueSeeker",
-              "pick": "draw",
-              "pick_label": "Draw",
-              "conf": 59,
-              "odds": 6.0,
-              "probs": {
-                "home": 0.332,
-                "draw": 0.362,
-                "away": 0.306
-              },
-              "reason": "ValueSeeker finds the price for Draw. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Last-5 form is close (gap -0.05), so the draw at about 6.00 is preferred over forcing a side. Confidence 59%.",
-              "stars": 2
-            },
-            {
-              "bot": "GoalsGuru",
               "pick": "home",
               "pick_label": "FC Groningen win",
               "conf": 59,
               "odds": 2.5,
               "probs": {
-                "home": 0.356,
-                "draw": 0.322,
-                "away": 0.322
+                "home": 0.361,
+                "draw": 0.326,
+                "away": 0.313
               },
-              "reason": "GoalsGuru's 1X2 call is FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 59%.",
-              "stars": 4
+              "reason": "ValueSeeker finds the price for FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 59%.",
+              "stars": 5
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "home",
+              "pick_label": "FC Groningen win",
+              "conf": 60,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.383,
+                "draw": 0.292,
+                "away": 0.325
+              },
+              "reason": "GoalsGuru's 1X2 call is FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 60%.",
+              "stars": 5
             },
             {
               "bot": "DevilAdvocate",
-              "pick": "draw",
-              "pick_label": "Draw",
+              "pick": "away",
+              "pick_label": "Willem II win",
               "conf": 59,
-              "odds": 6.0,
+              "odds": 2.9,
               "probs": {
-                "home": 0.3,
-                "draw": 0.359,
-                "away": 0.34
+                "home": 0.329,
+                "draw": 0.322,
+                "away": 0.349
               },
-              "reason": "DevilAdvocate goes against the obvious: Draw. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Last-5 form is close (gap -0.05), so the draw at about 6.00 is preferred over forcing a side. Confidence 59%.",
-              "stars": 2
+              "reason": "DevilAdvocate goes against the obvious: Willem II win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward Willem II away from home (price about 2.90). Confidence 59%.",
+              "stars": 1
             }
           ]
         }
@@ -1955,13 +1959,12 @@
           "consensus": {
             "pick": "home",
             "pick_label": "Maritimo win",
-            "bot_count": 4,
+            "bot_count": 3,
             "avg_conf": 60.0,
-            "strength": "solid",
+            "strength": "lean",
             "bots": [
               "FormFox",
               "HomeStrong",
-              "ValueSeeker",
               "GoalsGuru"
             ],
             "odds": 2.5,
@@ -1995,7 +1998,7 @@
                 "note": "Even match often means more fouls/cards (proxy)"
               }
             ],
-            "scoreline": "2-1",
+            "scoreline": "1-1",
             "safer_alternative": "Maritimo win or draw (1X)",
             "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
           },
@@ -2071,12 +2074,12 @@
               "conf": 60,
               "odds": 2.5,
               "probs": {
-                "home": 0.374,
-                "draw": 0.29,
-                "away": 0.336
+                "home": 0.366,
+                "draw": 0.286,
+                "away": 0.348
               },
               "reason": "FormFox leans Maritimo win in Maritimo vs C.D. Nacional. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward Maritimo in Primeira Liga (price about 2.50). Confidence 60%.",
-              "stars": 4
+              "stars": 3
             },
             {
               "bot": "HomeStrong",
@@ -2085,12 +2088,12 @@
               "conf": 61,
               "odds": 2.5,
               "probs": {
-                "home": 0.403,
-                "draw": 0.287,
-                "away": 0.31
+                "home": 0.387,
+                "draw": 0.289,
+                "away": 0.324
               },
               "reason": "HomeStrong backs the home angle: Maritimo win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward Maritimo in Primeira Liga (price about 2.50). Confidence 61%.",
-              "stars": 4
+              "stars": 3
             },
             {
               "bot": "AwayHunter",
@@ -2099,54 +2102,54 @@
               "conf": 60,
               "odds": 2.9,
               "probs": {
-                "home": 0.351,
+                "home": 0.344,
                 "draw": 0.283,
-                "away": 0.366
+                "away": 0.372
               },
               "reason": "AwayHunter's read is C.D. Nacional win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 60%.",
-              "stars": 2
+              "stars": 3
             },
             {
               "bot": "ValueSeeker",
-              "pick": "home",
-              "pick_label": "Maritimo win",
-              "conf": 59,
-              "odds": 2.5,
-              "probs": {
-                "home": 0.35,
-                "draw": 0.302,
-                "away": 0.348
-              },
-              "reason": "ValueSeeker finds the price for Maritimo win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward Maritimo in Primeira Liga (price about 2.50). Confidence 59%.",
-              "stars": 4
-            },
-            {
-              "bot": "GoalsGuru",
-              "pick": "home",
-              "pick_label": "Maritimo win",
-              "conf": 60,
-              "odds": 2.5,
-              "probs": {
-                "home": 0.367,
-                "draw": 0.295,
-                "away": 0.338
-              },
-              "reason": "GoalsGuru's 1X2 call is Maritimo win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward Maritimo in Primeira Liga (price about 2.50). Confidence 60%.",
-              "stars": 4
-            },
-            {
-              "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "C.D. Nacional win",
               "conf": 59,
               "odds": 2.9,
               "probs": {
-                "home": 0.319,
-                "draw": 0.321,
-                "away": 0.36
+                "home": 0.339,
+                "draw": 0.298,
+                "away": 0.363
               },
-              "reason": "DevilAdvocate goes against the obvious: C.D. Nacional win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 59%.",
-              "stars": 2
+              "reason": "ValueSeeker finds the price for C.D. Nacional win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 59%.",
+              "stars": 3
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "home",
+              "pick_label": "Maritimo win",
+              "conf": 59,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.355,
+                "draw": 0.296,
+                "away": 0.349
+              },
+              "reason": "GoalsGuru's 1X2 call is Maritimo win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward Maritimo in Primeira Liga (price about 2.50). Confidence 59%.",
+              "stars": 3
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "away",
+              "pick_label": "C.D. Nacional win",
+              "conf": 60,
+              "odds": 2.9,
+              "probs": {
+                "home": 0.311,
+                "draw": 0.316,
+                "away": 0.373
+              },
+              "reason": "DevilAdvocate goes against the obvious: C.D. Nacional win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 60%.",
+              "stars": 3
             }
           ]
         }
@@ -2163,7 +2166,20 @@
       "pick": "away",
       "pick_label": "Bologna win",
       "bot_count": 6,
-      "avg_conf": 67.2,
+      "avg_conf": 69.2,
+      "odds": 2.9,
+      "strength": "strong",
+      "scoreline": "0-2"
+    },
+    {
+      "league": "La Liga",
+      "category": "europe",
+      "match": "Levante vs Racing Santander",
+      "kickoff": "20:00",
+      "pick": "away",
+      "pick_label": "Racing Santander win",
+      "bot_count": 6,
+      "avg_conf": 67.7,
       "odds": 2.9,
       "strength": "strong",
       "scoreline": "0-2"
@@ -2176,23 +2192,10 @@
       "pick": "home",
       "pick_label": "Werder Bremen win",
       "bot_count": 6,
-      "avg_conf": 66.5,
+      "avg_conf": 67.5,
       "odds": 2.5,
       "strength": "strong",
       "scoreline": "2-0"
-    },
-    {
-      "league": "La Liga",
-      "category": "europe",
-      "match": "Levante vs Racing Santander",
-      "kickoff": "20:00",
-      "pick": "away",
-      "pick_label": "Racing Santander win",
-      "bot_count": 6,
-      "avg_conf": 65.7,
-      "odds": 2.9,
-      "strength": "strong",
-      "scoreline": "1-2"
     },
     {
       "league": "National League",
@@ -2202,7 +2205,20 @@
       "pick": "away",
       "pick_label": "Wealdstone win",
       "bot_count": 6,
-      "avg_conf": 65.0,
+      "avg_conf": 66.2,
+      "odds": 2.9,
+      "strength": "strong",
+      "scoreline": "0-2"
+    },
+    {
+      "league": "Premier League",
+      "category": "uk",
+      "match": "Nottingham Forest vs Chelsea",
+      "kickoff": "20:00",
+      "pick": "away",
+      "pick_label": "Chelsea win",
+      "bot_count": 6,
+      "avg_conf": 60.5,
       "odds": 2.9,
       "strength": "strong",
       "scoreline": "0-2"
@@ -2212,13 +2228,26 @@
       "category": "europe",
       "match": "Brest vs Paris FC",
       "kickoff": "19:45",
+      "pick": "away",
+      "pick_label": "Paris FC win",
+      "bot_count": 5,
+      "avg_conf": 61.8,
+      "odds": 2.9,
+      "strength": "strong",
+      "scoreline": "1-2"
+    },
+    {
+      "league": "Eredivisie",
+      "category": "europe",
+      "match": "FC Groningen vs Willem II",
+      "kickoff": "19:00",
       "pick": "home",
-      "pick_label": "Brest win",
-      "bot_count": 4,
-      "avg_conf": 61.5,
+      "pick_label": "FC Groningen win",
+      "bot_count": 5,
+      "avg_conf": 60.2,
       "odds": 2.5,
-      "strength": "solid",
-      "scoreline": "2-1"
+      "strength": "strong",
+      "scoreline": "1-0"
     },
     {
       "league": "Championship",
@@ -2228,10 +2257,10 @@
       "pick": "home",
       "pick_label": "Southampton win",
       "bot_count": 4,
-      "avg_conf": 60.8,
+      "avg_conf": 60.0,
       "odds": 2.5,
       "strength": "solid",
-      "scoreline": "2-1"
+      "scoreline": "1-1"
     },
     {
       "league": "Primeira Liga",
@@ -2240,37 +2269,11 @@
       "kickoff": "20:15",
       "pick": "home",
       "pick_label": "Maritimo win",
-      "bot_count": 4,
+      "bot_count": 3,
       "avg_conf": 60.0,
       "odds": 2.5,
-      "strength": "solid",
-      "scoreline": "2-1"
-    },
-    {
-      "league": "Premier League",
-      "category": "uk",
-      "match": "Nottingham Forest vs Chelsea",
-      "kickoff": "20:00",
-      "pick": "home",
-      "pick_label": "Nottingham Forest win",
-      "bot_count": 4,
-      "avg_conf": 59.8,
-      "odds": 2.5,
-      "strength": "solid",
-      "scoreline": "2-0"
-    },
-    {
-      "league": "Eredivisie",
-      "category": "europe",
-      "match": "FC Groningen vs Willem II",
-      "kickoff": "19:00",
-      "pick": "home",
-      "pick_label": "FC Groningen win",
-      "bot_count": 4,
-      "avg_conf": 59.5,
-      "odds": 2.5,
-      "strength": "solid",
-      "scoreline": "2-0"
+      "strength": "lean",
+      "scoreline": "1-1"
     }
   ],
   "meta": {
