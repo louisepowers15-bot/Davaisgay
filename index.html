@@ -321,6 +321,12 @@ function leaguesForTab(data, tab) {
   return list;
 }
 
+
+function toggleMatch(e, el) {
+  if (e) e.stopPropagation();
+  el.classList.toggle("open");
+}
+
 function renderMatch(m) {
   const cons = m.consensus || {};
   const tippable = m.tippable !== false && cons.tippable !== false && cons.pick;
