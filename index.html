@@ -224,6 +224,21 @@
     .lb-card .lbl { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; }
     .lb-card .val { color: var(--gold2); font-weight: 700; font-size: 1.05rem; margin-top: 0.2rem; }
 
+    .form-block { margin-top: 0.45rem; }
+    .form-toggle {
+      cursor: pointer; color: var(--gold); font-size: 0.78rem; font-weight: 600;
+      margin-top: 0.35rem; user-select: none;
+    }
+    .form-lines { display: none; margin-top: 0.4rem; font-size: 0.8rem; }
+    .form-lines.open { display: block; }
+    .form-line {
+      display: grid; grid-template-columns: 4.2rem 1.2rem 1fr 2.4rem 1.2rem;
+      gap: 0.25rem; padding: 0.22rem 0; border-bottom: 1px solid #1a1a1a; color: #ccc;
+    }
+    .form-line .res-W { color: #4ade80; font-weight: 700; }
+    .form-line .res-D { color: #fbbf24; font-weight: 700; }
+    .form-line .res-L { color: #f87171; font-weight: 700; }
+    .form-line .tag { color: var(--gold-dim); font-size: 0.72rem; grid-column: 1 / -1; padding-left: 0.2rem; }
     footer {
       text-align: center; color: #555; font-size: 0.75rem; margin-top: 2.5rem;
     }
@@ -332,14 +347,41 @@ function renderMatch(m) {
   // stats
   const st = m.stats || {};
   html += '<div class="stats-grid">';
+  function formLines(list, title) {
+    if (!list || !list.length) return "";
+    let h = '<div class="form-block"><div class="form-toggle" onclick="event.stopPropagation();this.nextElementSibling.classList.toggle(\'open\')">▶ ' + title + " (" + list.length + ")</div>";
+    h += '<div class="form-lines">';
+    list.forEach(r => {
+      h += '<div class="form-line">';
+      h += "<span>" + (r.date || "") + "</span>";
+      h += "<span>" + (r.venue || "") + "</span>";
+      h += "<span>" + (r.opponent || "") + "</span>";
+      h += "<span>" + (r.ft || "") + "</span>";
+      h += '<span class="res-' + (r.result || "") + '">' + (r.result || "") + "</span>";
+      if (r.opp_label) h += '<span class="tag">' + r.opp_label + "</span>";
+      if (r.red_cards) h += '<span class="tag">Red cards: ' + r.red_cards + "</span>";
+      if (r.penalties) h += '<span class="tag">Penalties: ' + r.penalties + "</span>";
+      h += "</div>";
+    });
+    h += "</div></div>";
+    return h;
+  }
   ["home", "away"].forEach(side => {
     const s = st[side] || {};
     html += '<div class="stat-card"><h4>' + (s.name || side) + "</h4>";
-    html += '<div class="row"><span>Record</span><span>' + (s.record || "—") + "</span></div>";
-    html += '<div class="row"><span>Win %</span><span>' + (s.win_pct != null ? s.win_pct + "%" : "—") + "</span></div>";
+    html += '<div class="row"><span>Last 5 overall</span><span>' + (s.form_last5 || "—") + " (" + (s.form_last5_record || "") + ")</span></div>";
+    html += '<div class="row"><span>Last 5 home</span><span>' + (s.home_form_last5 || "—") + " (" + (s.home_form_record || "") + ")</span></div>";
+    html += '<div class="row"><span>Last 5 away</span><span>' + (s.away_form_last5 || "—") + " (" + (s.away_form_record || "") + ")</span></div>";
+    if (s.unbeaten_last5) html += '<div class="row"><span></span><span style="color:var(--gold2)">Unbeaten last 5 overall</span></div>';
+    html += '<div class="row"><span>Season W-D-L</span><span>' + (s.record || "—") + "</span></div>";
+    html += '<div class="row"><span>Season win %</span><span>' + (s.win_pct != null ? s.win_pct + "%" : "—") + "</span></div>";
     html += '<div class="row"><span>Pts / game</span><span>' + (s.pts_pg != null ? s.pts_pg : "—") + "</span></div>";
-    html += '<div class="row"><span>Form</span><span>' + (s.form || "—") + "</span></div>";
-    html += '<div class="row"><span>W-D-L</span><span>' + (s.wins||0) + "-" + (s.draws||0) + "-" + (s.losses||0) + "</span></div>";
+    (s.flags || []).forEach(f => {
+      html += '<div class="row"><span></span><span style="color:var(--gold2)">' + f + "</span></div>";
+    });
+    html += formLines(s.overall_matches, "Overall last 5 detail");
+    html += formLines(s.home_matches, "Home last 5 detail");
+    html += formLines(s.away_matches, "Away last 5 detail");
     if (s.note) html += '<div class="stat-note">' + s.note + "</div>";
     html += "</div>";
   });

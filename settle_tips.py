@@ -15,6 +15,11 @@ import json
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
+try:
+    import history_store
+except ImportError:
+    history_store = None
+
 ROOT = Path(__file__).resolve().parent
 BOTS = [
     "FormFox", "HomeStrong", "AwayHunter",
@@ -162,6 +167,15 @@ def settle_day(d: date) -> dict | None:
     return payload
 
 
+def update_history():
+    if not history_store:
+        return
+    try:
+        history_store.rebuild_from_results()
+    except Exception as e:
+        print(f"history update failed: {e}")
+
+
 def rebuild_leaderboard() -> dict:
     empty = lambda: {
         "tips": 0, "wins": 0, "stake": 0.0, "returns": 0.0,
@@ -231,6 +245,7 @@ def main():
     args = ap.parse_args()
     if not args.rebuild_only:
         settle_day(parse_date(args.date))
+    update_history()
     rebuild_leaderboard()
 
 
