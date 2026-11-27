@@ -202,10 +202,14 @@ def score_match_sides(match: dict, hist_matches: list | None = None) -> dict:
     af = parse_form_last5(away.get("form") or "")
 
     home_pack = away_pack = None
+    h2h = {"n": 0, "matches": [], "record": "0-0-0", "chars": ""}
     if hist_matches and history_store:
         try:
             home_pack = history_store.team_form_pack(hist_matches, home.get("name") or "")
             away_pack = history_store.team_form_pack(hist_matches, away.get("name") or "")
+            h2h = history_store.head_to_head(
+                hist_matches, home.get("name") or "", away.get("name") or "", limit=6
+            )
             # Prefer venue-aware form for the side they play today
             if home_pack and home_pack["home"]["n"] >= 2:
                 hf = {
@@ -257,6 +261,7 @@ def score_match_sides(match: dict, hist_matches: list | None = None) -> dict:
         "away_l5": af,
         "home_hist": home_pack,
         "away_hist": away_pack,
+        "h2h": h2h,
         "goals": 0.5,
     }
 
@@ -266,58 +271,74 @@ def bot_pick(bot: str, match: dict, factors: dict, dec_odds: dict, rng: random.R
     w = WEIGHTS[bot]
     imp = implied_probs(dec_odds)
     hf, af = factors["home_form"], factors["away_form"]
-    gap = hf - af  # +ve = home stronger on recent form
+    gap = hf - af  # +ve = home stronger
 
-    # Base 1X2 — prefer a side when form gap is clear; draw only when genuinely close
-    h = 0.34 + 0.38 * hf + 0.12 * factors["home_adv"] + 0.10 * max(0, gap)
-    a = 0.34 + 0.38 * af + 0.10 * max(0, -gap)
-    d = 0.22 + 0.12 * (1.0 - min(1.0, abs(gap) * 3.0))  # draws only when sides close
+    # Base: sides from form; draw rises when gap is small
+    h = 0.32 + 0.36 * hf + 0.10 * factors["home_adv"] + 0.08 * max(0, gap)
+    a = 0.32 + 0.36 * af + 0.08 * max(0, -gap)
+    # Draw base higher when evenly matched
+    closeness = max(0.0, 1.0 - abs(gap) * 2.8)
+    d = 0.20 + 0.22 * closeness
 
-    # Bot flavour
-    h += w["home_form"] * hf * 0.15 + w["home_adv"] * factors["home_adv"] * 0.1
-    a += w["away_form"] * af * 0.15
-    d += w["upset"] * 0.04
+    h += w["home_form"] * hf * 0.12 + w["home_adv"] * factors["home_adv"] * 0.08
+    a += w["away_form"] * af * 0.12
+    d += w["upset"] * 0.05
+
+    # H2H nudge when we have meetings
+    h2h = factors.get("h2h") or {}
+    if h2h.get("n", 0) >= 2:
+        # record is from home team's POV in head_to_head(home, away)
+        hw, hd, hl = h2h.get("wins", 0), h2h.get("draws", 0), h2h.get("losses", 0)
+        n = h2h["n"]
+        h += 0.06 * (hw / n)
+        a += 0.06 * (hl / n)
+        d += 0.08 * (hd / n)
 
     if bot == "HomeStrong":
-        h *= 1.14
-        d *= 0.9
+        h *= 1.12
+        d *= 0.95
     if bot == "AwayHunter":
         a *= 1.12
-        d *= 0.9
+        d *= 0.95
     if bot == "ValueSeeker":
         tot = h + d + a
         ph, pd, pa = h / tot, d / tot, a / tot
-        h += max(0, ph - imp["home"]) * 0.45
-        a += max(0, pa - imp["away"]) * 0.45
-        d += max(0, pd - imp["draw"]) * 0.25
+        h += max(0, ph - imp["home"]) * 0.4
+        a += max(0, pa - imp["away"]) * 0.4
+        d += max(0, pd - imp["draw"]) * 0.35
     if bot == "DevilAdvocate":
         shortest = min(dec_odds, key=dec_odds.get)
         if shortest == "home":
-            h *= 0.88
-            a *= 1.1
-        elif shortest == "away":
-            a *= 0.88
-            h *= 1.1
-        else:
-            d *= 0.85
-            h *= 1.06
-            a *= 1.06
-    if bot == "GoalsGuru":
-        d *= 0.88  # open-game lean away from pure draws
-
-    # Clear form gap → suppress draw further
-    if abs(gap) >= 0.18:
-        d *= 0.72
-        if gap > 0:
-            h *= 1.08
-        else:
+            h *= 0.9
             a *= 1.08
-    elif abs(gap) >= 0.10:
-        d *= 0.88
+            d *= 1.05
+        elif shortest == "away":
+            a *= 0.9
+            h *= 1.08
+            d *= 1.05
+        else:
+            d *= 0.9
+            h *= 1.05
+            a *= 1.05
+    if bot == "GoalsGuru":
+        d *= 0.92
 
-    h += rng.uniform(-0.025, 0.025)
+    # Only suppress draw when form gap is clear
+    if abs(gap) >= 0.22:
+        d *= 0.75
+        if gap > 0:
+            h *= 1.07
+        else:
+            a *= 1.07
+    elif abs(gap) <= 0.07:
+        # very close → boost draw slightly
+        d *= 1.12
+        h *= 0.97
+        a *= 0.97
+
+    h += rng.uniform(-0.02, 0.02)
     d += rng.uniform(-0.02, 0.02)
-    a += rng.uniform(-0.025, 0.025)
+    a += rng.uniform(-0.02, 0.02)
     total = max(0.01, h + d + a)
     probs = {"home": h / total, "draw": d / total, "away": a / total}
     pick = max(probs, key=probs.get)
@@ -395,7 +416,12 @@ def reason_for(bot: str, match: dict, factors: dict, pick: str, conf: int, dec_o
             f"Last-5 form is close (gap {gap:+.2f}), so the draw at about {dec_odds['draw']:.2f} is preferred over forcing a side."
         )
 
-    sentences.append(f"Confidence {conf}%. Home/away-only last-5 will refine this once match history is stored.")
+    h2h = factors.get("h2h") or {}
+    if h2h.get("n", 0) >= 1:
+        sentences.append(
+            f"Head-to-head (last {h2h['n']} from {home}'s view): {h2h.get('chars') or h2h.get('record')}."
+        )
+    sentences.append(f"Confidence {conf}%.")
     return " ".join(" ".join(sentences).split())
 
 
@@ -460,69 +486,142 @@ def bet_builder(match: dict, factors: dict, consensus_pick: str, dec_odds: dict,
 
 
 def match_stats(match: dict, factors: dict) -> dict:
-    """UI stats with expandable last-5 lists (overall / home / away) when history exists."""
+    """
+    Home card: home form only (+ overall context).
+    Away card: away form only (+ overall context).
+    Goals for/against/clean sheets from history when present.
+    """
     hr, ar = factors["home_rec"], factors["away_rec"]
     home, away = match["home"], match["away"]
     hh = factors.get("home_hist")
     ah = factors.get("away_hist")
 
-    def pack(team, rec, hist, espn_form, side):
+    def pack_home(team, rec, hist, espn_form):
         if hist and hist.get("played", 0) > 0:
-            o, h, a = hist["overall"], hist["home"], hist["away"]
+            o, h = hist["overall"], hist["home"]
+            gh = hist.get("goals_home") or {}
+            go = hist.get("goals_overall") or {}
             return {
                 "name": team.get("name"),
-                "side": side,
+                "side": "home",
                 "record": team.get("record") or f"{rec.get('w',0)}-{rec.get('d',0)}-{rec.get('l',0)}",
-                "record_label": "Season W-D-L (overall)",
                 "wins": rec.get("w", 0),
                 "draws": rec.get("d", 0),
                 "losses": rec.get("l", 0),
                 "win_pct": round(100 * rec.get("win_pct", 0), 1),
                 "pts_pg": round(rec.get("pts_pg", 0), 2),
-                "form_last5": o.get("chars") or "—",
-                "form_last5_record": o.get("record") or "—",
-                "form_last5_label": "Last 5 overall",
-                "unbeaten_last5": o.get("unbeaten"),
-                "home_form_last5": h.get("chars") or "—",
-                "home_form_record": h.get("record") or "—",
-                "away_form_last5": a.get("chars") or "—",
-                "away_form_record": a.get("record") or "—",
+                # Venue-relevant form only
+                "venue_form_last5": h.get("chars") or "—",
+                "venue_form_record": h.get("record") or "—",
+                "venue_form_label": "Last 5 at home",
+                "overall_form_last5": o.get("chars") or "—",
+                "overall_form_record": o.get("record") or "—",
+                "venue_matches": h.get("matches") or [],
                 "overall_matches": o.get("matches") or [],
-                "home_matches": h.get("matches") or [],
-                "away_matches": a.get("matches") or [],
-                "flags": hist.get("flags") or [],
-                "note": "Tap Last 5 rows for opponents, scorelines and strength tags. Reds/pens when a stats feed provides them.",
+                "goals_for": gh.get("gf"),
+                "goals_against": gh.get("ga"),
+                "gf_pg": gh.get("gf_pg"),
+                "ga_pg": gh.get("ga_pg"),
+                "clean_sheets": gh.get("clean_sheets"),
+                "cs_pct": gh.get("cs_pct"),
+                "goals_sample": gh.get("played") or 0,
+                "goals_scope": "home games in history",
+                "goals_overall_for": go.get("gf"),
+                "goals_overall_against": go.get("ga"),
+                "cs_overall": go.get("clean_sheets"),
+                "flags": [f for f in (hist.get("flags") or []) if "away" not in f.lower()],
+                "note": "Home form and home goals only. Overall last-5 is secondary context.",
             }
-        # ESPN-only fallback
         l5 = parse_form_last5(espn_form or team.get("form") or "")
         return {
             "name": team.get("name"),
-            "side": side,
+            "side": "home",
             "record": team.get("record") or "",
-            "record_label": "Season W-D-L (overall)",
-            "wins": rec.get("w", 0),
-            "draws": rec.get("d", 0),
-            "losses": rec.get("l", 0),
+            "wins": rec.get("w", 0), "draws": rec.get("d", 0), "losses": rec.get("l", 0),
             "win_pct": round(100 * rec.get("win_pct", 0), 1),
             "pts_pg": round(rec.get("pts_pg", 0), 2),
-            "form_last5": l5.get("chars") or "—",
-            "form_last5_record": f"{l5.get('wins',0)}-{l5.get('draws',0)}-{l5.get('losses',0)}",
-            "form_last5_label": "Last 5 overall (ESPN)",
-            "unbeaten_last5": bool(l5.get("unbeaten") and l5.get("n", 0) >= 3),
-            "home_form_last5": "—",
-            "home_form_record": "—",
-            "away_form_last5": "—",
-            "away_form_record": "—",
+            "venue_form_last5": "—",
+            "venue_form_record": "—",
+            "venue_form_label": "Last 5 at home",
+            "overall_form_last5": l5.get("chars") or "—",
+            "overall_form_record": f"{l5.get('wins',0)}-{l5.get('draws',0)}-{l5.get('losses',0)}",
+            "venue_matches": [],
             "overall_matches": [],
-            "home_matches": [],
-            "away_matches": [],
-            "flags": (["Unbeaten in last 5 overall"] if l5.get("unbeaten") and l5.get("n", 0) >= 3 else []),
-            "note": "Detailed opponents appear after evening results build history. Home/away splits need that history.",
+            "goals_for": None, "goals_against": None, "gf_pg": None, "ga_pg": None,
+            "clean_sheets": None, "cs_pct": None, "goals_sample": 0,
+            "goals_scope": "not enough history yet",
+            "flags": [],
+            "note": "Home-only form and goals appear after this team has home results in history.",
         }
 
+    def pack_away(team, rec, hist, espn_form):
+        if hist and hist.get("played", 0) > 0:
+            o, a = hist["overall"], hist["away"]
+            ga_ = hist.get("goals_away") or {}
+            go = hist.get("goals_overall") or {}
+            return {
+                "name": team.get("name"),
+                "side": "away",
+                "record": team.get("record") or f"{rec.get('w',0)}-{rec.get('d',0)}-{rec.get('l',0)}",
+                "wins": rec.get("w", 0),
+                "draws": rec.get("d", 0),
+                "losses": rec.get("l", 0),
+                "win_pct": round(100 * rec.get("win_pct", 0), 1),
+                "pts_pg": round(rec.get("pts_pg", 0), 2),
+                "venue_form_last5": a.get("chars") or "—",
+                "venue_form_record": a.get("record") or "—",
+                "venue_form_label": "Last 5 away",
+                "overall_form_last5": o.get("chars") or "—",
+                "overall_form_record": o.get("record") or "—",
+                "venue_matches": a.get("matches") or [],
+                "overall_matches": o.get("matches") or [],
+                "goals_for": ga_.get("gf"),
+                "goals_against": ga_.get("ga"),
+                "gf_pg": ga_.get("gf_pg"),
+                "ga_pg": ga_.get("ga_pg"),
+                "clean_sheets": ga_.get("clean_sheets"),
+                "cs_pct": ga_.get("cs_pct"),
+                "goals_sample": ga_.get("played") or 0,
+                "goals_scope": "away games in history",
+                "goals_overall_for": go.get("gf"),
+                "goals_overall_against": go.get("ga"),
+                "cs_overall": go.get("clean_sheets"),
+                "flags": [f for f in (hist.get("flags") or []) if "home" not in f.lower() or "overall" in f.lower()],
+                "note": "Away form and away goals only. Overall last-5 is secondary context.",
+            }
+        l5 = parse_form_last5(espn_form or team.get("form") or "")
+        return {
+            "name": team.get("name"),
+            "side": "away",
+            "record": team.get("record") or "",
+            "wins": rec.get("w", 0), "draws": rec.get("d", 0), "losses": rec.get("l", 0),
+            "win_pct": round(100 * rec.get("win_pct", 0), 1),
+            "pts_pg": round(rec.get("pts_pg", 0), 2),
+            "venue_form_last5": "—",
+            "venue_form_record": "—",
+            "venue_form_label": "Last 5 away",
+            "overall_form_last5": l5.get("chars") or "—",
+            "overall_form_record": f"{l5.get('wins',0)}-{l5.get('draws',0)}-{l5.get('losses',0)}",
+            "venue_matches": [],
+            "overall_matches": [],
+            "goals_for": None, "goals_against": None, "gf_pg": None, "ga_pg": None,
+            "clean_sheets": None, "cs_pct": None, "goals_sample": 0,
+            "goals_scope": "not enough history yet",
+            "flags": [],
+            "note": "Away-only form and goals appear after this team has away results in history.",
+        }
+
+    h2h = factors.get("h2h") or {"n": 0, "matches": [], "record": "—", "chars": ""}
     return {
-        "home": pack(home, hr, hh, home.get("form"), "home"),
-        "away": pack(away, ar, ah, away.get("form"), "away"),
+        "home": pack_home(home, hr, hh, home.get("form")),
+        "away": pack_away(away, ar, ah, away.get("form")),
+        "h2h": {
+            "n": h2h.get("n", 0),
+            "record": h2h.get("record") or "—",
+            "chars": h2h.get("chars") or "",
+            "label": f"H2H (from {home.get('name')} view)",
+            "matches": h2h.get("matches") or [],
+        },
     }
 
 

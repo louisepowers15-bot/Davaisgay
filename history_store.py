@@ -271,6 +271,99 @@ def enrich_form_matches(matches: list, form_rows: list) -> list:
     return out
 
 
+
+def team_goal_stats(matches: list, team: str, venue: str | None = None) -> dict:
+    """
+    Goals for/against and clean sheets from history.
+    venue: None = overall, 'H' = home only, 'A' = away only.
+    """
+    rows = team_results(matches, team)
+    if venue in ("H", "A"):
+        rows = [r for r in rows if r.get("venue") == venue]
+    if not rows:
+        return {
+            "played": 0,
+            "gf": 0,
+            "ga": 0,
+            "gf_pg": None,
+            "ga_pg": None,
+            "clean_sheets": 0,
+            "cs_pct": None,
+            "failed_to_score": 0,
+        }
+    gf = sum(r["gf"] for r in rows)
+    ga = sum(r["ga"] for r in rows)
+    cs = sum(1 for r in rows if r["ga"] == 0)
+    fts = sum(1 for r in rows if r["gf"] == 0)
+    n = len(rows)
+    return {
+        "played": n,
+        "gf": gf,
+        "ga": ga,
+        "gf_pg": round(gf / n, 2),
+        "ga_pg": round(ga / n, 2),
+        "clean_sheets": cs,
+        "cs_pct": round(100.0 * cs / n, 1),
+        "failed_to_score": fts,
+    }
+
+
+
+def head_to_head(matches: list, team_a: str, team_b: str, limit: int = 6) -> dict:
+    """
+    Previous meetings between team_a and team_b, newest first.
+    Results from team_a's perspective in each meeting.
+    """
+    na, nb = norm(team_a), norm(team_b)
+    rows = []
+    for m in matches:
+        hn, an = norm(m.get("home_name") or ""), norm(m.get("away_name") or "")
+        if {hn, an} != {na, nb}:
+            continue
+        if hn == na:
+            venue = "H"
+            gf, ga = m["home_score"], m["away_score"]
+            opp = m.get("away_name") or ""
+        else:
+            venue = "A"
+            gf, ga = m["away_score"], m["home_score"]
+            opp = m.get("home_name") or ""
+        if gf > ga:
+            res = "W"
+        elif gf < ga:
+            res = "L"
+        else:
+            res = "D"
+        rows.append({
+            "date": m.get("date"),
+            "venue": venue,
+            "opponent": opp,
+            "gf": gf,
+            "ga": ga,
+            "ft": f"{gf}-{ga}",
+            "result": res,
+            "league": m.get("league") or "",
+            "home_name": m.get("home_name"),
+            "away_name": m.get("away_name"),
+            "score_home": m.get("home_score"),
+            "score_away": m.get("away_score"),
+        })
+    rows.sort(key=lambda x: x.get("date") or "", reverse=True)
+    rows = rows[:limit]
+    wins = sum(1 for r in rows if r["result"] == "W")
+    draws = sum(1 for r in rows if r["result"] == "D")
+    losses = sum(1 for r in rows if r["result"] == "L")
+    return {
+        "n": len(rows),
+        "chars": "".join(r["result"] for r in rows),
+        "record": f"{wins}-{draws}-{losses}",  # from team_a POV
+        "wins": wins,
+        "draws": draws,
+        "losses": losses,
+        "matches": rows,
+    }
+
+
 def team_form_pack(matches: list, team: str) -> dict:
     all_rows = team_results(matches, team)
     home_rows = [r for r in all_rows if r["venue"] == "H"]
@@ -300,10 +393,17 @@ def team_form_pack(matches: list, team: str) -> dict:
     if bots >= 2:
         flags.append(f"{bots} of last {overall['n']} vs weaker sides")
 
+    goals_overall = team_goal_stats(matches, team, None)
+    goals_home = team_goal_stats(matches, team, "H")
+    goals_away = team_goal_stats(matches, team, "A")
+
     return {
         "overall": overall,
         "home": home,
         "away": away,
+        "goals_overall": goals_overall,
+        "goals_home": goals_home,
+        "goals_away": goals_away,
         "flags": flags,
         "played": len(all_rows),
     }

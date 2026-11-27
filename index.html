@@ -368,24 +368,57 @@ function renderMatch(m) {
   }
   ["home", "away"].forEach(side => {
     const s = st[side] || {};
-    html += '<div class="stat-card"><h4>' + (s.name || side) + "</h4>";
-    html += '<div class="row"><span>Last 5 overall</span><span>' + (s.form_last5 || "—") + " (" + (s.form_last5_record || "") + ")</span></div>";
-    html += '<div class="row"><span>Last 5 home</span><span>' + (s.home_form_last5 || "—") + " (" + (s.home_form_record || "") + ")</span></div>";
-    html += '<div class="row"><span>Last 5 away</span><span>' + (s.away_form_last5 || "—") + " (" + (s.away_form_record || "") + ")</span></div>";
-    if (s.unbeaten_last5) html += '<div class="row"><span></span><span style="color:var(--gold2)">Unbeaten last 5 overall</span></div>';
+    const isHome = side === "home";
+    html += '<div class="stat-card"><h4>' + (s.name || side) + (isHome ? " (home)" : " (away)") + "</h4>";
+    // Venue form only
+    html += '<div class="row"><span>' + (s.venue_form_label || (isHome ? "Last 5 home" : "Last 5 away")) + '</span><span>' +
+      (s.venue_form_last5 || "—") + " (" + (s.venue_form_record || "—") + ")</span></div>";
+    html += '<div class="row"><span>Last 5 overall</span><span>' + (s.overall_form_last5 || "—") +
+      " (" + (s.overall_form_record || "—") + ")</span></div>";
+    // Goals / CS from history for that venue
+    if (s.goals_sample > 0) {
+      html += '<div class="row"><span>Goals scored</span><span>' + (s.goals_for != null ? s.goals_for : "—") +
+        (s.gf_pg != null ? " (" + s.gf_pg + "/game)" : "") + "</span></div>";
+      html += '<div class="row"><span>Goals conceded</span><span>' + (s.goals_against != null ? s.goals_against : "—") +
+        (s.ga_pg != null ? " (" + s.ga_pg + "/game)" : "") + "</span></div>";
+      html += '<div class="row"><span>Clean sheets</span><span>' + (s.clean_sheets != null ? s.clean_sheets : "—") +
+        (s.cs_pct != null ? " (" + s.cs_pct + "%)" : "") + "</span></div>";
+      html += '<div class="row"><span>Sample</span><span>' + s.goals_sample + " " + (s.goals_scope || "games") + "</span></div>";
+    } else {
+      html += '<div class="row"><span>Goals / CS</span><span style="color:var(--muted)">Need history</span></div>';
+    }
     html += '<div class="row"><span>Season W-D-L</span><span>' + (s.record || "—") + "</span></div>";
     html += '<div class="row"><span>Season win %</span><span>' + (s.win_pct != null ? s.win_pct + "%" : "—") + "</span></div>";
-    html += '<div class="row"><span>Pts / game</span><span>' + (s.pts_pg != null ? s.pts_pg : "—") + "</span></div>";
     (s.flags || []).forEach(f => {
       html += '<div class="row"><span></span><span style="color:var(--gold2)">' + f + "</span></div>";
     });
+    // Only venue-relevant detail list + overall as secondary
+    html += formLines(s.venue_matches, isHome ? "Home games detail" : "Away games detail");
     html += formLines(s.overall_matches, "Overall last 5 detail");
-    html += formLines(s.home_matches, "Home last 5 detail");
-    html += formLines(s.away_matches, "Away last 5 detail");
     if (s.note) html += '<div class="stat-note">' + s.note + "</div>";
     html += "</div>";
   });
   html += "</div>";
+
+  const h2h = (m.stats || {}).h2h || {};
+  if (h2h.n > 0 && (h2h.matches || []).length) {
+    html += '<div class="scoreline-box" style="margin-top:0.5rem"><div class="lbl">Head to head</div>';
+    html += '<div class="val" style="font-size:1rem">' + (h2h.chars || h2h.record || "") +
+      ' <span style="color:var(--muted);font-size:0.8rem;font-weight:500">(' + h2h.n + ' · home view W-D-L ' + (h2h.record || "") + ')</span></div>';
+    html += '<div class="form-lines open" style="margin-top:0.5rem">';
+    (h2h.matches || []).forEach(r => {
+      html += '<div class="form-line">';
+      html += "<span>" + (r.date || "") + "</span>";
+      html += "<span>" + (r.venue || "") + "</span>";
+      html += "<span>" + (r.home_name || r.opponent || "") + " " + (r.ft || "") + " " + (r.away_name || "") + "</span>";
+      html += "<span></span>";
+      html += '<span class="res-' + (r.result || "") + '">' + (r.result || "") + "</span>";
+      html += "</div>";
+    });
+    html += "</div></div>";
+  } else {
+    html += '<div class="stat-note" style="margin:0.35rem 0 0.65rem">No head-to-head in stored results yet.</div>';
+  }
 
   if (tippable) {
     const bb = m.bet_builder || {};
