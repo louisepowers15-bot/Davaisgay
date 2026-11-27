@@ -516,7 +516,7 @@ function renderBotWeek(botName) {
     tips.forEach(t => {
       html += '<div class="stat-card" style="margin-bottom:0.45rem">';
       html += '<div class="row"><span>' + (t.kickoff || "") + " · " + t.league + "</span><span>" + (t.conf || "") + "%</span></div>";
-      html += '<div class="row"><span>' + t.match + "</span><span style="color:var(--gold2)">' + t.pick + "</span></div>";
+      html += '<div class="row"><span>' + t.match + '</span><span style="color:var(--gold2)">' + t.pick + '</span></div>';
       if (t.consensus) html += '<div class="row"><span>Consensus</span><span>' + t.consensus + "</span></div>";
       if (t.reason) html += '<div class="stat-note">' + t.reason + "</div>";
       html += "</div>";
@@ -537,7 +537,7 @@ function showBotTips(botName) {
 
 function renderLeaderboard(lb) {
   if (!lb || !lb.bots || !Object.keys(lb.bots).length) {
-    return '<p class="empty">Leaderboard wiped — fills again after evening results settle.</p>';
+    return '<p class="empty">Leaderboard fills after evening results settle.</p>';
   }
   const rows = Object.entries(lb.bots).map(([name, s]) => {
     const tips = s.tips || 0;
@@ -563,7 +563,7 @@ function renderLeaderboard(lb) {
   return html;
 }
 
-function render(function render() {
+function render() {
   const el = document.getElementById("content");
   const hint = document.getElementById("hint");
   if (currentTab === "leaderboard") {
