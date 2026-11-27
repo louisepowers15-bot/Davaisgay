@@ -3,373 +3,462 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Football Bot Tips</title>
+  <title>Football Tips · Gold</title>
   <style>
     :root {
-      --bg: #0b1220; --card: #111827; --card-hover: #1e293b; --border: #1e293b;
-      --text: #e2e8f0; --muted: #94a3b8; --accent: #0ea5e9;
+      --bg: #050505;
+      --panel: #0e0e0e;
+      --panel2: #161616;
+      --border: #2a2410;
+      --gold: #d4af37;
+      --gold2: #f0d060;
+      --gold-dim: #8a7330;
+      --text: #f5f5f5;
+      --muted: #a3a3a3;
+      --skip: #6b7280;
+      --win: #4ade80;
+      --lose: #f87171;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg); color: var(--text); line-height: 1.45;
-      max-width: 920px; margin: 0 auto; padding: 1rem 1rem 3rem;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.45;
     }
-    header { text-align: center; padding: 1rem 0 0.5rem; }
-    header h1 { font-size: 1.45rem; font-weight: 700; }
-    header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.35rem; }
-    .tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
-    .tab {
-      background: var(--card); border: 1px solid var(--border); color: var(--muted);
-      padding: 0.55rem 1rem; border-radius: 999px; cursor: pointer; font-size: 0.9rem;
+    .wrap { max-width: 980px; margin: 0 auto; padding: 1rem 1rem 3rem; }
+    header {
+      text-align: center;
+      padding: 1.25rem 0 0.75rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1rem;
     }
-    .tab:hover { background: var(--card-hover); color: var(--text); }
-    .tab.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    header h1 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--gold2);
+      text-shadow: 0 0 24px rgba(212, 175, 55, 0.25);
+    }
+    header p { color: var(--muted); font-size: 0.88rem; margin-top: 0.35rem; }
+
+    /* Main tabs */
+    .main-tabs {
+      display: flex; flex-wrap: wrap; gap: 0.45rem;
+      margin: 1rem 0 1.1rem;
+      justify-content: center;
+    }
+    .main-tab {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      color: var(--gold-dim);
+      padding: 0.55rem 1.05rem;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      transition: 0.15s ease;
+    }
+    .main-tab:hover { border-color: var(--gold); color: var(--gold2); }
+    .main-tab.active {
+      background: linear-gradient(180deg, #3a3010, #1a1508);
+      border-color: var(--gold);
+      color: var(--gold2);
+      box-shadow: 0 0 16px rgba(212, 175, 55, 0.2);
+    }
+
+    /* League list under a tab */
     .league {
-      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      margin-bottom: 0.65rem; overflow: hidden;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 0.55rem;
+      overflow: hidden;
     }
-    .league-header {
+    .league-head {
       display: flex; justify-content: space-between; align-items: center;
-      padding: 1rem 1.1rem; cursor: pointer; font-weight: 600; font-size: 1.05rem;
-      background: #0f172a;
+      padding: 0.95rem 1.1rem;
+      cursor: pointer;
+      font-weight: 600;
+      background: var(--panel2);
+      user-select: none;
     }
-    .league-header:hover { background: #273548; }
-    .league-header .meta { color: var(--muted); font-weight: 400; font-size: 0.85rem; }
-    .league-header .chevron { color: var(--muted); transition: transform 0.2s; }
-    .league.open .chevron { transform: rotate(90deg); }
+    .league-head:hover { background: #1c1c1c; }
+    .league-head .count {
+      color: var(--gold-dim); font-weight: 500; font-size: 0.82rem;
+    }
+    .league-head .chev {
+      color: var(--gold); transition: transform 0.2s; margin-left: 0.5rem;
+    }
+    .league.open .chev { transform: rotate(90deg); }
     .league-body { display: none; border-top: 1px solid var(--border); }
     .league.open .league-body { display: block; }
-    .match { border-bottom: 1px solid var(--border); padding: 0.85rem 1rem 1rem; }
-    .match:last-child { border-bottom: none; }
-    .match-header { display: flex; flex-wrap: wrap; gap: 0.35rem 0.75rem; align-items: baseline; margin-bottom: 0.5rem; }
-    .kick { color: var(--accent); font-weight: 700; font-size: 0.95rem; min-width: 3.2rem; }
-    .match-name { font-weight: 600; font-size: 1rem; }
-    .venue { color: var(--muted); font-size: 0.8rem; width: 100%; }
-    .odds-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.4rem 0 0.65rem; font-size: 0.8rem; color: var(--muted); }
-    .odds-row span { background: #0f172a; border: 1px solid var(--border); border-radius: 6px; padding: 0.2rem 0.5rem; }
-    .consensus-bar {
-      background: linear-gradient(90deg, #0c4a6e, #164e63); border: 1px solid #38bdf8;
-      border-radius: 10px; padding: 0.7rem 0.9rem; margin: 0.4rem 0 0.7rem;
-    }
-    .consensus-bar.strong { border-color: #4ade80; background: linear-gradient(90deg, #14532d, #164e63); }
-    .consensus-bar.solid { border-color: #38bdf8; }
-    .consensus-bar.lean { border-color: #fbbf24; }
-    .consensus-bar.split { border-color: #64748b; }
-    .c-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; color: #7dd3fc; font-weight: 700; }
-    .c-pick { font-size: 1.05rem; font-weight: 700; }
-    .c-meta { font-size: 0.85rem; color: #cbd5e1; margin-top: 0.2rem; }
-    .builder {
-      background: #0f172a; border: 1px dashed #334155; border-radius: 10px;
-      padding: 0.7rem 0.9rem; margin: 0.5rem 0 0.75rem; font-size: 0.88rem;
-    }
-    .builder h4 { color: #fbbf24; font-size: 0.8rem; margin-bottom: 0.35rem; text-transform: uppercase; letter-spacing: 0.03em; }
-    .builder li { margin-left: 1.1rem; margin-bottom: 0.2rem; color: #cbd5e1; }
-    .builder .disclaimer { color: var(--muted); font-size: 0.75rem; margin-top: 0.4rem; }
-    .tip {
-      display: grid; grid-template-columns: 7.5rem 1fr auto auto; gap: 0.4rem 0.6rem;
-      align-items: center; padding: 0.55rem 0; border-top: 1px solid #1e293b; cursor: pointer;
-      font-size: 0.9rem;
-    }
-    .tip:first-of-type { border-top: none; }
-    .bot-badge {
-      font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.45rem; border-radius: 6px;
-      color: #fff; text-align: center;
-    }
-    .pick-label { font-weight: 600; }
-    .stars { color: #fbbf24; letter-spacing: 1px; font-size: 0.75rem; }
-    .conf { font-weight: 700; font-size: 0.85rem; }
-    .conf.hi { color: #4ade80; } .conf.mid { color: #fbbf24; } .conf.lo { color: #f87171; }
-    .reason-panel {
-      display: none; grid-column: 1 / -1; background: #0f172a; border-radius: 8px;
-      padding: 0.65rem 0.75rem; color: #cbd5e1; font-size: 0.86rem; margin-top: 0.15rem;
-    }
-    .tip.open .reason-panel { display: block; }
-    .section-title { font-size: 1.1rem; font-weight: 600; margin: 1.25rem 0 0.75rem; }
-    .card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 1rem 1.1rem; margin-bottom: 0.75rem;
-    }
-    .card h3 { font-size: 1rem; color: #38bdf8; margin-bottom: 0.3rem; }
-    .muted { color: var(--muted); }
-    .region-tag {
-      font-size: 0.7rem; background: #1e293b; color: #94a3b8; padding: 0.15rem 0.45rem;
-      border-radius: 4px; margin-left: 0.4rem; font-weight: 500;
-    }
-    footer { text-align: center; color: var(--muted); font-size: 0.8rem; margin-top: 2rem; }
 
-    .lb-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
-    .lb-table th, .lb-table td { padding: 0.55rem 0.5rem; border-bottom: 1px solid var(--border); text-align: left; }
-    .lb-table th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; }
-    .lb-table tr.best { background: linear-gradient(90deg, rgba(234,179,8,0.15), transparent); }
-    .roi-pos { color: #4ade80; font-weight: 700; }
-    .roi-neg { color: #f87171; font-weight: 700; }
-    .lb-stat-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem; }
-    .lb-stat {
-      background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-      padding: 0.75rem 1rem; min-width: 140px; flex: 1;
+    /* Match row */
+    .match {
+      border-bottom: 1px solid #1a1a1a;
+      padding: 0.85rem 1rem;
     }
-    .lb-stat .lbl { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; }
-    .lb-stat .val { font-size: 1.15rem; font-weight: 700; margin-top: 0.15rem; }
+    .match:last-child { border-bottom: none; }
+    .match-row {
+      display: flex; flex-wrap: wrap; gap: 0.4rem 0.85rem;
+      align-items: center; cursor: pointer;
+    }
+    .kick {
+      color: var(--gold); font-weight: 700; font-size: 0.9rem; min-width: 3.1rem;
+    }
+    .vs-name { font-weight: 600; font-size: 0.98rem; flex: 1; min-width: 140px; }
+    .pred {
+      font-size: 0.82rem; font-weight: 700;
+      padding: 0.25rem 0.65rem; border-radius: 6px;
+      border: 1px solid var(--gold-dim);
+      color: var(--gold2);
+      background: #1a1608;
+      white-space: nowrap;
+    }
+    .pred.skip {
+      border-color: #333; color: var(--skip); background: #111; font-weight: 500;
+    }
+    .pred.strong { border-color: var(--gold); box-shadow: 0 0 8px rgba(212,175,55,0.25); }
+    .conf-mini { color: var(--muted); font-size: 0.78rem; }
+
+    /* Expanded match detail */
+    .match-detail {
+      display: none;
+      margin-top: 0.75rem;
+      padding: 0.85rem;
+      background: #0a0a0a;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+    .match.open .match-detail { display: block; }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+      margin-bottom: 0.85rem;
+    }
+    @media (max-width: 560px) {
+      .stats-grid { grid-template-columns: 1fr; }
+    }
+    .stat-card {
+      background: var(--panel2);
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 0.65rem 0.75rem;
+    }
+    .stat-card h4 {
+      color: var(--gold); font-size: 0.8rem; margin-bottom: 0.35rem;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .stat-card .row {
+      display: flex; justify-content: space-between;
+      font-size: 0.84rem; padding: 0.15rem 0; color: #ddd;
+    }
+    .stat-card .row span:last-child { color: var(--gold2); font-weight: 600; }
+    .stat-note { font-size: 0.72rem; color: var(--muted); margin-top: 0.4rem; }
+
+    .scoreline-box {
+      border: 1px solid var(--gold-dim);
+      background: linear-gradient(90deg, #1a1508, #0e0e0e);
+      border-radius: 8px;
+      padding: 0.7rem 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+    .scoreline-box .lbl { font-size: 0.72rem; color: var(--gold-dim); text-transform: uppercase; }
+    .scoreline-box .val { font-size: 1.25rem; font-weight: 700; color: var(--gold2); }
+
+    .builder {
+      border: 1px dashed var(--gold-dim);
+      border-radius: 8px;
+      padding: 0.7rem 0.9rem;
+      margin-bottom: 0.65rem;
+    }
+    .builder h4 {
+      color: var(--gold); font-size: 0.78rem; text-transform: uppercase;
+      letter-spacing: 0.04em; margin-bottom: 0.4rem;
+    }
+    .builder li { margin-left: 1.1rem; margin-bottom: 0.25rem; font-size: 0.88rem; color: #e5e5e5; }
+    .builder .disc { font-size: 0.72rem; color: var(--muted); margin-top: 0.4rem; }
+
+    .bot-tip {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.5rem 0;
+      font-size: 0.86rem;
+      cursor: pointer;
+    }
+    .bot-tip .bot-name { color: var(--gold); font-weight: 700; font-size: 0.78rem; }
+    .bot-tip .reason {
+      display: none; margin-top: 0.35rem; color: var(--muted); font-size: 0.84rem;
+    }
+    .bot-tip.open .reason { display: block; }
+
+    .section-title {
+      color: var(--gold2); font-size: 1.05rem; font-weight: 700;
+      margin: 0.5rem 0 0.85rem; letter-spacing: 0.03em;
+    }
+    .empty {
+      text-align: center; color: var(--muted); padding: 2.5rem 1rem; font-size: 0.95rem;
+    }
+    .hint {
+      text-align: center; color: var(--muted); font-size: 0.8rem; margin-bottom: 0.85rem;
+    }
+
+    /* Leaderboard */
+    .lb-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .lb-table th, .lb-table td {
+      padding: 0.55rem 0.45rem; border-bottom: 1px solid #222; text-align: left;
+    }
+    .lb-table th { color: var(--gold-dim); font-size: 0.75rem; text-transform: uppercase; }
+    .lb-table tr.best { background: rgba(212, 175, 55, 0.08); }
+    .pos { color: var(--win); font-weight: 700; }
+    .neg { color: var(--lose); font-weight: 700; }
+    .lb-cards { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 1rem; }
+    .lb-card {
+      flex: 1; min-width: 130px; background: var(--panel);
+      border: 1px solid var(--border); border-radius: 10px; padding: 0.7rem 0.85rem;
+    }
+    .lb-card .lbl { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; }
+    .lb-card .val { color: var(--gold2); font-weight: 700; font-size: 1.05rem; margin-top: 0.2rem; }
+
+    footer {
+      text-align: center; color: #555; font-size: 0.75rem; margin-top: 2.5rem;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>⚽ Football Bot Tips</h1>
-    <p>UK leagues &amp; cups · Top European leagues · UEFA cups · 1X2 bots + bet builders</p>
-    <p class="muted" style="margin-top:0.25rem;font-size:0.8rem">Click a league → matches · Blue/green bar = consensus · Click a bot row for reasoning</p>
-  </header>
+  <div class="wrap">
+    <header>
+      <h1>FOOTBALL TIPS</h1>
+      <p>UK · Europe · Cups · UEFA · International · Leaderboard</p>
+    </header>
 
-  <div class="tabs" id="main-tabs">
-    <button class="tab active" data-tab="today">📅 Today</button>
-    <button class="tab" data-tab="tomorrow">🌅 Tomorrow</button>
-    <button class="tab" data-tab="hot">🔥 Hot Picks</button>
-    <button class="tab" data-tab="uk">🇬🇧 UK only</button>
-    <button class="tab" data-tab="europe">🇪🇺 Europe / UEFA</button>
-    <button class="tab" data-tab="leaderboard">🏅 Leaderboard</button>
+    <div class="main-tabs" id="main-tabs">
+      <button class="main-tab active" data-tab="uk">🇬🇧 UK</button>
+      <button class="main-tab" data-tab="europe">🇪🇺 Europe</button>
+      <button class="main-tab" data-tab="cups">🏆 Cups</button>
+      <button class="main-tab" data-tab="uefa">⭐ UEFA</button>
+      <button class="main-tab" data-tab="international">🌍 International</button>
+      <button class="main-tab" data-tab="leaderboard">🏅 Leaderboard</button>
+    </div>
+    <p class="hint" id="hint">Tap a league → games · Tap a game → stats, scoreline &amp; bet builder · Tight games are skipped</p>
+    <div id="content"><p class="empty">Loading…</p></div>
+    <footer>Not betting advice · 18+ · Gamble responsibly</footer>
   </div>
 
-  <div id="content"><p class="muted" style="text-align:center;padding:2rem">Loading tips…</p></div>
-  <footer>Free personal project · Not betting advice · 18+ · Gamble responsibly</footer>
-
 <script>
-const BOTS = {
-  FormFox: { name: "FormFox", colour: "#0ea5e9" },
-  HomeStrong: { name: "HomeStrong", colour: "#22c55e" },
-  AwayHunter: { name: "AwayHunter", colour: "#a855f7" },
-  ValueSeeker: { name: "ValueSeeker", colour: "#14b8a6" },
-  GoalsGuru: { name: "GoalsGuru", colour: "#f97316" },
-  DevilAdvocate: { name: "DevilAdvocate", colour: "#eab308" },
+const TAB_ORDER = {
+  uk: ["Premier League", "Championship", "League One", "League Two", "National League", "Scottish Premiership", "Scottish Championship"],
+  europe: ["La Liga", "Serie A", "Bundesliga", "Ligue 1", "Eredivisie", "Primeira Liga"],
+  cups: ["FA Cup", "EFL Cup", "EFL Trophy", "Scottish Cup", "Scottish League Cup"],
+  uefa: ["Champions League", "Europa League", "Conference League"],
+  international: [],
 };
 
-let todayData = null, tomorrowData = null, currentTab = "today";
-
-async function loadLeaderboard() {
-  for (const p of ['./leaderboard.json', 'leaderboard.json']) {
-    try {
-      const res = await fetch(p + '?t=' + Date.now());
-      if (res.ok) return await res.json();
-    } catch (e) {}
-  }
-  return null;
-}
-
-function renderLeaderboard(lb) {
-  if (!lb || !lb.bots) {
-    return '<p class="muted" style="text-align:center;padding:2rem">No settled results yet. Evening workflow will scrape scores and update this board.</p>';
-  }
-  const bots = Object.entries(lb.bots).map(([name, st]) => ({ name, ...st }));
-  bots.sort((a, b) => b.roi - a.roi);
-  const bestRoi = bots.length ? bots[0].name : null;
-  const bestWin = bots.slice().sort((a, b) => b.win_pct - a.win_pct)[0];
-  const cons = lb.consensus || {};
-  let html = '<div class="section-title">Leaderboard</div>';
-  html += '<p class="muted" style="margin-bottom:0.75rem;font-size:0.85rem">Level £1 stakes · Updated ' +
-    (lb.updated_at || '?').slice(0, 19) + ' · Last settled ' + (lb.last_settled || '—') + '</p>';
-  html += '<div class="lb-stat-row">';
-  html += '<div class="lb-stat"><div class="lbl">Consensus (3+ bots)</div><div class="val ' +
-    ((cons.roi||0)>=0?'roi-pos':'roi-neg') + '">' +
-    ((cons.roi||0)>=0?'+':'') + (cons.roi||0) + '% ROI</div>' +
-    '<div class="muted" style="font-size:0.8rem">' + (cons.tips||0) + ' tips · win ' + (cons.win_pct||0) + '%</div></div>';
-  if (bestRoi) {
-    const b = bots[0];
-    html += '<div class="lb-stat"><div class="lbl">Best ROI</div><div class="val">' + b.name +
-      '</div><div class="' + (b.roi>=0?'roi-pos':'roi-neg') + '">' + (b.roi>=0?'+':'') + b.roi + '%</div></div>';
-  }
-  if (bestWin) {
-    html += '<div class="lb-stat"><div class="lbl">Best win %</div><div class="val">' + bestWin.name +
-      '</div><div class="muted">' + bestWin.win_pct + '%</div></div>';
-  }
-  html += '</div>';
-  html += '<table class="lb-table"><thead><tr><th>Bot</th><th>Tips</th><th>Win%</th><th>ROI</th><th>P&amp;L</th><th>Avg odds</th></tr></thead><tbody>';
-  bots.forEach(b => {
-    const cls = b.name === bestRoi ? ' class="best"' : '';
-    const roiCls = b.roi >= 0 ? 'roi-pos' : 'roi-neg';
-    html += '<tr' + cls + '><td><strong>' + b.name + '</strong></td><td>' + b.tips + '</td><td>' +
-      b.win_pct + '%</td><td class="' + roiCls + '">' + (b.roi>=0?'+':'') + b.roi +
-      '%</td><td class="' + roiCls + '">' + (b.pnl>=0?'+':'') + b.pnl +
-      '</td><td>' + b.avg_odds + '</td></tr>';
-  });
-  html += '</tbody></table>';
-  if ((lb.daily_pnl || []).length) {
-    html += '<div class="section-title" style="margin-top:1.25rem">Recent daily P&amp;L (all bots)</div>';
-    html += '<div class="card">';
-    (lb.daily_pnl || []).forEach(d => {
-      const cls = d.pnl >= 0 ? 'roi-pos' : 'roi-neg';
-      html += '<div style="display:flex;justify-content:space-between;padding:0.25rem 0;border-bottom:1px solid var(--border)">' +
-        '<span>' + d.date + '</span><span class="' + cls + '">' + (d.pnl>=0?'+':'') + d.pnl + '</span></div>';
-    });
-    html += '</div>';
-  }
-  return html;
-}
-
+let todayData = null;
+let tomorrowData = null;
 let leaderboardData = null;
-
-
-function confClass(c) {
-  c = Number(c) || 0;
-  if (c >= 65) return "hi";
-  if (c >= 52) return "mid";
-  return "lo";
-}
-function stars(n) {
-  n = Math.max(0, Math.min(6, Number(n) || 0));
-  return "★".repeat(n) + "☆".repeat(6 - n);
-}
-
-async function loadTips(dateStr) {
-  const paths = [`./tips-${dateStr}.json`, `tips-${dateStr}.json`];
-  for (const p of paths) {
-    try {
-      const res = await fetch(p + "?t=" + Date.now());
-      if (res.ok) return await res.json();
-    } catch (e) {}
-  }
-  return null;
-}
+let currentTab = "uk";
 
 function pad(n) { return n < 10 ? "0" + n : "" + n; }
 function localISO(d) {
   return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
 }
-function isoToday() {
-  return localISO(new Date());
-}
+function isoToday() { return localISO(new Date()); }
 function isoTomorrow() {
-  const d = new Date();
-  d.setDate(d.getDate() + 1);
-  return localISO(d);
+  const d = new Date(); d.setDate(d.getDate() + 1); return localISO(d);
 }
 
-function filterLeagues(data, mode) {
-  if (!data || !data.leagues) return [];
-  if (mode === "uk") return data.leagues.filter(l => l.region === "UK");
-  if (mode === "europe") return data.leagues.filter(l => l.region === "Europe");
-  return data.leagues;
-}
-
-function renderLeagues(data, mode) {
-  if (!data || !data.leagues || !data.leagues.length) {
-    return '<p class="muted" style="text-align:center;padding:2rem">No tips available for this date yet. If you expected games (e.g. Europa on a Thursday, Premier League on weekends), re-run the workflow mode <b>tips</b> or <b>both</b> and hard-refresh. Check that tips-YYYY-MM-DD.json is in the repo.</p>';
+async function loadJSON(name) {
+  for (const p of ["./" + name, name]) {
+    try {
+      const r = await fetch(p + "?t=" + Date.now());
+      if (r.ok) return await r.json();
+    } catch (e) {}
   }
-  const leagues = filterLeagues(data, mode);
+  return null;
+}
+
+function leaguesForTab(data, tab) {
+  if (!data || !data.leagues) return [];
+  const preferred = TAB_ORDER[tab] || [];
+  const list = data.leagues.filter(lg => {
+    const cat = lg.category || (
+      preferred.includes(lg.name) ? tab :
+      (lg.region === "UK" && tab === "uk") ? "uk" :
+      (lg.region === "Europe" && tab === "europe") ? "europe" : null
+    );
+    if (tab === "uk") return cat === "uk" || preferred.includes(lg.name);
+    if (tab === "europe") return cat === "europe" || preferred.includes(lg.name);
+    if (tab === "cups") return cat === "cups" || preferred.includes(lg.name);
+    if (tab === "uefa") return cat === "uefa" || preferred.includes(lg.name);
+    if (tab === "international") return cat === "international";
+    return false;
+  });
+  // sort by preferred order
+  list.sort((a, b) => {
+    const ia = preferred.indexOf(a.name); const ib = preferred.indexOf(b.name);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+  });
+  return list;
+}
+
+function renderMatch(m) {
+  const cons = m.consensus || {};
+  const tippable = m.tippable !== false && cons.tippable !== false && cons.pick;
+  const strength = cons.strength || "skip";
+  const predCls = tippable ? ("pred " + (strength === "strong" ? "strong" : "")) : "pred skip";
+  const predText = tippable
+    ? (cons.pick_label || "—") + (cons.odds != null ? "  ·  " + cons.odds : "")
+    : "No tip — too tight";
+
+  let html = '<div class="match" onclick="toggleMatch(event, this)">';
+  html += '<div class="match-row">';
+  html += '<span class="kick">' + (m.kickoff || "") + "</span>";
+  html += '<span class="vs-name">' + (m.name || "") + "</span>";
+  html += '<span class="' + predCls + '">' + predText + "</span>";
+  if (tippable && cons.avg_conf) {
+    html += '<span class="conf-mini">' + cons.avg_conf + "% · " + (cons.bot_count || 0) + " bots</span>";
+  }
+  html += "</div>";
+
+  // detail
+  html += '<div class="match-detail" onclick="event.stopPropagation()">';
+  if (m.venue) html += '<div style="color:var(--muted);font-size:0.8rem;margin-bottom:0.5rem">' + m.venue + "</div>";
+
+  // stats
+  const st = m.stats || {};
+  html += '<div class="stats-grid">';
+  ["home", "away"].forEach(side => {
+    const s = st[side] || {};
+    html += '<div class="stat-card"><h4>' + (s.name || side) + "</h4>";
+    html += '<div class="row"><span>Record</span><span>' + (s.record || "—") + "</span></div>";
+    html += '<div class="row"><span>Win %</span><span>' + (s.win_pct != null ? s.win_pct + "%" : "—") + "</span></div>";
+    html += '<div class="row"><span>Pts / game</span><span>' + (s.pts_pg != null ? s.pts_pg : "—") + "</span></div>";
+    html += '<div class="row"><span>Form</span><span>' + (s.form || "—") + "</span></div>";
+    html += '<div class="row"><span>W-D-L</span><span>' + (s.wins||0) + "-" + (s.draws||0) + "-" + (s.losses||0) + "</span></div>";
+    if (s.note) html += '<div class="stat-note">' + s.note + "</div>";
+    html += "</div>";
+  });
+  html += "</div>";
+
+  if (tippable) {
+    const bb = m.bet_builder || {};
+    if (bb.scoreline) {
+      html += '<div class="scoreline-box"><div class="lbl">Suggested scoreline</div><div class="val">' + bb.scoreline + "</div></div>";
+    }
+    if (bb.legs && bb.legs.length) {
+      html += '<div class="builder"><h4>Bet builder</h4><ul>';
+      bb.legs.forEach(leg => {
+        html += "<li><b>" + leg.market + ":</b> " + leg.selection +
+          (leg.note ? ' <span style="color:var(--muted)">(' + leg.note + ")</span>" : "") + "</li>";
+      });
+      html += "</ul>";
+      if (bb.safer_alternative) html += '<div style="color:var(--muted);font-size:0.82rem">Safer: ' + bb.safer_alternative + "</div>";
+      if (bb.disclaimer) html += '<div class="disc">' + bb.disclaimer + "</div>";
+      html += "</div>";
+    }
+    (m.tips || []).forEach(t => {
+      html += '<div class="bot-tip" onclick="this.classList.toggle(\'open\')">';
+      html += '<span class="bot-name">' + t.bot + "</span> · " + (t.pick_label || t.pick) +
+        " · " + (t.conf || "") + "%";
+      html += '<div class="reason">' + (t.reason || "") + "</div></div>";
+    });
+  } else {
+    html += '<p style="color:var(--skip);font-size:0.88rem">Bots are split or confidence is too low — no forced tip on this game.</p>';
+  }
+
+  html += "</div></div>";
+  return html;
+}
+
+function renderLeagues(data, tab) {
+  const leagues = leaguesForTab(data, tab);
   if (!leagues.length) {
-    return '<p class="muted" style="text-align:center;padding:2rem">No matches in this filter for the day.</p>';
+    return '<p class="empty">No leagues in this section for today.<br>UK league games are mostly weekends; UEFA cups often midweek.</p>';
   }
   let html = "";
-  if (data.meta && data.meta.note) {
-    html += '<p class="muted" style="font-size:0.82rem;margin-bottom:0.75rem">' + data.meta.note + "</p>";
-  }
   leagues.forEach(lg => {
-    const n = (lg.matches || []).length;
-    html += '<div class="league">' +
-      '<div class="league-header" onclick="this.parentElement.classList.toggle(\'open\')">' +
-      '<span>' + lg.name + '<span class="region-tag">' + (lg.region || "") + "</span></span>" +
-      '<span><span class="meta">' + n + ' match' + (n === 1 ? "" : "es") + '</span> <span class="chevron">▶</span></span></div>' +
-      '<div class="league-body">';
-    (lg.matches || []).forEach(m => {
-      const cons = m.consensus || {};
-      const strength = cons.strength || "split";
-      html += '<div class="match">';
-      html += '<div class="match-header">' +
-        '<span class="kick">' + (m.kickoff || "") + "</span>" +
-        '<span class="match-name">' + (m.name || "") + "</span>";
-      if (m.venue) html += '<div class="venue">' + m.venue + "</div>";
-      html += "</div>";
-      if (m.odds) {
-        html += '<div class="odds-row">' +
-          "<span>1 " + (m.odds.home ?? "—") + "</span>" +
-          "<span>X " + (m.odds.draw ?? "—") + "</span>" +
-          "<span>2 " + (m.odds.away ?? "—") + "</span></div>";
-      }
-      if (cons.pick_label) {
-        html += '<div class="consensus-bar ' + strength + '">' +
-          '<div class="c-label">BACK THIS · ' + strength.toUpperCase() + " consensus</div>" +
-          '<div class="c-pick">' + cons.pick_label + "</div>" +
-          '<div class="c-meta">' + (cons.bot_count || 0) + " bots · conf " + (cons.avg_conf || "?") +
-          (cons.odds != null ? " · @ " + cons.odds : "") + "</div>" +
-          '<div class="c-meta">' + (cons.bots || []).join(", ") + "</div></div>";
-      }
-      // bet builder
-      const bb = m.bet_builder;
-      if (bb && bb.legs && bb.legs.length) {
-        html += '<div class="builder"><h4>Bet builder idea</h4><ul>';
-        bb.legs.forEach(leg => {
-          html += "<li><b>" + leg.market + ":</b> " + leg.selection +
-            (leg.note ? ' <span class="muted">(' + leg.note + ")</span>" : "") + "</li>";
-        });
-        html += "</ul>";
-        if (bb.safer_alternative) html += '<div class="muted">Safer alt: ' + bb.safer_alternative + "</div>";
-        if (bb.disclaimer) html += '<div class="disclaimer">' + bb.disclaimer + "</div>";
-        html += "</div>";
-      }
-      (m.tips || []).forEach(t => {
-        const bot = BOTS[t.bot] || { name: t.bot, colour: "#64748b" };
-        html += '<div class="tip" onclick="this.classList.toggle(\'open\')">' +
-          '<span class="bot-badge" style="background:' + bot.colour + '">' + bot.name + "</span>" +
-          '<span class="pick-label">' + (t.pick_label || t.pick) + "</span>" +
-          '<span class="stars">' + stars(t.stars) + "</span>" +
-          '<span class="conf ' + confClass(t.conf) + '">' + t.conf + "%</span>" +
-          '<div class="reason-panel"><strong>' + bot.name + ":</strong> " + (t.reason || "") + "</div>" +
-          "</div>";
-      });
-      html += "</div>";
-    });
+    const tipped = lg.tipped_count != null ? lg.tipped_count : (lg.matches || []).filter(m => m.tippable !== false && (m.consensus || {}).pick).length;
+    const total = (lg.matches || []).length;
+    html += '<div class="league">';
+    html += '<div class="league-head" onclick="this.parentElement.classList.toggle(\'open\')">';
+    html += "<span>" + lg.name + "</span>";
+    html += '<span class="count">' + tipped + " tipped · " + total + " games <span class=\"chev\">▶</span></span>";
+    html += "</div><div class=\"league-body\">";
+    (lg.matches || []).forEach(m => { html += renderMatch(m); });
     html += "</div></div>";
   });
   return html;
 }
 
-function renderHot(data) {
-  const list = (data && data.hot_picks) || [];
-  if (!list.length) {
-    return '<p class="muted" style="text-align:center;padding:2rem">No hot picks yet (need 3+ bots agreeing with solid confidence).</p>';
+function renderLeaderboard(lb) {
+  if (!lb || !lb.bots) {
+    return '<p class="empty">Leaderboard fills after evening results settle.</p>';
   }
-  let html = '<div class="section-title">Daily Hot Picks</div>' +
-    '<p class="muted" style="margin-bottom:0.75rem;font-size:0.85rem">3+ bots on the same 1X2 outcome</p>';
-  list.forEach(h => {
-    html += '<div class="card"><h3>' + h.pick_label + "</h3>" +
-      '<div>' + h.match + "</div>" +
-      '<div class="muted" style="margin-top:0.25rem">' + h.league +
-      (h.kickoff ? " · " + h.kickoff : "") +
-      " · " + h.bot_count + " bots · conf " + h.avg_conf +
-      (h.odds != null ? " · @ " + h.odds : "") + "</div></div>";
+  const bots = Object.entries(lb.bots).map(([name, st]) => ({ name, ...st }));
+  bots.sort((a, b) => b.roi - a.roi);
+  const cons = lb.consensus || {};
+  let html = '<div class="section-title">Leaderboard</div>';
+  html += '<p class="hint">Last settled ' + (lb.last_settled || "—") + " · £1 stakes</p>";
+  html += '<div class="lb-cards">';
+  html += '<div class="lb-card"><div class="lbl">Consensus</div><div class="val ' +
+    ((cons.roi||0)>=0?"pos":"neg") + '">' + ((cons.roi||0)>=0?"+":"") + (cons.roi||0) + "%</div></div>";
+  if (bots[0]) {
+    html += '<div class="lb-card"><div class="lbl">Best ROI</div><div class="val">' + bots[0].name +
+      '</div><div class="' + (bots[0].roi>=0?"pos":"neg") + '">' + (bots[0].roi>=0?"+":"") + bots[0].roi + "%</div></div>";
+  }
+  html += "</div>";
+  html += '<table class="lb-table"><thead><tr><th>Bot</th><th>Tips</th><th>Win%</th><th>ROI</th><th>P&amp;L</th></tr></thead><tbody>';
+  bots.forEach((b, i) => {
+    html += '<tr' + (i===0?' class="best"':'') + '><td><strong>' + b.name + "</strong></td><td>" +
+      b.tips + "</td><td>" + b.win_pct + '%</td><td class="' + (b.roi>=0?"pos":"neg") + '">' +
+      (b.roi>=0?"+":"") + b.roi + '%</td><td class="' + (b.pnl>=0?"pos":"neg") + '">' +
+      (b.pnl>=0?"+":"") + b.pnl + "</td></tr>";
   });
+  html += "</tbody></table>";
   return html;
+}
+
+function toggleMatch(ev, el) {
+  if (ev.target.closest(".match-detail")) return;
+  el.classList.toggle("open");
 }
 
 function render() {
   const el = document.getElementById("content");
-  const data = currentTab === "tomorrow" ? tomorrowData : todayData;
+  const hint = document.getElementById("hint");
   if (currentTab === "leaderboard") {
+    hint.style.display = "none";
     el.innerHTML = renderLeaderboard(leaderboardData);
     return;
   }
-  if (currentTab === "hot") {
-    el.innerHTML = renderHot(todayData);
-    return;
-  }
-  if (currentTab === "uk" || currentTab === "europe") {
-    el.innerHTML = renderLeagues(todayData, currentTab);
-    return;
-  }
-  el.innerHTML = renderLeagues(data, "all");
+  hint.style.display = "";
+  // Prefer today; if empty leagues for tab, still show today structure
+  el.innerHTML = renderLeagues(todayData, currentTab);
 }
 
 document.getElementById("main-tabs").addEventListener("click", e => {
-  const btn = e.target.closest(".tab");
+  const btn = e.target.closest(".main-tab");
   if (!btn) return;
-  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  document.querySelectorAll(".main-tab").forEach(t => t.classList.remove("active"));
   btn.classList.add("active");
   currentTab = btn.getAttribute("data-tab");
   render();
 });
 
 (async function init() {
-  todayData = await loadTips(isoToday());
-  tomorrowData = await loadTips(isoTomorrow());
-  leaderboardData = await loadLeaderboard();
+  const day = isoToday();
+  todayData = await loadJSON("tips-" + day + ".json");
+  tomorrowData = await loadJSON("tips-" + isoTomorrow() + ".json");
+  leaderboardData = await loadJSON("leaderboard.json");
+  // If today empty, try tomorrow for early evening browsing
+  if ((!todayData || !(todayData.leagues || []).length) && tomorrowData && (tomorrowData.leagues || []).length) {
+    todayData = tomorrowData;
+  }
   render();
 })();
 </script>

@@ -1,16 +1,1932 @@
 {
-  "start_date": null,
-  "generated_at": "2026-11-26T17:34:33.231996+00:00",
-  "match_count": 0,
-  "bots": [
-    "FormFox",
-    "HomeBanker",
-    "ValueHunter",
-    "DrawSpecialist",
-    "AttackMinded",
-    "H2HHistorian"
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T12:14:28.723128+00:00",
+  "frozen": true,
+  "leagues": [
+    {
+      "name": "Premier League",
+      "code": "eng.1",
+      "region": "UK",
+      "category": "uk",
+      "priority": 1,
+      "matches": [
+        {
+          "id": "401879225",
+          "name": "Nottingham Forest vs Chelsea",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-27T20:00Z",
+          "status": "pre",
+          "venue": "The City Ground",
+          "home": {
+            "name": "Nottingham Forest",
+            "short": "NFO",
+            "id": "393",
+            "record": "2-3-6",
+            "form": "LWLDL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Chelsea",
+            "short": "CHE",
+            "id": "363",
+            "record": "5-1-5",
+            "form": "DLWLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": 2.5,
+            "draw": 3.4,
+            "away": 2.9
+          },
+          "consensus": {
+            "pick": "draw",
+            "pick_label": "Draw",
+            "bot_count": 5,
+            "avg_conf": 64.4,
+            "strength": "strong",
+            "bots": [
+              "FormFox",
+              "AwayHunter",
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
+            ],
+            "odds": 3.4,
+            "tippable": true
+          },
+          "bet_builder": {
+            "legs": [
+              {
+                "market": "Match result",
+                "selection": "Draw",
+                "note": "Consensus 1X2"
+              },
+              {
+                "market": "Both teams to score",
+                "selection": "No",
+                "note": "One side looks weaker going forward"
+              },
+              {
+                "market": "Total goals",
+                "selection": "Under 2.5",
+                "note": "Tighter total expected"
+              },
+              {
+                "market": "Total corners",
+                "selection": "Under 10.5",
+                "note": "Proxy only \u2014 free feed has no corner averages yet"
+              },
+              {
+                "market": "Total cards",
+                "selection": "Under 4.5",
+                "note": "One-sided lean may mean fewer cards (proxy)"
+              }
+            ],
+            "scoreline": "1-1",
+            "safer_alternative": "Double chance 12 if you do not want the pure draw",
+            "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
+          },
+          "stats": {
+            "home": {
+              "name": "Nottingham Forest",
+              "record": "2-3-6",
+              "form": "LWLDL",
+              "wins": 2,
+              "draws": 3,
+              "losses": 6,
+              "win_pct": 18.2,
+              "pts_pg": 0.82,
+              "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard \u2014 added when history store has them."
+            },
+            "away": {
+              "name": "Chelsea",
+              "record": "5-1-5",
+              "form": "DLWLL",
+              "wins": 5,
+              "draws": 1,
+              "losses": 5,
+              "win_pct": 45.5,
+              "pts_pg": 1.45,
+              "note": "Same limit as home until richer stats pipeline is live."
+            }
+          },
+          "tippable": true,
+          "tips": [
+            {
+              "bot": "FormFox",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 59,
+              "odds": 3.4,
+              "probs": {
+                "home": 0.287,
+                "draw": 0.386,
+                "away": 0.327
+              },
+              "reason": "FormFox leans Draw in Nottingham Forest vs Chelsea. Nottingham Forest season record on the card is 2-3-6 (win rate 18%, 0.82 pts/game). Chelsea sit at 5-1-5 (45% wins, 1.45 pts/game). The sides look close enough that a draw at about 3.40 is the percentage play rather than forcing a winner. Venue listed as The City Ground. Kick-off 20:00 (feed time). Confidence 59% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            },
+            {
+              "bot": "HomeStrong",
+              "pick": "home",
+              "pick_label": "Nottingham Forest win",
+              "conf": 60,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.405,
+                "draw": 0.382,
+                "away": 0.214
+              },
+              "reason": "HomeStrong backs the home angle: Nottingham Forest win. Nottingham Forest season record on the card is 2-3-6 (win rate 18%, 0.82 pts/game). Chelsea sit at 5-1-5 (45% wins, 1.45 pts/game). Home advantage still matters in Premier League, and the model rates Nottingham Forest's relative strength above Chelsea enough to prefer the home win at about 2.50. Venue listed as The City Ground. Kick-off 20:00 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 1
+            },
+            {
+              "bot": "AwayHunter",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 61,
+              "odds": 3.4,
+              "probs": {
+                "home": 0.218,
+                "draw": 0.411,
+                "away": 0.371
+              },
+              "reason": "AwayHunter's read is Draw. Nottingham Forest season record on the card is 2-3-6 (win rate 18%, 0.82 pts/game). Chelsea sit at 5-1-5 (45% wins, 1.45 pts/game). The sides look close enough that a draw at about 3.40 is the percentage play rather than forcing a winner. Venue listed as The City Ground. Kick-off 20:00 (feed time). Confidence 61% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            },
+            {
+              "bot": "ValueSeeker",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 70,
+              "odds": 3.4,
+              "probs": {
+                "home": 0.225,
+                "draw": 0.597,
+                "away": 0.178
+              },
+              "reason": "ValueSeeker finds the price for Draw. Nottingham Forest season record on the card is 2-3-6 (win rate 18%, 0.82 pts/game). Chelsea sit at 5-1-5 (45% wins, 1.45 pts/game). The sides look close enough that a draw at about 3.40 is the percentage play rather than forcing a winner. Venue listed as The City Ground. Kick-off 20:00 (feed time). Confidence 70% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 66,
+              "odds": 3.4,
+              "probs": {
+                "home": 0.257,
+                "draw": 0.528,
+                "away": 0.215
+              },
+              "reason": "GoalsGuru's 1X2 call is Draw. Nottingham Forest season record on the card is 2-3-6 (win rate 18%, 0.82 pts/game). Chelsea sit at 5-1-5 (45% wins, 1.45 pts/game). The sides look close enough that a draw at about 3.40 is the percentage play rather than forcing a winner. Venue listed as The City Ground. Kick-off 20:00 (feed time). Confidence 66% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 66,
+              "odds": 3.4,
+              "probs": {
+                "home": 0.199,
+                "draw": 0.513,
+                "away": 0.288
+              },
+              "reason": "DevilAdvocate goes against the obvious: Draw. Nottingham Forest season record on the card is 2-3-6 (win rate 18%, 0.82 pts/game). Chelsea sit at 5-1-5 (45% wins, 1.45 pts/game). The sides look close enough that a draw at about 3.40 is the percentage play rather than forcing a winner. Venue listed as The City Ground. Kick-off 20:00 (feed time). Confidence 66% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            }
+          ]
+        }
+      ],
+      "tipped_count": 1
+    },
+    {
+      "name": "Championship",
+      "code": "eng.2",
+      "region": "UK",
+      "category": "uk",
+      "priority": 2,
+      "matches": [
+        {
+          "id": "401880129",
+          "name": "Southampton vs Middlesbrough",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-27T20:00Z",
+          "status": "pre",
+          "venue": "St. Mary's Stadium",
+          "home": {
+            "name": "Southampton",
+            "short": "SOU",
+            "id": "376",
+            "record": "9-5-3",
+            "form": "DWLDW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Middlesbrough",
+            "short": "MID",
+            "id": "369",
+            "record": "10-5-2",
+            "form": "DWDLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": 2.5,
+            "draw": 3.8,
+            "away": 2.9
+          },
+          "consensus": {
+            "pick": "draw",
+            "pick_label": "Draw",
+            "bot_count": 4,
+            "avg_conf": 64.2,
+            "strength": "solid",
+            "bots": [
+              "FormFox",
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
+            ],
+            "odds": 3.8,
+            "tippable": true
+          },
+          "bet_builder": {
+            "legs": [
+              {
+                "market": "Match result",
+                "selection": "Draw",
+                "note": "Consensus 1X2"
+              },
+              {
+                "market": "Both teams to score",
+                "selection": "Yes",
+                "note": "Both sides show enough attacking form proxy"
+              },
+              {
+                "market": "Total goals",
+                "selection": "Over 2.5",
+                "note": "Open-game lean from combined form"
+              },
+              {
+                "market": "Total corners",
+                "selection": "Over 9.5",
+                "note": "Proxy only \u2014 free feed has no corner averages yet"
+              },
+              {
+                "market": "Total cards",
+                "selection": "Over 3.5",
+                "note": "Even match often means more fouls/cards (proxy)"
+              }
+            ],
+            "scoreline": "1-1",
+            "safer_alternative": "Double chance 12 if you do not want the pure draw",
+            "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
+          },
+          "stats": {
+            "home": {
+              "name": "Southampton",
+              "record": "9-5-3",
+              "form": "DWLDW",
+              "wins": 9,
+              "draws": 5,
+              "losses": 3,
+              "win_pct": 52.9,
+              "pts_pg": 1.88,
+              "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard \u2014 added when history store has them."
+            },
+            "away": {
+              "name": "Middlesbrough",
+              "record": "10-5-2",
+              "form": "DWDLW",
+              "wins": 10,
+              "draws": 5,
+              "losses": 2,
+              "win_pct": 58.8,
+              "pts_pg": 2.06,
+              "note": "Same limit as home until richer stats pipeline is live."
+            }
+          },
+          "tippable": true,
+          "tips": [
+            {
+              "bot": "FormFox",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 60,
+              "odds": 3.8,
+              "probs": {
+                "home": 0.301,
+                "draw": 0.404,
+                "away": 0.295
+              },
+              "reason": "FormFox leans Draw in Southampton vs Middlesbrough. Southampton season record on the card is 9-5-3 (win rate 53%, 1.88 pts/game). Middlesbrough sit at 10-5-2 (59% wins, 2.06 pts/game). The sides look close enough that a draw at about 3.80 is the percentage play rather than forcing a winner. Venue listed as St. Mary's Stadium. Kick-off 20:00 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "HomeStrong",
+              "pick": "home",
+              "pick_label": "Southampton win",
+              "conf": 62,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.436,
+                "draw": 0.409,
+                "away": 0.155
+              },
+              "reason": "HomeStrong backs the home angle: Southampton win. Southampton season record on the card is 9-5-3 (win rate 53%, 1.88 pts/game). Middlesbrough sit at 10-5-2 (59% wins, 2.06 pts/game). Home advantage still matters in Championship, and the model rates Southampton's relative strength above Middlesbrough enough to prefer the home win at about 2.50. Venue listed as St. Mary's Stadium. Kick-off 20:00 (feed time). Confidence 62% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 1
+            },
+            {
+              "bot": "AwayHunter",
+              "pick": "away",
+              "pick_label": "Middlesbrough win",
+              "conf": 61,
+              "odds": 2.9,
+              "probs": {
+                "home": 0.193,
+                "draw": 0.391,
+                "away": 0.416
+              },
+              "reason": "AwayHunter's read is Middlesbrough win. Southampton season record on the card is 9-5-3 (win rate 53%, 1.88 pts/game). Middlesbrough sit at 10-5-2 (59% wins, 2.06 pts/game). The away case rests on Middlesbrough's comparative numbers versus Southampton, with the away price around 2.90 offering the side the bot wants. Venue listed as St. Mary's Stadium. Kick-off 20:00 (feed time). Confidence 61% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 1
+            },
+            {
+              "bot": "ValueSeeker",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 68,
+              "odds": 3.8,
+              "probs": {
+                "home": 0.237,
+                "draw": 0.555,
+                "away": 0.209
+              },
+              "reason": "ValueSeeker finds the price for Draw. Southampton season record on the card is 9-5-3 (win rate 53%, 1.88 pts/game). Middlesbrough sit at 10-5-2 (59% wins, 2.06 pts/game). The sides look close enough that a draw at about 3.80 is the percentage play rather than forcing a winner. Venue listed as St. Mary's Stadium. Kick-off 20:00 (feed time). Confidence 68% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 64,
+              "odds": 3.8,
+              "probs": {
+                "home": 0.293,
+                "draw": 0.474,
+                "away": 0.233
+              },
+              "reason": "GoalsGuru's 1X2 call is Draw. Southampton season record on the card is 9-5-3 (win rate 53%, 1.88 pts/game). Middlesbrough sit at 10-5-2 (59% wins, 2.06 pts/game). The sides look close enough that a draw at about 3.80 is the percentage play rather than forcing a winner. Venue listed as St. Mary's Stadium. Kick-off 20:00 (feed time). Confidence 64% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 65,
+              "odds": 3.8,
+              "probs": {
+                "home": 0.223,
+                "draw": 0.495,
+                "away": 0.282
+              },
+              "reason": "DevilAdvocate goes against the obvious: Draw. Southampton season record on the card is 9-5-3 (win rate 53%, 1.88 pts/game). Middlesbrough sit at 10-5-2 (59% wins, 2.06 pts/game). The sides look close enough that a draw at about 3.80 is the percentage play rather than forcing a winner. Venue listed as St. Mary's Stadium. Kick-off 20:00 (feed time). Confidence 65% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            }
+          ]
+        }
+      ],
+      "tipped_count": 1
+    },
+    {
+      "name": "National League",
+      "code": "eng.5",
+      "region": "UK",
+      "category": "uk",
+      "priority": 5,
+      "matches": [
+        {
+          "id": "401889179",
+          "name": "Scunthorpe United vs Wealdstone",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-27T19:45Z",
+          "status": "pre",
+          "venue": "Attis Arena",
+          "home": {
+            "name": "Scunthorpe United",
+            "short": "SCU",
+            "id": "313",
+            "record": "3-2-13",
+            "form": "DLDLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Wealdstone",
+            "short": "WEA",
+            "id": "3887",
+            "record": "6-4-9",
+            "form": "DWDLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": 2.5,
+            "draw": 3.85,
+            "away": 2.9
+          },
+          "consensus": {
+            "pick": "draw",
+            "pick_label": "Draw",
+            "bot_count": 4,
+            "avg_conf": 63.8,
+            "strength": "solid",
+            "bots": [
+              "FormFox",
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
+            ],
+            "odds": 3.85,
+            "tippable": true
+          },
+          "bet_builder": {
+            "legs": [
+              {
+                "market": "Match result",
+                "selection": "Draw",
+                "note": "Consensus 1X2"
+              },
+              {
+                "market": "Both teams to score",
+                "selection": "No",
+                "note": "One side looks weaker going forward"
+              },
+              {
+                "market": "Total goals",
+                "selection": "Under 2.5",
+                "note": "Tighter total expected"
+              },
+              {
+                "market": "Total corners",
+                "selection": "Under 10.5",
+                "note": "Proxy only \u2014 free feed has no corner averages yet"
+              },
+              {
+                "market": "Total cards",
+                "selection": "Under 4.5",
+                "note": "One-sided lean may mean fewer cards (proxy)"
+              }
+            ],
+            "scoreline": "1-1",
+            "safer_alternative": "Double chance 12 if you do not want the pure draw",
+            "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
+          },
+          "stats": {
+            "home": {
+              "name": "Scunthorpe United",
+              "record": "3-2-13",
+              "form": "DLDLL",
+              "wins": 3,
+              "draws": 2,
+              "losses": 13,
+              "win_pct": 16.7,
+              "pts_pg": 0.61,
+              "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard \u2014 added when history store has them."
+            },
+            "away": {
+              "name": "Wealdstone",
+              "record": "6-4-9",
+              "form": "DWDLW",
+              "wins": 6,
+              "draws": 4,
+              "losses": 9,
+              "win_pct": 31.6,
+              "pts_pg": 1.16,
+              "note": "Same limit as home until richer stats pipeline is live."
+            }
+          },
+          "tippable": true,
+          "tips": [
+            {
+              "bot": "FormFox",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 60,
+              "odds": 3.85,
+              "probs": {
+                "home": 0.279,
+                "draw": 0.408,
+                "away": 0.313
+              },
+              "reason": "FormFox leans Draw in Scunthorpe United vs Wealdstone. Scunthorpe United season record on the card is 3-2-13 (win rate 17%, 0.61 pts/game). Wealdstone sit at 6-4-9 (32% wins, 1.16 pts/game). The sides look close enough that a draw at about 3.85 is the percentage play rather than forcing a winner. Venue listed as Attis Arena. Kick-off 19:45 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "HomeStrong",
+              "pick": "home",
+              "pick_label": "Scunthorpe United win",
+              "conf": 61,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.414,
+                "draw": 0.405,
+                "away": 0.181
+              },
+              "reason": "HomeStrong backs the home angle: Scunthorpe United win. Scunthorpe United season record on the card is 3-2-13 (win rate 17%, 0.61 pts/game). Wealdstone sit at 6-4-9 (32% wins, 1.16 pts/game). Home advantage still matters in National League, and the model rates Scunthorpe United's relative strength above Wealdstone enough to prefer the home win at about 2.50. Venue listed as Attis Arena. Kick-off 19:45 (feed time). Confidence 61% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 1
+            },
+            {
+              "bot": "AwayHunter",
+              "pick": "away",
+              "pick_label": "Wealdstone win",
+              "conf": 61,
+              "odds": 2.9,
+              "probs": {
+                "home": 0.196,
+                "draw": 0.375,
+                "away": 0.43
+              },
+              "reason": "AwayHunter's read is Wealdstone win. Scunthorpe United season record on the card is 3-2-13 (win rate 17%, 0.61 pts/game). Wealdstone sit at 6-4-9 (32% wins, 1.16 pts/game). The away case rests on Wealdstone's comparative numbers versus Scunthorpe United, with the away price around 2.90 offering the side the bot wants. Venue listed as Attis Arena. Kick-off 19:45 (feed time). Confidence 61% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 1
+            },
+            {
+              "bot": "ValueSeeker",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 67,
+              "odds": 3.85,
+              "probs": {
+                "home": 0.227,
+                "draw": 0.543,
+                "away": 0.23
+              },
+              "reason": "ValueSeeker finds the price for Draw. Scunthorpe United season record on the card is 3-2-13 (win rate 17%, 0.61 pts/game). Wealdstone sit at 6-4-9 (32% wins, 1.16 pts/game). The sides look close enough that a draw at about 3.85 is the percentage play rather than forcing a winner. Venue listed as Attis Arena. Kick-off 19:45 (feed time). Confidence 67% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 63,
+              "odds": 3.85,
+              "probs": {
+                "home": 0.236,
+                "draw": 0.462,
+                "away": 0.302
+              },
+              "reason": "GoalsGuru's 1X2 call is Draw. Scunthorpe United season record on the card is 3-2-13 (win rate 17%, 0.61 pts/game). Wealdstone sit at 6-4-9 (32% wins, 1.16 pts/game). The sides look close enough that a draw at about 3.85 is the percentage play rather than forcing a winner. Venue listed as Attis Arena. Kick-off 19:45 (feed time). Confidence 63% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 65,
+              "odds": 3.85,
+              "probs": {
+                "home": 0.198,
+                "draw": 0.493,
+                "away": 0.309
+              },
+              "reason": "DevilAdvocate goes against the obvious: Draw. Scunthorpe United season record on the card is 3-2-13 (win rate 17%, 0.61 pts/game). Wealdstone sit at 6-4-9 (32% wins, 1.16 pts/game). The sides look close enough that a draw at about 3.85 is the percentage play rather than forcing a winner. Venue listed as Attis Arena. Kick-off 19:45 (feed time). Confidence 65% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            }
+          ]
+        }
+      ],
+      "tipped_count": 1
+    },
+    {
+      "name": "La Liga",
+      "code": "esp.1",
+      "region": "Europe",
+      "category": "europe",
+      "priority": 20,
+      "matches": [
+        {
+          "id": "401882791",
+          "name": "Levante vs Racing Santander",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-27T20:00Z",
+          "status": "pre",
+          "venue": "Estadi Ciutat de Val\u00e8ncia",
+          "home": {
+            "name": "Levante",
+            "short": "LEV",
+            "id": "1538",
+            "record": "2-6-5",
+            "form": "DWDLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Racing Santander",
+            "short": "RAC",
+            "id": "87",
+            "record": "5-2-6",
+            "form": "WWLWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": 2.5,
+            "draw": 3.95,
+            "away": 2.9
+          },
+          "consensus": {
+            "pick": "draw",
+            "pick_label": "Draw",
+            "bot_count": 3,
+            "avg_conf": 64.7,
+            "strength": "lean",
+            "bots": [
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
+            ],
+            "odds": 3.95,
+            "tippable": true
+          },
+          "bet_builder": {
+            "legs": [
+              {
+                "market": "Match result",
+                "selection": "Draw",
+                "note": "Consensus 1X2"
+              },
+              {
+                "market": "Both teams to score",
+                "selection": "No",
+                "note": "One side looks weaker going forward"
+              },
+              {
+                "market": "Total goals",
+                "selection": "Under 2.5",
+                "note": "Tighter total expected"
+              },
+              {
+                "market": "Total corners",
+                "selection": "Under 10.5",
+                "note": "Proxy only \u2014 free feed has no corner averages yet"
+              },
+              {
+                "market": "Total cards",
+                "selection": "Under 4.5",
+                "note": "One-sided lean may mean fewer cards (proxy)"
+              }
+            ],
+            "scoreline": "1-1",
+            "safer_alternative": "Double chance 12 if you do not want the pure draw",
+            "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
+          },
+          "stats": {
+            "home": {
+              "name": "Levante",
+              "record": "2-6-5",
+              "form": "DWDLL",
+              "wins": 2,
+              "draws": 6,
+              "losses": 5,
+              "win_pct": 15.4,
+              "pts_pg": 0.92,
+              "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard \u2014 added when history store has them."
+            },
+            "away": {
+              "name": "Racing Santander",
+              "record": "5-2-6",
+              "form": "WWLWW",
+              "wins": 5,
+              "draws": 2,
+              "losses": 6,
+              "win_pct": 38.5,
+              "pts_pg": 1.31,
+              "note": "Same limit as home until richer stats pipeline is live."
+            }
+          },
+          "tippable": true,
+          "tips": [
+            {
+              "bot": "FormFox",
+              "pick": "away",
+              "pick_label": "Racing Santander win",
+              "conf": 59,
+              "odds": 2.9,
+              "probs": {
+                "home": 0.252,
+                "draw": 0.368,
+                "away": 0.38
+              },
+              "reason": "FormFox leans Racing Santander win in Levante vs Racing Santander. Levante season record on the card is 2-6-5 (win rate 15%, 0.92 pts/game). Racing Santander sit at 5-2-6 (38% wins, 1.31 pts/game). The away case rests on Racing Santander's comparative numbers versus Levante, with the away price around 2.90 offering the side the bot wants. Venue listed as Estadi Ciutat de Val\u00e8ncia. Kick-off 20:00 (feed time). Confidence 59% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 2
+            },
+            {
+              "bot": "HomeStrong",
+              "pick": "home",
+              "pick_label": "Levante win",
+              "conf": 60,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.407,
+                "draw": 0.369,
+                "away": 0.224
+              },
+              "reason": "HomeStrong backs the home angle: Levante win. Levante season record on the card is 2-6-5 (win rate 15%, 0.92 pts/game). Racing Santander sit at 5-2-6 (38% wins, 1.31 pts/game). Home advantage still matters in La Liga, and the model rates Levante's relative strength above Racing Santander enough to prefer the home win at about 2.50. Venue listed as Estadi Ciutat de Val\u00e8ncia. Kick-off 20:00 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 1
+            },
+            {
+              "bot": "AwayHunter",
+              "pick": "away",
+              "pick_label": "Racing Santander win",
+              "conf": 62,
+              "odds": 2.9,
+              "probs": {
+                "home": 0.161,
+                "draw": 0.396,
+                "away": 0.443
+              },
+              "reason": "AwayHunter's read is Racing Santander win. Levante season record on the card is 2-6-5 (win rate 15%, 0.92 pts/game). Racing Santander sit at 5-2-6 (38% wins, 1.31 pts/game). The away case rests on Racing Santander's comparative numbers versus Levante, with the away price around 2.90 offering the side the bot wants. Venue listed as Estadi Ciutat de Val\u00e8ncia. Kick-off 20:00 (feed time). Confidence 62% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 2
+            },
+            {
+              "bot": "ValueSeeker",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 67,
+              "odds": 3.95,
+              "probs": {
+                "home": 0.167,
+                "draw": 0.548,
+                "away": 0.285
+              },
+              "reason": "ValueSeeker finds the price for Draw. Levante season record on the card is 2-6-5 (win rate 15%, 0.92 pts/game). Racing Santander sit at 5-2-6 (38% wins, 1.31 pts/game). The sides look close enough that a draw at about 3.95 is the percentage play rather than forcing a winner. Venue listed as Estadi Ciutat de Val\u00e8ncia. Kick-off 20:00 (feed time). Confidence 67% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 3
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 63,
+              "odds": 3.95,
+              "probs": {
+                "home": 0.178,
+                "draw": 0.467,
+                "away": 0.355
+              },
+              "reason": "GoalsGuru's 1X2 call is Draw. Levante season record on the card is 2-6-5 (win rate 15%, 0.92 pts/game). Racing Santander sit at 5-2-6 (38% wins, 1.31 pts/game). The sides look close enough that a draw at about 3.95 is the percentage play rather than forcing a winner. Venue listed as Estadi Ciutat de Val\u00e8ncia. Kick-off 20:00 (feed time). Confidence 63% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 3
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 64,
+              "odds": 3.95,
+              "probs": {
+                "home": 0.211,
+                "draw": 0.476,
+                "away": 0.312
+              },
+              "reason": "DevilAdvocate goes against the obvious: Draw. Levante season record on the card is 2-6-5 (win rate 15%, 0.92 pts/game). Racing Santander sit at 5-2-6 (38% wins, 1.31 pts/game). The sides look close enough that a draw at about 3.95 is the percentage play rather than forcing a winner. Venue listed as Estadi Ciutat de Val\u00e8ncia. Kick-off 20:00 (feed time). Confidence 64% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 3
+            }
+          ]
+        }
+      ],
+      "tipped_count": 1
+    },
+    {
+      "name": "Serie A",
+      "code": "ita.1",
+      "region": "Europe",
+      "category": "europe",
+      "priority": 21,
+      "matches": [
+        {
+          "id": "401875004",
+          "name": "Venezia vs Bologna",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-27T19:45Z",
+          "status": "pre",
+          "venue": "Stadio Pier Luigi Penzo",
+          "home": {
+            "name": "Venezia",
+            "short": "VEN",
+            "id": "17530",
+            "record": "2-0-10",
+            "form": "LWLLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Bologna",
+            "short": "BOL",
+            "id": "107",
+            "record": "5-3-4",
+            "form": "DWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": 2.5,
+            "draw": 3.1,
+            "away": 2.9
+          },
+          "consensus": {
+            "pick": "draw",
+            "pick_label": "Draw",
+            "bot_count": 5,
+            "avg_conf": 62.6,
+            "strength": "strong",
+            "bots": [
+              "FormFox",
+              "HomeStrong",
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
+            ],
+            "odds": 3.1,
+            "tippable": true
+          },
+          "bet_builder": {
+            "legs": [
+              {
+                "market": "Match result",
+                "selection": "Draw",
+                "note": "Consensus 1X2"
+              },
+              {
+                "market": "Both teams to score",
+                "selection": "No",
+                "note": "One side looks weaker going forward"
+              },
+              {
+                "market": "Total goals",
+                "selection": "Under 2.5",
+                "note": "Tighter total expected"
+              },
+              {
+                "market": "Total corners",
+                "selection": "Under 10.5",
+                "note": "Proxy only \u2014 free feed has no corner averages yet"
+              },
+              {
+                "market": "Total cards",
+                "selection": "Under 4.5",
+                "note": "One-sided lean may mean fewer cards (proxy)"
+              }
+            ],
+            "scoreline": "1-1",
+            "safer_alternative": "Double chance 12 if you do not want the pure draw",
+            "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
+          },
+          "stats": {
+            "home": {
+              "name": "Venezia",
+              "record": "2-0-10",
+              "form": "LWLLL",
+              "wins": 2,
+              "draws": 0,
+              "losses": 10,
+              "win_pct": 16.7,
+              "pts_pg": 0.5,
+              "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard \u2014 added when history store has them."
+            },
+            "away": {
+              "name": "Bologna",
+              "record": "5-3-4",
+              "form": "DWWWW",
+              "wins": 5,
+              "draws": 3,
+              "losses": 4,
+              "win_pct": 41.7,
+              "pts_pg": 1.5,
+              "note": "Same limit as home until richer stats pipeline is live."
+            }
+          },
+          "tippable": true,
+          "tips": [
+            {
+              "bot": "FormFox",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 60,
+              "odds": 3.1,
+              "probs": {
+                "home": 0.193,
+                "draw": 0.409,
+                "away": 0.398
+              },
+              "reason": "FormFox leans Draw in Venezia vs Bologna. Venezia season record on the card is 2-0-10 (win rate 17%, 0.50 pts/game). Bologna sit at 5-3-4 (42% wins, 1.50 pts/game). The sides look close enough that a draw at about 3.10 is the percentage play rather than forcing a winner. Venue listed as Stadio Pier Luigi Penzo. Kick-off 19:45 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            },
+            {
+              "bot": "HomeStrong",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 60,
+              "odds": 3.1,
+              "probs": {
+                "home": 0.372,
+                "draw": 0.398,
+                "away": 0.23
+              },
+              "reason": "HomeStrong backs the home angle: Draw. Venezia season record on the card is 2-0-10 (win rate 17%, 0.50 pts/game). Bologna sit at 5-3-4 (42% wins, 1.50 pts/game). The sides look close enough that a draw at about 3.10 is the percentage play rather than forcing a winner. Venue listed as Stadio Pier Luigi Penzo. Kick-off 19:45 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            },
+            {
+              "bot": "AwayHunter",
+              "pick": "away",
+              "pick_label": "Bologna win",
+              "conf": 61,
+              "odds": 2.9,
+              "probs": {
+                "home": 0.179,
+                "draw": 0.394,
+                "away": 0.428
+              },
+              "reason": "AwayHunter's read is Bologna win. Venezia season record on the card is 2-0-10 (win rate 17%, 0.50 pts/game). Bologna sit at 5-3-4 (42% wins, 1.50 pts/game). The away case rests on Bologna's comparative numbers versus Venezia, with the away price around 2.90 offering the side the bot wants. Venue listed as Stadio Pier Luigi Penzo. Kick-off 19:45 (feed time). Confidence 61% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 1
+            },
+            {
+              "bot": "ValueSeeker",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 65,
+              "odds": 3.1,
+              "probs": {
+                "home": 0.197,
+                "draw": 0.504,
+                "away": 0.3
+              },
+              "reason": "ValueSeeker finds the price for Draw. Venezia season record on the card is 2-0-10 (win rate 17%, 0.50 pts/game). Bologna sit at 5-3-4 (42% wins, 1.50 pts/game). The sides look close enough that a draw at about 3.10 is the percentage play rather than forcing a winner. Venue listed as Stadio Pier Luigi Penzo. Kick-off 19:45 (feed time). Confidence 65% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 64,
+              "odds": 3.1,
+              "probs": {
+                "home": 0.241,
+                "draw": 0.471,
+                "away": 0.288
+              },
+              "reason": "GoalsGuru's 1X2 call is Draw. Venezia season record on the card is 2-0-10 (win rate 17%, 0.50 pts/game). Bologna sit at 5-3-4 (42% wins, 1.50 pts/game). The sides look close enough that a draw at about 3.10 is the percentage play rather than forcing a winner. Venue listed as Stadio Pier Luigi Penzo. Kick-off 19:45 (feed time). Confidence 64% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 64,
+              "odds": 3.1,
+              "probs": {
+                "home": 0.148,
+                "draw": 0.479,
+                "away": 0.373
+              },
+              "reason": "DevilAdvocate goes against the obvious: Draw. Venezia season record on the card is 2-0-10 (win rate 17%, 0.50 pts/game). Bologna sit at 5-3-4 (42% wins, 1.50 pts/game). The sides look close enough that a draw at about 3.10 is the percentage play rather than forcing a winner. Venue listed as Stadio Pier Luigi Penzo. Kick-off 19:45 (feed time). Confidence 64% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 5
+            }
+          ]
+        }
+      ],
+      "tipped_count": 1
+    },
+    {
+      "name": "Bundesliga",
+      "code": "ger.1",
+      "region": "Europe",
+      "category": "europe",
+      "priority": 22,
+      "matches": [
+        {
+          "id": "401884720",
+          "name": "Werder Bremen vs Borussia M\u00f6nchengladbach",
+          "kickoff": "19:30",
+          "kickoff_iso": "2026-11-27T19:30Z",
+          "status": "pre",
+          "venue": "Weserstadion",
+          "home": {
+            "name": "Werder Bremen",
+            "short": "SVW",
+            "id": "137",
+            "record": "5-3-2",
+            "form": "WLWLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Borussia M\u00f6nchengladbach",
+            "short": "BMG",
+            "id": "268",
+            "record": "1-1-8",
+            "form": "LLDWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": 2.5,
+            "draw": 4.2,
+            "away": 2.9
+          },
+          "consensus": {
+            "pick": "draw",
+            "pick_label": "Draw",
+            "bot_count": 4,
+            "avg_conf": 65.2,
+            "strength": "solid",
+            "bots": [
+              "AwayHunter",
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
+            ],
+            "odds": 4.2,
+            "tippable": true
+          },
+          "bet_builder": {
+            "legs": [
+              {
+                "market": "Match result",
+                "selection": "Draw",
+                "note": "Consensus 1X2"
+              },
+              {
+                "market": "Both teams to score",
+                "selection": "No",
+                "note": "One side looks weaker going forward"
+              },
+              {
+                "market": "Total goals",
+                "selection": "Under 2.5",
+                "note": "Tighter total expected"
+              },
+              {
+                "market": "Total corners",
+                "selection": "Under 10.5",
+                "note": "Proxy only \u2014 free feed has no corner averages yet"
+              },
+              {
+                "market": "Total cards",
+                "selection": "Under 4.5",
+                "note": "One-sided lean may mean fewer cards (proxy)"
+              }
+            ],
+            "scoreline": "1-1",
+            "safer_alternative": "Double chance 12 if you do not want the pure draw",
+            "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
+          },
+          "stats": {
+            "home": {
+              "name": "Werder Bremen",
+              "record": "5-3-2",
+              "form": "WLWLW",
+              "wins": 5,
+              "draws": 3,
+              "losses": 2,
+              "win_pct": 50.0,
+              "pts_pg": 1.8,
+              "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard \u2014 added when history store has them."
+            },
+            "away": {
+              "name": "Borussia M\u00f6nchengladbach",
+              "record": "1-1-8",
+              "form": "LLDWW",
+              "wins": 1,
+              "draws": 1,
+              "losses": 8,
+              "win_pct": 10.0,
+              "pts_pg": 0.4,
+              "note": "Same limit as home until richer stats pipeline is live."
+            }
+          },
+          "tippable": true,
+          "tips": [
+            {
+              "bot": "FormFox",
+              "pick": "home",
+              "pick_label": "Werder Bremen win",
+              "conf": 60,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.403,
+                "draw": 0.392,
+                "away": 0.206
+              },
+              "reason": "FormFox leans Werder Bremen win in Werder Bremen vs Borussia M\u00f6nchengladbach. Werder Bremen season record on the card is 5-3-2 (win rate 50%, 1.80 pts/game). Borussia M\u00f6nchengladbach sit at 1-1-8 (10% wins, 0.40 pts/game). Home advantage still matters in Bundesliga, and the model rates Werder Bremen's relative strength above Borussia M\u00f6nchengladbach enough to prefer the home win at about 2.50. Venue listed as Weserstadion. Kick-off 19:30 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 2
+            },
+            {
+              "bot": "HomeStrong",
+              "pick": "home",
+              "pick_label": "Werder Bremen win",
+              "conf": 66,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.511,
+                "draw": 0.351,
+                "away": 0.139
+              },
+              "reason": "HomeStrong backs the home angle: Werder Bremen win. Werder Bremen season record on the card is 5-3-2 (win rate 50%, 1.80 pts/game). Borussia M\u00f6nchengladbach sit at 1-1-8 (10% wins, 0.40 pts/game). Home advantage still matters in Bundesliga, and the model rates Werder Bremen's relative strength above Borussia M\u00f6nchengladbach enough to prefer the home win at about 2.50. Venue listed as Weserstadion. Kick-off 19:30 (feed time). Confidence 66% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 2
+            },
+            {
+              "bot": "AwayHunter",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 60,
+              "odds": 4.2,
+              "probs": {
+                "home": 0.311,
+                "draw": 0.408,
+                "away": 0.281
+              },
+              "reason": "AwayHunter's read is Draw. Werder Bremen season record on the card is 5-3-2 (win rate 50%, 1.80 pts/game). Borussia M\u00f6nchengladbach sit at 1-1-8 (10% wins, 0.40 pts/game). The sides look close enough that a draw at about 4.20 is the percentage play rather than forcing a winner. Venue listed as Weserstadion. Kick-off 19:30 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "ValueSeeker",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 70,
+              "odds": 4.2,
+              "probs": {
+                "home": 0.269,
+                "draw": 0.592,
+                "away": 0.138
+              },
+              "reason": "ValueSeeker finds the price for Draw. Werder Bremen season record on the card is 5-3-2 (win rate 50%, 1.80 pts/game). Borussia M\u00f6nchengladbach sit at 1-1-8 (10% wins, 0.40 pts/game). The sides look close enough that a draw at about 4.20 is the percentage play rather than forcing a winner. Venue listed as Weserstadion. Kick-off 19:30 (feed time). Confidence 70% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 65,
+              "odds": 4.2,
+              "probs": {
+                "home": 0.343,
+                "draw": 0.509,
+                "away": 0.148
+              },
+              "reason": "GoalsGuru's 1X2 call is Draw. Werder Bremen season record on the card is 5-3-2 (win rate 50%, 1.80 pts/game). Borussia M\u00f6nchengladbach sit at 1-1-8 (10% wins, 0.40 pts/game). The sides look close enough that a draw at about 4.20 is the percentage play rather than forcing a winner. Venue listed as Weserstadion. Kick-off 19:30 (feed time). Confidence 65% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 66,
+              "odds": 4.2,
+              "probs": {
+                "home": 0.305,
+                "draw": 0.513,
+                "away": 0.182
+              },
+              "reason": "DevilAdvocate goes against the obvious: Draw. Werder Bremen season record on the card is 5-3-2 (win rate 50%, 1.80 pts/game). Borussia M\u00f6nchengladbach sit at 1-1-8 (10% wins, 0.40 pts/game). The sides look close enough that a draw at about 4.20 is the percentage play rather than forcing a winner. Venue listed as Weserstadion. Kick-off 19:30 (feed time). Confidence 66% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            }
+          ]
+        }
+      ],
+      "tipped_count": 1
+    },
+    {
+      "name": "Ligue 1",
+      "code": "fra.1",
+      "region": "Europe",
+      "category": "europe",
+      "priority": 23,
+      "matches": [
+        {
+          "id": "401876392",
+          "name": "Brest vs Paris FC",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-27T19:45Z",
+          "status": "pre",
+          "venue": "Stade Francis-Le Bl\u00e9",
+          "home": {
+            "name": "Brest",
+            "short": "BRE",
+            "id": "6997",
+            "record": "5-3-3",
+            "form": "WWWLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Paris FC",
+            "short": "PAR",
+            "id": "6851",
+            "record": "7-2-2",
+            "form": "WWWLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": 2.5,
+            "draw": 3.4,
+            "away": 2.9
+          },
+          "consensus": {
+            "pick": "draw",
+            "pick_label": "Draw",
+            "bot_count": 3,
+            "avg_conf": 63.3,
+            "strength": "lean",
+            "bots": [
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
+            ],
+            "odds": 3.4,
+            "tippable": true
+          },
+          "bet_builder": {
+            "legs": [
+              {
+                "market": "Match result",
+                "selection": "Draw",
+                "note": "Consensus 1X2"
+              },
+              {
+                "market": "Both teams to score",
+                "selection": "Yes",
+                "note": "Both sides show enough attacking form proxy"
+              },
+              {
+                "market": "Total goals",
+                "selection": "Over 2.5",
+                "note": "Open-game lean from combined form"
+              },
+              {
+                "market": "Total corners",
+                "selection": "Over 9.5",
+                "note": "Proxy only \u2014 free feed has no corner averages yet"
+              },
+              {
+                "market": "Total cards",
+                "selection": "Under 4.5",
+                "note": "One-sided lean may mean fewer cards (proxy)"
+              }
+            ],
+            "scoreline": "1-1",
+            "safer_alternative": "Double chance 12 if you do not want the pure draw",
+            "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
+          },
+          "stats": {
+            "home": {
+              "name": "Brest",
+              "record": "5-3-3",
+              "form": "WWWLD",
+              "wins": 5,
+              "draws": 3,
+              "losses": 3,
+              "win_pct": 45.5,
+              "pts_pg": 1.64,
+              "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard \u2014 added when history store has them."
+            },
+            "away": {
+              "name": "Paris FC",
+              "record": "7-2-2",
+              "form": "WWWLW",
+              "wins": 7,
+              "draws": 2,
+              "losses": 2,
+              "win_pct": 63.6,
+              "pts_pg": 2.09,
+              "note": "Same limit as home until richer stats pipeline is live."
+            }
+          },
+          "tippable": true,
+          "tips": [
+            {
+              "bot": "FormFox",
+              "pick": "away",
+              "pick_label": "Paris FC win",
+              "conf": 59,
+              "odds": 2.9,
+              "probs": {
+                "home": 0.312,
+                "draw": 0.314,
+                "away": 0.374
+              },
+              "reason": "FormFox leans Paris FC win in Brest vs Paris FC. Brest season record on the card is 5-3-3 (win rate 45%, 1.64 pts/game). Paris FC sit at 7-2-2 (64% wins, 2.09 pts/game). The away case rests on Paris FC's comparative numbers versus Brest, with the away price around 2.90 offering the side the bot wants. Venue listed as Stade Francis-Le Bl\u00e9. Kick-off 19:45 (feed time). Confidence 59% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 2
+            },
+            {
+              "bot": "HomeStrong",
+              "pick": "home",
+              "pick_label": "Brest win",
+              "conf": 64,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.473,
+                "draw": 0.354,
+                "away": 0.172
+              },
+              "reason": "HomeStrong backs the home angle: Brest win. Brest season record on the card is 5-3-3 (win rate 45%, 1.64 pts/game). Paris FC sit at 7-2-2 (64% wins, 2.09 pts/game). Home advantage still matters in Ligue 1, and the model rates Brest's relative strength above Paris FC enough to prefer the home win at about 2.50. Venue listed as Stade Francis-Le Bl\u00e9. Kick-off 19:45 (feed time). Confidence 64% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 1
+            },
+            {
+              "bot": "AwayHunter",
+              "pick": "away",
+              "pick_label": "Paris FC win",
+              "conf": 62,
+              "odds": 2.9,
+              "probs": {
+                "home": 0.188,
+                "draw": 0.375,
+                "away": 0.437
+              },
+              "reason": "AwayHunter's read is Paris FC win. Brest season record on the card is 5-3-3 (win rate 45%, 1.64 pts/game). Paris FC sit at 7-2-2 (64% wins, 2.09 pts/game). The away case rests on Paris FC's comparative numbers versus Brest, with the away price around 2.90 offering the side the bot wants. Venue listed as Stade Francis-Le Bl\u00e9. Kick-off 19:45 (feed time). Confidence 62% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 2
+            },
+            {
+              "bot": "ValueSeeker",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 65,
+              "odds": 3.4,
+              "probs": {
+                "home": 0.233,
+                "draw": 0.51,
+                "away": 0.257
+              },
+              "reason": "ValueSeeker finds the price for Draw. Brest season record on the card is 5-3-3 (win rate 45%, 1.64 pts/game). Paris FC sit at 7-2-2 (64% wins, 2.09 pts/game). The sides look close enough that a draw at about 3.40 is the percentage play rather than forcing a winner. Venue listed as Stade Francis-Le Bl\u00e9. Kick-off 19:45 (feed time). Confidence 65% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 3
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 62,
+              "odds": 3.4,
+              "probs": {
+                "home": 0.252,
+                "draw": 0.441,
+                "away": 0.307
+              },
+              "reason": "GoalsGuru's 1X2 call is Draw. Brest season record on the card is 5-3-3 (win rate 45%, 1.64 pts/game). Paris FC sit at 7-2-2 (64% wins, 2.09 pts/game). The sides look close enough that a draw at about 3.40 is the percentage play rather than forcing a winner. Venue listed as Stade Francis-Le Bl\u00e9. Kick-off 19:45 (feed time). Confidence 62% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 3
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 63,
+              "odds": 3.4,
+              "probs": {
+                "home": 0.249,
+                "draw": 0.467,
+                "away": 0.284
+              },
+              "reason": "DevilAdvocate goes against the obvious: Draw. Brest season record on the card is 5-3-3 (win rate 45%, 1.64 pts/game). Paris FC sit at 7-2-2 (64% wins, 2.09 pts/game). The sides look close enough that a draw at about 3.40 is the percentage play rather than forcing a winner. Venue listed as Stade Francis-Le Bl\u00e9. Kick-off 19:45 (feed time). Confidence 63% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 3
+            }
+          ]
+        }
+      ],
+      "tipped_count": 1
+    },
+    {
+      "name": "Eredivisie",
+      "code": "ned.1",
+      "region": "Europe",
+      "category": "europe",
+      "priority": 24,
+      "matches": [
+        {
+          "id": "401875536",
+          "name": "FC Groningen vs Willem II",
+          "kickoff": "19:00",
+          "kickoff_iso": "2026-11-27T19:00Z",
+          "status": "pre",
+          "venue": "Euroborg",
+          "home": {
+            "name": "FC Groningen",
+            "short": "GRO",
+            "id": "145",
+            "record": "4-3-6",
+            "form": "LLLLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Willem II",
+            "short": "WIL",
+            "id": "156",
+            "record": "0-3-10",
+            "form": "LDLWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": 2.5,
+            "draw": 6.0,
+            "away": 2.9
+          },
+          "consensus": {
+            "pick": "draw",
+            "pick_label": "Draw",
+            "bot_count": 4,
+            "avg_conf": 65.8,
+            "strength": "solid",
+            "bots": [
+              "AwayHunter",
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
+            ],
+            "odds": 6.0,
+            "tippable": true
+          },
+          "bet_builder": {
+            "legs": [
+              {
+                "market": "Match result",
+                "selection": "Draw",
+                "note": "Consensus 1X2"
+              },
+              {
+                "market": "Both teams to score",
+                "selection": "No",
+                "note": "One side looks weaker going forward"
+              },
+              {
+                "market": "Total goals",
+                "selection": "Under 2.5",
+                "note": "Tighter total expected"
+              },
+              {
+                "market": "Total corners",
+                "selection": "Under 10.5",
+                "note": "Proxy only \u2014 free feed has no corner averages yet"
+              },
+              {
+                "market": "Total cards",
+                "selection": "Over 3.5",
+                "note": "Even match often means more fouls/cards (proxy)"
+              }
+            ],
+            "scoreline": "1-1",
+            "safer_alternative": "Double chance 12 if you do not want the pure draw",
+            "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
+          },
+          "stats": {
+            "home": {
+              "name": "FC Groningen",
+              "record": "4-3-6",
+              "form": "LLLLD",
+              "wins": 4,
+              "draws": 3,
+              "losses": 6,
+              "win_pct": 30.8,
+              "pts_pg": 1.15,
+              "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard \u2014 added when history store has them."
+            },
+            "away": {
+              "name": "Willem II",
+              "record": "0-3-10",
+              "form": "LDLWL",
+              "wins": 0,
+              "draws": 3,
+              "losses": 10,
+              "win_pct": 0.0,
+              "pts_pg": 0.23,
+              "note": "Same limit as home until richer stats pipeline is live."
+            }
+          },
+          "tippable": true,
+          "tips": [
+            {
+              "bot": "FormFox",
+              "pick": "home",
+              "pick_label": "FC Groningen win",
+              "conf": 59,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.379,
+                "draw": 0.373,
+                "away": 0.248
+              },
+              "reason": "FormFox leans FC Groningen win in FC Groningen vs Willem II. FC Groningen season record on the card is 4-3-6 (win rate 31%, 1.15 pts/game). Willem II sit at 0-3-10 (0% wins, 0.23 pts/game). Home advantage still matters in Eredivisie, and the model rates FC Groningen's relative strength above Willem II enough to prefer the home win at about 2.50. Venue listed as Euroborg. Kick-off 19:00 (feed time). Confidence 59% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 2
+            },
+            {
+              "bot": "HomeStrong",
+              "pick": "home",
+              "pick_label": "FC Groningen win",
+              "conf": 63,
+              "odds": 2.5,
+              "probs": {
+                "home": 0.468,
+                "draw": 0.391,
+                "away": 0.141
+              },
+              "reason": "HomeStrong backs the home angle: FC Groningen win. FC Groningen season record on the card is 4-3-6 (win rate 31%, 1.15 pts/game). Willem II sit at 0-3-10 (0% wins, 0.23 pts/game). Home advantage still matters in Eredivisie, and the model rates FC Groningen's relative strength above Willem II enough to prefer the home win at about 2.50. Venue listed as Euroborg. Kick-off 19:00 (feed time). Confidence 63% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 2
+            },
+            {
+              "bot": "AwayHunter",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 60,
+              "odds": 6.0,
+              "probs": {
+                "home": 0.316,
+                "draw": 0.405,
+                "away": 0.279
+              },
+              "reason": "AwayHunter's read is Draw. FC Groningen season record on the card is 4-3-6 (win rate 31%, 1.15 pts/game). Willem II sit at 0-3-10 (0% wins, 0.23 pts/game). The sides look close enough that a draw at about 6.00 is the percentage play rather than forcing a winner. Venue listed as Euroborg. Kick-off 19:00 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "ValueSeeker",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 70,
+              "odds": 6.0,
+              "probs": {
+                "home": 0.238,
+                "draw": 0.59,
+                "away": 0.171
+              },
+              "reason": "ValueSeeker finds the price for Draw. FC Groningen season record on the card is 4-3-6 (win rate 31%, 1.15 pts/game). Willem II sit at 0-3-10 (0% wins, 0.23 pts/game). The sides look close enough that a draw at about 6.00 is the percentage play rather than forcing a winner. Venue listed as Euroborg. Kick-off 19:00 (feed time). Confidence 70% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 65,
+              "odds": 6.0,
+              "probs": {
+                "home": 0.307,
+                "draw": 0.496,
+                "away": 0.198
+              },
+              "reason": "GoalsGuru's 1X2 call is Draw. FC Groningen season record on the card is 4-3-6 (win rate 31%, 1.15 pts/game). Willem II sit at 0-3-10 (0% wins, 0.23 pts/game). The sides look close enough that a draw at about 6.00 is the percentage play rather than forcing a winner. Venue listed as Euroborg. Kick-off 19:00 (feed time). Confidence 65% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 68,
+              "odds": 6.0,
+              "probs": {
+                "home": 0.218,
+                "draw": 0.56,
+                "away": 0.222
+              },
+              "reason": "DevilAdvocate goes against the obvious: Draw. FC Groningen season record on the card is 4-3-6 (win rate 31%, 1.15 pts/game). Willem II sit at 0-3-10 (0% wins, 0.23 pts/game). The sides look close enough that a draw at about 6.00 is the percentage play rather than forcing a winner. Venue listed as Euroborg. Kick-off 19:00 (feed time). Confidence 68% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 4
+            }
+          ]
+        }
+      ],
+      "tipped_count": 1
+    },
+    {
+      "name": "Primeira Liga",
+      "code": "por.1",
+      "region": "Europe",
+      "category": "europe",
+      "priority": 25,
+      "matches": [
+        {
+          "id": "401885389",
+          "name": "Maritimo vs C.D. Nacional",
+          "kickoff": "20:15",
+          "kickoff_iso": "2026-11-27T20:15Z",
+          "status": "pre",
+          "venue": "Est\u00e1dio do Mar\u00edtimo",
+          "home": {
+            "name": "Maritimo",
+            "short": "MAR",
+            "id": "552",
+            "record": "2-2-6",
+            "form": "WLLWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "C.D. Nacional",
+            "short": "CDN",
+            "id": "3472",
+            "record": "3-1-7",
+            "form": "WLWLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": 2.5,
+            "draw": 3.2,
+            "away": 2.9
+          },
+          "consensus": {
+            "pick": "draw",
+            "pick_label": "Draw",
+            "bot_count": 6,
+            "avg_conf": 64.7,
+            "strength": "strong",
+            "bots": [
+              "FormFox",
+              "HomeStrong",
+              "AwayHunter",
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
+            ],
+            "odds": 3.2,
+            "tippable": true
+          },
+          "bet_builder": {
+            "legs": [
+              {
+                "market": "Match result",
+                "selection": "Draw",
+                "note": "Consensus 1X2"
+              },
+              {
+                "market": "Both teams to score",
+                "selection": "No",
+                "note": "One side looks weaker going forward"
+              },
+              {
+                "market": "Total goals",
+                "selection": "Under 2.5",
+                "note": "Tighter total expected"
+              },
+              {
+                "market": "Total corners",
+                "selection": "Under 10.5",
+                "note": "Proxy only \u2014 free feed has no corner averages yet"
+              },
+              {
+                "market": "Total cards",
+                "selection": "Over 3.5",
+                "note": "Even match often means more fouls/cards (proxy)"
+              }
+            ],
+            "scoreline": "1-1",
+            "safer_alternative": "Double chance 12 if you do not want the pure draw",
+            "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
+          },
+          "stats": {
+            "home": {
+              "name": "Maritimo",
+              "record": "2-2-6",
+              "form": "WLLWL",
+              "wins": 2,
+              "draws": 2,
+              "losses": 6,
+              "win_pct": 20.0,
+              "pts_pg": 0.8,
+              "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard \u2014 added when history store has them."
+            },
+            "away": {
+              "name": "C.D. Nacional",
+              "record": "3-1-7",
+              "form": "WLWLL",
+              "wins": 3,
+              "draws": 1,
+              "losses": 7,
+              "win_pct": 27.3,
+              "pts_pg": 0.91,
+              "note": "Same limit as home until richer stats pipeline is live."
+            }
+          },
+          "tippable": true,
+          "tips": [
+            {
+              "bot": "FormFox",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 60,
+              "odds": 3.2,
+              "probs": {
+                "home": 0.333,
+                "draw": 0.391,
+                "away": 0.276
+              },
+              "reason": "FormFox leans Draw in Maritimo vs C.D. Nacional. Maritimo season record on the card is 2-2-6 (win rate 20%, 0.80 pts/game). C.D. Nacional sit at 3-1-7 (27% wins, 0.91 pts/game). The sides look close enough that a draw at about 3.20 is the percentage play rather than forcing a winner. Venue listed as Est\u00e1dio do Mar\u00edtimo. Kick-off 20:15 (feed time). Confidence 60% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 6
+            },
+            {
+              "bot": "HomeStrong",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 62,
+              "odds": 3.2,
+              "probs": {
+                "home": 0.419,
+                "draw": 0.431,
+                "away": 0.151
+              },
+              "reason": "HomeStrong backs the home angle: Draw. Maritimo season record on the card is 2-2-6 (win rate 20%, 0.80 pts/game). C.D. Nacional sit at 3-1-7 (27% wins, 0.91 pts/game). The sides look close enough that a draw at about 3.20 is the percentage play rather than forcing a winner. Venue listed as Est\u00e1dio do Mar\u00edtimo. Kick-off 20:15 (feed time). Confidence 62% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 6
+            },
+            {
+              "bot": "AwayHunter",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 61,
+              "odds": 3.2,
+              "probs": {
+                "home": 0.225,
+                "draw": 0.428,
+                "away": 0.347
+              },
+              "reason": "AwayHunter's read is Draw. Maritimo season record on the card is 2-2-6 (win rate 20%, 0.80 pts/game). C.D. Nacional sit at 3-1-7 (27% wins, 0.91 pts/game). The sides look close enough that a draw at about 3.20 is the percentage play rather than forcing a winner. Venue listed as Est\u00e1dio do Mar\u00edtimo. Kick-off 20:15 (feed time). Confidence 61% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 6
+            },
+            {
+              "bot": "ValueSeeker",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 70,
+              "odds": 3.2,
+              "probs": {
+                "home": 0.179,
+                "draw": 0.59,
+                "away": 0.23
+              },
+              "reason": "ValueSeeker finds the price for Draw. Maritimo season record on the card is 2-2-6 (win rate 20%, 0.80 pts/game). C.D. Nacional sit at 3-1-7 (27% wins, 0.91 pts/game). The sides look close enough that a draw at about 3.20 is the percentage play rather than forcing a winner. Venue listed as Est\u00e1dio do Mar\u00edtimo. Kick-off 20:15 (feed time). Confidence 70% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 6
+            },
+            {
+              "bot": "GoalsGuru",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 68,
+              "odds": 3.2,
+              "probs": {
+                "home": 0.224,
+                "draw": 0.563,
+                "away": 0.213
+              },
+              "reason": "GoalsGuru's 1X2 call is Draw. Maritimo season record on the card is 2-2-6 (win rate 20%, 0.80 pts/game). C.D. Nacional sit at 3-1-7 (27% wins, 0.91 pts/game). The sides look close enough that a draw at about 3.20 is the percentage play rather than forcing a winner. Venue listed as Est\u00e1dio do Mar\u00edtimo. Kick-off 20:15 (feed time). Confidence 68% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 6
+            },
+            {
+              "bot": "DevilAdvocate",
+              "pick": "draw",
+              "pick_label": "Draw",
+              "conf": 67,
+              "odds": 3.2,
+              "probs": {
+                "home": 0.19,
+                "draw": 0.546,
+                "away": 0.264
+              },
+              "reason": "DevilAdvocate goes against the obvious: Draw. Maritimo season record on the card is 2-2-6 (win rate 20%, 0.80 pts/game). C.D. Nacional sit at 3-1-7 (27% wins, 0.91 pts/game). The sides look close enough that a draw at about 3.20 is the percentage play rather than forcing a winner. Venue listed as Est\u00e1dio do Mar\u00edtimo. Kick-off 20:15 (feed time). Confidence 67% on a 1X2 reading only \u2014 not a guaranteed result.",
+              "stars": 6
+            }
+          ]
+        }
+      ],
+      "tipped_count": 1
+    }
   ],
-  "matches": [],
-  "by_region": {},
-  "note": "Primary: last-5 home form for the home side and last-5 away form for the away side (goals, conceded, clean sheets; corners/cards when match stats exist). Secondary: overall form string and league position. Injuries/top scorers only when the feed provides them."
+  "hot_picks": [
+    {
+      "league": "Primeira Liga",
+      "category": "europe",
+      "match": "Maritimo vs C.D. Nacional",
+      "kickoff": "20:15",
+      "pick": "draw",
+      "pick_label": "Draw",
+      "bot_count": 6,
+      "avg_conf": 64.7,
+      "odds": 3.2,
+      "strength": "strong",
+      "scoreline": "1-1"
+    },
+    {
+      "league": "Premier League",
+      "category": "uk",
+      "match": "Nottingham Forest vs Chelsea",
+      "kickoff": "20:00",
+      "pick": "draw",
+      "pick_label": "Draw",
+      "bot_count": 5,
+      "avg_conf": 64.4,
+      "odds": 3.4,
+      "strength": "strong",
+      "scoreline": "1-1"
+    },
+    {
+      "league": "Serie A",
+      "category": "europe",
+      "match": "Venezia vs Bologna",
+      "kickoff": "19:45",
+      "pick": "draw",
+      "pick_label": "Draw",
+      "bot_count": 5,
+      "avg_conf": 62.6,
+      "odds": 3.1,
+      "strength": "strong",
+      "scoreline": "1-1"
+    },
+    {
+      "league": "Eredivisie",
+      "category": "europe",
+      "match": "FC Groningen vs Willem II",
+      "kickoff": "19:00",
+      "pick": "draw",
+      "pick_label": "Draw",
+      "bot_count": 4,
+      "avg_conf": 65.8,
+      "odds": 6.0,
+      "strength": "solid",
+      "scoreline": "1-1"
+    },
+    {
+      "league": "Bundesliga",
+      "category": "europe",
+      "match": "Werder Bremen vs Borussia M\u00f6nchengladbach",
+      "kickoff": "19:30",
+      "pick": "draw",
+      "pick_label": "Draw",
+      "bot_count": 4,
+      "avg_conf": 65.2,
+      "odds": 4.2,
+      "strength": "solid",
+      "scoreline": "1-1"
+    },
+    {
+      "league": "Championship",
+      "category": "uk",
+      "match": "Southampton vs Middlesbrough",
+      "kickoff": "20:00",
+      "pick": "draw",
+      "pick_label": "Draw",
+      "bot_count": 4,
+      "avg_conf": 64.2,
+      "odds": 3.8,
+      "strength": "solid",
+      "scoreline": "1-1"
+    },
+    {
+      "league": "National League",
+      "category": "uk",
+      "match": "Scunthorpe United vs Wealdstone",
+      "kickoff": "19:45",
+      "pick": "draw",
+      "pick_label": "Draw",
+      "bot_count": 4,
+      "avg_conf": 63.8,
+      "odds": 3.85,
+      "strength": "solid",
+      "scoreline": "1-1"
+    },
+    {
+      "league": "La Liga",
+      "category": "europe",
+      "match": "Levante vs Racing Santander",
+      "kickoff": "20:00",
+      "pick": "draw",
+      "pick_label": "Draw",
+      "bot_count": 3,
+      "avg_conf": 64.7,
+      "odds": 3.95,
+      "strength": "lean",
+      "scoreline": "1-1"
+    },
+    {
+      "league": "Ligue 1",
+      "category": "europe",
+      "match": "Brest vs Paris FC",
+      "kickoff": "19:45",
+      "pick": "draw",
+      "pick_label": "Draw",
+      "bot_count": 3,
+      "avg_conf": 63.3,
+      "odds": 3.4,
+      "strength": "lean",
+      "scoreline": "1-1"
+    }
+  ],
+  "meta": {
+    "bots": [
+      "FormFox",
+      "HomeStrong",
+      "AwayHunter",
+      "ValueSeeker",
+      "GoalsGuru",
+      "DevilAdvocate"
+    ],
+    "freeze_policy": "first_write_wins",
+    "note": "1X2 tips from season records/form proxies on ESPN feed. Not betting advice."
+  },
+  "published": true
 }

@@ -1,28 +1,64 @@
 #!/usr/bin/env python3
 """
-Football tips: venue form (last 5 home / last 5 away) is primary.
-Overall form & league position secondary. Bet builders from goals/corners/cards stats.
+Football tip bots: 1X2 (home / draw / away) with brief reasoning + bet builder.
+First successful tips file of the day is frozen unless --force.
 """
 from __future__ import annotations
 
 import argparse
 import json
-import math
 import random
-from collections import Counter
+import re
+from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
-BOTS = [
+
+# How leagues map into site tabs
+LEAGUE_CATEGORY = {
+    "Premier League": "uk",
+    "Championship": "uk",
+    "League One": "uk",
+    "League Two": "uk",
+    "National League": "uk",
+    "Scottish Premiership": "uk",
+    "Scottish Championship": "uk",
+    "FA Cup": "cups",
+    "EFL Cup": "cups",
+    "EFL Trophy": "cups",
+    "Scottish Cup": "cups",
+    "Scottish League Cup": "cups",
+    "La Liga": "europe",
+    "Serie A": "europe",
+    "Bundesliga": "europe",
+    "Ligue 1": "europe",
+    "Eredivisie": "europe",
+    "Primeira Liga": "europe",
+    "Champions League": "uefa",
+    "Europa League": "uefa",
+    "Conference League": "uefa",
+}
+
+BOT_NAMES = [
     "FormFox",
-    "HomeBanker",
-    "ValueHunter",
-    "DrawSpecialist",
-    "AttackMinded",
-    "H2HHistorian",
+    "HomeStrong",
+    "AwayHunter",
+    "ValueSeeker",
+    "GoalsGuru",
+    "DevilAdvocate",
 ]
+
+# Each bot leans differently on 1X2 factors
+WEIGHTS = {
+    "FormFox":       {"home_form": 0.28, "away_form": 0.28, "home_adv": 0.12, "value": 0.12, "goals": 0.10, "upset": 0.10},
+    "HomeStrong":    {"home_form": 0.22, "away_form": 0.12, "home_adv": 0.35, "value": 0.10, "goals": 0.11, "upset": 0.10},
+    "AwayHunter":    {"home_form": 0.12, "away_form": 0.30, "home_adv": 0.08, "value": 0.20, "goals": 0.15, "upset": 0.15},
+    "ValueSeeker":   {"home_form": 0.15, "away_form": 0.15, "home_adv": 0.10, "value": 0.40, "goals": 0.10, "upset": 0.10},
+    "GoalsGuru":     {"home_form": 0.15, "away_form": 0.15, "home_adv": 0.10, "value": 0.15, "goals": 0.35, "upset": 0.10},
+    "DevilAdvocate": {"home_form": 0.18, "away_form": 0.18, "home_adv": 0.08, "value": 0.18, "goals": 0.13, "upset": 0.25},
+}
 
 
 def parse_date(arg: str) -> date:
@@ -30,394 +66,468 @@ def parse_date(arg: str) -> date:
         return date.today()
     if arg.lower() == "tomorrow":
         return date.today() + timedelta(days=1)
+    if arg.lower() == "yesterday":
+        return date.today() - timedelta(days=1)
     return datetime.strptime(arg, "%Y-%m-%d").date()
 
 
-def fnum(x, default=None):
-    if x is None:
-        return default
-    try:
-        return float(x)
-    except Exception:
-        return default
+def parse_record(summary: str) -> dict:
+    """Parse 'W-D-L' or '10-5-3' style records into win rate."""
+    s = (summary or "").strip()
+    m = re.match(r"(\d+)\s*[-–]\s*(\d+)\s*[-–]\s*(\d+)", s)
+    if not m:
+        return {"w": 0, "d": 0, "l": 0, "n": 0, "win_pct": 0.33, "pts_pg": 1.0}
+    w, d, l = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    n = w + d + l
+    if n <= 0:
+        return {"w": 0, "d": 0, "l": 0, "n": 0, "win_pct": 0.33, "pts_pg": 1.0}
+    return {
+        "w": w, "d": d, "l": l, "n": n,
+        "win_pct": w / n,
+        "draw_pct": d / n,
+        "pts_pg": (3 * w + d) / n,
+    }
 
 
-def form_score(form: str) -> float:
+def form_score_from_string(form: str) -> float:
+    """W/D/L string most-recent first if available."""
     if not form:
-        return 0.45
-    chunk = form.upper().replace(" ", "")[-5:]
-    pts = w = 0.0
-    for i, c in enumerate(chunk):
-        weight = 0.6 + 0.1 * i
-        pts += (1.0 if c == "W" else 0.45 if c == "D" else 0.0) * weight
-        w += weight
-    return max(0.05, min(0.95, pts / max(w, 1)))
+        return 0.5
+    chars = re.findall(r"[WDL]", form.upper())
+    if not chars:
+        return 0.5
+    score = 0.0
+    weight = 0.0
+    for i, c in enumerate(chars[:6]):
+        w = 1.0 / (1.0 + i * 0.35)
+        if c == "W":
+            score += w
+        elif c == "D":
+            score += 0.4 * w
+        weight += w
+    return max(0.15, min(0.9, score / weight if weight else 0.5))
 
 
-def poisson(lmbda: float, k: int) -> float:
-    return math.exp(-lmbda) * (lmbda ** k) / math.factorial(k)
+def american_to_decimal(a) -> float | None:
+    try:
+        a = float(a)
+    except (TypeError, ValueError):
+        return None
+    if a == 0:
+        return None
+    if a > 0:
+        return round(1 + a / 100.0, 2)
+    return round(1 + 100.0 / abs(a), 2)
 
 
-def predict_score(home_xg: float, away_xg: float):
-    best, best_p = (1, 1), -1.0
-    dist = {}
-    for i in range(0, 6):
-        for j in range(0, 6):
-            p = poisson(max(0.2, home_xg), i) * poisson(max(0.2, away_xg), j)
-            dist[(i, j)] = p
-            if p > best_p:
-                best_p, best = p, (i, j)
-    ph = pd = pa = 0.0
-    for (i, j), p in dist.items():
-        if i > j:
-            ph += p
-        elif i == j:
-            pd += p
+def normalise_odds(odds: dict | None) -> dict:
+    """Return decimal 1X2 odds dict with sensible fallbacks."""
+    if not odds:
+        return {"home": 2.5, "draw": 3.3, "away": 2.9}
+    out = {}
+    for k in ("home", "draw", "away"):
+        v = odds.get(k)
+        if v is None:
+            out[k] = {"home": 2.5, "draw": 3.3, "away": 2.9}[k]
+            continue
+        v = float(v)
+        # ESPN often uses American moneyline for soccer
+        if v > 20 or v < -20 or (v < 1 and v != 0):
+            d = american_to_decimal(v)
+            out[k] = d if d and d > 1.01 else {"home": 2.5, "draw": 3.3, "away": 2.9}[k]
+        elif v > 1.01:
+            out[k] = round(v, 2)
         else:
-            pa += p
-    s = ph + pd + pa or 1
-    return best[0], best[1], {"p_home": ph / s, "p_draw": pd / s, "p_away": pa / s, "p_score": best_p}
+            d = american_to_decimal(v)
+            out[k] = d if d else {"home": 2.5, "draw": 3.3, "away": 2.9}[k]
+    return out
 
 
-def match_features(m: dict) -> dict:
-    home, away = m["home"], m["away"]
-    hv = home.get("venue_form") or {}
-    av = away.get("venue_form") or {}
-    ho = home.get("overall_form") or {}
-    ao = away.get("overall_form") or {}
+def implied_probs(dec: dict) -> dict:
+    raw = {k: 1.0 / v for k, v in dec.items()}
+    s = sum(raw.values()) or 1.0
+    return {k: raw[k] / s for k in raw}
 
-    # PRIMARY: last 5 home / last 5 away
-    h_gf = fnum(hv.get("gf_avg"), fnum(ho.get("gf_avg"), 1.2))
-    h_ga = fnum(hv.get("ga_avg"), fnum(ho.get("ga_avg"), 1.2))
-    a_gf = fnum(av.get("gf_avg"), fnum(ao.get("gf_avg"), 1.1))
-    a_ga = fnum(av.get("ga_avg"), fnum(ao.get("ga_avg"), 1.3))
-    h_cs = int(hv.get("cs") or 0)
-    a_cs = int(av.get("cs") or 0)
 
-    home_xg = 0.6 * h_gf + 0.4 * a_ga
-    away_xg = 0.6 * a_gf + 0.4 * h_ga
-
-    # SECONDARY: overall form string / overall last-5 (smaller weight)
-    hf = form_score(home.get("form") or "")
-    af = form_score(away.get("form") or "")
-    home_xg = 0.8 * home_xg + 0.2 * home_xg * (0.85 + 0.3 * hf)
-    away_xg = 0.8 * away_xg + 0.2 * away_xg * (0.85 + 0.3 * af)
-
-    # Home advantage unless away in excellent form
-    home_bump = 1.12
-    if af >= 0.7:
-        home_bump = 1.03
-    elif af >= 0.6:
-        home_bump = 1.07
-    home_xg *= home_bump
-
-    if h_cs >= 2:
-        away_xg *= 0.9
-    if a_cs >= 2:
-        home_xg *= 0.92
-
-    # League position tilt (small)
-    hr = home.get("league_rank")
-    ar = away.get("league_rank")
-    if isinstance(hr, int) and isinstance(ar, int) and hr > 0 and ar > 0:
-        # lower rank number = better
-        if hr + 4 <= ar:
-            home_xg *= 1.06
-            away_xg *= 0.96
-        elif ar + 4 <= hr:
-            away_xg *= 1.06
-            home_xg *= 0.96
-
-    home_xg = max(0.25, min(3.6, home_xg))
-    away_xg = max(0.25, min(3.4, away_xg))
-    ph, pa, probs = predict_score(home_xg, away_xg)
-
+def score_match_sides(match: dict) -> dict:
+    home = match["home"]
+    away = match["away"]
+    hr = parse_record(home.get("record") or "")
+    ar = parse_record(away.get("record") or "")
+    hf = form_score_from_string(home.get("form") or "")
+    af = form_score_from_string(away.get("form") or "")
+    # blend record + form string
+    home_str = 0.55 * hr["win_pct"] + 0.45 * hf if hr["n"] >= 3 else (hf if home.get("form") else 0.45 + 0.1 * hr["win_pct"])
+    away_str = 0.55 * ar["win_pct"] + 0.45 * af if ar["n"] >= 3 else (af if away.get("form") else 0.45 + 0.1 * ar["win_pct"])
+    home_adv = 0.58  # baseline home edge in football
+    # goals tendency proxy from pts (high scoring leagues not known — use mid)
+    goals = 0.52
     return {
-        "home_gf": h_gf, "home_ga": h_ga, "away_gf": a_gf, "away_ga": a_ga,
-        "home_cs": h_cs, "away_cs": a_cs,
-        "home_xg": home_xg, "away_xg": away_xg,
-        "pred_home": ph, "pred_away": pa, "probs": probs,
-        "home_form": hf, "away_form": af,
-        "home_corners": fnum(hv.get("corners_avg")),
-        "away_corners": fnum(av.get("corners_avg")),
-        "home_yellows": fnum(hv.get("yellows_avg")),
-        "away_yellows": fnum(av.get("yellows_avg")),
-        "home_shots": fnum(hv.get("shots_avg")),
-        "away_shots": fnum(av.get("shots_avg")),
-        "home_rank": hr, "away_rank": ar,
-        "home_bump": home_bump,
-        "hv": hv, "av": av,
+        "home_form": max(0.12, min(0.88, home_str)),
+        "away_form": max(0.12, min(0.88, away_str)),
+        "home_adv": home_adv,
+        "home_rec": hr,
+        "away_rec": ar,
+        "goals": goals,
     }
 
 
-def bot_pick(bot: str, m: dict, feat: dict, rng: random.Random) -> dict:
-    hf, af = feat["home_form"], feat["away_form"]
-    home_s = 0.45 * (feat["home_gf"] / (feat["home_gf"] + feat["home_ga"] + 0.1)) + 0.25 * hf + 0.15
-    away_s = 0.45 * (feat["away_gf"] / (feat["away_gf"] + feat["away_ga"] + 0.1)) + 0.25 * af + 0.10
-    # venue edge into home
-    home_s += 0.12 if feat["home_bump"] >= 1.1 else 0.04
-    draw_s = 0.35 + 0.25 * (1 - abs(feat["home_xg"] - feat["away_xg"])) + 0.15 * (1 - abs(hf - af))
-
-    if bot == "HomeBanker":
-        home_s *= 1.18
-    elif bot == "DrawSpecialist":
-        draw_s *= 1.3
-    elif bot == "ValueHunter":
-        # lean against big rank gap if venue form close
-        if feat["home_rank"] and feat["away_rank"]:
-            if feat["home_rank"] + 5 <= feat["away_rank"] and abs(hf - af) < 0.1:
-                away_s *= 1.1
-            elif feat["away_rank"] + 5 <= feat["home_rank"] and abs(hf - af) < 0.1:
-                home_s *= 1.1
-    elif bot == "AttackMinded":
-        draw_s *= 0.7
-        if feat["home_xg"] >= feat["away_xg"]:
-            home_s *= 1.1
+def bot_pick(bot: str, match: dict, factors: dict, dec_odds: dict, rng: random.Random) -> dict:
+    w = WEIGHTS[bot]
+    imp = implied_probs(dec_odds)
+    # model probs before value
+    h = (
+        w["home_form"] * factors["home_form"]
+        + w["home_adv"] * factors["home_adv"]
+        + w["away_form"] * (1 - factors["away_form"]) * 0.5
+    )
+    a = (
+        w["away_form"] * factors["away_form"]
+        + w["home_form"] * (1 - factors["home_form"]) * 0.35
+        + (0.15 if bot == "AwayHunter" else 0.05)
+    )
+    d = 0.28 + w["upset"] * 0.15 + (0.05 if abs(factors["home_form"] - factors["away_form"]) < 0.08 else 0.0)
+    # value adjustments
+    if bot == "ValueSeeker":
+        # prefer outcomes where model > implied
+        edge_h = h / (h + d + a) - imp["home"]
+        edge_a = a / (h + d + a) - imp["away"]
+        edge_d = d / (h + d + a) - imp["draw"]
+        h += max(0, edge_h) * 0.4
+        a += max(0, edge_a) * 0.4
+        d += max(0, edge_d) * 0.35
+    if bot == "DevilAdvocate":
+        # lean against shortest price
+        shortest = min(dec_odds, key=dec_odds.get)
+        if shortest == "home":
+            h *= 0.85
+            a *= 1.08
+            d *= 1.05
+        elif shortest == "away":
+            a *= 0.85
+            h *= 1.08
+            d *= 1.05
         else:
-            away_s *= 1.1
-    elif bot == "H2HHistorian":
-        h2h = m.get("h2h") or []
-        if h2h:
-            # crude: count results from home team perspective of THIS fixture
-            hid = m["home"]["id"]
-            hw = dr = aw = 0
-            for g in h2h:
-                hs, as_ = g["score"]
-                if hs == as_:
-                    dr += 1
-                else:
-                    home_won = (g["home_id"] == hid and hs > as_) or (g["away_id"] == hid and as_ > hs)
-                    if home_won:
-                        hw += 1
-                    else:
-                        aw += 1
-            n = max(1, hw + dr + aw)
-            home_s = 0.5 * home_s + 0.5 * (hw / n)
-            draw_s = 0.5 * draw_s + 0.5 * (dr / n)
-            away_s = 0.5 * away_s + 0.5 * (aw / n)
-        # else no change
+            d *= 0.88
+            h *= 1.05
+            a *= 1.05
+    if bot == "HomeStrong":
+        h *= 1.12
+    if bot == "GoalsGuru":
+        # still 1X2 but lean BTTS-friendly sides (slightly prefer not-draw for goals markets narrative)
+        d *= 0.92
 
-    home_s += rng.uniform(-0.02, 0.02)
-    away_s += rng.uniform(-0.02, 0.02)
-    draw_s += rng.uniform(-0.02, 0.02)
-    scores = {"home": home_s, "draw": draw_s, "away": away_s}
-    outcome = max(scores, key=scores.get)
-    conf = int(max(44, min(82, 52 + 55 * (scores[outcome] - sorted(scores.values())[-2]))))
+    h += rng.uniform(-0.03, 0.03)
+    d += rng.uniform(-0.03, 0.03)
+    a += rng.uniform(-0.03, 0.03)
+    total = max(0.01, h + d + a)
+    probs = {"home": h / total, "draw": d / total, "away": a / total}
+    pick = max(probs, key=probs.get)
+    conf = int(round(40 + probs[pick] * 50))
+    conf = max(42, min(82, conf))
+    return {"pick": pick, "probs": probs, "conf": conf}
 
-    ph, pa = feat["pred_home"], feat["pred_away"]
-    if outcome == "home" and ph <= pa:
-        ph = pa + 1
-    if outcome == "away" and pa <= ph:
-        pa = ph + 1
-    if outcome == "draw":
-        g = min(max(ph, pa, 1), 2)
-        ph = pa = g if bot != "DrawSpecialist" else min(g, 1)
 
-    if outcome == "home":
-        selection, market = m["home"]["name"], "Home win"
-    elif outcome == "away":
-        selection, market = m["away"]["name"], "Away win"
-    else:
-        selection, market = "Draw", "Draw"
+def outcome_label(pick: str, match: dict) -> str:
+    if pick == "home":
+        return f"{match['home']['name']} win"
+    if pick == "away":
+        return f"{match['away']['name']} win"
+    return "Draw"
 
-    reason = build_reason(bot, m, feat, outcome, ph, pa)
-    builder = build_bet_builder(m, feat, outcome, ph, pa)
 
-    return {
-        "bot": bot,
-        "outcome": outcome,
-        "market": market,
-        "selection": selection,
-        "predicted_score": f"{ph}-{pa}",
-        "conf": conf,
-        "reason": reason,
-        "bet_builder": builder,
-        "probs": {k: round(v, 3) for k, v in feat["probs"].items() if k.startswith("p_")},
+def reason_for(bot: str, match: dict, factors: dict, pick: str, conf: int, dec_odds: dict) -> str:
+    home, away = match["home"]["name"], match["away"]["name"]
+    hr, ar = factors["home_rec"], factors["away_rec"]
+    league = match.get("league") or ""
+    kick = match.get("kickoff") or ""
+    sentences = []
+
+    openers = {
+        "FormFox": f"FormFox leans {outcome_label(pick, match)} in {home} vs {away}.",
+        "HomeStrong": f"HomeStrong backs the home angle: {outcome_label(pick, match)}.",
+        "AwayHunter": f"AwayHunter's read is {outcome_label(pick, match)}.",
+        "ValueSeeker": f"ValueSeeker finds the price for {outcome_label(pick, match)}.",
+        "GoalsGuru": f"GoalsGuru's 1X2 call is {outcome_label(pick, match)}.",
+        "DevilAdvocate": f"DevilAdvocate goes against the obvious: {outcome_label(pick, match)}.",
     }
+    sentences.append(openers.get(bot, f"Selection: {outcome_label(pick, match)}."))
 
-
-def build_reason(bot, m, feat, outcome, ph, pa) -> str:
-    home, away = m["home"]["name"], m["away"]["name"]
-    league = m.get("league") or ""
-    hv, av = feat.get("hv") or {}, feat.get("av") or {}
-    bits = []
-
-    bits.append(
-        f"{league}: last-5 venue form is the main read — {home} at home "
-        f"({feat['home_gf']:.1f} scored, {feat['home_ga']:.1f} conceded, {feat['home_cs']} clean sheets) "
-        f"vs {away} away ({feat['away_gf']:.1f} scored, {feat['away_ga']:.1f} conceded, {feat['away_cs']} clean sheets)."
-    )
-
-    if bot == "FormFox":
-        bits.append(
-            f"Overall form strings (secondary): {home} {m['home'].get('form') or 'n/a'}, {away} {m['away'].get('form') or 'n/a'}."
-        )
-        if abs(feat["home_form"] - feat["away_form"]) < 0.1:
-            bits.append("Overall form is close, so venue numbers decide more than the general string.")
-    elif bot == "HomeBanker":
-        if feat["home_bump"] <= 1.05:
-            bits.append(f"Home edge is reduced because {away}’s recent form is strong.")
-        else:
-            bits.append(f"Home advantage still applies unless {away} clearly outplay these home numbers.")
-    elif bot == "DrawSpecialist":
-        bits.append(
-            f"xG gap is {abs(feat['home_xg']-feat['away_xg']):.2f}; tight gaps and mutual clean-sheet habits support a stalemate."
-        )
-    elif bot == "AttackMinded":
-        bits.append(
-            f"Modelled goals ~{feat['home_xg']:.2f}–{feat['away_xg']:.2f}. "
-            f"Shots averages (if known): home {feat.get('home_shots') or 'n/a'}, away {feat.get('away_shots') or 'n/a'}."
-        )
-    elif bot == "ValueHunter":
-        bits.append(
-            f"League positions: {home} #{feat.get('home_rank') or '?'} vs {away} #{feat.get('away_rank') or '?'}. "
-            "If the table gap is large but venue form is close, the underdog venue line is interesting."
+    if hr["n"] >= 3:
+        sentences.append(
+            f"{home} season record on the card is {hr['w']}-{hr['d']}-{hr['l']} "
+            f"(win rate {hr['win_pct']*100:.0f}%, {hr['pts_pg']:.2f} pts/game)."
         )
     else:
-        n = len(m.get("h2h") or [])
-        bits.append(f"H2H meetings in loaded data: {n}." + (" Used as a light tilt only." if n else " None available — not invented."))
+        sentences.append(f"{home} have limited record data on the feed for this season snapshot.")
+    if ar["n"] >= 3:
+        sentences.append(
+            f"{away} sit at {ar['w']}-{ar['d']}-{ar['l']} "
+            f"({ar['win_pct']*100:.0f}% wins, {ar['pts_pg']:.2f} pts/game)."
+        )
+    else:
+        sentences.append(f"{away} similarly have sparse record detail on this feed.")
 
-    if feat.get("home_corners") is not None or feat.get("away_corners") is not None:
-        bits.append(
-            f"Corners avg (venue sample): {home} {feat.get('home_corners') or 'n/a'}, {away} {feat.get('away_corners') or 'n/a'}. "
-            f"Yellows avg: {feat.get('home_yellows') or 'n/a'} / {feat.get('away_yellows') or 'n/a'}."
+    if pick == "home":
+        sentences.append(
+            f"Home advantage still matters in {league or 'this competition'}, and the model rates "
+            f"{home}'s relative strength above {away} enough to prefer the home win at about {dec_odds['home']:.2f}."
+        )
+    elif pick == "away":
+        sentences.append(
+            f"The away case rests on {away}'s comparative numbers versus {home}, "
+            f"with the away price around {dec_odds['away']:.2f} offering the side the bot wants."
+        )
+    else:
+        sentences.append(
+            f"The sides look close enough that a draw at about {dec_odds['draw']:.2f} is the percentage play rather than forcing a winner."
         )
 
-    if outcome == "home":
-        bits.append(f"Pick: {home} to win; predicted score {ph}-{pa}.")
-    elif outcome == "away":
-        bits.append(f"Pick: {away} to win; predicted score {ph}-{pa}.")
-    else:
-        bits.append(f"Pick: draw; predicted score {ph}-{pa}.")
+    if match.get("venue"):
+        sentences.append(f"Venue listed as {match['venue']}.")
+    if kick:
+        sentences.append(f"Kick-off {kick} (feed time).")
+    sentences.append(f"Confidence {conf}% on a 1X2 reading only — not a guaranteed result.")
 
-    bits.append(
-        "Overall form and league position are secondary to home/away venue samples. "
-        "Injuries/top scorers only used when present on the feed (often missing)."
-    )
-    return " ".join(bits)
+    text = " ".join(sentences)
+    # soft min length
+    if len(text.split()) < 45:
+        text += (
+            f" Market snapshot on the card: home {dec_odds['home']:.2f}, "
+            f"draw {dec_odds['draw']:.2f}, away {dec_odds['away']:.2f}."
+        )
+    return " ".join(text.split())
 
 
-def build_bet_builder(m, feat, outcome, ph, pa) -> dict:
-    home, away = m["home"]["name"], m["away"]["name"]
-    total = ph + pa
+def bet_builder(match: dict, factors: dict, consensus_pick: str, dec_odds: dict, conf: float) -> dict:
+    """Richer builder legs from record proxies (honest about limited free data)."""
+    home, away = match["home"]["name"], match["away"]["name"]
+    hr, ar = factors["home_rec"], factors["away_rec"]
     legs = []
-    if outcome == "home":
-        legs.append(f"{home} to win")
-    elif outcome == "away":
-        legs.append(f"{away} to win")
-    else:
-        legs.append("Draw")
 
-    if total >= 3:
-        legs.append("Over 2.5 goals")
+    if consensus_pick == "home":
+        legs.append({"market": "Match result", "selection": f"{home} to win", "note": "Consensus 1X2"})
+    elif consensus_pick == "away":
+        legs.append({"market": "Match result", "selection": f"{away} to win", "note": "Consensus 1X2"})
     else:
-        legs.append("Under 2.5 goals")
+        legs.append({"market": "Match result", "selection": "Draw", "note": "Consensus 1X2"})
 
-    if ph > 0 and pa > 0:
-        legs.append("BTTS — Yes")
+    both_ok = factors["home_form"] >= 0.4 and factors["away_form"] >= 0.4
+    if both_ok:
+        legs.append({"market": "Both teams to score", "selection": "Yes", "note": "Both sides show enough attacking form proxy"})
     else:
-        legs.append("BTTS — No")
+        legs.append({"market": "Both teams to score", "selection": "No", "note": "One side looks weaker going forward"})
 
-    # corners from averages
-    hc = feat.get("home_corners")
-    ac = feat.get("away_corners")
-    if hc is not None and ac is not None:
-        est = hc + ac
-        if est >= 10.5:
-            legs.append("Over 9.5 corners")
-        elif est <= 8.0:
-            legs.append("Under 9.5 corners")
-        else:
-            legs.append("Over 8.5 corners")
+    if factors["home_form"] + factors["away_form"] >= 1.05:
+        legs.append({"market": "Total goals", "selection": "Over 2.5", "note": "Open-game lean from combined form"})
     else:
-        # fallback from goals tempo
-        if total >= 3:
-            legs.append("Over 8.5 corners")
-        else:
-            legs.append("Under 10.5 corners")
+        legs.append({"market": "Total goals", "selection": "Under 2.5", "note": "Tighter total expected"})
 
-    hy = feat.get("home_yellows")
-    ay = feat.get("away_yellows")
-    if hy is not None and ay is not None and (hy + ay) >= 3.5:
-        legs.append("Over 3.5 cards in match")
+    # Corners proxy: higher combined form → more corners
+    if factors["home_form"] + factors["away_form"] >= 1.0:
+        legs.append({"market": "Total corners", "selection": "Over 9.5", "note": "Proxy only — free feed has no corner averages yet"})
     else:
-        legs.append("Card market: check book (sample thin)")
+        legs.append({"market": "Total corners", "selection": "Under 10.5", "note": "Proxy only — free feed has no corner averages yet"})
 
-    safer = [legs[0], "Over 1.5 goals" if total >= 2 else "Under 3.5 goals"]
+    # Cards proxy: competitive tight games
+    if abs(factors["home_form"] - factors["away_form"]) < 0.12:
+        legs.append({"market": "Total cards", "selection": "Over 3.5", "note": "Even match often means more fouls/cards (proxy)"})
+    else:
+        legs.append({"market": "Total cards", "selection": "Under 4.5", "note": "One-sided lean may mean fewer cards (proxy)"})
+
+    # Scoreline suggestion
+    if consensus_pick == "home":
+        scoreline = "2-1" if factors["away_form"] >= 0.4 else "2-0"
+    elif consensus_pick == "away":
+        scoreline = "1-2" if factors["home_form"] >= 0.4 else "0-2"
+    else:
+        scoreline = "1-1"
+
+    if consensus_pick == "home":
+        safer = f"{home} win or draw (1X)"
+    elif consensus_pick == "away":
+        safer = f"{away} win or draw (X2)"
+    else:
+        safer = "Double chance 12 if you do not want the pure draw"
+
     return {
-        "primary_legs": legs[:5],
-        "safer_legs": safer,
-        "note": "Builder legs come from venue goal/corner/card samples + predicted score. Prices not fetched — check your book.",
+        "legs": legs,
+        "scoreline": scoreline,
+        "safer_alternative": safer,
+        "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice.",
     }
 
 
-def build_tips(fixtures: dict) -> dict:
-    matches_out = []
-    for idx, m in enumerate(fixtures.get("matches") or []):
-        # skip if not enriched enough? still tip from form string
-        feat = match_features(m)
-        rng = random.Random(f"{m.get('id')}|{idx}")
-        tips = [bot_pick(bot, m, feat, rng) for bot in BOTS]
-        stars = Counter(t["selection"] for t in tips)
-        for t in tips:
-            t["stars"] = stars[t["selection"]]
-        votes = Counter(t["outcome"] for t in tips)
-        matches_out.append({
-            "id": m.get("id"),
-            "date": m.get("date"),
-            "kickoff": m.get("kickoff"),
-            "league": m.get("league"),
-            "league_code": m.get("league_code"),
-            "region": m.get("region"),
-            "venue": m.get("venue"),
-            "home": m["home"]["name"],
-            "away": m["away"]["name"],
-            "home_form": m["home"].get("form"),
-            "away_form": m["away"].get("form"),
-            "home_rank": m["home"].get("league_rank"),
-            "away_rank": m["away"].get("league_rank"),
-            "home_venue": m["home"].get("venue_form"),
-            "away_venue": m["away"].get("venue_form"),
-            "model_score": f"{feat['pred_home']}-{feat['pred_away']}",
-            "model_probs": feat["probs"],
-            "consensus": votes.most_common(1)[0][0],
-            "tips": tips,
-        })
-
-    # group helper for UI
-    by_region = {}
-    for m in matches_out:
-        by_region.setdefault(m.get("region") or "Other", {}).setdefault(m.get("league") or "Other", []).append(m)
-
+def match_stats(match: dict, factors: dict) -> dict:
+    """Card-facing stats block from what the free feed actually has."""
+    hr, ar = factors["home_rec"], factors["away_rec"]
+    home, away = match["home"], match["away"]
     return {
-        "start_date": fixtures.get("start_date"),
+        "home": {
+            "name": home.get("name"),
+            "record": home.get("record") or "",
+            "form": home.get("form") or "",
+            "wins": hr.get("w", 0),
+            "draws": hr.get("d", 0),
+            "losses": hr.get("l", 0),
+            "win_pct": round(100 * hr.get("win_pct", 0), 1),
+            "pts_pg": round(hr.get("pts_pg", 0), 2),
+            "note": "Goals for/against, clean sheets, corners not on free ESPN scoreboard — added when history store has them.",
+        },
+        "away": {
+            "name": away.get("name"),
+            "record": away.get("record") or "",
+            "form": away.get("form") or "",
+            "wins": ar.get("w", 0),
+            "draws": ar.get("d", 0),
+            "losses": ar.get("l", 0),
+            "win_pct": round(100 * ar.get("win_pct", 0), 1),
+            "pts_pg": round(ar.get("pts_pg", 0), 2),
+            "note": "Same limit as home until richer stats pipeline is live.",
+        },
+    }
+
+
+def build_tips(d: date, fixtures: dict) -> dict:
+    leagues_out = []
+    hot = []
+    for lg in fixtures.get("leagues") or []:
+        matches_out = []
+        for match in lg.get("matches") or []:
+            # skip finished if you only want previews — still tip pre-match
+            if (match.get("status") or "").lower() in ("post", "final"):
+                # still show but flag
+                pass
+            dec = normalise_odds(match.get("odds"))
+            factors = score_match_sides(match)
+            rng = random.Random(f"{d}|{match.get('id')}|{match.get('name')}")
+            tips = []
+            for bot in BOT_NAMES:
+                res = bot_pick(bot, match, factors, dec, rng)
+                tips.append({
+                    "bot": bot,
+                    "pick": res["pick"],  # home|draw|away
+                    "pick_label": outcome_label(res["pick"], match),
+                    "conf": res["conf"],
+                    "odds": dec.get(res["pick"]),
+                    "probs": {k: round(v, 3) for k, v in res["probs"].items()},
+                    "reason": reason_for(bot, match, factors, res["pick"], res["conf"], dec),
+                })
+            counts = Counter(t["pick"] for t in tips)
+            top_pick, n = counts.most_common(1)[0]
+            avg_conf = sum(t["conf"] for t in tips if t["pick"] == top_pick) / max(1, n)
+            strength = "strong" if n >= 5 else ("solid" if n >= 4 else ("lean" if n >= 3 else "split"))
+            # Skip forced tips: too tight / low agreement (same idea as horse "split")
+            tippable = (n >= 3 and avg_conf >= 54 and strength != "split")
+            consensus = {
+                "pick": top_pick if tippable else None,
+                "pick_label": outcome_label(top_pick, match) if tippable else "No tip — too tight",
+                "bot_count": n,
+                "avg_conf": round(avg_conf, 1),
+                "strength": strength if tippable else "skip",
+                "bots": [t["bot"] for t in tips if t["pick"] == top_pick] if tippable else [],
+                "odds": dec.get(top_pick) if tippable else None,
+                "tippable": tippable,
+            }
+            bb = bet_builder(match, factors, top_pick, dec, avg_conf) if tippable else {
+                "legs": [],
+                "scoreline": None,
+                "safer_alternative": None,
+                "disclaimer": "No builder — match skipped as too tight for a tip.",
+            }
+            stats = match_stats(match, factors)
+            for t in tips:
+                t["stars"] = counts[t["pick"]]
+            matches_out.append({
+                "id": match.get("id"),
+                "name": match.get("name"),
+                "kickoff": match.get("kickoff"),
+                "kickoff_iso": match.get("kickoff_iso"),
+                "status": match.get("status"),
+                "venue": match.get("venue"),
+                "home": match["home"],
+                "away": match["away"],
+                "odds": dec,
+                "consensus": consensus,
+                "bet_builder": bb,
+                "stats": stats,
+                "tippable": tippable,
+                "tips": tips if tippable else [],  # hide bot noise on skips
+            })
+            if tippable:
+                hot.append({
+                    "league": lg["name"],
+                    "category": LEAGUE_CATEGORY.get(lg["name"], "europe"),
+                    "match": match["name"],
+                    "kickoff": match.get("kickoff"),
+                    "pick": top_pick,
+                    "pick_label": consensus["pick_label"],
+                    "bot_count": n,
+                    "avg_conf": consensus["avg_conf"],
+                    "odds": consensus["odds"],
+                    "strength": strength,
+                    "scoreline": bb.get("scoreline"),
+                })
+        if matches_out:
+            leagues_out.append({
+                "name": lg["name"],
+                "code": lg.get("code"),
+                "region": lg.get("region"),
+                "category": LEAGUE_CATEGORY.get(lg["name"], "europe"),
+                "priority": lg.get("priority", 99),
+                "matches": matches_out,
+                "tipped_count": sum(1 for m in matches_out if m.get("tippable")),
+            })
+    hot.sort(key=lambda x: (-x["bot_count"], -x["avg_conf"]))
+    return {
+        "date": d.isoformat(),
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "match_count": len(matches_out),
-        "bots": BOTS,
-        "matches": matches_out,
-        "by_region": {r: {l: len(v) for l, v in leagues.items()} for r, leagues in by_region.items()},
-        "note": (
-            "Primary: last-5 home form for the home side and last-5 away form for the away side "
-            "(goals, conceded, clean sheets; corners/cards when match stats exist). "
-            "Secondary: overall form string and league position. "
-            "Injuries/top scorers only when the feed provides them."
-        ),
+        "frozen": True,
+        "leagues": leagues_out,
+        "hot_picks": hot[:15],
+        "meta": {
+            "bots": BOT_NAMES,
+            "freeze_policy": "first_write_wins",
+            "note": "1X2 tips from season records/form proxies on ESPN feed. Not betting advice.",
+        },
     }
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default="today")
+    ap.add_argument("--force", action="store_true")
     args = ap.parse_args()
     d = parse_date(args.date)
-    path = ROOT / f"fixtures-{d.isoformat()}.json"
-    if not path.exists():
-        out = {"start_date": d.isoformat(), "match_count": 0, "matches": [], "note": "No fixtures file."}
+    out = ROOT / f"tips-{d.isoformat()}.json"
+    if out.exists() and not args.force:
+        try:
+            existing = json.loads(out.read_text(encoding="utf-8"))
+            n = sum(len(lg.get("matches") or []) for lg in existing.get("leagues") or [])
+            if n > 0:
+                print(f"SKIP: {out.name} already has {n} matches — frozen. Use --force to overwrite.")
+                return
+        except Exception:
+            pass
+
+    fx_path = ROOT / f"fixtures-{d.isoformat()}.json"
+    if not fx_path.exists():
+        print(f"No fixtures file {fx_path} — run scrape_fixtures.py first")
+        tips = {
+            "date": d.isoformat(),
+            "leagues": [],
+            "hot_picks": [],
+            "published": False,
+            "note": "No fixtures scraped yet.",
+        }
     else:
-        out = build_tips(json.loads(path.read_text(encoding="utf-8")))
-    out_path = ROOT / f"tips-{d.isoformat()}.json"
-    out_path.write_text(json.dumps(out, indent=2), encoding="utf-8")
-    print(f"Wrote {out_path} matches={out.get('match_count')}")
+        fixtures = json.loads(fx_path.read_text(encoding="utf-8"))
+        tips = build_tips(d, fixtures)
+        tips["published"] = True
+
+    out.write_text(json.dumps(tips, indent=2), encoding="utf-8")
+    n = sum(len(lg.get("matches") or []) for lg in tips.get("leagues") or [])
+    print(f"Wrote {out} matches={n} hot={len(tips.get('hot_picks') or [])}")
 
 
 if __name__ == "__main__":
