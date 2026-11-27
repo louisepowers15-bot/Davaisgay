@@ -189,6 +189,45 @@ def implied_probs(dec: dict) -> dict:
     return {k: raw[k] / s for k in raw}
 
 
+DERBY_PAIRS = {
+    frozenset({"liverpool", "everton"}),
+    frozenset({"manchester united", "manchester city"}),
+    frozenset({"arsenal", "tottenham"}),
+    frozenset({"arsenal", "tottenham hotspur"}),
+    frozenset({"chelsea", "tottenham"}),
+    frozenset({"chelsea", "tottenham hotspur"}),
+    frozenset({"newcastle", "sunderland"}),
+    frozenset({"newcastle united", "sunderland"}),
+    frozenset({"aston villa", "birmingham"}),
+    frozenset({"aston villa", "birmingham city"}),
+    frozenset({"sheffield united", "sheffield wednesday"}),
+    frozenset({"nottingham forest", "derby"}),
+    frozenset({"nottingham forest", "derby county"}),
+    frozenset({"celtic", "rangers"}),
+    frozenset({"barcelona", "real madrid"}),
+    frozenset({"inter", "milan"}),
+    frozenset({"internazionale", "ac milan"}),
+    frozenset({"borussia dortmund", "schalke"}),
+    frozenset({"roma", "lazio"}),
+    frozenset({"benfica", "porto"}),
+    frozenset({"benfica", "sporting"}),
+    frozenset({"porto", "sporting"}),
+}
+
+
+def is_derby(home: str, away: str) -> bool:
+    try:
+        import history_store as hs
+        a, b = hs.norm(home), hs.norm(away)
+    except Exception:
+        a, b = (home or "").lower(), (away or "").lower()
+    pair = frozenset({a, b})
+    if pair in DERBY_PAIRS:
+        return True
+    # soft: same short city token
+    return False
+
+
 def score_match_sides(match: dict, hist_matches: list | None = None) -> dict:
     """
     Strengths from history last-5 (overall/home/away) when available,
@@ -275,6 +314,8 @@ def score_match_sides(match: dict, hist_matches: list | None = None) -> dict:
         "home_hist": home_pack,
         "away_hist": away_pack,
         "h2h": h2h,
+        "is_derby": is_derby(home.get("name") or "", away.get("name") or ""),
+        "_hist_matches": hist_matches or [],
         "goals": 0.5,
     }
 
@@ -308,9 +349,16 @@ def bot_pick(bot: str, match: dict, factors: dict, dec_odds: dict, rng: random.R
     h2h = factors.get("h2h") or {}
     if h2h.get("n", 0) >= 2:
         n = h2h["n"]
-        h += 0.05 * (h2h.get("wins", 0) / n)
-        a += 0.05 * (h2h.get("losses", 0) / n)
-        d += 0.07 * (h2h.get("draws", 0) / n)
+        # Mild H2H only — form stays primary
+        h += 0.03 * (h2h.get("wins", 0) / n)
+        a += 0.03 * (h2h.get("losses", 0) / n)
+        d += 0.04 * (h2h.get("draws", 0) / n)
+
+    if factors.get("is_derby"):
+        # Derbies are chaotic: lift draw, shrink big side lean
+        d *= 1.15
+        h *= 0.96
+        a *= 0.96
 
     if bot == "HomeStrong":
         # Only lean home if home is not clearly inferior
@@ -439,8 +487,10 @@ def reason_for(bot: str, match: dict, factors: dict, pick: str, conf: int, dec_o
     h2h = factors.get("h2h") or {}
     if h2h.get("n", 0) >= 1:
         sentences.append(
-            f"Head-to-head (last {h2h['n']} from {home}'s view): {h2h.get('chars') or h2h.get('record')}."
+            f"H2H last {h2h['n']} (mild factor only): {h2h.get('chars') or h2h.get('record')} from {home}'s view — form still leads."
         )
+    if factors.get("is_derby"):
+        sentences.append("Derby caution: rivalry games often ignore league form; treated as higher variance.")
     sentences.append(f"Confidence {conf}%.")
     return " ".join(" ".join(sentences).split())
 
@@ -522,134 +572,75 @@ def bet_builder(match: dict, factors: dict, consensus_pick: str, dec_odds: dict,
 
 def match_stats(match: dict, factors: dict) -> dict:
     """
-    Home card: home form only (+ overall context).
-    Away card: away form only (+ overall context).
-    Goals for/against/clean sheets from history when present.
+    Display:
+      Home: last 5 home form + stats, last 3 overall form + stats
+      Away: last 5 away form + stats, last 3 overall form + stats
+      Season W-D-L + win %, optional league position, streak flags
     """
     hr, ar = factors["home_rec"], factors["away_rec"]
     home, away = match["home"], match["away"]
     hh = factors.get("home_hist")
     ah = factors.get("away_hist")
+    league = match.get("league") or ""
 
-    def pack_home(team, rec, hist, espn_form):
-        if hist and hist.get("played", 0) > 0:
-            o, h = hist["overall"], hist["home"]
-            gh = hist.get("goals_home") or {}
-            go = hist.get("goals_overall") or {}
-            return {
-                "name": team.get("name"),
-                "side": "home",
-                "record": team.get("record") or f"{rec.get('w',0)}-{rec.get('d',0)}-{rec.get('l',0)}",
-                "wins": rec.get("w", 0),
-                "draws": rec.get("d", 0),
-                "losses": rec.get("l", 0),
-                "win_pct": round(100 * rec.get("win_pct", 0), 1),
-                "pts_pg": round(rec.get("pts_pg", 0), 2),
-                # Venue-relevant form only
-                "venue_form_last5": h.get("chars") or "—",
-                "venue_form_record": h.get("record") or "—",
-                "venue_form_label": "Last 5 at home",
-                "overall_form_last5": o.get("chars") or "—",
-                "overall_form_record": o.get("record") or "—",
-                "venue_matches": h.get("matches") or [],
-                "overall_matches": o.get("matches") or [],
-                "goals_for": gh.get("gf"),
-                "goals_against": gh.get("ga"),
-                "gf_pg": gh.get("gf_pg"),
-                "ga_pg": gh.get("ga_pg"),
-                "clean_sheets": gh.get("clean_sheets"),
-                "cs_pct": gh.get("cs_pct"),
-                "goals_sample": gh.get("played") or 0,
-                "goals_scope": "home games in history",
-                "goals_overall_for": go.get("gf"),
-                "goals_overall_against": go.get("ga"),
-                "cs_overall": go.get("clean_sheets"),
-                "flags": [f for f in (hist.get("flags") or []) if "away" not in f.lower()],
-                "note": "Home form and home goals only. Overall last-5 is secondary context.",
-            }
-        l5 = parse_form_last5(espn_form or team.get("form") or "")
-        return {
+    def pack(team, rec, hist, espn_form, side: str):
+        base = {
             "name": team.get("name"),
-            "side": "home",
-            "record": team.get("record") or "",
+            "side": side,
+            "record": team.get("record") or f"{rec.get('w',0)}-{rec.get('d',0)}-{rec.get('l',0)}",
             "wins": rec.get("w", 0), "draws": rec.get("d", 0), "losses": rec.get("l", 0),
             "win_pct": round(100 * rec.get("win_pct", 0), 1),
-            "pts_pg": round(rec.get("pts_pg", 0), 2),
-            "venue_form_last5": "—",
-            "venue_form_record": "—",
-            "venue_form_label": "Last 5 at home",
-            "overall_form_last5": l5.get("chars") or "—",
-            "overall_form_record": f"{l5.get('wins',0)}-{l5.get('draws',0)}-{l5.get('losses',0)}",
-            "venue_matches": [],
-            "overall_matches": [],
-            "goals_for": None, "goals_against": None, "gf_pg": None, "ga_pg": None,
-            "clean_sheets": None, "cs_pct": None, "goals_sample": 0,
-            "goals_scope": "not enough history yet",
-            "flags": [],
-            "note": "Home-only form and goals appear after this team has home results in history.",
+            "overall_form_last3": "—", "overall_form_last3_record": "—",
+            "venue_form_last5": "—", "venue_form_record": "—",
+            "venue_form_label": "Last 5 at home" if side == "home" else "Last 5 away",
+            "l3_gf": None, "l3_ga": None, "l3_cs": None,
+            "venue_l5_gf": None, "venue_l5_ga": None, "venue_l5_cs": None,
+            "overall3_matches": [], "venue_matches": [],
+            "position": None, "position_label": None,
+            "streaks": {}, "streaks_venue": {}, "flags": [],
+            "note": "",
         }
+        if not hist or hist.get("played", 0) <= 0:
+            l5 = parse_form_last5(espn_form or team.get("form") or "")
+            base["overall_form_last3"] = (l5.get("chars") or "—")[-3:] if l5.get("chars") else "—"
+            return base
 
-    def pack_away(team, rec, hist, espn_form):
-        if hist and hist.get("played", 0) > 0:
-            o, a = hist["overall"], hist["away"]
-            ga_ = hist.get("goals_away") or {}
-            go = hist.get("goals_overall") or {}
-            return {
-                "name": team.get("name"),
-                "side": "away",
-                "record": team.get("record") or f"{rec.get('w',0)}-{rec.get('d',0)}-{rec.get('l',0)}",
-                "wins": rec.get("w", 0),
-                "draws": rec.get("d", 0),
-                "losses": rec.get("l", 0),
-                "win_pct": round(100 * rec.get("win_pct", 0), 1),
-                "pts_pg": round(rec.get("pts_pg", 0), 2),
-                "venue_form_last5": a.get("chars") or "—",
-                "venue_form_record": a.get("record") or "—",
-                "venue_form_label": "Last 5 away",
-                "overall_form_last5": o.get("chars") or "—",
-                "overall_form_record": o.get("record") or "—",
-                "venue_matches": a.get("matches") or [],
-                "overall_matches": o.get("matches") or [],
-                "goals_for": ga_.get("gf"),
-                "goals_against": ga_.get("ga"),
-                "gf_pg": ga_.get("gf_pg"),
-                "ga_pg": ga_.get("ga_pg"),
-                "clean_sheets": ga_.get("clean_sheets"),
-                "cs_pct": ga_.get("cs_pct"),
-                "goals_sample": ga_.get("played") or 0,
-                "goals_scope": "away games in history",
-                "goals_overall_for": go.get("gf"),
-                "goals_overall_against": go.get("ga"),
-                "cs_overall": go.get("clean_sheets"),
-                "flags": [f for f in (hist.get("flags") or []) if "home" not in f.lower() or "overall" in f.lower()],
-                "note": "Away form and away goals only. Overall last-5 is secondary context.",
-            }
-        l5 = parse_form_last5(espn_form or team.get("form") or "")
-        return {
-            "name": team.get("name"),
-            "side": "away",
-            "record": team.get("record") or "",
-            "wins": rec.get("w", 0), "draws": rec.get("d", 0), "losses": rec.get("l", 0),
-            "win_pct": round(100 * rec.get("win_pct", 0), 1),
-            "pts_pg": round(rec.get("pts_pg", 0), 2),
-            "venue_form_last5": "—",
-            "venue_form_record": "—",
-            "venue_form_label": "Last 5 away",
-            "overall_form_last5": l5.get("chars") or "—",
-            "overall_form_record": f"{l5.get('wins',0)}-{l5.get('draws',0)}-{l5.get('losses',0)}",
-            "venue_matches": [],
-            "overall_matches": [],
-            "goals_for": None, "goals_against": None, "gf_pg": None, "ga_pg": None,
-            "clean_sheets": None, "cs_pct": None, "goals_sample": 0,
-            "goals_scope": "not enough history yet",
-            "flags": [],
-            "note": "Away-only form and goals appear after this team has away results in history.",
-        }
+        o3 = hist.get("overall3") or {}
+        venue_key = "home" if side == "home" else "away"
+        v = hist.get(venue_key) or {}
+        g3 = hist.get("goals_last3") or {}
+        vg5 = hist.get("goals_home_last5" if side == "home" else "goals_away_last5") or {}
+        base.update({
+            "overall_form_last3": o3.get("chars") or "—",
+            "overall_form_last3_record": o3.get("record") or "—",
+            "venue_form_last5": v.get("chars") or "—",
+            "venue_form_record": v.get("record") or "—",
+            "overall3_matches": o3.get("matches") or [],
+            "venue_matches": v.get("matches") or [],
+            "l3_gf": g3.get("gf"), "l3_ga": g3.get("ga"), "l3_cs": g3.get("clean_sheets"),
+            "venue_l5_gf": vg5.get("gf"), "venue_l5_ga": vg5.get("ga"), "venue_l5_cs": vg5.get("clean_sheets"),
+            "streaks": hist.get("streaks") or {},
+            "streaks_venue": hist.get("streaks_home" if side == "home" else "streaks_away") or {},
+            "flags": hist.get("flags") or [],
+        })
+        # position from history if available
+        if history_store and factors.get("_hist_matches") is not None:
+            try:
+                pos = history_store.league_position_estimate(
+                    factors["_hist_matches"], team.get("name") or "", league
+                )
+                if pos:
+                    base["position"] = pos.get("position")
+                    base["position_label"] = pos.get("label")
+                    base["position_band"] = pos.get("band")
+            except Exception:
+                pass
+        return base
 
     h2h = factors.get("h2h") or {"n": 0, "matches": [], "record": "—", "chars": ""}
     return {
-        "home": pack_home(home, hr, hh, home.get("form")),
-        "away": pack_away(away, ar, ah, away.get("form")),
+        "home": pack(home, hr, hh, home.get("form"), "home"),
+        "away": pack(away, ar, ah, away.get("form"), "away"),
         "h2h": {
             "n": h2h.get("n", 0),
             "record": h2h.get("record") or "—",
@@ -657,6 +648,7 @@ def match_stats(match: dict, factors: dict) -> dict:
             "label": f"H2H (from {home.get('name')} view)",
             "matches": h2h.get("matches") or [],
         },
+        "is_derby": bool(factors.get("is_derby")),
     }
 
 

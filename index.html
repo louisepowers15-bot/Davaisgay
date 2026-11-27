@@ -370,37 +370,47 @@ function renderMatch(m) {
     const s = st[side] || {};
     const isHome = side === "home";
     html += '<div class="stat-card"><h4>' + (s.name || side) + (isHome ? " (home)" : " (away)") + "</h4>";
-    // Venue form only
+    // Spec: L5 venue form+stats, L3 overall form+stats, season %, streaks
     html += '<div class="row"><span>' + (s.venue_form_label || (isHome ? "Last 5 home" : "Last 5 away")) + '</span><span>' +
       (s.venue_form_last5 || "—") + " (" + (s.venue_form_record || "—") + ")</span></div>";
-    html += '<div class="row"><span>Last 5 overall</span><span>' + (s.overall_form_last5 || "—") +
-      " (" + (s.overall_form_record || "—") + ")</span></div>";
-    // Goals / CS from history for that venue
-    if (s.goals_sample > 0) {
-      html += '<div class="row"><span>Goals scored</span><span>' + (s.goals_for != null ? s.goals_for : "—") +
-        (s.gf_pg != null ? " (" + s.gf_pg + "/game)" : "") + "</span></div>";
-      html += '<div class="row"><span>Goals conceded</span><span>' + (s.goals_against != null ? s.goals_against : "—") +
-        (s.ga_pg != null ? " (" + s.ga_pg + "/game)" : "") + "</span></div>";
-      html += '<div class="row"><span>Clean sheets</span><span>' + (s.clean_sheets != null ? s.clean_sheets : "—") +
-        (s.cs_pct != null ? " (" + s.cs_pct + "%)" : "") + "</span></div>";
-      html += '<div class="row"><span>Sample</span><span>' + s.goals_sample + " " + (s.goals_scope || "games") + "</span></div>";
-    } else {
-      html += '<div class="row"><span>Goals / CS</span><span style="color:var(--muted)">Need history</span></div>';
+    if (s.venue_l5_gf != null) {
+      html += '<div class="row"><span>L5 scored / conc</span><span>' + s.venue_l5_gf + " / " + s.venue_l5_ga + "</span></div>";
+      html += '<div class="row"><span>L5 clean sheets</span><span>' + (s.venue_l5_cs != null ? s.venue_l5_cs : "—") + "</span></div>";
+    }
+    html += '<div class="row"><span>Last 3 overall</span><span>' + (s.overall_form_last3 || "—") +
+      " (" + (s.overall_form_last3_record || "—") + ")</span></div>";
+    if (s.l3_gf != null) {
+      html += '<div class="row"><span>L3 scored / conc</span><span>' + s.l3_gf + " / " + s.l3_ga + "</span></div>";
+      html += '<div class="row"><span>L3 clean sheets</span><span>' + (s.l3_cs != null ? s.l3_cs : "—") + "</span></div>";
     }
     html += '<div class="row"><span>Season W-D-L</span><span>' + (s.record || "—") + "</span></div>";
     html += '<div class="row"><span>Season win %</span><span>' + (s.win_pct != null ? s.win_pct + "%" : "—") + "</span></div>";
+    if (s.position_label) {
+      html += '<div class="row"><span>League pos (est.)</span><span>' + s.position_label + "</span></div>";
+    }
+    const st = s.streaks || {};
+    const sv = s.streaks_venue || {};
+    if (st.unbeaten >= 5) html += '<div class="row"><span></span><span style="color:var(--gold2)">Unbeaten last ' + st.unbeaten + ' overall</span></div>';
+    if (st.wins >= 4) html += '<div class="row"><span></span><span style="color:var(--gold2)">Won last ' + st.wins + '</span></div>';
+    if (st.clean_sheets >= 3) html += '<div class="row"><span></span><span style="color:var(--gold2)">No goals conceded in last ' + st.clean_sheets + '</span></div>';
+    if (sv.unbeaten >= 5) html += '<div class="row"><span></span><span style="color:var(--gold2)">Unbeaten last ' + sv.unbeaten + (isHome ? ' at home' : ' away') + '</span></div>';
+    if (sv.clean_sheets >= 3) html += '<div class="row"><span></span><span style="color:var(--gold2)">' + sv.clean_sheets + ' CS in a row ' + (isHome ? 'home' : 'away') + '</span></div>';
+    if (st.winless >= 5) html += '<div class="row"><span></span><span style="color:#f87171">Winless last ' + st.winless + '</span></div>';
     (s.flags || []).forEach(f => {
-      html += '<div class="row"><span></span><span style="color:var(--gold2)">' + f + "</span></div>";
+      if (f.indexOf("vs stronger") >= 0 || f.indexOf("vs weaker") >= 0 || f.indexOf("Unbeaten") >= 0 || f.indexOf("clean") >= 0 || f.indexOf("Won last") >= 0)
+        html += '<div class="row"><span></span><span style="color:var(--gold2)">' + f + "</span></div>";
     });
-    // Only venue-relevant detail list + overall as secondary
-    html += formLines(s.venue_matches, isHome ? "Home games detail" : "Away games detail");
-    html += formLines(s.overall_matches, "Overall last 5 detail");
+    html += formLines(s.venue_matches, isHome ? "Last 5 home detail" : "Last 5 away detail");
+    html += formLines(s.overall3_matches, "Last 3 overall detail");
     if (s.note) html += '<div class="stat-note">' + s.note + "</div>";
     html += "</div>";
   });
   html += "</div>";
 
   const h2h = (m.stats || {}).h2h || {};
+  if ((m.stats || {}).is_derby) {
+    html += '<div class="stat-note" style="color:var(--gold2)">⚠ Derby — higher variance; form treated cautiously.</div>';
+  }
   if (h2h.n > 0 && (h2h.matches || []).length) {
     html += '<div class="scoreline-box" style="margin-top:0.5rem"><div class="lbl">Head to head</div>';
     html += '<div class="val" style="font-size:1rem">' + (h2h.chars || h2h.record || "") +

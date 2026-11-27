@@ -313,6 +313,29 @@ def enrich_form_matches(matches: list, form_rows: list) -> list:
 
 
 
+def team_goal_stats_from_rows(rows: list) -> dict:
+    if not rows:
+        return {
+            "played": 0, "gf": 0, "ga": 0, "gf_pg": None, "ga_pg": None,
+            "clean_sheets": 0, "cs_pct": None, "failed_to_score": 0,
+        }
+    gf = sum(r["gf"] for r in rows)
+    ga = sum(r["ga"] for r in rows)
+    cs = sum(1 for r in rows if r["ga"] == 0)
+    fts = sum(1 for r in rows if r["gf"] == 0)
+    n = len(rows)
+    return {
+        "played": n,
+        "gf": gf,
+        "ga": ga,
+        "gf_pg": round(gf / n, 2),
+        "ga_pg": round(ga / n, 2),
+        "clean_sheets": cs,
+        "cs_pct": round(100.0 * cs / n, 1),
+        "failed_to_score": fts,
+    }
+
+
 def team_goal_stats(matches: list, team: str, venue: str | None = None) -> dict:
     """
     Goals for/against and clean sheets from history.
@@ -405,6 +428,103 @@ def head_to_head(matches: list, team_a: str, team_b: str, limit: int = 6) -> dic
     }
 
 
+
+def streak_stats(rows: list) -> dict:
+    """
+    Current streaks from newest result first.
+    rows = team_results order (newest first).
+    """
+    if not rows:
+        return {
+            "unbeaten": 0,
+            "wins": 0,
+            "clean_sheets": 0,
+            "scoring": 0,
+            "winless": 0,
+        }
+    unbeaten = 0
+    for r in rows:
+        if r["result"] in ("W", "D"):
+            unbeaten += 1
+        else:
+            break
+    wins = 0
+    for r in rows:
+        if r["result"] == "W":
+            wins += 1
+        else:
+            break
+    cs = 0
+    for r in rows:
+        if r["ga"] == 0:
+            cs += 1
+        else:
+            break
+    scoring = 0
+    for r in rows:
+        if r["gf"] > 0:
+            scoring += 1
+        else:
+            break
+    winless = 0
+    for r in rows:
+        if r["result"] in ("D", "L"):
+            winless += 1
+        else:
+            break
+    return {
+        "unbeaten": unbeaten,
+        "wins": wins,
+        "clean_sheets": cs,
+        "scoring": scoring,
+        "winless": winless,
+    }
+
+
+
+def league_position_estimate(matches: list, team: str, league: str, season_prefix: str | None = None) -> dict | None:
+    """
+    Rough table position from stored results in this league (current-ish season).
+    Points from all matches for each team in that league since season start.
+    """
+    # Prefer 2627 / current season rows if present
+    league_rows = [m for m in matches if (m.get("league") or "") == league]
+    if not league_rows:
+        return None
+    # take most recent season tag if present
+    seasons = sorted({m.get("season") for m in league_rows if m.get("season")}, reverse=True)
+    if seasons:
+        league_rows = [m for m in league_rows if m.get("season") == seasons[0]]
+    pts = {}
+    played = {}
+    for m in league_rows:
+        h, a = m.get("home_name") or "", m.get("away_name") or ""
+        hs_, as_ = m.get("home_score"), m.get("away_score")
+        if hs_ is None or as_ is None:
+            continue
+        for name, gf, ga in ((h, hs_, as_), (a, as_, hs_)):
+            key = norm(name)
+            if not key:
+                continue
+            played[key] = played.get(key, 0) + 1
+            if gf > ga:
+                pts[key] = pts.get(key, 0) + 3
+            elif gf == ga:
+                pts[key] = pts.get(key, 0) + 1
+            else:
+                pts[key] = pts.get(key, 0) + 0
+    if not pts:
+        return None
+    table = sorted(pts.items(), key=lambda x: (-x[1], -played.get(x[0], 0)))
+    nt = norm(team)
+    for i, (k, p) in enumerate(table, 1):
+        if k == nt:
+            n = len(table)
+            band = "top" if i <= max(3, n // 4) else ("bottom" if i > n - max(3, n // 4) else "mid")
+            return {"position": i, "teams": n, "points": p, "played": played.get(k, 0), "band": band, "label": f"{i}/{n}"}
+    return None
+
+
 def team_form_pack(matches: list, team: str) -> dict:
     all_rows = team_results(matches, team)
     home_rows = [r for r in all_rows if r["venue"] == "H"]
@@ -412,41 +532,72 @@ def team_form_pack(matches: list, team: str) -> dict:
     overall = form_slice(all_rows, 5)
     home = form_slice(home_rows, 5)
     away = form_slice(away_rows, 5)
+    overall3 = form_slice(all_rows, 3)
+    home3 = form_slice(home_rows, 3)
+    away3 = form_slice(away_rows, 3)
     overall["matches"] = enrich_form_matches(matches, overall["matches"])
     home["matches"] = enrich_form_matches(matches, home["matches"])
     away["matches"] = enrich_form_matches(matches, away["matches"])
-
-    flags = []
-    if overall["unbeaten"] and overall["n"] >= 3:
-        flags.append(f"Unbeaten last {overall['n']} overall")
-    if home["unbeaten"] and home["n"] >= 3:
-        flags.append(f"Unbeaten last {home['n']} at home")
-    if away["unbeaten"] and away["n"] >= 3:
-        flags.append(f"Unbeaten last {away['n']} away")
-    if overall["all_wins"]:
-        flags.append(f"Won last {overall['n']} overall")
-
-    # SoS in last 5 overall
-    tops = sum(1 for m in overall["matches"] if m.get("opp_strength") == "top")
-    bots = sum(1 for m in overall["matches"] if m.get("opp_strength") == "bottom")
-    if tops >= 2:
-        flags.append(f"{tops} of last {overall['n']} vs stronger sides")
-    if bots >= 2:
-        flags.append(f"{bots} of last {overall['n']} vs weaker sides")
+    overall3["matches"] = enrich_form_matches(matches, overall3["matches"])
+    home3["matches"] = enrich_form_matches(matches, home3["matches"])
+    away3["matches"] = enrich_form_matches(matches, away3["matches"])
 
     goals_overall = team_goal_stats(matches, team, None)
     goals_home = team_goal_stats(matches, team, "H")
     goals_away = team_goal_stats(matches, team, "A")
+    goals_last3 = team_goal_stats_from_rows(all_rows[:3])
+    goals_last5 = team_goal_stats_from_rows(all_rows[:5])
+    goals_home_last3 = team_goal_stats_from_rows(home_rows[:3])
+    goals_away_last3 = team_goal_stats_from_rows(away_rows[:3])
+    goals_home_last5 = team_goal_stats_from_rows(home_rows[:5])
+    goals_away_last5 = team_goal_stats_from_rows(away_rows[:5])
+    streaks = streak_stats(all_rows)
+    streaks_home = streak_stats(home_rows)
+    streaks_away = streak_stats(away_rows)
+
+    # Highlight flags for notable runs (not full-season averages)
+    flags = []
+    if streaks["unbeaten"] >= 5:
+        flags.append(f"Unbeaten in last {streaks['unbeaten']} overall")
+    if streaks["wins"] >= 4:
+        flags.append(f"Won last {streaks['wins']} overall")
+    if streaks["clean_sheets"] >= 3:
+        flags.append(f"{streaks['clean_sheets']} clean sheets in a row overall")
+    if streaks["clean_sheets"] >= 5:
+        flags.append(f"No goals conceded in last {streaks['clean_sheets']} overall")
+    if streaks_home["unbeaten"] >= 5:
+        flags.append(f"Unbeaten in last {streaks_home['unbeaten']} at home")
+    if streaks_away["unbeaten"] >= 5:
+        flags.append(f"Unbeaten in last {streaks_away['unbeaten']} away")
+    if streaks_home["clean_sheets"] >= 3:
+        flags.append(f"{streaks_home['clean_sheets']} home clean sheets in a row")
+    if streaks_away["clean_sheets"] >= 3:
+        flags.append(f"{streaks_away['clean_sheets']} away clean sheets in a row")
+    if streaks["winless"] >= 5:
+        flags.append(f"Winless in last {streaks['winless']} overall")
 
     return {
         "overall": overall,
         "home": home,
         "away": away,
+        "overall3": overall3,
+        "home3": home3,
+        "away3": away3,
+        "goals_last3": goals_last3,
+        "goals_last5": goals_last5,
+        "goals_home_last3": goals_home_last3,
+        "goals_away_last3": goals_away_last3,
+        "goals_home_last5": goals_home_last5,
+        "goals_away_last5": goals_away_last5,
+        "streaks": streaks,
+        "streaks_home": streaks_home,
+        "streaks_away": streaks_away,
+        "flags": flags,
+        "played": len(all_rows),
+        # season totals kept only for win% context elsewhere, not primary goals display
         "goals_overall": goals_overall,
         "goals_home": goals_home,
         "goals_away": goals_away,
-        "flags": flags,
-        "played": len(all_rows),
     }
 
 
