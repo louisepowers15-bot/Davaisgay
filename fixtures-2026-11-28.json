@@ -1,6 +1,6 @@
 {
   "date": "2026-11-28",
-  "generated_at": "2026-11-27T17:16:25.312757+00:00",
+  "generated_at": "2026-11-27T18:55:38.754888+00:00",
   "source": "espn_scoreboard",
   "leagues": [
     {
@@ -1915,9 +1915,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 250.0,
+            "draw": 255.0,
             "away": null,
-            "raw": "HIBS +150"
+            "raw": "HIBS +155"
           },
           "name": "Motherwell vs Hibernian"
         }
@@ -2639,7 +2639,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 600.0,
+            "draw": 650.0,
             "away": null,
             "raw": "PSV -450"
           },
@@ -2791,7 +2791,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 210.0,
+            "draw": 215.0,
             "away": null,
             "raw": "ACV +155"
           },

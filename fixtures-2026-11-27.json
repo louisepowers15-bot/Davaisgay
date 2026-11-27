@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated_at": "2026-11-27T17:16:20.866468+00:00",
+  "generated_at": "2026-11-27T18:55:34.018892+00:00",
   "source": "espn_scoreboard",
   "leagues": [
     {
@@ -39,7 +39,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 240.0,
+            "draw": 245.0,
             "away": null,
             "raw": "NFO +145"
           },
@@ -83,9 +83,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 275.0,
+            "draw": 270.0,
             "away": null,
-            "raw": "MID +115"
+            "raw": "MID +125"
           },
           "name": "Southampton vs Middlesbrough"
         }
@@ -171,9 +171,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 300.0,
+            "draw": 295.0,
             "away": null,
-            "raw": "LEV -105"
+            "raw": "LEV +100"
           },
           "name": "Levante vs Racing Santander"
         }
@@ -215,9 +215,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 215.0,
+            "draw": 210.0,
             "away": null,
-            "raw": "BOL +135"
+            "raw": "BOL +140"
           },
           "name": "Venezia vs Bologna"
         }
@@ -259,9 +259,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 310.0,
+            "draw": 300.0,
             "away": null,
-            "raw": "SVW -155"
+            "raw": "SVW -145"
           },
           "name": "Werder Bremen vs Borussia M\u00f6nchengladbach"
         }
@@ -347,9 +347,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 500.0,
+            "draw": 475.0,
             "away": null,
-            "raw": "GRO -370"
+            "raw": "GRO -340"
           },
           "name": "FC Groningen vs Willem II"
         }
