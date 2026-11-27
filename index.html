@@ -388,14 +388,14 @@ function renderMatch(m) {
     if (s.position_label) {
       html += '<div class="row"><span>League pos (est.)</span><span>' + s.position_label + "</span></div>";
     }
-    const streaks = s.streaks || {};
+    const st = s.streaks || {};
     const sv = s.streaks_venue || {};
-    if (streaks.unbeaten >= 5) html += '<div class="row"><span></span><span style="color:var(--gold2)">Unbeaten last ' + streaks.unbeaten + ' overall</span></div>';
-    if (streaks.wins >= 4) html += '<div class="row"><span></span><span style="color:var(--gold2)">Won last ' + streaks.wins + '</span></div>';
-    if (streaks.clean_sheets >= 3) html += '<div class="row"><span></span><span style="color:var(--gold2)">No goals conceded in last ' + streaks.clean_sheets + '</span></div>';
+    if (st.unbeaten >= 5) html += '<div class="row"><span></span><span style="color:var(--gold2)">Unbeaten last ' + st.unbeaten + ' overall</span></div>';
+    if (st.wins >= 4) html += '<div class="row"><span></span><span style="color:var(--gold2)">Won last ' + st.wins + '</span></div>';
+    if (st.clean_sheets >= 3) html += '<div class="row"><span></span><span style="color:var(--gold2)">No goals conceded in last ' + st.clean_sheets + '</span></div>';
     if (sv.unbeaten >= 5) html += '<div class="row"><span></span><span style="color:var(--gold2)">Unbeaten last ' + sv.unbeaten + (isHome ? ' at home' : ' away') + '</span></div>';
     if (sv.clean_sheets >= 3) html += '<div class="row"><span></span><span style="color:var(--gold2)">' + sv.clean_sheets + ' CS in a row ' + (isHome ? 'home' : 'away') + '</span></div>';
-    if (streaks.winless >= 5) html += '<div class="row"><span></span><span style="color:#f87171">Winless last ' + streaks.winless + '</span></div>';
+    if (st.winless >= 5) html += '<div class="row"><span></span><span style="color:#f87171">Winless last ' + st.winless + '</span></div>';
     (s.flags || []).forEach(f => {
       if (f.indexOf("vs stronger") >= 0 || f.indexOf("vs weaker") >= 0 || f.indexOf("Unbeaten") >= 0 || f.indexOf("clean") >= 0 || f.indexOf("Won last") >= 0)
         html += '<div class="row"><span></span><span style="color:var(--gold2)">' + f + "</span></div>";
@@ -480,90 +480,40 @@ function renderLeagues(data, tab) {
   return html;
 }
 
-function collectBotTips(botName) {
-  const out = [];
-  const data = todayData;
-  if (!data) return out;
-  (data.leagues || []).forEach(lg => {
-    (lg.matches || []).forEach(m => {
-      (m.tips || []).forEach(t => {
-        if (t.bot === botName) {
-          out.push({
-            league: lg.name,
-            match: m.name,
-            kickoff: m.kickoff,
-            pick: t.pick_label || t.pick,
-            conf: t.conf,
-            reason: t.reason || "",
-            tippable: m.tippable !== false && (m.consensus || {}).pick,
-            consensus: (m.consensus || {}).pick_label || "",
-          });
-        }
-      });
-    });
-  });
-  return out;
-}
-
-function renderBotWeek(botName) {
-  const tips = collectBotTips(botName);
-  let html = '<div class="league open" style="margin-bottom:0.75rem">';
-  html += '<div class="league-head" onclick="render()"><span>← Back to leaderboard</span><span class="count">' + botName + " · today</span></div>";
-  html += '<div class="league-body" style="display:block">';
-  if (!tips.length) {
-    html += '<p class="empty">No tips for ' + botName + ' in today’s file.</p>';
-  } else {
-    tips.forEach(t => {
-      html += '<div class="stat-card" style="margin-bottom:0.45rem">';
-      html += '<div class="row"><span>' + (t.kickoff || "") + " · " + t.league + "</span><span>" + (t.conf || "") + "%</span></div>";
-      html += '<div class="row"><span>' + t.match + "</span><span style="color:var(--gold2)">' + t.pick + "</span></div>";
-      if (t.consensus) html += '<div class="row"><span>Consensus</span><span>' + t.consensus + "</span></div>";
-      if (t.reason) html += '<div class="stat-note">' + t.reason + "</div>";
-      html += "</div>";
-    });
-  }
-  html += "</div></div>";
-  html += '<p class="stat-note">Weekly view uses today’s tips file. Settled history builds as evenings run.</p>';
-  return html;
-}
-
-function showBotTips(botName) {
-  const el = document.getElementById("content");
-  const hint = document.getElementById("hint");
-  if (hint) hint.style.display = "none";
-  el.innerHTML = renderBotWeek(botName);
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
 function renderLeaderboard(lb) {
-  if (!lb || !lb.bots || !Object.keys(lb.bots).length) {
-    return '<p class="empty">Leaderboard wiped — fills again after evening results settle.</p>';
+  if (!lb || !lb.bots) {
+    return '<p class="empty">Leaderboard fills after evening results settle.</p>';
   }
-  const rows = Object.entries(lb.bots).map(([name, s]) => {
-    const tips = s.tips || 0;
-    const wins = s.wins || 0;
-    const stake = s.stake || tips || 1;
-    const profit = s.profit != null ? s.profit : 0;
-    const roi = s.roi != null ? s.roi : (stake ? (100 * profit / stake) : 0);
-    return { name, tips, wins, profit, roi, stake };
+  const bots = Object.entries(lb.bots).map(([name, st]) => ({ name, ...st }));
+  bots.sort((a, b) => b.roi - a.roi);
+  const cons = lb.consensus || {};
+  let html = '<div class="section-title">Leaderboard</div>';
+  html += '<p class="hint">Last settled ' + (lb.last_settled || "—") + " · £1 stakes</p>";
+  html += '<div class="lb-cards">';
+  html += '<div class="lb-card"><div class="lbl">Consensus</div><div class="val ' +
+    ((cons.roi||0)>=0?"pos":"neg") + '">' + ((cons.roi||0)>=0?"+":"") + (cons.roi||0) + "%</div></div>";
+  if (bots[0]) {
+    html += '<div class="lb-card"><div class="lbl">Best ROI</div><div class="val">' + bots[0].name +
+      '</div><div class="' + (bots[0].roi>=0?"pos":"neg") + '">' + (bots[0].roi>=0?"+":"") + bots[0].roi + "%</div></div>";
+  }
+  html += "</div>";
+  html += '<table class="lb-table"><thead><tr><th>Bot</th><th>Tips</th><th>Win%</th><th>ROI</th><th>P&amp;L</th></tr></thead><tbody>';
+  bots.forEach((b, i) => {
+    html += '<tr' + (i===0?' class="best"':'') + '><td><strong>' + b.name + "</strong></td><td>" +
+      b.tips + "</td><td>" + b.win_pct + '%</td><td class="' + (b.roi>=0?"pos":"neg") + '">' +
+      (b.roi>=0?"+":"") + b.roi + '%</td><td class="' + (b.pnl>=0?"pos":"neg") + '">' +
+      (b.pnl>=0?"+":"") + b.pnl + "</td></tr>";
   });
-  rows.sort((a, b) => b.roi - a.roi || b.profit - a.profit);
-  let html = '<div class="league open"><div class="league-head"><span>Bot leaderboard</span><span class="count">' +
-    (lb.last_settled ? ("Last settled " + lb.last_settled) : "Fresh") + ' · tap bot for today’s tips</span></div>';
-  html += '<div class="league-body" style="display:block">';
-  html += '<div class="stat-card" style="grid-column:1/-1">';
-  rows.forEach((r, i) => {
-    const badge = i === 0 ? " 🥇" : (i === 1 ? " 🥈" : (i === 2 ? " 🥉" : ""));
-    html += '<div class="row" style="cursor:pointer" onclick="showBotTips(\'' + r.name + '\')">';
-    html += "<span style=\"color:var(--gold)\">" + (i + 1) + ". " + r.name + badge + "</span>";
-    html += "<span>" + r.wins + "/" + r.tips + " · ROI " + (Math.round(r.roi * 10) / 10) + "% · P/L " +
-      (r.profit >= 0 ? "+" : "") + (Math.round(r.profit * 100) / 100) + "</span></div>";
-  });
-  html += "</div></div></div>";
+  html += "</tbody></table>";
   return html;
 }
 
-function render(function render() {
+function toggleMatch(ev, el) {
+  if (ev.target.closest(".match-detail")) return;
+  el.classList.toggle("open");
+}
+
+function render() {
   const el = document.getElementById("content");
   const hint = document.getElementById("hint");
   if (currentTab === "leaderboard") {
@@ -586,25 +536,15 @@ document.getElementById("main-tabs").addEventListener("click", e => {
 });
 
 (async function init() {
-  try {
-    const day = isoToday();
-    todayData = await loadJSON("tips-" + day + ".json");
-    tomorrowData = await loadJSON("tips-" + isoTomorrow() + ".json");
-    leaderboardData = await loadJSON("leaderboard.json");
-    if ((!todayData || !(todayData.leagues || []).length) && tomorrowData && (tomorrowData.leagues || []).length) {
-      todayData = tomorrowData;
-    }
-    if (!todayData) {
-      document.getElementById("content").innerHTML =
-        '<p class="empty">No tips file for ' + day + '.<br>Run the morning workflow or upload tips-' + day + '.json</p>';
-      return;
-    }
-    render();
-  } catch (err) {
-    console.error(err);
-    document.getElementById("content").innerHTML =
-      '<p class="empty">Load error: ' + (err && err.message ? err.message : err) + "</p>";
+  const day = isoToday();
+  todayData = await loadJSON("tips-" + day + ".json");
+  tomorrowData = await loadJSON("tips-" + isoTomorrow() + ".json");
+  leaderboardData = await loadJSON("leaderboard.json");
+  // If today empty, try tomorrow for early evening browsing
+  if ((!todayData || !(todayData.leagues || []).length) && tomorrowData && (tomorrowData.leagues || []).length) {
+    todayData = tomorrowData;
   }
+  render();
 })();
 </script>
 </body>
