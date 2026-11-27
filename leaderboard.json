@@ -1,85 +1,85 @@
 {
-  "updated_at": "2026-11-27T04:52:41.661347+00:00",
+  "updated_at": "2026-11-27T16:37:05.034715+00:00",
   "last_settled": "2026-11-26",
   "stake_unit": 1.0,
   "bots": {
     "FormFox": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "returns": 0.0,
-      "odds_sum": 0.0,
-      "win_pct": 0.0,
-      "roi": 0.0,
-      "avg_odds": 0.0,
-      "pnl": 0.0
+      "tips": 37,
+      "wins": 19,
+      "stake": 37.0,
+      "returns": 52.29999999999999,
+      "odds_sum": 109.29999999999998,
+      "win_pct": 51.4,
+      "roi": 41.4,
+      "avg_odds": 2.95,
+      "pnl": 15.3
     },
     "HomeStrong": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "returns": 0.0,
-      "odds_sum": 0.0,
-      "win_pct": 0.0,
-      "roi": 0.0,
-      "avg_odds": 0.0,
-      "pnl": 0.0
+      "tips": 37,
+      "wins": 18,
+      "stake": 37.0,
+      "returns": 45.0,
+      "odds_sum": 95.69999999999999,
+      "win_pct": 48.6,
+      "roi": 21.6,
+      "avg_odds": 2.59,
+      "pnl": 8.0
     },
     "AwayHunter": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "returns": 0.0,
-      "odds_sum": 0.0,
-      "win_pct": 0.0,
-      "roi": 0.0,
-      "avg_odds": 0.0,
-      "pnl": 0.0
+      "tips": 37,
+      "wins": 16,
+      "stake": 37.0,
+      "returns": 48.39999999999999,
+      "odds_sum": 114.90000000000002,
+      "win_pct": 43.2,
+      "roi": 30.8,
+      "avg_odds": 3.11,
+      "pnl": 11.4
     },
     "ValueSeeker": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "returns": 0.0,
-      "odds_sum": 0.0,
-      "win_pct": 0.0,
-      "roi": 0.0,
-      "avg_odds": 0.0,
-      "pnl": 0.0
+      "tips": 37,
+      "wins": 5,
+      "stake": 37.0,
+      "returns": 16.5,
+      "odds_sum": 122.09999999999992,
+      "win_pct": 13.5,
+      "roi": -55.4,
+      "avg_odds": 3.3,
+      "pnl": -20.5
     },
     "GoalsGuru": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "returns": 0.0,
-      "odds_sum": 0.0,
-      "win_pct": 0.0,
-      "roi": 0.0,
-      "avg_odds": 0.0,
-      "pnl": 0.0
+      "tips": 37,
+      "wins": 5,
+      "stake": 37.0,
+      "returns": 16.5,
+      "odds_sum": 122.09999999999992,
+      "win_pct": 13.5,
+      "roi": -55.4,
+      "avg_odds": 3.3,
+      "pnl": -20.5
     },
     "DevilAdvocate": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "returns": 0.0,
-      "odds_sum": 0.0,
-      "win_pct": 0.0,
-      "roi": 0.0,
-      "avg_odds": 0.0,
-      "pnl": 0.0
+      "tips": 37,
+      "wins": 5,
+      "stake": 37.0,
+      "returns": 16.5,
+      "odds_sum": 122.09999999999992,
+      "win_pct": 13.5,
+      "roi": -55.4,
+      "avg_odds": 3.3,
+      "pnl": -20.5
     }
   },
   "consensus": {
-    "tips": 0,
-    "wins": 0,
-    "stake": 0.0,
-    "returns": 0.0,
+    "tips": 37,
+    "wins": 5,
+    "stake": 37.0,
+    "returns": 16.5,
     "odds_sum": 0.0,
-    "win_pct": 0.0,
-    "roi": 0.0,
+    "win_pct": 13.5,
+    "roi": -55.4,
     "avg_odds": 0.0,
-    "pnl": 0.0
+    "pnl": -20.5
   },
   "daily_pnl": [
     {
@@ -88,7 +88,7 @@
     },
     {
       "date": "2026-11-26",
-      "pnl": 0.0
+      "pnl": -26.8
     }
   ],
   "note": "Level \u00a31 win stakes on 1X2 tips. ROI = (returns - stake) / stake."

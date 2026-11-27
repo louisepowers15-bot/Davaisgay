@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated_at": "2026-11-26T17:34:33.191612+00:00",
+  "generated_at": "2026-11-27T16:36:52.287093+00:00",
   "source": "espn_scoreboard",
   "leagues": [
     {
@@ -39,9 +39,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 235.0,
+            "draw": 240.0,
             "away": null,
-            "raw": "NFO +150"
+            "raw": "NFO +145"
           },
           "name": "Nottingham Forest vs Chelsea"
         }
@@ -85,7 +85,7 @@
             "home": null,
             "draw": 275.0,
             "away": null,
-            "raw": "MID +130"
+            "raw": "MID +115"
           },
           "name": "Southampton vs Middlesbrough"
         }
@@ -127,9 +127,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 280.0,
+            "draw": 290.0,
             "away": null,
-            "raw": "SCU +115"
+            "raw": "SCU +120"
           },
           "name": "Scunthorpe United vs Wealdstone"
         }
@@ -173,7 +173,7 @@
             "home": null,
             "draw": 300.0,
             "away": null,
-            "raw": "LEV +105"
+            "raw": "LEV -105"
           },
           "name": "Levante vs Racing Santander"
         }
@@ -217,7 +217,7 @@
             "home": null,
             "draw": 215.0,
             "away": null,
-            "raw": "BOL +120"
+            "raw": "BOL +135"
           },
           "name": "Venezia vs Bologna"
         }
@@ -259,9 +259,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 320.0,
+            "draw": 310.0,
             "away": null,
-            "raw": "SVW -145"
+            "raw": "SVW -155"
           },
           "name": "Werder Bremen vs Borussia M\u00f6nchengladbach"
         }
@@ -305,7 +305,7 @@
             "home": null,
             "draw": 240.0,
             "away": null,
-            "raw": "PAR +120"
+            "raw": "PAR +115"
           },
           "name": "Brest vs Paris FC"
         }
@@ -347,9 +347,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 390.0,
+            "draw": 500.0,
             "away": null,
-            "raw": "GRO -240"
+            "raw": "GRO -370"
           },
           "name": "FC Groningen vs Willem II"
         }
@@ -391,9 +391,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 230.0,
+            "draw": 220.0,
             "away": null,
-            "raw": "MAR +105"
+            "raw": "MAR +115"
           },
           "name": "Maritimo vs C.D. Nacional"
         }
