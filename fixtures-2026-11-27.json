@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated_at": "2026-11-27T18:55:34.018892+00:00",
+  "generated_at": "2026-11-27T19:45:20.236165+00:00",
   "source": "espn_scoreboard",
   "leagues": [
     {
@@ -85,7 +85,7 @@
             "home": null,
             "draw": 270.0,
             "away": null,
-            "raw": "MID +125"
+            "raw": "MID +120"
           },
           "name": "Southampton vs Middlesbrough"
         }
@@ -127,9 +127,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 290.0,
+            "draw": 275.0,
             "away": null,
-            "raw": "SCU +120"
+            "raw": "SCU +110"
           },
           "name": "Scunthorpe United vs Wealdstone"
         }
@@ -171,7 +171,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 295.0,
+            "draw": 285.0,
             "away": null,
             "raw": "LEV +100"
           },
@@ -215,9 +215,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 210.0,
+            "draw": 0.0,
             "away": null,
-            "raw": "BOL +140"
+            "raw": ""
           },
           "name": "Venezia vs Bologna"
         }
@@ -237,7 +237,7 @@
           "priority": 22,
           "kickoff": "19:30",
           "kickoff_iso": "2026-11-27T19:30Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Weserstadion",
           "home": {
             "name": "Werder Bremen",
@@ -303,9 +303,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 240.0,
+            "draw": 0.0,
             "away": null,
-            "raw": "PAR +115"
+            "raw": ""
           },
           "name": "Brest vs Paris FC"
         }
@@ -325,7 +325,7 @@
           "priority": 24,
           "kickoff": "19:00",
           "kickoff_iso": "2026-11-27T19:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Euroborg",
           "home": {
             "name": "FC Groningen",
@@ -342,7 +342,7 @@
             "id": "156",
             "record": "0-3-10",
             "form": "LDLWL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
@@ -391,7 +391,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 220.0,
+            "draw": 215.0,
             "away": null,
             "raw": "MAR +115"
           },
