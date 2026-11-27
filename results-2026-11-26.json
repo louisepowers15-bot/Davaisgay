@@ -1,8 +1,1881 @@
 {
   "date": "2026-11-26",
-  "generated_at": "2026-11-26T14:35:05.157003+00:00",
+  "generated_at": "2026-11-27T03:44:29.993426+00:00",
   "source": "espn_scoreboard",
-  "leagues": [],
-  "matches": [],
-  "match_count": 0
+  "leagues": [
+    {
+      "name": "League One",
+      "code": "eng.3",
+      "region": "UK",
+      "matches": [
+        {
+          "id": "401880728",
+          "league": "League One",
+          "league_code": "eng.3",
+          "region": "UK",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Doncaster Rovers",
+            "id": "279",
+            "score": 2,
+            "winner": false
+          },
+          "away": {
+            "name": "Huddersfield Town",
+            "id": "335",
+            "score": 3,
+            "winner": true
+          },
+          "home_score": 2,
+          "away_score": 3,
+          "outcome": "away",
+          "name": "Doncaster Rovers vs Huddersfield Town",
+          "ft": "2-3"
+        }
+      ]
+    },
+    {
+      "name": "Europa League",
+      "code": "uefa.europa",
+      "region": "Europe",
+      "matches": [
+        {
+          "id": "401915506",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Besiktas",
+            "id": "1895",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Hapoel Be'er",
+            "id": "13083",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Besiktas vs Hapoel Be'er",
+          "ft": "2-1"
+        },
+        {
+          "id": "401915519",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Celta Vigo",
+            "id": "85",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "AFC Bournemouth",
+            "id": "349",
+            "score": 2,
+            "winner": true
+          },
+          "home_score": 1,
+          "away_score": 2,
+          "outcome": "away",
+          "name": "Celta Vigo vs AFC Bournemouth",
+          "ft": "1-2"
+        },
+        {
+          "id": "401915517",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Dinamo Zagreb",
+            "id": "597",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "Bayer Leverkusen",
+            "id": "131",
+            "score": 2,
+            "winner": true
+          },
+          "home_score": 0,
+          "away_score": 2,
+          "outcome": "away",
+          "name": "Dinamo Zagreb vs Bayer Leverkusen",
+          "ft": "0-2"
+        },
+        {
+          "id": "401915507",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Marseille",
+            "id": "176",
+            "score": 1,
+            "winner": true
+          },
+          "away": {
+            "name": "Levski Sofia",
+            "id": "490",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 1,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Marseille vs Levski Sofia",
+          "ft": "1-0"
+        },
+        {
+          "id": "401915521",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Olympiacos",
+            "id": "435",
+            "score": 2,
+            "winner": false
+          },
+          "away": {
+            "name": "AC Milan",
+            "id": "103",
+            "score": 4,
+            "winner": true
+          },
+          "home_score": 2,
+          "away_score": 4,
+          "outcome": "away",
+          "name": "Olympiacos vs AC Milan",
+          "ft": "2-4"
+        },
+        {
+          "id": "401915520",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "RB Salzburg",
+            "id": "2790",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Ararat-Armenia",
+            "id": "20024",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "RB Salzburg vs Ararat-Armenia",
+          "ft": "2-0"
+        },
+        {
+          "id": "401915508",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Union St.-Gilloise",
+            "id": "5807",
+            "score": 2,
+            "winner": false
+          },
+          "away": {
+            "name": "Lech Poznan",
+            "id": "2990",
+            "score": 2,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 2,
+          "outcome": "draw",
+          "name": "Union St.-Gilloise vs Lech Poznan",
+          "ft": "2-2"
+        },
+        {
+          "id": "401915518",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Viktoria Plzen",
+            "id": "11706",
+            "score": 4,
+            "winner": true
+          },
+          "away": {
+            "name": "Benfica",
+            "id": "1929",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 4,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Viktoria Plzen vs Benfica",
+          "ft": "4-0"
+        },
+        {
+          "id": "401915504",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Crystal Palace",
+            "id": "384",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Real Sociedad",
+            "id": "89",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Crystal Palace vs Real Sociedad",
+          "ft": "2-1"
+        },
+        {
+          "id": "401915516",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Ferencvaros",
+            "id": "622",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "NK Celje",
+            "id": "3362",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 0,
+          "away_score": 0,
+          "outcome": "draw",
+          "name": "Ferencvaros vs NK Celje",
+          "ft": "0-0"
+        },
+        {
+          "id": "401915502",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Juventus",
+            "id": "111",
+            "score": 4,
+            "winner": true
+          },
+          "away": {
+            "name": "Omonia Nicosia",
+            "id": "617",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 4,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Juventus vs Omonia Nicosia",
+          "ft": "4-1"
+        },
+        {
+          "id": "401915501",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Lyon",
+            "id": "167",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "Lillestrom",
+            "id": "987",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 0,
+          "away_score": 0,
+          "outcome": "draw",
+          "name": "Lyon vs Lillestrom",
+          "ft": "0-0"
+        },
+        {
+          "id": "401915505",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "NEC Nijmegen",
+            "id": "147",
+            "score": 3,
+            "winner": true
+          },
+          "away": {
+            "name": "Stade Rennais",
+            "id": "169",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 3,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "NEC Nijmegen vs Stade Rennais",
+          "ft": "3-1"
+        },
+        {
+          "id": "401915503",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "OFI Crete",
+            "id": "1010",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "Anderlecht",
+            "id": "441",
+            "score": 3,
+            "winner": true
+          },
+          "home_score": 1,
+          "away_score": 3,
+          "outcome": "away",
+          "name": "OFI Crete vs Anderlecht",
+          "ft": "1-3"
+        },
+        {
+          "id": "401915514",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Sparta Prague",
+            "id": "433",
+            "score": 2,
+            "winner": false
+          },
+          "away": {
+            "name": "AZ Alkmaar",
+            "id": "140",
+            "score": 4,
+            "winner": true
+          },
+          "home_score": 2,
+          "away_score": 4,
+          "outcome": "away",
+          "name": "Sparta Prague vs AZ Alkmaar",
+          "ft": "2-4"
+        },
+        {
+          "id": "401915513",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Sunderland",
+            "id": "366",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "Jagiellonia Bialystok",
+            "id": "11505",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 1,
+          "away_score": 1,
+          "outcome": "draw",
+          "name": "Sunderland vs Jagiellonia Bialystok",
+          "ft": "1-1"
+        },
+        {
+          "id": "401915512",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Torreense",
+            "id": "21615",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "Celtic",
+            "id": "256",
+            "score": 2,
+            "winner": true
+          },
+          "home_score": 1,
+          "away_score": 2,
+          "outcome": "away",
+          "name": "Torreense vs Celtic",
+          "ft": "1-2"
+        },
+        {
+          "id": "401915515",
+          "league": "Europa League",
+          "league_code": "uefa.europa",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "TSG Hoffenheim",
+            "id": "7911",
+            "score": 3,
+            "winner": true
+          },
+          "away": {
+            "name": "SK Sturm Graz",
+            "id": "3746",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 3,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "TSG Hoffenheim vs SK Sturm Graz",
+          "ft": "3-1"
+        }
+      ]
+    },
+    {
+      "name": "Conference League",
+      "code": "uefa.europa.conf",
+      "region": "Europe",
+      "matches": [
+        {
+          "id": "401915816",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "15:30",
+          "kickoff_iso": "2026-11-26T15:30Z",
+          "home": {
+            "name": "Kairat Almaty",
+            "id": "2528",
+            "score": 1,
+            "winner": true
+          },
+          "away": {
+            "name": "Mj\u00e4llby AIF",
+            "id": "20301",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 1,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Kairat Almaty vs Mj\u00e4llby AIF",
+          "ft": "1-0"
+        },
+        {
+          "id": "401915815",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Ajax Amsterdam",
+            "id": "139",
+            "score": 4,
+            "winner": true
+          },
+          "away": {
+            "name": "FC Thun",
+            "id": "3024",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 4,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Ajax Amsterdam vs FC Thun",
+          "ft": "4-0"
+        },
+        {
+          "id": "401915814",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Brighton & Hove Albion",
+            "id": "331",
+            "score": 4,
+            "winner": true
+          },
+          "away": {
+            "name": "Universitatea Craiova",
+            "id": "8089",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 4,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Brighton & Hove Albion vs Universitatea Craiova",
+          "ft": "4-0"
+        },
+        {
+          "id": "401915810",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Egnatia",
+            "id": "21943",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Lincoln Red Imps",
+            "id": "17856",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Egnatia vs Lincoln Red Imps",
+          "ft": "2-1"
+        },
+        {
+          "id": "401915811",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Heart of Midlothian",
+            "id": "262",
+            "score": 2,
+            "winner": false
+          },
+          "away": {
+            "name": "AS Monaco",
+            "id": "174",
+            "score": 3,
+            "winner": true
+          },
+          "home_score": 2,
+          "away_score": 3,
+          "outcome": "away",
+          "name": "Heart of Midlothian vs AS Monaco",
+          "ft": "2-3"
+        },
+        {
+          "id": "401915813",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Iberia 1999",
+            "id": "20025",
+            "score": 1,
+            "winner": true
+          },
+          "away": {
+            "name": "Getafe",
+            "id": "2922",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 1,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Iberia 1999 vs Getafe",
+          "ft": "1-0"
+        },
+        {
+          "id": "401915812",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Jablonec",
+            "id": "7922",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "FC Lugano",
+            "id": "7672",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Jablonec vs FC Lugano",
+          "ft": "2-0"
+        },
+        {
+          "id": "401915739",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Kauno Zalgiris",
+            "id": "20028",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Riga FC",
+            "id": "19246",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Kauno Zalgiris vs Riga FC",
+          "ft": "2-0"
+        },
+        {
+          "id": "401915809",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "Pafos",
+            "id": "22281",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "FC Midtjylland",
+            "id": "572",
+            "score": 2,
+            "winner": true
+          },
+          "home_score": 0,
+          "away_score": 2,
+          "outcome": "away",
+          "name": "Pafos vs FC Midtjylland",
+          "ft": "0-2"
+        },
+        {
+          "id": "401915808",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "17:45",
+          "kickoff_iso": "2026-11-26T17:45Z",
+          "home": {
+            "name": "SK Brann",
+            "id": "620",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "AGF",
+            "id": "7853",
+            "score": 4,
+            "winner": true
+          },
+          "home_score": 1,
+          "away_score": 4,
+          "outcome": "away",
+          "name": "SK Brann vs AGF",
+          "ft": "1-4"
+        },
+        {
+          "id": "401915806",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Borac Banja Luka",
+            "id": "20710",
+            "score": 2,
+            "winner": false
+          },
+          "away": {
+            "name": "Atalanta",
+            "id": "105",
+            "score": 3,
+            "winner": true
+          },
+          "home_score": 2,
+          "away_score": 3,
+          "outcome": "away",
+          "name": "Borac Banja Luka vs Atalanta",
+          "ft": "2-3"
+        },
+        {
+          "id": "401915802",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Braga",
+            "id": "2994",
+            "score": 4,
+            "winner": true
+          },
+          "away": {
+            "name": "KuPS Kuopio",
+            "id": "8169",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 4,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Braga vs KuPS Kuopio",
+          "ft": "4-0"
+        },
+        {
+          "id": "401915803",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "CSKA Sofia",
+            "id": "10834",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "Trabzonspor",
+            "id": "997",
+            "score": 2,
+            "winner": true
+          },
+          "home_score": 1,
+          "away_score": 2,
+          "outcome": "away",
+          "name": "CSKA Sofia vs Trabzonspor",
+          "ft": "1-2"
+        },
+        {
+          "id": "401915807",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "FC Nordsj\u00e6lland",
+            "id": "3101",
+            "score": 3,
+            "winner": true
+          },
+          "away": {
+            "name": "Panathinaikos",
+            "id": "443",
+            "score": 2,
+            "winner": false
+          },
+          "home_score": 3,
+          "away_score": 2,
+          "outcome": "home",
+          "name": "FC Nordsj\u00e6lland vs Panathinaikos",
+          "ft": "3-2"
+        },
+        {
+          "id": "401915805",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Hajduk Split",
+            "id": "489",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "Sint-Truidense",
+            "id": "936",
+            "score": 2,
+            "winner": true
+          },
+          "home_score": 0,
+          "away_score": 2,
+          "outcome": "away",
+          "name": "Hajduk Split vs Sint-Truidense",
+          "ft": "0-2"
+        },
+        {
+          "id": "401915738",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "Inter D'Escaldes",
+            "id": "20703",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "F.C. K\u00f8benhavn",
+            "id": "909",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Inter D'Escaldes vs F.C. K\u00f8benhavn",
+          "ft": "2-0"
+        },
+        {
+          "id": "401915804",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "KAA Gent",
+            "id": "3611",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "Red Star Belgrade",
+            "id": "2290",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 1,
+          "away_score": 1,
+          "outcome": "draw",
+          "name": "KAA Gent vs Red Star Belgrade",
+          "ft": "1-1"
+        },
+        {
+          "id": "401915801",
+          "league": "Conference League",
+          "league_code": "uefa.europa.conf",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-26T20:00Z",
+          "home": {
+            "name": "SC Freiburg",
+            "id": "126",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "FC Twente",
+            "id": "152",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "SC Freiburg vs FC Twente",
+          "ft": "2-1"
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "401880728",
+      "league": "League One",
+      "league_code": "eng.3",
+      "region": "UK",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Doncaster Rovers",
+        "id": "279",
+        "score": 2,
+        "winner": false
+      },
+      "away": {
+        "name": "Huddersfield Town",
+        "id": "335",
+        "score": 3,
+        "winner": true
+      },
+      "home_score": 2,
+      "away_score": 3,
+      "outcome": "away",
+      "name": "Doncaster Rovers vs Huddersfield Town",
+      "ft": "2-3"
+    },
+    {
+      "id": "401915506",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Besiktas",
+        "id": "1895",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Hapoel Be'er",
+        "id": "13083",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Besiktas vs Hapoel Be'er",
+      "ft": "2-1"
+    },
+    {
+      "id": "401915519",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Celta Vigo",
+        "id": "85",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "AFC Bournemouth",
+        "id": "349",
+        "score": 2,
+        "winner": true
+      },
+      "home_score": 1,
+      "away_score": 2,
+      "outcome": "away",
+      "name": "Celta Vigo vs AFC Bournemouth",
+      "ft": "1-2"
+    },
+    {
+      "id": "401915517",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Dinamo Zagreb",
+        "id": "597",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "Bayer Leverkusen",
+        "id": "131",
+        "score": 2,
+        "winner": true
+      },
+      "home_score": 0,
+      "away_score": 2,
+      "outcome": "away",
+      "name": "Dinamo Zagreb vs Bayer Leverkusen",
+      "ft": "0-2"
+    },
+    {
+      "id": "401915507",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Marseille",
+        "id": "176",
+        "score": 1,
+        "winner": true
+      },
+      "away": {
+        "name": "Levski Sofia",
+        "id": "490",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Marseille vs Levski Sofia",
+      "ft": "1-0"
+    },
+    {
+      "id": "401915521",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Olympiacos",
+        "id": "435",
+        "score": 2,
+        "winner": false
+      },
+      "away": {
+        "name": "AC Milan",
+        "id": "103",
+        "score": 4,
+        "winner": true
+      },
+      "home_score": 2,
+      "away_score": 4,
+      "outcome": "away",
+      "name": "Olympiacos vs AC Milan",
+      "ft": "2-4"
+    },
+    {
+      "id": "401915520",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "RB Salzburg",
+        "id": "2790",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Ararat-Armenia",
+        "id": "20024",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "RB Salzburg vs Ararat-Armenia",
+      "ft": "2-0"
+    },
+    {
+      "id": "401915508",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Union St.-Gilloise",
+        "id": "5807",
+        "score": 2,
+        "winner": false
+      },
+      "away": {
+        "name": "Lech Poznan",
+        "id": "2990",
+        "score": 2,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 2,
+      "outcome": "draw",
+      "name": "Union St.-Gilloise vs Lech Poznan",
+      "ft": "2-2"
+    },
+    {
+      "id": "401915518",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Viktoria Plzen",
+        "id": "11706",
+        "score": 4,
+        "winner": true
+      },
+      "away": {
+        "name": "Benfica",
+        "id": "1929",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 4,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Viktoria Plzen vs Benfica",
+      "ft": "4-0"
+    },
+    {
+      "id": "401915504",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Crystal Palace",
+        "id": "384",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Real Sociedad",
+        "id": "89",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Crystal Palace vs Real Sociedad",
+      "ft": "2-1"
+    },
+    {
+      "id": "401915516",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Ferencvaros",
+        "id": "622",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "NK Celje",
+        "id": "3362",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "outcome": "draw",
+      "name": "Ferencvaros vs NK Celje",
+      "ft": "0-0"
+    },
+    {
+      "id": "401915502",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Juventus",
+        "id": "111",
+        "score": 4,
+        "winner": true
+      },
+      "away": {
+        "name": "Omonia Nicosia",
+        "id": "617",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 4,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Juventus vs Omonia Nicosia",
+      "ft": "4-1"
+    },
+    {
+      "id": "401915501",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Lyon",
+        "id": "167",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "Lillestrom",
+        "id": "987",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "outcome": "draw",
+      "name": "Lyon vs Lillestrom",
+      "ft": "0-0"
+    },
+    {
+      "id": "401915505",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "NEC Nijmegen",
+        "id": "147",
+        "score": 3,
+        "winner": true
+      },
+      "away": {
+        "name": "Stade Rennais",
+        "id": "169",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 3,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "NEC Nijmegen vs Stade Rennais",
+      "ft": "3-1"
+    },
+    {
+      "id": "401915503",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "OFI Crete",
+        "id": "1010",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "Anderlecht",
+        "id": "441",
+        "score": 3,
+        "winner": true
+      },
+      "home_score": 1,
+      "away_score": 3,
+      "outcome": "away",
+      "name": "OFI Crete vs Anderlecht",
+      "ft": "1-3"
+    },
+    {
+      "id": "401915514",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Sparta Prague",
+        "id": "433",
+        "score": 2,
+        "winner": false
+      },
+      "away": {
+        "name": "AZ Alkmaar",
+        "id": "140",
+        "score": 4,
+        "winner": true
+      },
+      "home_score": 2,
+      "away_score": 4,
+      "outcome": "away",
+      "name": "Sparta Prague vs AZ Alkmaar",
+      "ft": "2-4"
+    },
+    {
+      "id": "401915513",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Sunderland",
+        "id": "366",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "Jagiellonia Bialystok",
+        "id": "11505",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "outcome": "draw",
+      "name": "Sunderland vs Jagiellonia Bialystok",
+      "ft": "1-1"
+    },
+    {
+      "id": "401915512",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Torreense",
+        "id": "21615",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "Celtic",
+        "id": "256",
+        "score": 2,
+        "winner": true
+      },
+      "home_score": 1,
+      "away_score": 2,
+      "outcome": "away",
+      "name": "Torreense vs Celtic",
+      "ft": "1-2"
+    },
+    {
+      "id": "401915515",
+      "league": "Europa League",
+      "league_code": "uefa.europa",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "TSG Hoffenheim",
+        "id": "7911",
+        "score": 3,
+        "winner": true
+      },
+      "away": {
+        "name": "SK Sturm Graz",
+        "id": "3746",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 3,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "TSG Hoffenheim vs SK Sturm Graz",
+      "ft": "3-1"
+    },
+    {
+      "id": "401915816",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "15:30",
+      "kickoff_iso": "2026-11-26T15:30Z",
+      "home": {
+        "name": "Kairat Almaty",
+        "id": "2528",
+        "score": 1,
+        "winner": true
+      },
+      "away": {
+        "name": "Mj\u00e4llby AIF",
+        "id": "20301",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Kairat Almaty vs Mj\u00e4llby AIF",
+      "ft": "1-0"
+    },
+    {
+      "id": "401915815",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Ajax Amsterdam",
+        "id": "139",
+        "score": 4,
+        "winner": true
+      },
+      "away": {
+        "name": "FC Thun",
+        "id": "3024",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 4,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Ajax Amsterdam vs FC Thun",
+      "ft": "4-0"
+    },
+    {
+      "id": "401915814",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Brighton & Hove Albion",
+        "id": "331",
+        "score": 4,
+        "winner": true
+      },
+      "away": {
+        "name": "Universitatea Craiova",
+        "id": "8089",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 4,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Brighton & Hove Albion vs Universitatea Craiova",
+      "ft": "4-0"
+    },
+    {
+      "id": "401915810",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Egnatia",
+        "id": "21943",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Lincoln Red Imps",
+        "id": "17856",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Egnatia vs Lincoln Red Imps",
+      "ft": "2-1"
+    },
+    {
+      "id": "401915811",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Heart of Midlothian",
+        "id": "262",
+        "score": 2,
+        "winner": false
+      },
+      "away": {
+        "name": "AS Monaco",
+        "id": "174",
+        "score": 3,
+        "winner": true
+      },
+      "home_score": 2,
+      "away_score": 3,
+      "outcome": "away",
+      "name": "Heart of Midlothian vs AS Monaco",
+      "ft": "2-3"
+    },
+    {
+      "id": "401915813",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Iberia 1999",
+        "id": "20025",
+        "score": 1,
+        "winner": true
+      },
+      "away": {
+        "name": "Getafe",
+        "id": "2922",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Iberia 1999 vs Getafe",
+      "ft": "1-0"
+    },
+    {
+      "id": "401915812",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Jablonec",
+        "id": "7922",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "FC Lugano",
+        "id": "7672",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Jablonec vs FC Lugano",
+      "ft": "2-0"
+    },
+    {
+      "id": "401915739",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Kauno Zalgiris",
+        "id": "20028",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Riga FC",
+        "id": "19246",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Kauno Zalgiris vs Riga FC",
+      "ft": "2-0"
+    },
+    {
+      "id": "401915809",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "Pafos",
+        "id": "22281",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "FC Midtjylland",
+        "id": "572",
+        "score": 2,
+        "winner": true
+      },
+      "home_score": 0,
+      "away_score": 2,
+      "outcome": "away",
+      "name": "Pafos vs FC Midtjylland",
+      "ft": "0-2"
+    },
+    {
+      "id": "401915808",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "17:45",
+      "kickoff_iso": "2026-11-26T17:45Z",
+      "home": {
+        "name": "SK Brann",
+        "id": "620",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "AGF",
+        "id": "7853",
+        "score": 4,
+        "winner": true
+      },
+      "home_score": 1,
+      "away_score": 4,
+      "outcome": "away",
+      "name": "SK Brann vs AGF",
+      "ft": "1-4"
+    },
+    {
+      "id": "401915806",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Borac Banja Luka",
+        "id": "20710",
+        "score": 2,
+        "winner": false
+      },
+      "away": {
+        "name": "Atalanta",
+        "id": "105",
+        "score": 3,
+        "winner": true
+      },
+      "home_score": 2,
+      "away_score": 3,
+      "outcome": "away",
+      "name": "Borac Banja Luka vs Atalanta",
+      "ft": "2-3"
+    },
+    {
+      "id": "401915802",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Braga",
+        "id": "2994",
+        "score": 4,
+        "winner": true
+      },
+      "away": {
+        "name": "KuPS Kuopio",
+        "id": "8169",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 4,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Braga vs KuPS Kuopio",
+      "ft": "4-0"
+    },
+    {
+      "id": "401915803",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "CSKA Sofia",
+        "id": "10834",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "Trabzonspor",
+        "id": "997",
+        "score": 2,
+        "winner": true
+      },
+      "home_score": 1,
+      "away_score": 2,
+      "outcome": "away",
+      "name": "CSKA Sofia vs Trabzonspor",
+      "ft": "1-2"
+    },
+    {
+      "id": "401915807",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "FC Nordsj\u00e6lland",
+        "id": "3101",
+        "score": 3,
+        "winner": true
+      },
+      "away": {
+        "name": "Panathinaikos",
+        "id": "443",
+        "score": 2,
+        "winner": false
+      },
+      "home_score": 3,
+      "away_score": 2,
+      "outcome": "home",
+      "name": "FC Nordsj\u00e6lland vs Panathinaikos",
+      "ft": "3-2"
+    },
+    {
+      "id": "401915805",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Hajduk Split",
+        "id": "489",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "Sint-Truidense",
+        "id": "936",
+        "score": 2,
+        "winner": true
+      },
+      "home_score": 0,
+      "away_score": 2,
+      "outcome": "away",
+      "name": "Hajduk Split vs Sint-Truidense",
+      "ft": "0-2"
+    },
+    {
+      "id": "401915738",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "Inter D'Escaldes",
+        "id": "20703",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "F.C. K\u00f8benhavn",
+        "id": "909",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Inter D'Escaldes vs F.C. K\u00f8benhavn",
+      "ft": "2-0"
+    },
+    {
+      "id": "401915804",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "KAA Gent",
+        "id": "3611",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "Red Star Belgrade",
+        "id": "2290",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "outcome": "draw",
+      "name": "KAA Gent vs Red Star Belgrade",
+      "ft": "1-1"
+    },
+    {
+      "id": "401915801",
+      "league": "Conference League",
+      "league_code": "uefa.europa.conf",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-26T20:00Z",
+      "home": {
+        "name": "SC Freiburg",
+        "id": "126",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "FC Twente",
+        "id": "152",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "SC Freiburg vs FC Twente",
+      "ft": "2-1"
+    }
+  ],
+  "match_count": 37
 }

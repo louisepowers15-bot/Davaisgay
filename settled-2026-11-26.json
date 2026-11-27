@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-26",
+  "settled_at": "2026-11-27T03:44:30.022551+00:00",
+  "tips": [],
+  "bots": {
+    "FormFox": {
+      "tips": 0,
+      "wins": 0,
+      "stake": 0.0,
+      "returns": 0.0,
+      "odds_sum": 0.0
+    },
+    "HomeStrong": {
+      "tips": 0,
+      "wins": 0,
+      "stake": 0.0,
+      "returns": 0.0,
+      "odds_sum": 0.0
+    },
+    "AwayHunter": {
+      "tips": 0,
+      "wins": 0,
+      "stake": 0.0,
+      "returns": 0.0,
+      "odds_sum": 0.0
+    },
+    "ValueSeeker": {
+      "tips": 0,
+      "wins": 0,
+      "stake": 0.0,
+      "returns": 0.0,
+      "odds_sum": 0.0
+    },
+    "GoalsGuru": {
+      "tips": 0,
+      "wins": 0,
+      "stake": 0.0,
+      "returns": 0.0,
+      "odds_sum": 0.0
+    },
+    "DevilAdvocate": {
+      "tips": 0,
+      "wins": 0,
+      "stake": 0.0,
+      "returns": 0.0,
+      "odds_sum": 0.0
+    }
+  },
+  "consensus": {
+    "tips": 0,
+    "wins": 0,
+    "stake": 0.0,
+    "returns": 0.0
+  },
+  "n_settled": 0
+}
