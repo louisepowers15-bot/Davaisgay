@@ -229,14 +229,17 @@ async function loadTips(dateStr) {
   return null;
 }
 
+function pad(n) { return n < 10 ? "0" + n : "" + n; }
+function localISO(d) {
+  return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+}
 function isoToday() {
-  const d = new Date();
-  return d.toISOString().slice(0, 10);
+  return localISO(new Date());
 }
 function isoTomorrow() {
   const d = new Date();
   d.setDate(d.getDate() + 1);
-  return d.toISOString().slice(0, 10);
+  return localISO(d);
 }
 
 function filterLeagues(data, mode) {
@@ -248,7 +251,7 @@ function filterLeagues(data, mode) {
 
 function renderLeagues(data, mode) {
   if (!data || !data.leagues || !data.leagues.length) {
-    return '<p class="muted" style="text-align:center;padding:2rem">No tips available for this date yet. Run the morning scrape + generate workflow.</p>';
+    return '<p class="muted" style="text-align:center;padding:2rem">No tips available for this date yet. If you expected games (e.g. Europa on a Thursday, Premier League on weekends), re-run the workflow mode <b>tips</b> or <b>both</b> and hard-refresh. Check that tips-YYYY-MM-DD.json is in the repo.</p>';
   }
   const leagues = filterLeagues(data, mode);
   if (!leagues.length) {

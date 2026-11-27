@@ -201,6 +201,60 @@ def scrape_day(d: date) -> dict:
             print(f"  {meta['name']}: {len(matches)} matches")
         time.sleep(0.15)
 
+
+    # Fallback: if thin day, also scan ESPN "all" scoreboard for our league names
+    if len(all_matches) < 5:
+        try:
+            url_all = f"https://site.api.espn.com/apis/site/v2/sports/soccer/all/scoreboard?dates={date_compact}"
+            data_all = fetch_json(url_all)
+            known = {m["name"]: m for m in LEAGUES}
+            # reverse map by partial name
+            for ev in data_all.get("events") or []:
+                comps = ev.get("competitions") or []
+                if not comps:
+                    continue
+                c0 = comps[0]
+                lg_name = ((c0.get("league") or {}).get("name") or "").strip()
+                # try match our list
+                meta = None
+                for L in LEAGUES:
+                    if L["name"].lower() in lg_name.lower() or lg_name.lower() in L["name"].lower():
+                        meta = L
+                        break
+                if not meta:
+                    # UEFA phase labels
+                    low = lg_name.lower()
+                    if "europa" in low and "conf" not in low:
+                        meta = next(x for x in LEAGUES if x["code"] == "uefa.europa")
+                    elif "conference" in low or "uefa.europa.conf" in low:
+                        meta = next(x for x in LEAGUES if x["code"] == "uefa.europa.conf")
+                    elif "champion" in low:
+                        meta = next(x for x in LEAGUES if x["code"] == "uefa.champions")
+                if not meta:
+                    continue
+                m = parse_event(ev, meta)
+                if not m:
+                    continue
+                if any(x.get("id") == m["id"] for x in all_matches):
+                    continue
+                all_matches.append(m)
+                # attach to leagues_out
+                found = next((x for x in leagues_out if x["code"] == meta["code"]), None)
+                if found:
+                    found["matches"].append(m)
+                else:
+                    leagues_out.append({
+                        "name": meta["name"],
+                        "code": meta["code"],
+                        "region": meta["region"],
+                        "priority": meta["priority"],
+                        "matches": [m],
+                    })
+            print(f"  all-scoreboard fallback total matches now {len(all_matches)}")
+        except Exception as e:
+            print(f"  all-scoreboard fallback failed: {e}", file=sys.stderr)
+
+
     leagues_out.sort(key=lambda x: x["priority"])
     return {
         "date": d.isoformat(),

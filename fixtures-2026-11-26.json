@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "generated_at": "2026-11-26T17:34:28.736177+00:00",
+  "generated_at": "2026-11-26T15:37:01.026595+00:00",
   "source": "espn_scoreboard",
   "leagues": [
     {
@@ -41,7 +41,7 @@
             "home": null,
             "draw": 330.0,
             "away": null,
-            "raw": "HUD -170"
+            "raw": "HUD -155"
           },
           "name": "Doncaster Rovers vs Huddersfield Town"
         }
@@ -83,9 +83,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 425.0,
+            "draw": 550.0,
             "away": null,
-            "raw": "BES -255"
+            "raw": "BES -400"
           },
           "name": "Besiktas vs Hapoel Be'er"
         },
@@ -119,9 +119,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 260.0,
+            "draw": 270.0,
             "away": null,
-            "raw": "BOU +100"
+            "raw": "BOU -110"
           },
           "name": "Celta Vigo vs AFC Bournemouth"
         },
@@ -155,9 +155,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 340.0,
+            "draw": 350.0,
             "away": null,
-            "raw": "B04 -160"
+            "raw": "B04 -165"
           },
           "name": "Dinamo Zagreb vs Bayer Leverkusen"
         },
@@ -193,7 +193,7 @@
             "home": null,
             "draw": 400.0,
             "away": null,
-            "raw": "OLM -250"
+            "raw": "OLM -245"
           },
           "name": "Marseille vs Levski Sofia"
         },
@@ -227,9 +227,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 235.0,
+            "draw": 245.0,
             "away": null,
-            "raw": "MIL +145"
+            "raw": "MIL +150"
           },
           "name": "Olympiacos vs AC Milan"
         },
@@ -263,9 +263,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 700.0,
+            "draw": 850.0,
             "away": null,
-            "raw": "SLZ -550"
+            "raw": "SLZ -700"
           },
           "name": "RB Salzburg vs Ararat-Armenia"
         },
@@ -299,9 +299,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 450.0,
+            "draw": 425.0,
             "away": null,
-            "raw": "USG -290"
+            "raw": "USG -260"
           },
           "name": "Union St.-Gilloise vs Lech Poznan"
         },
@@ -335,9 +335,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 350.0,
+            "draw": 400.0,
             "away": null,
-            "raw": "SLB -180"
+            "raw": "SLB -225"
           },
           "name": "Viktoria Plzen vs Benfica"
         },
@@ -373,7 +373,7 @@
             "home": null,
             "draw": 290.0,
             "away": null,
-            "raw": "CRY +120"
+            "raw": "CRY +105"
           },
           "name": "Crystal Palace vs Real Sociedad"
         },
@@ -443,9 +443,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 650.0,
+            "draw": 600.0,
             "away": null,
-            "raw": "JUV -525"
+            "raw": "JUV -500"
           },
           "name": "Juventus vs Omonia Nicosia"
         },
@@ -481,7 +481,7 @@
             "home": null,
             "draw": 650.0,
             "away": null,
-            "raw": "LYON -525"
+            "raw": "LYON -500"
           },
           "name": "Lyon vs Lillestrom"
         },
@@ -697,7 +697,7 @@
             "home": null,
             "draw": 500.0,
             "away": null,
-            "raw": "TSG -330"
+            "raw": "TSG -310"
           },
           "name": "TSG Hoffenheim vs SK Sturm Graz"
         }
@@ -717,27 +717,32 @@
           "priority": 17,
           "kickoff": "15:30",
           "kickoff_iso": "2026-11-26T15:30Z",
-          "status": "post",
+          "status": "in",
           "venue": "Almaty Ortalyk Stadium",
           "home": {
             "name": "Kairat Almaty",
             "short": "KAI",
             "id": "2528",
-            "record": "1-2-1",
-            "form": "WDLDL",
-            "score": "1",
-            "winner": true
+            "record": "0-2-1",
+            "form": "DLDLL",
+            "score": "0",
+            "winner": false
           },
           "away": {
             "name": "Mj\u00e4llby AIF",
             "short": "MJA",
             "id": "20301",
-            "record": "2-1-1",
-            "form": "LDDWD",
+            "record": "2-1-0",
+            "form": "DDWDW",
             "score": "0",
             "winner": false
           },
-          "odds": null,
+          "odds": {
+            "home": null,
+            "draw": 245.0,
+            "away": null,
+            "raw": "KAI +110"
+          },
           "name": "Kairat Almaty vs Mj\u00e4llby AIF"
         },
         {
@@ -770,9 +775,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 650.0,
+            "draw": 700.0,
             "away": null,
-            "raw": "AJA -450"
+            "raw": "AJA -475"
           },
           "name": "Ajax Amsterdam vs FC Thun"
         },
@@ -806,9 +811,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 750.0,
+            "draw": 850.0,
             "away": null,
-            "raw": "BHA -700"
+            "raw": "BHA -800"
           },
           "name": "Brighton & Hove Albion vs CSU Craiova"
         },
@@ -844,7 +849,7 @@
             "home": null,
             "draw": 350.0,
             "away": null,
-            "raw": "EGN -180"
+            "raw": "EGN -165"
           },
           "name": "Egnatia vs Lincoln Red Imps"
         },
@@ -878,7 +883,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 340.0,
+            "draw": 350.0,
             "away": null,
             "raw": "MON -185"
           },
@@ -914,9 +919,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 285.0,
+            "draw": 320.0,
             "away": null,
-            "raw": "GET -165"
+            "raw": "GET -205"
           },
           "name": "Iberia 1999 vs Getafe"
         },
@@ -950,9 +955,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 250.0,
+            "draw": 265.0,
             "away": null,
-            "raw": "LUG +150"
+            "raw": "LUG +125"
           },
           "name": "Jablonec vs FC Lugano"
         },
@@ -986,9 +991,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 255.0,
+            "draw": 245.0,
             "away": null,
-            "raw": "RIG -105"
+            "raw": "RIG +105"
           },
           "name": "Kauno Zalgiris vs Riga FC"
         },
@@ -1055,7 +1060,7 @@
             "home": null,
             "draw": 295.0,
             "away": null,
-            "raw": "SKBR +115"
+            "raw": "SKBR +105"
           },
           "name": "SK Brann vs AGF"
         },
@@ -1089,9 +1094,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 425.0,
+            "draw": 400.0,
             "away": null,
-            "raw": "ATA -250"
+            "raw": "ATA -240"
           },
           "name": "Borac Banja Luka vs Atalanta"
         },
@@ -1125,7 +1130,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 750.0,
+            "draw": 700.0,
             "away": null,
             "raw": "SCB -650"
           },
@@ -1161,9 +1166,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 330.0,
+            "draw": 310.0,
             "away": null,
-            "raw": "TRAB -145"
+            "raw": "TRAB -140"
           },
           "name": "CSKA Sofia vs Trabzonspor"
         },
@@ -1269,9 +1274,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 475.0,
+            "draw": 450.0,
             "away": null,
-            "raw": "KBH -370"
+            "raw": "KBH -350"
           },
           "name": "Inter D'Escaldes vs F.C. K\u00f8benhavn"
         },
@@ -1305,9 +1310,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 255.0,
+            "draw": 250.0,
             "away": null,
-            "raw": "GENT +145"
+            "raw": "GENT +130"
           },
           "name": "KAA Gent vs Red Star Belgrade"
         },
@@ -1343,7 +1348,7 @@
             "home": null,
             "draw": 300.0,
             "away": null,
-            "raw": "SCF -130"
+            "raw": "SCF -135"
           },
           "name": "SC Freiburg vs FC Twente"
         }
