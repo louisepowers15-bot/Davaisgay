@@ -41,8 +41,49 @@ FD_COMPS = {
 }
 
 
+# Common short names from football-data.co.uk → expand before norm
+ALIASES = {
+    "nott'm forest": "nottingham forest",
+    "nottm forest": "nottingham forest",
+    "man united": "manchester united",
+    "man utd": "manchester united",
+    "manchester utd": "manchester united",
+    "man city": "manchester city",
+    "spurs": "tottenham hotspur",
+    "tottenham": "tottenham hotspur",
+    "wolves": "wolverhampton wanderers",
+    "wolverhampton": "wolverhampton wanderers",
+    "newcastle": "newcastle united",
+    "west ham": "west ham united",
+    "west brom": "west bromwich albion",
+    "brighton": "brighton and hove albion",
+    "brighton hove": "brighton and hove albion",
+    "nottingham forest": "nottingham forest",
+    "sheffield united": "sheffield united",
+    "sheff utd": "sheffield united",
+    "sheff wed": "sheffield wednesday",
+    "qpr": "queens park rangers",
+    "mk dons": "milton keynes dons",
+    "inter": "internazionale",
+    "milan": "ac milan",
+    "atletico": "atletico madrid",
+    "atl madrid": "atletico madrid",
+    "betis": "real betis",
+    "sociedad": "real sociedad",
+    "psg": "paris saint germain",
+    "paris sg": "paris saint germain",
+    "bayern": "bayern munich",
+    "dortmund": "borussia dortmund",
+    "m'gladbach": "borussia monchengladbach",
+    "gladbach": "borussia monchengladbach",
+    "frankfurt": "eintracht frankfurt",
+    "leverkusen": "bayer leverkusen",
+}
+
 def norm(name: str) -> str:
-    s = (name or "").lower()
+    s = (name or "").lower().strip()
+    s = ALIASES.get(s, s)
+    s = ALIASES.get(s, s)  # double in case chained
     s = re.sub(r"\b(fc|afc|cf|sc|united|utd)\b", " ", s)
     s = re.sub(r"[^a-z0-9]+", " ", s)
     return " ".join(s.split())

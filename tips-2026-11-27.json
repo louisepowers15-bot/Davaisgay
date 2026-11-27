@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated_at": "2026-11-27T18:58:17.531421+00:00",
+  "generated_at": "2026-11-27T19:17:05.301192+00:00",
   "frozen": true,
   "leagues": [
     {
@@ -43,15 +43,14 @@
           "consensus": {
             "pick": "away",
             "pick_label": "Chelsea win",
-            "bot_count": 6,
-            "avg_conf": 60.5,
+            "bot_count": 5,
+            "avg_conf": 60.6,
             "strength": "strong",
             "bots": [
               "FormFox",
               "HomeStrong",
               "AwayHunter",
               "ValueSeeker",
-              "GoalsGuru",
               "DevilAdvocate"
             ],
             "odds": 2.9,
@@ -99,23 +98,170 @@
               "losses": 6,
               "win_pct": 18.2,
               "pts_pg": 0.82,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "WLLDL",
+              "venue_form_record": "1-1-3",
               "venue_form_label": "Last 5 at home",
               "overall_form_last5": "LWLDL",
               "overall_form_record": "1-1-3",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
-              "flags": [],
-              "note": "Home-only form and goals appear after this team has home results in history."
+              "venue_matches": [
+                {
+                  "date": "2026-11-07",
+                  "venue": "H",
+                  "opponent": "Man City",
+                  "gf": 3,
+                  "ga": 1,
+                  "ft": "3-1",
+                  "result": "W",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-18",
+                  "venue": "H",
+                  "opponent": "Arsenal",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-09-19",
+                  "venue": "H",
+                  "opponent": "Coventry",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-09-05",
+                  "venue": "H",
+                  "opponent": "Tottenham",
+                  "gf": 0,
+                  "ga": 0,
+                  "ft": "0-0",
+                  "result": "D",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-08-22",
+                  "venue": "H",
+                  "opponent": "Leeds",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-21",
+                  "venue": "A",
+                  "opponent": "Bournemouth",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-07",
+                  "venue": "H",
+                  "opponent": "Man City",
+                  "gf": 3,
+                  "ga": 1,
+                  "ft": "3-1",
+                  "result": "W",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "A",
+                  "opponent": "Brentford",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-23",
+                  "venue": "A",
+                  "opponent": "Ipswich",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-18",
+                  "venue": "H",
+                  "opponent": "Arsenal",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                }
+              ],
+              "goals_for": 23,
+              "goals_against": 27,
+              "gf_pg": 0.96,
+              "ga_pg": 1.12,
+              "clean_sheets": 5,
+              "cs_pct": 20.8,
+              "goals_sample": 24,
+              "goals_scope": "home games in history",
+              "goals_overall_for": 57,
+              "goals_overall_against": 66,
+              "cs_overall": 10,
+              "flags": [
+                "2 of last 5 vs stronger sides"
+              ],
+              "note": "Home form and home goals only. Overall last-5 is secondary context."
             },
             "away": {
               "name": "Chelsea",
@@ -126,30 +272,204 @@
               "losses": 5,
               "win_pct": 45.5,
               "pts_pg": 1.45,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "LWLLW",
+              "venue_form_record": "2-0-3",
               "venue_form_label": "Last 5 away",
-              "overall_form_last5": "DLWLL",
-              "overall_form_record": "1-1-3",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
+              "overall_form_last5": "LLWLW",
+              "overall_form_record": "2-0-3",
+              "venue_matches": [
+                {
+                  "date": "2026-11-08",
+                  "venue": "A",
+                  "opponent": "Sunderland",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-17",
+                  "venue": "A",
+                  "opponent": "Everton",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "A",
+                  "opponent": "Brentford",
+                  "gf": 0,
+                  "ga": 3,
+                  "ft": "0-3",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-06",
+                  "venue": "A",
+                  "opponent": "Arsenal",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-08-24",
+                  "venue": "A",
+                  "opponent": "Fulham",
+                  "gf": 3,
+                  "ga": 2,
+                  "ft": "3-2",
+                  "result": "W",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-21",
+                  "venue": "H",
+                  "opponent": "Leeds",
+                  "gf": 1,
+                  "ga": 4,
+                  "ft": "1-4",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-08",
+                  "venue": "A",
+                  "opponent": "Sunderland",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "H",
+                  "opponent": "Man United",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-24",
+                  "venue": "H",
+                  "opponent": "Tottenham",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Premier League",
+                  "red_cards": 1,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-17",
+                  "venue": "A",
+                  "opponent": "Everton",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Premier League",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "goals_for": 38,
+              "goals_against": 35,
+              "gf_pg": 1.58,
+              "ga_pg": 1.46,
+              "clean_sheets": 5,
+              "cs_pct": 20.8,
+              "goals_sample": 24,
+              "goals_scope": "away games in history",
+              "goals_overall_for": 78,
+              "goals_overall_against": 72,
+              "cs_overall": 11,
               "flags": [],
-              "note": "Away-only form and goals appear after this team has away results in history."
+              "note": "Away form and away goals only. Overall last-5 is secondary context."
             },
             "h2h": {
-              "n": 0,
-              "record": "0-0-0",
-              "chars": "",
+              "n": 2,
+              "record": "1-0-1",
+              "chars": "WL",
               "label": "H2H (from Nottingham Forest view)",
-              "matches": []
+              "matches": [
+                {
+                  "date": "2026-05-04",
+                  "venue": "A",
+                  "opponent": "Chelsea",
+                  "gf": 3,
+                  "ga": 1,
+                  "ft": "3-1",
+                  "result": "W",
+                  "league": "Premier League",
+                  "home_name": "Chelsea",
+                  "away_name": "Nott'm Forest",
+                  "score_home": 1,
+                  "score_away": 3
+                },
+                {
+                  "date": "2025-10-18",
+                  "venue": "H",
+                  "opponent": "Chelsea",
+                  "gf": 0,
+                  "ga": 3,
+                  "ft": "0-3",
+                  "result": "L",
+                  "league": "Premier League",
+                  "home_name": "Nott'm Forest",
+                  "away_name": "Chelsea",
+                  "score_home": 0,
+                  "score_away": 3
+                }
+              ]
             }
           },
           "tippable": true,
@@ -161,12 +481,12 @@
               "conf": 60,
               "odds": 2.9,
               "probs": {
-                "home": 0.356,
-                "draw": 0.259,
-                "away": 0.385
+                "home": 0.363,
+                "draw": 0.254,
+                "away": 0.383
               },
-              "reason": "FormFox leans Chelsea win in Nottingham Forest vs Chelsea. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 60%.",
-              "stars": 6
+              "reason": "FormFox leans Chelsea win in Nottingham Forest vs Chelsea. Nottingham Forest last 5 overall: WLLDL (1-1-3 in that run). Chelsea last 5 overall: LWLLW (2-0-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Head-to-head (last 2 from Nottingham Forest's view): WL. Confidence 60%.",
+              "stars": 5
             },
             {
               "bot": "HomeStrong",
@@ -175,12 +495,12 @@
               "conf": 60,
               "odds": 2.9,
               "probs": {
-                "home": 0.366,
-                "draw": 0.249,
-                "away": 0.385
+                "home": 0.373,
+                "draw": 0.243,
+                "away": 0.384
               },
-              "reason": "HomeStrong backs the home angle: Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 60%.",
-              "stars": 6
+              "reason": "HomeStrong backs the home angle: Chelsea win. Nottingham Forest last 5 overall: WLLDL (1-1-3 in that run). Chelsea last 5 overall: LWLLW (2-0-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Head-to-head (last 2 from Nottingham Forest's view): WL. Confidence 60%.",
+              "stars": 5
             },
             {
               "bot": "AwayHunter",
@@ -189,12 +509,12 @@
               "conf": 61,
               "odds": 2.9,
               "probs": {
-                "home": 0.347,
-                "draw": 0.251,
-                "away": 0.402
+                "home": 0.354,
+                "draw": 0.245,
+                "away": 0.401
               },
-              "reason": "AwayHunter's read is Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 61%.",
-              "stars": 6
+              "reason": "AwayHunter's read is Chelsea win. Nottingham Forest last 5 overall: WLLDL (1-1-3 in that run). Chelsea last 5 overall: LWLLW (2-0-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Head-to-head (last 2 from Nottingham Forest's view): WL. Confidence 61%.",
+              "stars": 5
             },
             {
               "bot": "ValueSeeker",
@@ -203,26 +523,26 @@
               "conf": 60,
               "odds": 2.9,
               "probs": {
-                "home": 0.358,
-                "draw": 0.27,
-                "away": 0.372
+                "home": 0.365,
+                "draw": 0.264,
+                "away": 0.371
               },
-              "reason": "ValueSeeker finds the price for Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 60%.",
-              "stars": 6
+              "reason": "ValueSeeker finds the price for Chelsea win. Nottingham Forest last 5 overall: WLLDL (1-1-3 in that run). Chelsea last 5 overall: LWLLW (2-0-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Head-to-head (last 2 from Nottingham Forest's view): WL. Confidence 60%.",
+              "stars": 5
             },
             {
               "bot": "GoalsGuru",
-              "pick": "away",
-              "pick_label": "Chelsea win",
+              "pick": "home",
+              "pick_label": "Nottingham Forest win",
               "conf": 60,
-              "odds": 2.9,
+              "odds": 2.5,
               "probs": {
-                "home": 0.367,
-                "draw": 0.262,
+                "home": 0.374,
+                "draw": 0.256,
                 "away": 0.37
               },
-              "reason": "GoalsGuru's 1X2 call is Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 60%.",
-              "stars": 6
+              "reason": "GoalsGuru's 1X2 call is Nottingham Forest win. Nottingham Forest last 5 overall: WLLDL (1-1-3 in that run). Chelsea last 5 overall: LWLLW (2-0-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Nottingham Forest in Premier League (price about 2.50). Head-to-head (last 2 from Nottingham Forest's view): WL. Confidence 60%.",
+              "stars": 1
             },
             {
               "bot": "DevilAdvocate",
@@ -231,12 +551,12 @@
               "conf": 62,
               "odds": 2.9,
               "probs": {
-                "home": 0.323,
-                "draw": 0.269,
-                "away": 0.408
+                "home": 0.33,
+                "draw": 0.263,
+                "away": 0.407
               },
-              "reason": "DevilAdvocate goes against the obvious: Chelsea win. Nottingham Forest last 5 overall: LWLDL (1-1-3 in that run). Chelsea last 5 overall: DLWLL (1-1-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Confidence 62%.",
-              "stars": 6
+              "reason": "DevilAdvocate goes against the obvious: Chelsea win. Nottingham Forest last 5 overall: WLLDL (1-1-3 in that run). Chelsea last 5 overall: LWLLW (2-0-3). Nottingham Forest season record is 2-3-6 (wins-draws-losses overall), 18% wins, 0.82 pts/game. Chelsea season record is 5-1-5 (W-D-L overall), 45% wins, 1.45 pts/game. Recent form edges toward Chelsea away from home (price about 2.90). Head-to-head (last 2 from Nottingham Forest's view): WL. Confidence 62%.",
+              "stars": 5
             }
           ]
         }
@@ -337,23 +657,170 @@
               "losses": 3,
               "win_pct": 52.9,
               "pts_pg": 1.88,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "WWDWW",
+              "venue_form_record": "4-1-0",
               "venue_form_label": "Last 5 at home",
               "overall_form_last5": "DWLDW",
               "overall_form_record": "2-2-1",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
-              "flags": [],
-              "note": "Home-only form and goals appear after this team has home results in history."
+              "venue_matches": [
+                {
+                  "date": "2026-11-21",
+                  "venue": "H",
+                  "opponent": "Derby",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "H",
+                  "opponent": "QPR",
+                  "gf": 4,
+                  "ga": 1,
+                  "ft": "4-1",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-17",
+                  "venue": "H",
+                  "opponent": "Bolton",
+                  "gf": 0,
+                  "ga": 0,
+                  "ft": "0-0",
+                  "result": "D",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-11",
+                  "venue": "H",
+                  "opponent": "Portsmouth",
+                  "gf": 1,
+                  "ga": 0,
+                  "ft": "1-0",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 1,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-12",
+                  "venue": "H",
+                  "opponent": "Bristol City",
+                  "gf": 4,
+                  "ga": 1,
+                  "ft": "4-1",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-24",
+                  "venue": "A",
+                  "opponent": "Sheffield United",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-21",
+                  "venue": "H",
+                  "opponent": "Derby",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-07",
+                  "venue": "A",
+                  "opponent": "Preston",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-11-03",
+                  "venue": "A",
+                  "opponent": "West Brom",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "H",
+                  "opponent": "QPR",
+                  "gf": 4,
+                  "ga": 1,
+                  "ft": "4-1",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "goals_for": 60,
+              "goals_against": 24,
+              "gf_pg": 1.94,
+              "ga_pg": 0.77,
+              "clean_sheets": 13,
+              "cs_pct": 41.9,
+              "goals_sample": 31,
+              "goals_scope": "home games in history",
+              "goals_overall_for": 114,
+              "goals_overall_against": 72,
+              "cs_overall": 15,
+              "flags": [
+                "Unbeaten last 5 at home"
+              ],
+              "note": "Home form and home goals only. Overall last-5 is secondary context."
             },
             "away": {
               "name": "Middlesbrough",
@@ -364,30 +831,206 @@
               "losses": 2,
               "win_pct": 58.8,
               "pts_pg": 2.06,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "DLWWD",
+              "venue_form_record": "2-2-1",
               "venue_form_label": "Last 5 away",
-              "overall_form_last5": "DWDLW",
-              "overall_form_record": "2-2-1",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
-              "flags": [],
-              "note": "Away-only form and goals appear after this team has away results in history."
+              "overall_form_last5": "WWDLW",
+              "overall_form_record": "3-1-1",
+              "venue_matches": [
+                {
+                  "date": "2026-11-07",
+                  "venue": "A",
+                  "opponent": "Watford",
+                  "gf": 0,
+                  "ga": 0,
+                  "ft": "0-0",
+                  "result": "D",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-11-04",
+                  "venue": "A",
+                  "opponent": "Wrexham",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-23",
+                  "venue": "A",
+                  "opponent": "Bolton",
+                  "gf": 5,
+                  "ga": 1,
+                  "ft": "5-1",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-13",
+                  "venue": "A",
+                  "opponent": "Stoke",
+                  "gf": 3,
+                  "ga": 2,
+                  "ft": "3-2",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-19",
+                  "venue": "A",
+                  "opponent": "Birmingham",
+                  "gf": 2,
+                  "ga": 2,
+                  "ft": "2-2",
+                  "result": "D",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-24",
+                  "venue": "H",
+                  "opponent": "Swansea",
+                  "gf": 2,
+                  "ga": 1,
+                  "ft": "2-1",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-21",
+                  "venue": "H",
+                  "opponent": "Bristol City",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-07",
+                  "venue": "A",
+                  "opponent": "Watford",
+                  "gf": 0,
+                  "ga": 0,
+                  "ft": "0-0",
+                  "result": "D",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-11-04",
+                  "venue": "A",
+                  "opponent": "Wrexham",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "H",
+                  "opponent": "Charlton",
+                  "gf": 3,
+                  "ga": 0,
+                  "ft": "3-0",
+                  "result": "W",
+                  "league": "Championship",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                }
+              ],
+              "goals_for": 51,
+              "goals_against": 39,
+              "gf_pg": 1.65,
+              "ga_pg": 1.26,
+              "clean_sheets": 6,
+              "cs_pct": 19.4,
+              "goals_sample": 31,
+              "goals_scope": "away games in history",
+              "goals_overall_for": 106,
+              "goals_overall_against": 67,
+              "cs_overall": 18,
+              "flags": [
+                "2 of last 5 vs weaker sides"
+              ],
+              "note": "Away form and away goals only. Overall last-5 is secondary context."
             },
             "h2h": {
-              "n": 0,
-              "record": "0-0-0",
-              "chars": "",
+              "n": 2,
+              "record": "0-1-1",
+              "chars": "LD",
               "label": "H2H (from Southampton view)",
-              "matches": []
+              "matches": [
+                {
+                  "date": "2026-01-04",
+                  "venue": "A",
+                  "opponent": "Middlesbrough",
+                  "gf": 0,
+                  "ga": 4,
+                  "ft": "0-4",
+                  "result": "L",
+                  "league": "Championship",
+                  "home_name": "Middlesbrough",
+                  "away_name": "Southampton",
+                  "score_home": 4,
+                  "score_away": 0
+                },
+                {
+                  "date": "2025-09-27",
+                  "venue": "H",
+                  "opponent": "Middlesbrough",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "Championship",
+                  "home_name": "Southampton",
+                  "away_name": "Middlesbrough",
+                  "score_home": 1,
+                  "score_away": 1
+                }
+              ]
             }
           },
           "tippable": true,
@@ -399,11 +1042,11 @@
               "conf": 59,
               "odds": 2.5,
               "probs": {
-                "home": 0.363,
-                "draw": 0.279,
-                "away": 0.359
+                "home": 0.362,
+                "draw": 0.283,
+                "away": 0.354
               },
-              "reason": "FormFox leans Southampton win in Southampton vs Middlesbrough. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 59%.",
+              "reason": "FormFox leans Southampton win in Southampton vs Middlesbrough. Southampton last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Middlesbrough last 5 overall: DLWWD (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Head-to-head (last 2 from Southampton's view): LD. Confidence 59%.",
               "stars": 4
             },
             {
@@ -413,11 +1056,11 @@
               "conf": 61,
               "odds": 2.5,
               "probs": {
-                "home": 0.397,
-                "draw": 0.266,
-                "away": 0.337
+                "home": 0.396,
+                "draw": 0.27,
+                "away": 0.334
               },
-              "reason": "HomeStrong backs the home angle: Southampton win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 61%.",
+              "reason": "HomeStrong backs the home angle: Southampton win. Southampton last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Middlesbrough last 5 overall: DLWWD (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Head-to-head (last 2 from Southampton's view): LD. Confidence 61%.",
               "stars": 4
             },
             {
@@ -427,11 +1070,11 @@
               "conf": 61,
               "odds": 2.9,
               "probs": {
-                "home": 0.353,
-                "draw": 0.254,
-                "away": 0.393
+                "home": 0.352,
+                "draw": 0.259,
+                "away": 0.388
               },
-              "reason": "AwayHunter's read is Middlesbrough win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Middlesbrough away from home (price about 2.90). Confidence 61%.",
+              "reason": "AwayHunter's read is Middlesbrough win. Southampton last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Middlesbrough last 5 overall: DLWWD (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Middlesbrough away from home (price about 2.90). Head-to-head (last 2 from Southampton's view): LD. Confidence 61%.",
               "stars": 2
             },
             {
@@ -441,11 +1084,11 @@
               "conf": 60,
               "odds": 2.5,
               "probs": {
-                "home": 0.367,
-                "draw": 0.277,
-                "away": 0.356
+                "home": 0.366,
+                "draw": 0.283,
+                "away": 0.351
               },
-              "reason": "ValueSeeker finds the price for Southampton win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 60%.",
+              "reason": "ValueSeeker finds the price for Southampton win. Southampton last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Middlesbrough last 5 overall: DLWWD (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Head-to-head (last 2 from Southampton's view): LD. Confidence 60%.",
               "stars": 4
             },
             {
@@ -455,11 +1098,11 @@
               "conf": 60,
               "odds": 2.5,
               "probs": {
-                "home": 0.382,
-                "draw": 0.26,
-                "away": 0.358
+                "home": 0.381,
+                "draw": 0.265,
+                "away": 0.354
               },
-              "reason": "GoalsGuru's 1X2 call is Southampton win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Confidence 60%.",
+              "reason": "GoalsGuru's 1X2 call is Southampton win. Southampton last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Middlesbrough last 5 overall: DLWWD (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Southampton in Championship (price about 2.50). Head-to-head (last 2 from Southampton's view): LD. Confidence 60%.",
               "stars": 4
             },
             {
@@ -470,10 +1113,10 @@
               "odds": 2.9,
               "probs": {
                 "home": 0.328,
-                "draw": 0.29,
-                "away": 0.382
+                "draw": 0.295,
+                "away": 0.377
               },
-              "reason": "DevilAdvocate goes against the obvious: Middlesbrough win. Southampton last 5 overall: DWLDW (2-2-1 in that run). Middlesbrough last 5 overall: DWDLW (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Middlesbrough away from home (price about 2.90). Confidence 60%.",
+              "reason": "DevilAdvocate goes against the obvious: Middlesbrough win. Southampton last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Middlesbrough last 5 overall: DLWWD (2-2-1). Southampton season record is 9-5-3 (wins-draws-losses overall), 53% wins, 1.88 pts/game. Middlesbrough season record is 10-5-2 (W-D-L overall), 59% wins, 2.06 pts/game. Recent form edges toward Middlesbrough away from home (price about 2.90). Head-to-head (last 2 from Southampton's view): LD. Confidence 60%.",
               "stars": 2
             }
           ]
@@ -762,7 +1405,7 @@
             "pick": "away",
             "pick_label": "Racing Santander win",
             "bot_count": 6,
-            "avg_conf": 67.7,
+            "avg_conf": 68.5,
             "strength": "strong",
             "bots": [
               "FormFox",
@@ -784,13 +1427,13 @@
               },
               {
                 "market": "Both teams to score",
-                "selection": "Yes",
-                "note": "Both sides show enough attacking form proxy"
+                "selection": "No",
+                "note": "One side looks weaker going forward"
               },
               {
                 "market": "Total goals",
-                "selection": "Over 2.5",
-                "note": "Open-game lean from combined form"
+                "selection": "Under 2.5",
+                "note": "Tighter total expected"
               },
               {
                 "market": "Total corners",
@@ -817,23 +1460,168 @@
               "losses": 5,
               "win_pct": 15.4,
               "pts_pg": 0.92,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "DLWDL",
+              "venue_form_record": "1-2-2",
               "venue_form_label": "Last 5 at home",
-              "overall_form_last5": "DWDLL",
+              "overall_form_last5": "DDLLW",
               "overall_form_record": "1-2-2",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
+              "venue_matches": [
+                {
+                  "date": "2026-11-23",
+                  "venue": "H",
+                  "opponent": "Elche",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "H",
+                  "opponent": "Ath Madrid",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-21",
+                  "venue": "H",
+                  "opponent": "Ath Bilbao",
+                  "gf": 3,
+                  "ga": 1,
+                  "ft": "3-1",
+                  "result": "W",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-12",
+                  "venue": "H",
+                  "opponent": "Sevilla",
+                  "gf": 3,
+                  "ga": 3,
+                  "ft": "3-3",
+                  "result": "D",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-13",
+                  "venue": "H",
+                  "opponent": "Barcelona",
+                  "gf": 2,
+                  "ga": 4,
+                  "ft": "2-4",
+                  "result": "L",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-23",
+                  "venue": "H",
+                  "opponent": "Elche",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-11-08",
+                  "venue": "A",
+                  "opponent": "Celta",
+                  "gf": 0,
+                  "ga": 0,
+                  "ft": "0-0",
+                  "result": "D",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "H",
+                  "opponent": "Ath Madrid",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-25",
+                  "venue": "A",
+                  "opponent": "Sociedad",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-21",
+                  "venue": "H",
+                  "opponent": "Ath Bilbao",
+                  "gf": 3,
+                  "ga": 1,
+                  "ft": "3-1",
+                  "result": "W",
+                  "league": "La Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "goals_for": 40,
+              "goals_against": 41,
+              "gf_pg": 1.6,
+              "ga_pg": 1.64,
+              "clean_sheets": 5,
+              "cs_pct": 20.0,
+              "goals_sample": 25,
+              "goals_scope": "home games in history",
+              "goals_overall_for": 64,
+              "goals_overall_against": 83,
+              "cs_overall": 12,
               "flags": [],
-              "note": "Home-only form and goals appear after this team has home results in history."
+              "note": "Home form and home goals only. Overall last-5 is secondary context."
             },
             "away": {
               "name": "Racing Santander",
@@ -876,56 +1664,56 @@
               "bot": "FormFox",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 67,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.316,
-                "draw": 0.16,
-                "away": 0.524
+                "home": 0.312,
+                "draw": 0.153,
+                "away": 0.535
               },
-              "reason": "FormFox leans Racing Santander win in Levante vs Racing Santander. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 67%.",
+              "reason": "FormFox leans Racing Santander win in Levante vs Racing Santander. Levante last 5 overall: DLWDL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "HomeStrong",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 67,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.328,
-                "draw": 0.15,
-                "away": 0.522
+                "home": 0.324,
+                "draw": 0.143,
+                "away": 0.533
               },
-              "reason": "HomeStrong backs the home angle: Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 67%.",
+              "reason": "HomeStrong backs the home angle: Racing Santander win. Levante last 5 overall: DLWDL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "AwayHunter",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 68,
+              "conf": 69,
               "odds": 2.9,
               "probs": {
-                "home": 0.298,
-                "draw": 0.155,
-                "away": 0.547
+                "home": 0.294,
+                "draw": 0.148,
+                "away": 0.559
               },
-              "reason": "AwayHunter's read is Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
+              "reason": "AwayHunter's read is Racing Santander win. Levante last 5 overall: DLWDL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 69%.",
               "stars": 6
             },
             {
               "bot": "ValueSeeker",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 68,
+              "conf": 69,
               "odds": 2.9,
               "probs": {
-                "home": 0.299,
-                "draw": 0.158,
-                "away": 0.543
+                "home": 0.294,
+                "draw": 0.15,
+                "away": 0.555
               },
-              "reason": "ValueSeeker finds the price for Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
+              "reason": "ValueSeeker finds the price for Racing Santander win. Levante last 5 overall: DLWDL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 69%.",
               "stars": 6
             },
             {
@@ -935,25 +1723,25 @@
               "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.31,
-                "draw": 0.155,
-                "away": 0.535
+                "home": 0.306,
+                "draw": 0.148,
+                "away": 0.547
               },
-              "reason": "GoalsGuru's 1X2 call is Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
+              "reason": "GoalsGuru's 1X2 call is Racing Santander win. Levante last 5 overall: DLWDL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "Racing Santander win",
-              "conf": 68,
+              "conf": 69,
               "odds": 2.9,
               "probs": {
-                "home": 0.295,
-                "draw": 0.162,
-                "away": 0.543
+                "home": 0.291,
+                "draw": 0.154,
+                "away": 0.554
               },
-              "reason": "DevilAdvocate goes against the obvious: Racing Santander win. Levante last 5 overall: DWDLL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 68%.",
+              "reason": "DevilAdvocate goes against the obvious: Racing Santander win. Levante last 5 overall: DLWDL (1-2-2 in that run). Racing Santander last 5 overall: WWLWW (4-0-1). Levante season record is 2-6-5 (wins-draws-losses overall), 15% wins, 0.92 pts/game. Racing Santander season record is 5-2-6 (W-D-L overall), 38% wins, 1.31 pts/game. Recent form edges toward Racing Santander away from home (price about 2.90). Confidence 69%.",
               "stars": 6
             }
           ]
@@ -1002,7 +1790,7 @@
             "pick": "away",
             "pick_label": "Bologna win",
             "bot_count": 6,
-            "avg_conf": 69.2,
+            "avg_conf": 68.3,
             "strength": "strong",
             "bots": [
               "FormFox",
@@ -1029,12 +1817,12 @@
               },
               {
                 "market": "Total goals",
-                "selection": "Under 2.5",
-                "note": "Tighter total expected"
+                "selection": "Over 2.5",
+                "note": "Open-game lean from combined form"
               },
               {
                 "market": "Total corners",
-                "selection": "Under 10.5",
+                "selection": "Over 9.5",
                 "note": "Proxy only \u2014 free feed has no corner averages yet"
               },
               {
@@ -1057,23 +1845,171 @@
               "losses": 10,
               "win_pct": 16.7,
               "pts_pg": 0.5,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "WLWLL",
+              "venue_form_record": "2-0-3",
               "venue_form_label": "Last 5 at home",
               "overall_form_last5": "LWLLL",
               "overall_form_record": "1-0-4",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
-              "flags": [],
-              "note": "Home-only form and goals appear after this team has home results in history."
+              "venue_matches": [
+                {
+                  "date": "2026-11-06",
+                  "venue": "H",
+                  "opponent": "Udinese",
+                  "gf": 2,
+                  "ga": 1,
+                  "ft": "2-1",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-28",
+                  "venue": "H",
+                  "opponent": "Inter",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-17",
+                  "venue": "H",
+                  "opponent": "Napoli",
+                  "gf": 1,
+                  "ga": 0,
+                  "ft": "1-0",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-09-19",
+                  "venue": "H",
+                  "opponent": "Lazio",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-11",
+                  "venue": "H",
+                  "opponent": "Fiorentina",
+                  "gf": 2,
+                  "ga": 4,
+                  "ft": "2-4",
+                  "result": "L",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-22",
+                  "venue": "A",
+                  "opponent": "Juventus",
+                  "gf": 0,
+                  "ga": 4,
+                  "ft": "0-4",
+                  "result": "L",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-06",
+                  "venue": "H",
+                  "opponent": "Udinese",
+                  "gf": 2,
+                  "ga": 1,
+                  "ft": "2-1",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-11-01",
+                  "venue": "A",
+                  "opponent": "Como",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-28",
+                  "venue": "H",
+                  "opponent": "Inter",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-25",
+                  "venue": "A",
+                  "opponent": "Genoa",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                }
+              ],
+              "goals_for": 5,
+              "goals_against": 11,
+              "gf_pg": 0.83,
+              "ga_pg": 1.83,
+              "clean_sheets": 1,
+              "cs_pct": 16.7,
+              "goals_sample": 6,
+              "goals_scope": "home games in history",
+              "goals_overall_for": 8,
+              "goals_overall_against": 25,
+              "cs_overall": 1,
+              "flags": [
+                "2 of last 5 vs stronger sides",
+                "2 of last 5 vs weaker sides"
+              ],
+              "note": "Home form and home goals only. Overall last-5 is secondary context."
             },
             "away": {
               "name": "Bologna",
@@ -1084,23 +2020,171 @@
               "losses": 4,
               "win_pct": 41.7,
               "pts_pg": 1.5,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "WWWWL",
+              "venue_form_record": "4-0-1",
               "venue_form_label": "Last 5 away",
               "overall_form_last5": "DWWWW",
               "overall_form_record": "4-1-0",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
-              "flags": [],
-              "note": "Away-only form and goals appear after this team has away results in history."
+              "venue_matches": [
+                {
+                  "date": "2026-11-07",
+                  "venue": "A",
+                  "opponent": "Parma",
+                  "gf": 2,
+                  "ga": 1,
+                  "ft": "2-1",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-28",
+                  "venue": "A",
+                  "opponent": "Milan",
+                  "gf": 4,
+                  "ga": 2,
+                  "ft": "4-2",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-24",
+                  "venue": "A",
+                  "opponent": "Cagliari",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-11",
+                  "venue": "A",
+                  "opponent": "Lecce",
+                  "gf": 2,
+                  "ga": 1,
+                  "ft": "2-1",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-09-13",
+                  "venue": "A",
+                  "opponent": "Napoli",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-22",
+                  "venue": "H",
+                  "opponent": "Udinese",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-11-07",
+                  "venue": "A",
+                  "opponent": "Parma",
+                  "gf": 2,
+                  "ga": 1,
+                  "ft": "2-1",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "H",
+                  "opponent": "Monza",
+                  "gf": 2,
+                  "ga": 1,
+                  "ft": "2-1",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-28",
+                  "venue": "A",
+                  "opponent": "Milan",
+                  "gf": 4,
+                  "ga": 2,
+                  "ft": "4-2",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-24",
+                  "venue": "A",
+                  "opponent": "Cagliari",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Serie A",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "goals_for": 40,
+              "goals_against": 29,
+              "gf_pg": 1.6,
+              "ga_pg": 1.16,
+              "clean_sheets": 6,
+              "cs_pct": 24.0,
+              "goals_sample": 25,
+              "goals_scope": "away games in history",
+              "goals_overall_for": 66,
+              "goals_overall_against": 61,
+              "cs_overall": 13,
+              "flags": [
+                "Unbeaten last 5 overall",
+                "3 of last 5 vs weaker sides"
+              ],
+              "note": "Away form and away goals only. Overall last-5 is secondary context."
             },
             "h2h": {
               "n": 0,
@@ -1116,28 +2200,28 @@
               "bot": "FormFox",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 69,
+              "conf": 68,
               "odds": 2.9,
               "probs": {
-                "home": 0.291,
-                "draw": 0.149,
-                "away": 0.56
+                "home": 0.299,
+                "draw": 0.16,
+                "away": 0.541
               },
-              "reason": "FormFox leans Bologna win in Venezia vs Bologna. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 69%.",
+              "reason": "FormFox leans Bologna win in Venezia vs Bologna. Venezia last 5 overall: WLWLL (2-0-3 in that run). Bologna last 5 overall: WWWWL (4-0-1). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 68%.",
               "stars": 6
             },
             {
               "bot": "HomeStrong",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 68,
+              "conf": 67,
               "odds": 2.9,
               "probs": {
-                "home": 0.313,
-                "draw": 0.144,
-                "away": 0.543
+                "home": 0.321,
+                "draw": 0.154,
+                "away": 0.525
               },
-              "reason": "HomeStrong backs the home angle: Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 68%.",
+              "reason": "HomeStrong backs the home angle: Bologna win. Venezia last 5 overall: WLWLL (2-0-3 in that run). Bologna last 5 overall: WWWWL (4-0-1). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 67%.",
               "stars": 6
             },
             {
@@ -1147,53 +2231,53 @@
               "conf": 69,
               "odds": 2.9,
               "probs": {
-                "home": 0.295,
-                "draw": 0.132,
-                "away": 0.573
+                "home": 0.302,
+                "draw": 0.143,
+                "away": 0.555
               },
-              "reason": "AwayHunter's read is Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 69%.",
+              "reason": "AwayHunter's read is Bologna win. Venezia last 5 overall: WLWLL (2-0-3 in that run). Bologna last 5 overall: WWWWL (4-0-1). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 69%.",
               "stars": 6
             },
             {
               "bot": "ValueSeeker",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 70,
+              "conf": 69,
               "odds": 2.9,
               "probs": {
-                "home": 0.295,
-                "draw": 0.118,
-                "away": 0.587
+                "home": 0.304,
+                "draw": 0.13,
+                "away": 0.566
               },
-              "reason": "ValueSeeker finds the price for Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 70%.",
+              "reason": "ValueSeeker finds the price for Bologna win. Venezia last 5 overall: WLWLL (2-0-3 in that run). Bologna last 5 overall: WWWWL (4-0-1). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 69%.",
               "stars": 6
             },
             {
               "bot": "GoalsGuru",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 68,
+              "conf": 67,
               "odds": 2.9,
               "probs": {
-                "home": 0.32,
-                "draw": 0.134,
-                "away": 0.547
+                "home": 0.327,
+                "draw": 0.144,
+                "away": 0.529
               },
-              "reason": "GoalsGuru's 1X2 call is Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 68%.",
+              "reason": "GoalsGuru's 1X2 call is Bologna win. Venezia last 5 overall: WLWLL (2-0-3 in that run). Bologna last 5 overall: WWWWL (4-0-1). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 67%.",
               "stars": 6
             },
             {
               "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "Bologna win",
-              "conf": 71,
+              "conf": 70,
               "odds": 2.9,
               "probs": {
-                "home": 0.269,
-                "draw": 0.135,
-                "away": 0.595
+                "home": 0.276,
+                "draw": 0.148,
+                "away": 0.576
               },
-              "reason": "DevilAdvocate goes against the obvious: Bologna win. Venezia last 5 overall: LWLLL (1-0-4 in that run). Bologna last 5 overall: DWWWW (4-1-0, unbeaten). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 71%.",
+              "reason": "DevilAdvocate goes against the obvious: Bologna win. Venezia last 5 overall: WLWLL (2-0-3 in that run). Bologna last 5 overall: WWWWL (4-0-1). Venezia season record is 2-0-10 (wins-draws-losses overall), 17% wins, 0.50 pts/game. Bologna season record is 5-3-4 (W-D-L overall), 42% wins, 1.50 pts/game. Recent form edges toward Bologna away from home (price about 2.90). Confidence 70%.",
               "stars": 6
             }
           ]
@@ -1242,7 +2326,7 @@
             "pick": "home",
             "pick_label": "Werder Bremen win",
             "bot_count": 6,
-            "avg_conf": 67.5,
+            "avg_conf": 69.3,
             "strength": "strong",
             "bots": [
               "FormFox",
@@ -1274,7 +2358,7 @@
               },
               {
                 "market": "Total corners",
-                "selection": "Under 10.5",
+                "selection": "Over 9.5",
                 "note": "Proxy only \u2014 free feed has no corner averages yet"
               },
               {
@@ -1297,23 +2381,171 @@
               "losses": 2,
               "win_pct": 50.0,
               "pts_pg": 1.8,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "WWDWW",
+              "venue_form_record": "4-1-0",
               "venue_form_label": "Last 5 at home",
-              "overall_form_last5": "WLWLW",
-              "overall_form_record": "3-0-2",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
-              "flags": [],
-              "note": "Home-only form and goals appear after this team has home results in history."
+              "overall_form_last5": "WLWWD",
+              "overall_form_record": "3-1-1",
+              "venue_matches": [
+                {
+                  "date": "2026-11-22",
+                  "venue": "H",
+                  "opponent": "Hamburg",
+                  "gf": 4,
+                  "ga": 0,
+                  "ft": "4-0",
+                  "result": "W",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "H",
+                  "opponent": "Hoffenheim",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-17",
+                  "venue": "H",
+                  "opponent": "Paderborn",
+                  "gf": 2,
+                  "ga": 2,
+                  "ft": "2-2",
+                  "result": "D",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-09-19",
+                  "venue": "H",
+                  "opponent": "Augsburg",
+                  "gf": 3,
+                  "ga": 2,
+                  "ft": "3-2",
+                  "result": "W",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-05",
+                  "venue": "H",
+                  "opponent": "RB Leipzig",
+                  "gf": 3,
+                  "ga": 1,
+                  "ft": "3-1",
+                  "result": "W",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-22",
+                  "venue": "H",
+                  "opponent": "Hamburg",
+                  "gf": 4,
+                  "ga": 0,
+                  "ft": "4-0",
+                  "result": "W",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-11-07",
+                  "venue": "A",
+                  "opponent": "Stuttgart",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "H",
+                  "opponent": "Hoffenheim",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-24",
+                  "venue": "A",
+                  "opponent": "Mainz",
+                  "gf": 3,
+                  "ga": 2,
+                  "ft": "3-2",
+                  "result": "W",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-17",
+                  "venue": "H",
+                  "opponent": "Paderborn",
+                  "gf": 2,
+                  "ga": 2,
+                  "ft": "2-2",
+                  "result": "D",
+                  "league": "Bundesliga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                }
+              ],
+              "goals_for": 33,
+              "goals_against": 36,
+              "gf_pg": 1.5,
+              "ga_pg": 1.64,
+              "clean_sheets": 5,
+              "cs_pct": 22.7,
+              "goals_sample": 22,
+              "goals_scope": "home games in history",
+              "goals_overall_for": 58,
+              "goals_overall_against": 75,
+              "cs_overall": 8,
+              "flags": [
+                "Unbeaten last 5 at home",
+                "3 of last 5 vs weaker sides"
+              ],
+              "note": "Home form and home goals only. Overall last-5 is secondary context."
             },
             "away": {
               "name": "Borussia M\u00f6nchengladbach",
@@ -1356,84 +2588,84 @@
               "bot": "FormFox",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 67,
+              "conf": 69,
               "odds": 2.5,
               "probs": {
-                "home": 0.526,
-                "draw": 0.165,
-                "away": 0.309
+                "home": 0.556,
+                "draw": 0.139,
+                "away": 0.305
               },
-              "reason": "FormFox leans Werder Bremen win in Werder Bremen vs Borussia M\u00f6nchengladbach. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 67%.",
+              "reason": "FormFox leans Werder Bremen win in Werder Bremen vs Borussia M\u00f6nchengladbach. Werder Bremen last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 69%.",
               "stars": 6
             },
             {
               "bot": "HomeStrong",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 69,
+              "conf": 71,
               "odds": 2.5,
               "probs": {
-                "home": 0.568,
-                "draw": 0.141,
-                "away": 0.291
+                "home": 0.598,
+                "draw": 0.116,
+                "away": 0.286
               },
-              "reason": "HomeStrong backs the home angle: Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 69%.",
+              "reason": "HomeStrong backs the home angle: Werder Bremen win. Werder Bremen last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 71%.",
               "stars": 6
             },
             {
               "bot": "AwayHunter",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 67,
+              "conf": 69,
               "odds": 2.5,
               "probs": {
-                "home": 0.527,
-                "draw": 0.149,
-                "away": 0.324
+                "home": 0.557,
+                "draw": 0.123,
+                "away": 0.32
               },
-              "reason": "AwayHunter's read is Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 67%.",
+              "reason": "AwayHunter's read is Werder Bremen win. Werder Bremen last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 69%.",
               "stars": 6
             },
             {
               "bot": "ValueSeeker",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 68,
+              "conf": 70,
               "odds": 2.5,
               "probs": {
-                "home": 0.543,
-                "draw": 0.162,
-                "away": 0.294
+                "home": 0.578,
+                "draw": 0.135,
+                "away": 0.287
               },
-              "reason": "ValueSeeker finds the price for Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 68%.",
+              "reason": "ValueSeeker finds the price for Werder Bremen win. Werder Bremen last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 70%.",
               "stars": 6
             },
             {
               "bot": "GoalsGuru",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 68,
+              "conf": 69,
               "odds": 2.5,
               "probs": {
-                "home": 0.541,
-                "draw": 0.159,
-                "away": 0.3
+                "home": 0.571,
+                "draw": 0.133,
+                "away": 0.296
               },
-              "reason": "GoalsGuru's 1X2 call is Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 68%.",
+              "reason": "GoalsGuru's 1X2 call is Werder Bremen win. Werder Bremen last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 69%.",
               "stars": 6
             },
             {
               "bot": "DevilAdvocate",
               "pick": "home",
               "pick_label": "Werder Bremen win",
-              "conf": 66,
+              "conf": 68,
               "odds": 2.5,
               "probs": {
-                "home": 0.5,
-                "draw": 0.164,
-                "away": 0.336
+                "home": 0.532,
+                "draw": 0.135,
+                "away": 0.333
               },
-              "reason": "DevilAdvocate goes against the obvious: Werder Bremen win. Werder Bremen last 5 overall: WLWLW (3-0-2 in that run). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 66%.",
+              "reason": "DevilAdvocate goes against the obvious: Werder Bremen win. Werder Bremen last 5 overall: WWDWW (4-1-0 in that run, unbeaten). Borussia M\u00f6nchengladbach last 5 overall: LLDWW (2-1-2). Werder Bremen season record is 5-3-2 (wins-draws-losses overall), 50% wins, 1.80 pts/game. Borussia M\u00f6nchengladbach season record is 1-1-8 (W-D-L overall), 10% wins, 0.40 pts/game. Recent form edges toward Werder Bremen in Bundesliga (price about 2.50). Confidence 68%.",
               "stars": 6
             }
           ]
@@ -1481,11 +2713,12 @@
           "consensus": {
             "pick": "away",
             "pick_label": "Paris FC win",
-            "bot_count": 5,
+            "bot_count": 6,
             "avg_conf": 61.8,
             "strength": "strong",
             "bots": [
               "FormFox",
+              "HomeStrong",
               "AwayHunter",
               "ValueSeeker",
               "GoalsGuru",
@@ -1522,7 +2755,7 @@
                 "note": "Even match often means more fouls/cards (proxy)"
               }
             ],
-            "scoreline": "1-2",
+            "scoreline": "1-1",
             "safer_alternative": "Paris FC win or draw (X2)",
             "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
           },
@@ -1536,23 +2769,168 @@
               "losses": 3,
               "win_pct": 45.5,
               "pts_pg": 1.64,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "WLWLD",
+              "venue_form_record": "2-1-2",
               "venue_form_label": "Last 5 at home",
               "overall_form_last5": "WWWLD",
               "overall_form_record": "3-1-1",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
+              "venue_matches": [
+                {
+                  "date": "2026-11-08",
+                  "venue": "H",
+                  "opponent": "Lyon",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-23",
+                  "venue": "H",
+                  "opponent": "Nice",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-10",
+                  "venue": "H",
+                  "opponent": "Angers",
+                  "gf": 5,
+                  "ga": 1,
+                  "ft": "5-1",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-09-13",
+                  "venue": "H",
+                  "opponent": "Paris SG",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-08-29",
+                  "venue": "H",
+                  "opponent": "Toulouse",
+                  "gf": 2,
+                  "ga": 2,
+                  "ft": "2-2",
+                  "result": "D",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-21",
+                  "venue": "A",
+                  "opponent": "Strasbourg",
+                  "gf": 1,
+                  "ga": 0,
+                  "ft": "1-0",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-08",
+                  "venue": "H",
+                  "opponent": "Lyon",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-02",
+                  "venue": "A",
+                  "opponent": "Lorient",
+                  "gf": 2,
+                  "ga": 0,
+                  "ft": "2-0",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-23",
+                  "venue": "H",
+                  "opponent": "Nice",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-17",
+                  "venue": "A",
+                  "opponent": "Lille",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "goals_for": 38,
+              "goals_against": 29,
+              "gf_pg": 1.73,
+              "ga_pg": 1.32,
+              "clean_sheets": 8,
+              "cs_pct": 36.4,
+              "goals_sample": 22,
+              "goals_scope": "home games in history",
+              "goals_overall_for": 62,
+              "goals_overall_against": 67,
+              "cs_overall": 12,
               "flags": [],
-              "note": "Home-only form and goals appear after this team has home results in history."
+              "note": "Home form and home goals only. Overall last-5 is secondary context."
             },
             "away": {
               "name": "Paris FC",
@@ -1563,30 +2941,206 @@
               "losses": 2,
               "win_pct": 63.6,
               "pts_pg": 2.09,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "WLLWD",
+              "venue_form_record": "2-1-2",
               "venue_form_label": "Last 5 away",
               "overall_form_last5": "WWWLW",
               "overall_form_record": "4-0-1",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
-              "flags": [],
-              "note": "Away-only form and goals appear after this team has away results in history."
+              "venue_matches": [
+                {
+                  "date": "2026-11-07",
+                  "venue": "A",
+                  "opponent": "Auxerre",
+                  "gf": 1,
+                  "ga": 0,
+                  "ft": "1-0",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-24",
+                  "venue": "A",
+                  "opponent": "Lens",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-10",
+                  "venue": "A",
+                  "opponent": "Lorient",
+                  "gf": 0,
+                  "ga": 1,
+                  "ft": "0-1",
+                  "result": "L",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-06",
+                  "venue": "A",
+                  "opponent": "Marseille",
+                  "gf": 3,
+                  "ga": 2,
+                  "ft": "3-2",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-08-22",
+                  "venue": "A",
+                  "opponent": "Troyes",
+                  "gf": 0,
+                  "ga": 0,
+                  "ft": "0-0",
+                  "result": "D",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-22",
+                  "venue": "H",
+                  "opponent": "Angers",
+                  "gf": 4,
+                  "ga": 0,
+                  "ft": "4-0",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-11-07",
+                  "venue": "A",
+                  "opponent": "Auxerre",
+                  "gf": 1,
+                  "ga": 0,
+                  "ft": "1-0",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-11-01",
+                  "venue": "H",
+                  "opponent": "Monaco",
+                  "gf": 3,
+                  "ga": 1,
+                  "ft": "3-1",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-24",
+                  "venue": "A",
+                  "opponent": "Lens",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-18",
+                  "venue": "H",
+                  "opponent": "Rennes",
+                  "gf": 4,
+                  "ga": 3,
+                  "ft": "4-3",
+                  "result": "W",
+                  "league": "Ligue 1",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "goals_for": 24,
+              "goals_against": 28,
+              "gf_pg": 1.09,
+              "ga_pg": 1.27,
+              "clean_sheets": 6,
+              "cs_pct": 27.3,
+              "goals_sample": 22,
+              "goals_scope": "away games in history",
+              "goals_overall_for": 68,
+              "goals_overall_against": 60,
+              "cs_overall": 13,
+              "flags": [
+                "2 of last 5 vs weaker sides"
+              ],
+              "note": "Away form and away goals only. Overall last-5 is secondary context."
             },
             "h2h": {
-              "n": 0,
-              "record": "0-0-0",
-              "chars": "",
+              "n": 2,
+              "record": "0-0-2",
+              "chars": "LL",
               "label": "H2H (from Brest view)",
-              "matches": []
+              "matches": [
+                {
+                  "date": "2026-05-03",
+                  "venue": "A",
+                  "opponent": "Paris FC",
+                  "gf": 0,
+                  "ga": 4,
+                  "ft": "0-4",
+                  "result": "L",
+                  "league": "Ligue 1",
+                  "home_name": "Paris FC",
+                  "away_name": "Brest",
+                  "score_home": 4,
+                  "score_away": 0
+                },
+                {
+                  "date": "2025-09-14",
+                  "venue": "H",
+                  "opponent": "Paris FC",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Ligue 1",
+                  "home_name": "Brest",
+                  "away_name": "Paris FC",
+                  "score_home": 1,
+                  "score_away": 2
+                }
+              ]
             }
           },
           "tippable": true,
@@ -1598,26 +3152,26 @@
               "conf": 62,
               "odds": 2.9,
               "probs": {
-                "home": 0.383,
-                "draw": 0.209,
-                "away": 0.408
+                "home": 0.368,
+                "draw": 0.217,
+                "away": 0.416
               },
-              "reason": "FormFox leans Paris FC win in Brest vs Paris FC. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 62%.",
-              "stars": 5
+              "reason": "FormFox leans Paris FC win in Brest vs Paris FC. Brest last 5 overall: WLWLD (2-1-2 in that run). Paris FC last 5 overall: WLLWD (2-1-2). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Head-to-head (last 2 from Brest's view): LL. Confidence 62%.",
+              "stars": 6
             },
             {
               "bot": "HomeStrong",
-              "pick": "home",
-              "pick_label": "Brest win",
+              "pick": "away",
+              "pick_label": "Paris FC win",
               "conf": 61,
-              "odds": 2.5,
+              "odds": 2.9,
               "probs": {
-                "home": 0.401,
-                "draw": 0.214,
-                "away": 0.386
+                "home": 0.385,
+                "draw": 0.221,
+                "away": 0.394
               },
-              "reason": "HomeStrong backs the home angle: Brest win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Brest in Ligue 1 (price about 2.50). Confidence 61%.",
-              "stars": 1
+              "reason": "HomeStrong backs the home angle: Paris FC win. Brest last 5 overall: WLWLD (2-1-2 in that run). Paris FC last 5 overall: WLLWD (2-1-2). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Head-to-head (last 2 from Brest's view): LL. Confidence 61%.",
+              "stars": 6
             },
             {
               "bot": "AwayHunter",
@@ -1626,12 +3180,12 @@
               "conf": 62,
               "odds": 2.9,
               "probs": {
-                "home": 0.368,
-                "draw": 0.213,
-                "away": 0.419
+                "home": 0.353,
+                "draw": 0.22,
+                "away": 0.427
               },
-              "reason": "AwayHunter's read is Paris FC win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 62%.",
-              "stars": 5
+              "reason": "AwayHunter's read is Paris FC win. Brest last 5 overall: WLWLD (2-1-2 in that run). Paris FC last 5 overall: WLLWD (2-1-2). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Head-to-head (last 2 from Brest's view): LL. Confidence 62%.",
+              "stars": 6
             },
             {
               "bot": "ValueSeeker",
@@ -1640,26 +3194,26 @@
               "conf": 62,
               "odds": 2.9,
               "probs": {
-                "home": 0.379,
-                "draw": 0.215,
-                "away": 0.407
+                "home": 0.362,
+                "draw": 0.222,
+                "away": 0.416
               },
-              "reason": "ValueSeeker finds the price for Paris FC win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 62%.",
-              "stars": 5
+              "reason": "ValueSeeker finds the price for Paris FC win. Brest last 5 overall: WLWLD (2-1-2 in that run). Paris FC last 5 overall: WLLWD (2-1-2). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Head-to-head (last 2 from Brest's view): LL. Confidence 62%.",
+              "stars": 6
             },
             {
               "bot": "GoalsGuru",
               "pick": "away",
               "pick_label": "Paris FC win",
-              "conf": 61,
+              "conf": 62,
               "odds": 2.9,
               "probs": {
-                "home": 0.385,
-                "draw": 0.21,
-                "away": 0.405
+                "home": 0.369,
+                "draw": 0.217,
+                "away": 0.413
               },
-              "reason": "GoalsGuru's 1X2 call is Paris FC win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 61%.",
-              "stars": 5
+              "reason": "GoalsGuru's 1X2 call is Paris FC win. Brest last 5 overall: WLWLD (2-1-2 in that run). Paris FC last 5 overall: WLLWD (2-1-2). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Head-to-head (last 2 from Brest's view): LL. Confidence 62%.",
+              "stars": 6
             },
             {
               "bot": "DevilAdvocate",
@@ -1668,12 +3222,12 @@
               "conf": 62,
               "odds": 2.9,
               "probs": {
-                "home": 0.352,
-                "draw": 0.234,
-                "away": 0.414
+                "home": 0.338,
+                "draw": 0.241,
+                "away": 0.421
               },
-              "reason": "DevilAdvocate goes against the obvious: Paris FC win. Brest last 5 overall: WWWLD (3-1-1 in that run). Paris FC last 5 overall: WWWLW (4-0-1). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Confidence 62%.",
-              "stars": 5
+              "reason": "DevilAdvocate goes against the obvious: Paris FC win. Brest last 5 overall: WLWLD (2-1-2 in that run). Paris FC last 5 overall: WLLWD (2-1-2). Brest season record is 5-3-3 (wins-draws-losses overall), 45% wins, 1.64 pts/game. Paris FC season record is 7-2-2 (W-D-L overall), 64% wins, 2.09 pts/game. Recent form edges toward Paris FC away from home (price about 2.90). Head-to-head (last 2 from Brest's view): LL. Confidence 62%.",
+              "stars": 6
             }
           ]
         }
@@ -1720,15 +3274,16 @@
           "consensus": {
             "pick": "home",
             "pick_label": "FC Groningen win",
-            "bot_count": 5,
-            "avg_conf": 60.2,
+            "bot_count": 6,
+            "avg_conf": 62.7,
             "strength": "strong",
             "bots": [
               "FormFox",
               "HomeStrong",
               "AwayHunter",
               "ValueSeeker",
-              "GoalsGuru"
+              "GoalsGuru",
+              "DevilAdvocate"
             ],
             "odds": 2.5,
             "tippable": true
@@ -1757,8 +3312,8 @@
               },
               {
                 "market": "Total cards",
-                "selection": "Over 3.5",
-                "note": "Even match often means more fouls/cards (proxy)"
+                "selection": "Under 4.5",
+                "note": "One-sided lean may mean fewer cards (proxy)"
               }
             ],
             "scoreline": "1-0",
@@ -1775,23 +3330,168 @@
               "losses": 6,
               "win_pct": 30.8,
               "pts_pg": 1.15,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "LLLWD",
+              "venue_form_record": "1-1-3",
               "venue_form_label": "Last 5 at home",
-              "overall_form_last5": "LLLLD",
+              "overall_form_last5": "LLLDL",
               "overall_form_record": "0-1-4",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
+              "venue_matches": [
+                {
+                  "date": "2026-11-21",
+                  "venue": "H",
+                  "opponent": "Heerenveen",
+                  "gf": 1,
+                  "ga": 3,
+                  "ft": "1-3",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-01",
+                  "venue": "H",
+                  "opponent": "Sparta Rotterdam",
+                  "gf": 2,
+                  "ga": 3,
+                  "ft": "2-3",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-18",
+                  "venue": "H",
+                  "opponent": "Ajax",
+                  "gf": 2,
+                  "ga": 5,
+                  "ft": "2-5",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-18",
+                  "venue": "H",
+                  "opponent": "Zwolle",
+                  "gf": 3,
+                  "ga": 0,
+                  "ft": "3-0",
+                  "result": "W",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-09-06",
+                  "venue": "H",
+                  "opponent": "Twente",
+                  "gf": 2,
+                  "ga": 2,
+                  "ft": "2-2",
+                  "result": "D",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-21",
+                  "venue": "H",
+                  "opponent": "Heerenveen",
+                  "gf": 1,
+                  "ga": 3,
+                  "ft": "1-3",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-08",
+                  "venue": "A",
+                  "opponent": "AZ Alkmaar",
+                  "gf": 3,
+                  "ga": 4,
+                  "ft": "3-4",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 2,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-01",
+                  "venue": "H",
+                  "opponent": "Sparta Rotterdam",
+                  "gf": 2,
+                  "ga": 3,
+                  "ft": "2-3",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-25",
+                  "venue": "A",
+                  "opponent": "Nijmegen",
+                  "gf": 2,
+                  "ga": 2,
+                  "ft": "2-2",
+                  "result": "D",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-18",
+                  "venue": "H",
+                  "opponent": "Ajax",
+                  "gf": 2,
+                  "ga": 5,
+                  "ft": "2-5",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "goals_for": 41,
+              "goals_against": 35,
+              "gf_pg": 1.71,
+              "ga_pg": 1.46,
+              "clean_sheets": 7,
+              "cs_pct": 29.2,
+              "goals_sample": 24,
+              "goals_scope": "home games in history",
+              "goals_overall_for": 79,
+              "goals_overall_against": 76,
+              "cs_overall": 11,
               "flags": [],
-              "note": "Home-only form and goals appear after this team has home results in history."
+              "note": "Home form and home goals only. Overall last-5 is secondary context."
             },
             "away": {
               "name": "Willem II",
@@ -1802,23 +3502,168 @@
               "losses": 10,
               "win_pct": 0.0,
               "pts_pg": 0.23,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "LLLLL",
+              "venue_form_record": "0-0-5",
               "venue_form_label": "Last 5 away",
-              "overall_form_last5": "LDLWL",
-              "overall_form_record": "1-1-3",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
+              "overall_form_last5": "LDLLL",
+              "overall_form_record": "0-1-4",
+              "venue_matches": [
+                {
+                  "date": "2026-11-22",
+                  "venue": "A",
+                  "opponent": "Twente",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 1,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "A",
+                  "opponent": "PSV Eindhoven",
+                  "gf": 0,
+                  "ga": 7,
+                  "ft": "0-7",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-17",
+                  "venue": "A",
+                  "opponent": "Sparta Rotterdam",
+                  "gf": 2,
+                  "ga": 3,
+                  "ft": "2-3",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-11",
+                  "venue": "A",
+                  "opponent": "Utrecht",
+                  "gf": 1,
+                  "ga": 3,
+                  "ft": "1-3",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-15",
+                  "venue": "A",
+                  "opponent": "Ajax",
+                  "gf": 1,
+                  "ga": 5,
+                  "ft": "1-5",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-22",
+                  "venue": "A",
+                  "opponent": "Twente",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 1,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-11-06",
+                  "venue": "H",
+                  "opponent": "Zwolle",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                },
+                {
+                  "date": "2026-10-31",
+                  "venue": "A",
+                  "opponent": "PSV Eindhoven",
+                  "gf": 0,
+                  "ga": 7,
+                  "ft": "0-7",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-10-24",
+                  "venue": "H",
+                  "opponent": "Cambuur",
+                  "gf": 1,
+                  "ga": 6,
+                  "ft": "1-6",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-17",
+                  "venue": "A",
+                  "opponent": "Sparta Rotterdam",
+                  "gf": 2,
+                  "ga": 3,
+                  "ft": "2-3",
+                  "result": "L",
+                  "league": "Eredivisie",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "goals_for": 7,
+              "goals_against": 25,
+              "gf_pg": 1.0,
+              "ga_pg": 3.57,
+              "clean_sheets": 0,
+              "cs_pct": 0.0,
+              "goals_sample": 7,
+              "goals_scope": "away games in history",
+              "goals_overall_for": 12,
+              "goals_overall_against": 42,
+              "cs_overall": 0,
               "flags": [],
-              "note": "Away-only form and goals appear after this team has away results in history."
+              "note": "Away form and away goals only. Overall last-5 is secondary context."
             },
             "h2h": {
               "n": 0,
@@ -1834,85 +3679,85 @@
               "bot": "FormFox",
               "pick": "home",
               "pick_label": "FC Groningen win",
-              "conf": 60,
+              "conf": 63,
               "odds": 2.5,
               "probs": {
-                "home": 0.383,
-                "draw": 0.283,
-                "away": 0.334
+                "home": 0.441,
+                "draw": 0.26,
+                "away": 0.299
               },
-              "reason": "FormFox leans FC Groningen win in FC Groningen vs Willem II. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 60%.",
-              "stars": 5
+              "reason": "FormFox leans FC Groningen win in FC Groningen vs Willem II. FC Groningen last 5 overall: LLLWD (1-1-3 in that run). Willem II last 5 overall: LLLLL (0-0-5). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 63%.",
+              "stars": 6
             },
             {
               "bot": "HomeStrong",
               "pick": "home",
               "pick_label": "FC Groningen win",
-              "conf": 62,
+              "conf": 65,
               "odds": 2.5,
               "probs": {
-                "home": 0.413,
-                "draw": 0.278,
-                "away": 0.309
+                "home": 0.473,
+                "draw": 0.254,
+                "away": 0.273
               },
-              "reason": "HomeStrong backs the home angle: FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 62%.",
-              "stars": 5
+              "reason": "HomeStrong backs the home angle: FC Groningen win. FC Groningen last 5 overall: LLLWD (1-1-3 in that run). Willem II last 5 overall: LLLLL (0-0-5). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 65%.",
+              "stars": 6
             },
             {
               "bot": "AwayHunter",
               "pick": "home",
               "pick_label": "FC Groningen win",
-              "conf": 60,
+              "conf": 63,
               "odds": 2.5,
               "probs": {
-                "home": 0.378,
-                "draw": 0.279,
-                "away": 0.343
+                "home": 0.436,
+                "draw": 0.258,
+                "away": 0.306
               },
-              "reason": "AwayHunter's read is FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 60%.",
-              "stars": 5
+              "reason": "AwayHunter's read is FC Groningen win. FC Groningen last 5 overall: LLLWD (1-1-3 in that run). Willem II last 5 overall: LLLLL (0-0-5). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 63%.",
+              "stars": 6
             },
             {
               "bot": "ValueSeeker",
               "pick": "home",
               "pick_label": "FC Groningen win",
-              "conf": 59,
+              "conf": 62,
               "odds": 2.5,
               "probs": {
-                "home": 0.361,
-                "draw": 0.326,
-                "away": 0.313
+                "home": 0.417,
+                "draw": 0.301,
+                "away": 0.282
               },
-              "reason": "ValueSeeker finds the price for FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 59%.",
-              "stars": 5
+              "reason": "ValueSeeker finds the price for FC Groningen win. FC Groningen last 5 overall: LLLWD (1-1-3 in that run). Willem II last 5 overall: LLLLL (0-0-5). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 62%.",
+              "stars": 6
             },
             {
               "bot": "GoalsGuru",
               "pick": "home",
               "pick_label": "FC Groningen win",
-              "conf": 60,
+              "conf": 63,
               "odds": 2.5,
               "probs": {
-                "home": 0.383,
-                "draw": 0.292,
-                "away": 0.325
+                "home": 0.439,
+                "draw": 0.271,
+                "away": 0.29
               },
-              "reason": "GoalsGuru's 1X2 call is FC Groningen win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 60%.",
-              "stars": 5
+              "reason": "GoalsGuru's 1X2 call is FC Groningen win. FC Groningen last 5 overall: LLLWD (1-1-3 in that run). Willem II last 5 overall: LLLLL (0-0-5). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 63%.",
+              "stars": 6
             },
             {
               "bot": "DevilAdvocate",
-              "pick": "away",
-              "pick_label": "Willem II win",
-              "conf": 59,
-              "odds": 2.9,
+              "pick": "home",
+              "pick_label": "FC Groningen win",
+              "conf": 60,
+              "odds": 2.5,
               "probs": {
-                "home": 0.329,
-                "draw": 0.322,
-                "away": 0.349
+                "home": 0.384,
+                "draw": 0.301,
+                "away": 0.315
               },
-              "reason": "DevilAdvocate goes against the obvious: Willem II win. FC Groningen last 5 overall: LLLLD (0-1-4 in that run). Willem II last 5 overall: LDLWL (1-1-3). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward Willem II away from home (price about 2.90). Confidence 59%.",
-              "stars": 1
+              "reason": "DevilAdvocate goes against the obvious: FC Groningen win. FC Groningen last 5 overall: LLLWD (1-1-3 in that run). Willem II last 5 overall: LLLLL (0-0-5). FC Groningen season record is 4-3-6 (wins-draws-losses overall), 31% wins, 1.15 pts/game. Willem II season record is 0-3-10 (W-D-L overall), 0% wins, 0.23 pts/game. Recent form edges toward FC Groningen in Eredivisie (price about 2.50). Confidence 60%.",
+              "stars": 6
             }
           ]
         }
@@ -1957,30 +3802,33 @@
             "away": 2.9
           },
           "consensus": {
-            "pick": "home",
-            "pick_label": "Maritimo win",
-            "bot_count": 3,
-            "avg_conf": 60.0,
-            "strength": "lean",
+            "pick": "away",
+            "pick_label": "C.D. Nacional win",
+            "bot_count": 6,
+            "avg_conf": 63.8,
+            "strength": "strong",
             "bots": [
               "FormFox",
               "HomeStrong",
-              "GoalsGuru"
+              "AwayHunter",
+              "ValueSeeker",
+              "GoalsGuru",
+              "DevilAdvocate"
             ],
-            "odds": 2.5,
+            "odds": 2.9,
             "tippable": true
           },
           "bet_builder": {
             "legs": [
               {
                 "market": "Match result",
-                "selection": "Maritimo to win",
+                "selection": "C.D. Nacional to win",
                 "note": "Consensus 1X2"
               },
               {
                 "market": "Both teams to score",
-                "selection": "Yes",
-                "note": "Both sides show enough attacking form proxy"
+                "selection": "No",
+                "note": "One side looks weaker going forward"
               },
               {
                 "market": "Total goals",
@@ -1994,12 +3842,12 @@
               },
               {
                 "market": "Total cards",
-                "selection": "Over 3.5",
-                "note": "Even match often means more fouls/cards (proxy)"
+                "selection": "Under 4.5",
+                "note": "One-sided lean may mean fewer cards (proxy)"
               }
             ],
-            "scoreline": "1-1",
-            "safer_alternative": "Maritimo win or draw (1X)",
+            "scoreline": "0-2",
+            "safer_alternative": "C.D. Nacional win or draw (X2)",
             "disclaimer": "Corners/cards legs are proxies until richer stats are stored. Always check live prices. Not betting advice."
           },
           "stats": {
@@ -2012,23 +3860,168 @@
               "losses": 6,
               "win_pct": 20.0,
               "pts_pg": 0.8,
-              "venue_form_last5": "\u2014",
-              "venue_form_record": "\u2014",
+              "venue_form_last5": "LLLDW",
+              "venue_form_record": "1-1-3",
               "venue_form_label": "Last 5 at home",
-              "overall_form_last5": "WLLWL",
-              "overall_form_record": "2-0-3",
-              "venue_matches": [],
-              "overall_matches": [],
-              "goals_for": null,
-              "goals_against": null,
-              "gf_pg": null,
-              "ga_pg": null,
-              "clean_sheets": null,
-              "cs_pct": null,
-              "goals_sample": 0,
-              "goals_scope": "not enough history yet",
+              "overall_form_last5": "LLLDL",
+              "overall_form_record": "0-1-4",
+              "venue_matches": [
+                {
+                  "date": "2026-11-01",
+                  "venue": "H",
+                  "opponent": "Santa Clara",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-10",
+                  "venue": "H",
+                  "opponent": "Porto",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-09-05",
+                  "venue": "H",
+                  "opponent": "Benfica",
+                  "gf": 0,
+                  "ga": 3,
+                  "ft": "0-3",
+                  "result": "L",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-08-22",
+                  "venue": "H",
+                  "opponent": "Academico Viseu",
+                  "gf": 2,
+                  "ga": 2,
+                  "ft": "2-2",
+                  "result": "D",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-08-08",
+                  "venue": "H",
+                  "opponent": "Casa Pia",
+                  "gf": 1,
+                  "ga": 0,
+                  "ft": "1-0",
+                  "result": "W",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "bottom",
+                  "opp_label": "vs weaker side"
+                }
+              ],
+              "overall_matches": [
+                {
+                  "date": "2026-11-01",
+                  "venue": "H",
+                  "opponent": "Santa Clara",
+                  "gf": 0,
+                  "ga": 2,
+                  "ft": "0-2",
+                  "result": "L",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-23",
+                  "venue": "A",
+                  "opponent": "Guimaraes",
+                  "gf": 0,
+                  "ga": 5,
+                  "ft": "0-5",
+                  "result": "L",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-10-10",
+                  "venue": "H",
+                  "opponent": "Porto",
+                  "gf": 1,
+                  "ga": 2,
+                  "ft": "1-2",
+                  "result": "L",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "top",
+                  "opp_label": "vs stronger side"
+                },
+                {
+                  "date": "2026-09-19",
+                  "venue": "A",
+                  "opponent": "Gil Vicente",
+                  "gf": 1,
+                  "ga": 1,
+                  "ft": "1-1",
+                  "result": "D",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                },
+                {
+                  "date": "2026-09-14",
+                  "venue": "A",
+                  "opponent": "Moreirense",
+                  "gf": 1,
+                  "ga": 3,
+                  "ft": "1-3",
+                  "result": "L",
+                  "league": "Primeira Liga",
+                  "red_cards": 0,
+                  "penalties": null,
+                  "opp_strength": "mid",
+                  "opp_label": "vs mid-table form"
+                }
+              ],
+              "goals_for": 4,
+              "goals_against": 9,
+              "gf_pg": 0.8,
+              "ga_pg": 1.8,
+              "clean_sheets": 1,
+              "cs_pct": 20.0,
+              "goals_sample": 5,
+              "goals_scope": "home games in history",
+              "goals_overall_for": 9,
+              "goals_overall_against": 21,
+              "cs_overall": 1,
               "flags": [],
-              "note": "Home-only form and goals appear after this team has home results in history."
+              "note": "Home form and home goals only. Overall last-5 is secondary context."
             },
             "away": {
               "name": "C.D. Nacional",
@@ -2069,87 +4062,87 @@
           "tips": [
             {
               "bot": "FormFox",
-              "pick": "home",
-              "pick_label": "Maritimo win",
-              "conf": 60,
-              "odds": 2.5,
+              "pick": "away",
+              "pick_label": "C.D. Nacional win",
+              "conf": 63,
+              "odds": 2.9,
               "probs": {
-                "home": 0.366,
-                "draw": 0.286,
-                "away": 0.348
+                "home": 0.319,
+                "draw": 0.238,
+                "away": 0.443
               },
-              "reason": "FormFox leans Maritimo win in Maritimo vs C.D. Nacional. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward Maritimo in Primeira Liga (price about 2.50). Confidence 60%.",
-              "stars": 3
+              "reason": "FormFox leans C.D. Nacional win in Maritimo vs C.D. Nacional. Maritimo last 5 overall: LLLDW (1-1-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 63%.",
+              "stars": 6
             },
             {
               "bot": "HomeStrong",
-              "pick": "home",
-              "pick_label": "Maritimo win",
-              "conf": 61,
-              "odds": 2.5,
+              "pick": "away",
+              "pick_label": "C.D. Nacional win",
+              "conf": 62,
+              "odds": 2.9,
               "probs": {
-                "home": 0.387,
-                "draw": 0.289,
-                "away": 0.324
+                "home": 0.321,
+                "draw": 0.253,
+                "away": 0.427
               },
-              "reason": "HomeStrong backs the home angle: Maritimo win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward Maritimo in Primeira Liga (price about 2.50). Confidence 61%.",
-              "stars": 3
+              "reason": "HomeStrong backs the home angle: C.D. Nacional win. Maritimo last 5 overall: LLLDW (1-1-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 62%.",
+              "stars": 6
             },
             {
               "bot": "AwayHunter",
               "pick": "away",
               "pick_label": "C.D. Nacional win",
-              "conf": 60,
+              "conf": 65,
               "odds": 2.9,
               "probs": {
-                "home": 0.344,
-                "draw": 0.283,
-                "away": 0.372
+                "home": 0.295,
+                "draw": 0.236,
+                "away": 0.469
               },
-              "reason": "AwayHunter's read is C.D. Nacional win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 60%.",
-              "stars": 3
+              "reason": "AwayHunter's read is C.D. Nacional win. Maritimo last 5 overall: LLLDW (1-1-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 65%.",
+              "stars": 6
             },
             {
               "bot": "ValueSeeker",
               "pick": "away",
               "pick_label": "C.D. Nacional win",
-              "conf": 59,
+              "conf": 65,
               "odds": 2.9,
               "probs": {
-                "home": 0.339,
-                "draw": 0.298,
-                "away": 0.363
+                "home": 0.284,
+                "draw": 0.244,
+                "away": 0.472
               },
-              "reason": "ValueSeeker finds the price for C.D. Nacional win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 59%.",
-              "stars": 3
+              "reason": "ValueSeeker finds the price for C.D. Nacional win. Maritimo last 5 overall: LLLDW (1-1-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 65%.",
+              "stars": 6
             },
             {
               "bot": "GoalsGuru",
-              "pick": "home",
-              "pick_label": "Maritimo win",
-              "conf": 59,
-              "odds": 2.5,
+              "pick": "away",
+              "pick_label": "C.D. Nacional win",
+              "conf": 63,
+              "odds": 2.9,
               "probs": {
-                "home": 0.355,
-                "draw": 0.296,
-                "away": 0.349
+                "home": 0.304,
+                "draw": 0.249,
+                "away": 0.447
               },
-              "reason": "GoalsGuru's 1X2 call is Maritimo win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward Maritimo in Primeira Liga (price about 2.50). Confidence 59%.",
-              "stars": 3
+              "reason": "GoalsGuru's 1X2 call is C.D. Nacional win. Maritimo last 5 overall: LLLDW (1-1-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 63%.",
+              "stars": 6
             },
             {
               "bot": "DevilAdvocate",
               "pick": "away",
               "pick_label": "C.D. Nacional win",
-              "conf": 60,
+              "conf": 65,
               "odds": 2.9,
               "probs": {
-                "home": 0.311,
-                "draw": 0.316,
-                "away": 0.373
+                "home": 0.266,
+                "draw": 0.264,
+                "away": 0.47
               },
-              "reason": "DevilAdvocate goes against the obvious: C.D. Nacional win. Maritimo last 5 overall: WLLWL (2-0-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 60%.",
-              "stars": 3
+              "reason": "DevilAdvocate goes against the obvious: C.D. Nacional win. Maritimo last 5 overall: LLLDW (1-1-3 in that run). C.D. Nacional last 5 overall: WLWLL (2-0-3). Maritimo season record is 2-2-6 (wins-draws-losses overall), 20% wins, 0.80 pts/game. C.D. Nacional season record is 3-1-7 (W-D-L overall), 27% wins, 0.91 pts/game. Recent form edges toward C.D. Nacional away from home (price about 2.90). Confidence 65%.",
+              "stars": 6
             }
           ]
         }
@@ -2159,17 +4152,17 @@
   ],
   "hot_picks": [
     {
-      "league": "Serie A",
+      "league": "Bundesliga",
       "category": "europe",
-      "match": "Venezia vs Bologna",
-      "kickoff": "19:45",
-      "pick": "away",
-      "pick_label": "Bologna win",
+      "match": "Werder Bremen vs Borussia M\u00f6nchengladbach",
+      "kickoff": "19:30",
+      "pick": "home",
+      "pick_label": "Werder Bremen win",
       "bot_count": 6,
-      "avg_conf": 69.2,
-      "odds": 2.9,
+      "avg_conf": 69.3,
+      "odds": 2.5,
       "strength": "strong",
-      "scoreline": "0-2"
+      "scoreline": "2-0"
     },
     {
       "league": "La Liga",
@@ -2179,23 +4172,23 @@
       "pick": "away",
       "pick_label": "Racing Santander win",
       "bot_count": 6,
-      "avg_conf": 67.7,
+      "avg_conf": 68.5,
       "odds": 2.9,
       "strength": "strong",
       "scoreline": "0-2"
     },
     {
-      "league": "Bundesliga",
+      "league": "Serie A",
       "category": "europe",
-      "match": "Werder Bremen vs Borussia M\u00f6nchengladbach",
-      "kickoff": "19:30",
-      "pick": "home",
-      "pick_label": "Werder Bremen win",
+      "match": "Venezia vs Bologna",
+      "kickoff": "19:45",
+      "pick": "away",
+      "pick_label": "Bologna win",
       "bot_count": 6,
-      "avg_conf": 67.5,
-      "odds": 2.5,
+      "avg_conf": 68.3,
+      "odds": 2.9,
       "strength": "strong",
-      "scoreline": "2-0"
+      "scoreline": "0-2"
     },
     {
       "league": "National League",
@@ -2211,30 +4204,17 @@
       "scoreline": "0-2"
     },
     {
-      "league": "Premier League",
-      "category": "uk",
-      "match": "Nottingham Forest vs Chelsea",
-      "kickoff": "20:00",
+      "league": "Primeira Liga",
+      "category": "europe",
+      "match": "Maritimo vs C.D. Nacional",
+      "kickoff": "20:15",
       "pick": "away",
-      "pick_label": "Chelsea win",
+      "pick_label": "C.D. Nacional win",
       "bot_count": 6,
-      "avg_conf": 60.5,
+      "avg_conf": 63.8,
       "odds": 2.9,
       "strength": "strong",
       "scoreline": "0-2"
-    },
-    {
-      "league": "Ligue 1",
-      "category": "europe",
-      "match": "Brest vs Paris FC",
-      "kickoff": "19:45",
-      "pick": "away",
-      "pick_label": "Paris FC win",
-      "bot_count": 5,
-      "avg_conf": 61.8,
-      "odds": 2.9,
-      "strength": "strong",
-      "scoreline": "1-2"
     },
     {
       "league": "Eredivisie",
@@ -2243,11 +4223,37 @@
       "kickoff": "19:00",
       "pick": "home",
       "pick_label": "FC Groningen win",
-      "bot_count": 5,
-      "avg_conf": 60.2,
+      "bot_count": 6,
+      "avg_conf": 62.7,
       "odds": 2.5,
       "strength": "strong",
       "scoreline": "1-0"
+    },
+    {
+      "league": "Ligue 1",
+      "category": "europe",
+      "match": "Brest vs Paris FC",
+      "kickoff": "19:45",
+      "pick": "away",
+      "pick_label": "Paris FC win",
+      "bot_count": 6,
+      "avg_conf": 61.8,
+      "odds": 2.9,
+      "strength": "strong",
+      "scoreline": "1-1"
+    },
+    {
+      "league": "Premier League",
+      "category": "uk",
+      "match": "Nottingham Forest vs Chelsea",
+      "kickoff": "20:00",
+      "pick": "away",
+      "pick_label": "Chelsea win",
+      "bot_count": 5,
+      "avg_conf": 60.6,
+      "odds": 2.9,
+      "strength": "strong",
+      "scoreline": "0-2"
     },
     {
       "league": "Championship",
@@ -2260,19 +4266,6 @@
       "avg_conf": 60.0,
       "odds": 2.5,
       "strength": "solid",
-      "scoreline": "1-1"
-    },
-    {
-      "league": "Primeira Liga",
-      "category": "europe",
-      "match": "Maritimo vs C.D. Nacional",
-      "kickoff": "20:15",
-      "pick": "home",
-      "pick_label": "Maritimo win",
-      "bot_count": 3,
-      "avg_conf": 60.0,
-      "odds": 2.5,
-      "strength": "lean",
       "scoreline": "1-1"
     }
   ],
