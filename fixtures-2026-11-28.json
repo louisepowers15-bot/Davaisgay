@@ -1,6 +1,6 @@
 {
   "date": "2026-11-28",
-  "generated_at": "2026-11-27T18:55:38.754888+00:00",
+  "generated_at": "2026-11-28T15:59:05.480272+00:00",
   "source": "espn_scoreboard",
   "leagues": [
     {
@@ -17,7 +17,7 @@
           "priority": 1,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Elland Road",
           "home": {
             "name": "Leeds United",
@@ -25,7 +25,7 @@
             "id": "357",
             "record": "4-5-2",
             "form": "DWLDD",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "away": {
@@ -39,9 +39,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 360.0,
+            "draw": 350.0,
             "away": null,
-            "raw": "LEE -205"
+            "raw": "LEE -220"
           },
           "name": "Leeds United vs Coventry City"
         },
@@ -53,7 +53,7 @@
           "priority": 1,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Old Trafford",
           "home": {
             "name": "Manchester United",
@@ -70,14 +70,14 @@
             "id": "337",
             "record": "4-5-2",
             "form": "WLWLD",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 275.0,
             "away": null,
-            "raw": "MAN +120"
+            "raw": "MAN +130"
           },
           "name": "Manchester United vs Brentford"
         },
@@ -111,9 +111,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 280.0,
+            "draw": 275.0,
             "away": null,
-            "raw": "AVL +100"
+            "raw": "AVL +105"
           },
           "name": "Ipswich Town vs Aston Villa"
         }
@@ -133,32 +133,27 @@
           "priority": 2,
           "kickoff": "12:30",
           "kickoff_iso": "2026-11-28T12:30Z",
-          "status": "pre",
+          "status": "post",
           "venue": "Ewood Park",
           "home": {
             "name": "Blackburn Rovers",
             "short": "BLK",
             "id": "365",
-            "record": "7-4-6",
-            "form": "WDWLL",
-            "score": "0",
-            "winner": false
+            "record": "8-4-6",
+            "form": "WWDWL",
+            "score": "1",
+            "winner": true
           },
           "away": {
             "name": "Charlton Athletic",
             "short": "CHA",
             "id": "372",
-            "record": "5-5-7",
-            "form": "DLWLL",
+            "record": "5-5-8",
+            "form": "LWLWL",
             "score": "0",
             "winner": false
           },
-          "odds": {
-            "home": null,
-            "draw": 260.0,
-            "away": null,
-            "raw": "BLK +100"
-          },
+          "odds": null,
           "name": "Blackburn Rovers vs Charlton Athletic"
         },
         {
@@ -169,13 +164,13 @@
           "priority": 2,
           "kickoff": "12:30",
           "kickoff_iso": "2026-11-28T12:30Z",
-          "status": "pre",
+          "status": "post",
           "venue": "LNER Stadium",
           "home": {
             "name": "Lincoln City",
             "short": "LCN",
             "id": "314",
-            "record": "4-3-10",
+            "record": "4-4-10",
             "form": "DLLLL",
             "score": "0",
             "winner": false
@@ -184,17 +179,12 @@
             "name": "Wolverhampton Wanderers",
             "short": "WOL",
             "id": "380",
-            "record": "10-4-3",
-            "form": "DWDWW",
+            "record": "10-5-3",
+            "form": "DWWDW",
             "score": "0",
             "winner": false
           },
-          "odds": {
-            "home": null,
-            "draw": 320.0,
-            "away": null,
-            "raw": "WOL -180"
-          },
+          "odds": null,
           "name": "Lincoln City vs Wolverhampton Wanderers"
         },
         {
@@ -205,32 +195,27 @@
           "priority": 2,
           "kickoff": "12:30",
           "kickoff_iso": "2026-11-28T12:30Z",
-          "status": "pre",
+          "status": "post",
           "venue": "Deepdale",
           "home": {
             "name": "Preston North End",
             "short": "PNE",
             "id": "394",
-            "record": "3-3-11",
-            "form": "WDWLL",
-            "score": "0",
+            "record": "3-4-11",
+            "form": "DWDWL",
+            "score": "1",
             "winner": false
           },
           "away": {
             "name": "Norwich City",
             "short": "NOR",
             "id": "381",
-            "record": "8-1-8",
-            "form": "DWWWW",
-            "score": "0",
+            "record": "8-2-8",
+            "form": "DDWWW",
+            "score": "1",
             "winner": false
           },
-          "odds": {
-            "home": null,
-            "draw": 320.0,
-            "away": null,
-            "raw": "NOR -140"
-          },
+          "odds": null,
           "name": "Preston North End vs Norwich City"
         },
         {
@@ -241,7 +226,7 @@
           "priority": 2,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "St. Andrew's Stadium",
           "home": {
             "name": "Birmingham City",
@@ -249,7 +234,7 @@
             "id": "392",
             "record": "9-5-3",
             "form": "WLWWW",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -258,14 +243,14 @@
             "id": "358",
             "record": "5-3-9",
             "form": "DDLWL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 370.0,
+            "draw": 360.0,
             "away": null,
-            "raw": "BIR -195"
+            "raw": "BIR -185"
           },
           "name": "Birmingham City vs Bolton Wanderers"
         },
@@ -277,7 +262,7 @@
           "priority": 2,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Pride Park",
           "home": {
             "name": "Derby County",
@@ -299,9 +284,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 240.0,
+            "draw": 245.0,
             "away": null,
-            "raw": "DER +125"
+            "raw": "DER +110"
           },
           "name": "Derby County vs Watford"
         },
@@ -313,7 +298,7 @@
           "priority": 2,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "The Den",
           "home": {
             "name": "Millwall",
@@ -335,7 +320,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 270.0,
+            "draw": 285.0,
             "away": null,
             "raw": "MIL +115"
           },
@@ -349,7 +334,7 @@
           "priority": 2,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "MATRADE Loftus Road",
           "home": {
             "name": "Queens Park Rangers",
@@ -366,14 +351,14 @@
             "id": "398",
             "record": "7-5-5",
             "form": "DWLWW",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 260.0,
+            "draw": 265.0,
             "away": null,
-            "raw": "QPR +105"
+            "raw": "QPR +100"
           },
           "name": "Queens Park Rangers vs Sheffield United"
         },
@@ -385,7 +370,7 @@
           "priority": 2,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "The Hawthorns",
           "home": {
             "name": "West Bromwich Albion",
@@ -407,9 +392,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 290.0,
+            "draw": 285.0,
             "away": null,
-            "raw": "WBA -140"
+            "raw": "WBA -130"
           },
           "name": "West Bromwich Albion vs Bristol City"
         },
@@ -421,7 +406,7 @@
           "priority": 2,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "London Stadium",
           "home": {
             "name": "West Ham United",
@@ -443,7 +428,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 330.0,
+            "draw": 320.0,
             "away": null,
             "raw": "WHU -150"
           },
@@ -457,7 +442,7 @@
           "priority": 2,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "ST\u014dK Cae Ras",
           "home": {
             "name": "Wrexham",
@@ -465,7 +450,7 @@
             "id": "352",
             "record": "5-7-5",
             "form": "DWDWL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -479,9 +464,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 225.0,
+            "draw": 230.0,
             "away": null,
-            "raw": "WXM +120"
+            "raw": "WXM +110"
           },
           "name": "Wrexham vs Portsmouth"
         }
@@ -501,14 +486,14 @@
           "priority": 3,
           "kickoff": "12:30",
           "kickoff_iso": "2026-11-28T12:30Z",
-          "status": "pre",
+          "status": "post",
           "venue": "Stadium MK",
           "home": {
             "name": "Milton Keynes Dons",
             "short": "MKD",
             "id": "390",
-            "record": "5-7-3",
-            "form": "DWWWW",
+            "record": "5-8-3",
+            "form": "DDWWW",
             "score": "0",
             "winner": false
           },
@@ -516,17 +501,12 @@
             "name": "Notts County",
             "short": "NCO",
             "id": "340",
-            "record": "3-5-5",
-            "form": "DWWWD",
+            "record": "3-6-5",
+            "form": "DLWWW",
             "score": "0",
             "winner": false
           },
-          "odds": {
-            "home": null,
-            "draw": 290.0,
-            "away": null,
-            "raw": "MKD -110"
-          },
+          "odds": null,
           "name": "Milton Keynes Dons vs Notts County"
         },
         {
@@ -537,32 +517,27 @@
           "priority": 3,
           "kickoff": "12:30",
           "kickoff_iso": "2026-11-28T12:30Z",
-          "status": "pre",
+          "status": "post",
           "venue": "London Road Stadium",
           "home": {
             "name": "Peterborough United",
             "short": "PET",
             "id": "342",
-            "record": "3-4-7",
-            "form": "DLLLL",
-            "score": "0",
+            "record": "3-4-8",
+            "form": "LWLLL",
+            "score": "1",
             "winner": false
           },
           "away": {
             "name": "Cambridge United",
             "short": "CAM",
             "id": "351",
-            "record": "5-6-4",
-            "form": "DLWLD",
-            "score": "0",
-            "winner": false
+            "record": "6-6-4",
+            "form": "WLLWL",
+            "score": "2",
+            "winner": true
           },
-          "odds": {
-            "home": null,
-            "draw": 275.0,
-            "away": null,
-            "raw": "PET +125"
-          },
+          "odds": null,
           "name": "Peterborough United vs Cambridge United"
         },
         {
@@ -573,7 +548,7 @@
           "priority": 3,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "The Cherry Red Records Stadium",
           "home": {
             "name": "AFC Wimbledon",
@@ -581,7 +556,7 @@
             "id": "3802",
             "record": "4-4-7",
             "form": "LWLLL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -595,9 +570,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 270.0,
+            "draw": 310.0,
             "away": null,
-            "raw": "BAR +140"
+            "raw": "BAR -105"
           },
           "name": "AFC Wimbledon vs Barnsley"
         },
@@ -609,7 +584,7 @@
           "priority": 3,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "RELOC8 EM Community Stadium",
           "home": {
             "name": "Bromley",
@@ -626,14 +601,14 @@
             "id": "2567",
             "record": "4-5-7",
             "form": "DLLWL",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 260.0,
             "away": null,
-            "raw": "BRO +130"
+            "raw": "BRO +135"
           },
           "name": "Bromley vs Burton Albion"
         },
@@ -645,7 +620,7 @@
           "priority": 3,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "King Power Stadium",
           "home": {
             "name": "Leicester City",
@@ -667,9 +642,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 370.0,
+            "draw": 360.0,
             "away": null,
-            "raw": "LEI -200"
+            "raw": "LEI -195"
           },
           "name": "Leicester City vs Mansfield Town"
         },
@@ -681,7 +656,7 @@
           "priority": 3,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Kenilworth Road",
           "home": {
             "name": "Luton Town",
@@ -698,14 +673,14 @@
             "id": "311",
             "record": "8-5-1",
             "form": "WWWLW",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 300.0,
             "away": null,
-            "raw": "LTN -135"
+            "raw": "LTN -125"
           },
           "name": "Luton Town vs Oxford United"
         },
@@ -717,7 +692,7 @@
           "priority": 3,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Hillsborough",
           "home": {
             "name": "Sheffield Wednesday",
@@ -725,7 +700,7 @@
             "id": "399",
             "record": "7-6-3",
             "form": "DWWLL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -734,14 +709,14 @@
             "id": "338",
             "record": "6-4-6",
             "form": "DLLWL",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 275.0,
             "away": null,
-            "raw": "SHW +125"
+            "raw": "SHW +140"
           },
           "name": "Sheffield Wednesday vs Reading"
         },
@@ -753,7 +728,7 @@
           "priority": 3,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Lamex Stadium",
           "home": {
             "name": "Stevenage",
@@ -775,9 +750,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 275.0,
+            "draw": 280.0,
             "away": null,
-            "raw": "STE -115"
+            "raw": "STE -125"
           },
           "name": "Stevenage vs Blackpool"
         },
@@ -789,7 +764,7 @@
           "priority": 3,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Edgeley Park",
           "home": {
             "name": "Stockport County",
@@ -806,14 +781,14 @@
             "id": "309",
             "record": "6-2-6",
             "form": "WLWWL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 400.0,
             "away": null,
-            "raw": "STO -245"
+            "raw": "STO -270"
           },
           "name": "Stockport County vs Leyton Orient"
         },
@@ -825,7 +800,7 @@
           "priority": 3,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "DW Stadium",
           "home": {
             "name": "Wigan Athletic",
@@ -842,14 +817,14 @@
             "id": "307",
             "record": "7-2-7",
             "form": "DLWWD",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 250.0,
+            "draw": 265.0,
             "away": null,
-            "raw": "WGA +155"
+            "raw": "PLY +135"
           },
           "name": "Wigan Athletic vs Plymouth Argyle"
         },
@@ -861,7 +836,7 @@
           "priority": 3,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Adams Park",
           "home": {
             "name": "Wycombe Wanderers",
@@ -869,7 +844,7 @@
             "id": "344",
             "record": "4-7-4",
             "form": "DLWWD",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -878,14 +853,14 @@
             "id": "387",
             "record": "7-5-3",
             "form": "WDWWL",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 250.0,
+            "draw": 240.0,
             "away": null,
-            "raw": "WYC +120"
+            "raw": "WYC +140"
           },
           "name": "Wycombe Wanderers vs Bradford City"
         }
@@ -905,32 +880,27 @@
           "priority": 4,
           "kickoff": "12:30",
           "kickoff_iso": "2026-11-28T12:30Z",
-          "status": "pre",
+          "status": "post",
           "venue": "Memorial Stadium",
           "home": {
             "name": "Bristol Rovers",
             "short": "BRI",
             "id": "308",
-            "record": "6-1-9",
-            "form": "WLWWL",
-            "score": "0",
+            "record": "6-1-10",
+            "form": "LWLWW",
+            "score": "1",
             "winner": false
           },
           "away": {
             "name": "Tranmere Rovers",
             "short": "TRN",
             "id": "345",
-            "record": "5-7-4",
-            "form": "WWLLL",
-            "score": "0",
-            "winner": false
+            "record": "6-7-4",
+            "form": "WWWLL",
+            "score": "3",
+            "winner": true
           },
-          "odds": {
-            "home": null,
-            "draw": 255.0,
-            "away": null,
-            "raw": "BRI -105"
-          },
+          "odds": null,
           "name": "Bristol Rovers vs Tranmere Rovers"
         },
         {
@@ -941,14 +911,14 @@
           "priority": 4,
           "kickoff": "12:30",
           "kickoff_iso": "2026-11-28T12:30Z",
-          "status": "pre",
+          "status": "post",
           "venue": "St James Park",
           "home": {
             "name": "Exeter City",
             "short": "EXE",
             "id": "324",
-            "record": "6-5-5",
-            "form": "DWWLW",
+            "record": "6-6-5",
+            "form": "DDWWL",
             "score": "0",
             "winner": false
           },
@@ -956,17 +926,12 @@
             "name": "Crawley Town",
             "short": "CRA",
             "id": "2594",
-            "record": "3-4-7",
-            "form": "DWLLW",
+            "record": "3-5-7",
+            "form": "DDWLL",
             "score": "0",
             "winner": false
           },
-          "odds": {
-            "home": null,
-            "draw": 260.0,
-            "away": null,
-            "raw": "EXE -115"
-          },
+          "odds": null,
           "name": "Exeter City vs Crawley Town"
         },
         {
@@ -977,7 +942,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "JobServe Community Stadium",
           "home": {
             "name": "Colchester United",
@@ -985,7 +950,7 @@
             "id": "339",
             "record": "3-6-6",
             "form": "LWWWL",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "away": {
@@ -994,14 +959,14 @@
             "id": "315",
             "record": "6-6-4",
             "form": "DWLWL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 255.0,
+            "draw": 235.0,
             "away": null,
-            "raw": "YORK +130"
+            "raw": "YORK +145"
           },
           "name": "Colchester United vs York City"
         },
@@ -1013,7 +978,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Mornflake Stadium",
           "home": {
             "name": "Crewe Alexandra",
@@ -1030,14 +995,14 @@
             "id": "386",
             "record": "6-6-4",
             "form": "DWLWW",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 265.0,
+            "draw": 280.0,
             "away": null,
-            "raw": "GRI +110"
+            "raw": "GRI +100"
           },
           "name": "Crewe Alexandra vs Grimsby Town"
         },
@@ -1049,7 +1014,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Highbury Stadium",
           "home": {
             "name": "Fleetwood Town",
@@ -1066,14 +1031,14 @@
             "id": "2731",
             "record": "4-8-4",
             "form": "DLWLD",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 245.0,
+            "draw": 260.0,
             "away": null,
-            "raw": "FLE +110"
+            "raw": "FLE -105"
           },
           "name": "Fleetwood Town vs Accrington Stanley"
         },
@@ -1085,7 +1050,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Vale Park",
           "home": {
             "name": "Port Vale",
@@ -1107,7 +1072,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 250.0,
+            "draw": 245.0,
             "away": null,
             "raw": "PTV -110"
           },
@@ -1121,7 +1086,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Crown Oil Arena",
           "home": {
             "name": "Rochdale",
@@ -1129,7 +1094,7 @@
             "id": "303",
             "record": "4-3-9",
             "form": "LLWLL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -1138,12 +1103,12 @@
             "id": "280",
             "record": "8-6-1",
             "form": "DWWWD",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 295.0,
+            "draw": 285.0,
             "away": null,
             "raw": "BAR -120"
           },
@@ -1157,7 +1122,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "AESSEAL New York Stadium",
           "home": {
             "name": "Rotherham United",
@@ -1165,7 +1130,7 @@
             "id": "402",
             "record": "2-7-6",
             "form": "DWLLD",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "away": {
@@ -1179,9 +1144,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 235.0,
+            "draw": 230.0,
             "away": null,
-            "raw": "OLD +150"
+            "raw": "OLD +135"
           },
           "name": "Rotherham United vs Oldham Athletic"
         },
@@ -1193,7 +1158,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Peninsula Stadium",
           "home": {
             "name": "Salford City",
@@ -1210,14 +1175,14 @@
             "id": "389",
             "record": "5-6-5",
             "form": "DLWLW",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 350.0,
+            "draw": 300.0,
             "away": null,
-            "raw": "SAL -205"
+            "raw": "SAL -170"
           },
           "name": "Salford City vs Gillingham"
         },
@@ -1229,7 +1194,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "The Croud Meadow",
           "home": {
             "name": "Shrewsbury Town",
@@ -1246,14 +1211,14 @@
             "id": "320",
             "record": "6-3-7",
             "form": "LLLWL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 245.0,
+            "draw": 265.0,
             "away": null,
-            "raw": "SHR -110"
+            "raw": "SHR -120"
           },
           "name": "Shrewsbury Town vs Cheltenham Town"
         },
@@ -1265,7 +1230,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "The County Ground",
           "home": {
             "name": "Swindon Town",
@@ -1282,14 +1247,14 @@
             "id": "343",
             "record": "7-4-5",
             "form": "WWWWL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 290.0,
+            "draw": 330.0,
             "away": null,
-            "raw": "CHES -115"
+            "raw": "CHES -155"
           },
           "name": "Swindon Town vs Chesterfield"
         },
@@ -1301,7 +1266,7 @@
           "priority": 4,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Bescot Stadium",
           "home": {
             "name": "Walsall",
@@ -1309,7 +1274,7 @@
             "id": "401",
             "record": "5-8-1",
             "form": "DLLWL",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "away": {
@@ -1323,9 +1288,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 245.0,
+            "draw": 250.0,
             "away": null,
-            "raw": "WAL +140"
+            "raw": "WAL +125"
           },
           "name": "Walsall vs Northampton Town"
         }
@@ -1345,14 +1310,14 @@
           "priority": 5,
           "kickoff": "12:30",
           "kickoff_iso": "2026-11-28T12:30Z",
-          "status": "pre",
+          "status": "post",
           "venue": "Mill Farm Sports Village",
           "home": {
             "name": "AFC Fylde",
             "short": "FYL",
             "id": "13884",
-            "record": "10-3-6",
-            "form": "DDWWW",
+            "record": "10-3-7",
+            "form": "LLDWW",
             "score": "0",
             "winner": false
           },
@@ -1360,17 +1325,12 @@
             "name": "Aldershot Town",
             "short": "ALD",
             "id": "632",
-            "record": "7-3-9",
-            "form": "DWLLW",
-            "score": "0",
-            "winner": false
+            "record": "8-3-9",
+            "form": "WLWLL",
+            "score": "1",
+            "winner": true
           },
-          "odds": {
-            "home": null,
-            "draw": 360.0,
-            "away": null,
-            "raw": "FYL -225"
-          },
+          "odds": null,
           "name": "AFC Fylde vs Aldershot Town"
         },
         {
@@ -1381,32 +1341,27 @@
           "priority": 5,
           "kickoff": "12:30",
           "kickoff_iso": "2026-11-28T12:30Z",
-          "status": "pre",
+          "status": "post",
           "venue": "The Laithwaite Community Stadium",
           "home": {
             "name": "Woking",
             "short": "WOK",
             "id": "290",
-            "record": "7-3-8",
-            "form": "DLWLW",
-            "score": "0",
+            "record": "7-3-9",
+            "form": "DWLWL",
+            "score": "1",
             "winner": false
           },
           "away": {
             "name": "Barrow",
             "short": "BRW",
             "id": "642",
-            "record": "9-4-5",
-            "form": "DLWWD",
-            "score": "0",
-            "winner": false
+            "record": "10-4-5",
+            "form": "DWLWW",
+            "score": "2",
+            "winner": true
           },
-          "odds": {
-            "home": null,
-            "draw": 240.0,
-            "away": null,
-            "raw": "BRW +145"
-          },
+          "odds": null,
           "name": "Woking vs Barrow"
         },
         {
@@ -1417,7 +1372,7 @@
           "priority": 5,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Hornchurch Stadium",
           "home": {
             "name": "AFC Hornchurch",
@@ -1439,9 +1394,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 240.0,
+            "draw": 235.0,
             "away": null,
-            "raw": "HOR +120"
+            "raw": "HOR +140"
           },
           "name": "AFC Hornchurch vs Solihull Moors"
         },
@@ -1453,7 +1408,7 @@
           "priority": 5,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "J. Davidson Stadium",
           "home": {
             "name": "Altrincham",
@@ -1461,7 +1416,7 @@
             "id": "633",
             "record": "10-1-8",
             "form": "DLLLL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -1470,14 +1425,14 @@
             "id": "128663",
             "record": "9-5-5",
             "form": "DWDLD",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 275.0,
             "away": null,
-            "raw": "ALT +105"
+            "raw": "ALT +110"
           },
           "name": "Altrincham vs Worthing"
         },
@@ -1489,7 +1444,7 @@
           "priority": 5,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Meadow Park",
           "home": {
             "name": "Boreham Wood",
@@ -1506,14 +1461,14 @@
             "id": "3138",
             "record": "2-1-15",
             "form": "DLLLL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 950.0,
             "away": null,
-            "raw": "BOR -1600"
+            "raw": "BOR -1100"
           },
           "name": "Boreham Wood vs Gateshead"
         },
@@ -1525,7 +1480,7 @@
           "priority": 5,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Jakemans Community Stadium",
           "home": {
             "name": "Boston United",
@@ -1542,7 +1497,7 @@
             "id": "319",
             "record": "5-8-6",
             "form": "LDDWL",
-            "score": "0",
+            "score": "2",
             "winner": false
           },
           "odds": {
@@ -1561,7 +1516,7 @@
           "priority": 5,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Brunton Park",
           "home": {
             "name": "Carlisle United",
@@ -1569,7 +1524,7 @@
             "id": "322",
             "record": "9-5-5",
             "form": "DWWWW",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -1583,9 +1538,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 330.0,
+            "draw": 320.0,
             "away": null,
-            "raw": "CAR -220"
+            "raw": "CAR -210"
           },
           "name": "Carlisle United vs Sutton United"
         },
@@ -1597,7 +1552,7 @@
           "priority": 5,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Silverlake Stadium",
           "home": {
             "name": "Eastleigh",
@@ -1619,9 +1574,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 245.0,
+            "draw": 295.0,
             "away": null,
-            "raw": "HAL +105"
+            "raw": "HAL -140"
           },
           "name": "Eastleigh vs FC Halifax Town"
         },
@@ -1633,7 +1588,7 @@
           "priority": 5,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "The Bolt New Lawn",
           "home": {
             "name": "Forest Green Rovers",
@@ -1655,9 +1610,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 340.0,
+            "draw": 310.0,
             "away": null,
-            "raw": "FGR -175"
+            "raw": "FGR -150"
           },
           "name": "Forest Green Rovers vs Tamworth"
         },
@@ -1669,7 +1624,7 @@
           "priority": 5,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "post",
           "venue": "EnviroVent Stadium",
           "home": {
             "name": "Harrogate Town",
@@ -1689,12 +1644,7 @@
             "score": "0",
             "winner": false
           },
-          "odds": {
-            "home": null,
-            "draw": 310.0,
-            "away": null,
-            "raw": "HAR -155"
-          },
+          "odds": null,
           "name": "Harrogate Town vs Yeovil Town"
         },
         {
@@ -1727,7 +1677,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 270.0,
+            "draw": 275.0,
             "away": null,
             "raw": "SOUT -115"
           },
@@ -1749,7 +1699,7 @@
           "priority": 9,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Pittodrie Stadium",
           "home": {
             "name": "Aberdeen",
@@ -1757,7 +1707,7 @@
             "id": "263",
             "record": "4-2-8",
             "form": "DWLLL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -1771,7 +1721,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 285.0,
+            "draw": 270.0,
             "away": null,
             "raw": "ABE -115"
           },
@@ -1785,7 +1735,7 @@
           "priority": 9,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Tannadice Park",
           "home": {
             "name": "Dundee United",
@@ -1793,7 +1743,7 @@
             "id": "264",
             "record": "5-5-3",
             "form": "DDDWD",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -1802,14 +1752,14 @@
             "id": "267",
             "record": "4-5-5",
             "form": "DWDDL",
-            "score": "0",
+            "score": "4",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 330.0,
             "away": null,
-            "raw": "DUN -150"
+            "raw": "DUN -160"
           },
           "name": "Dundee United vs St Johnstone"
         },
@@ -1821,7 +1771,7 @@
           "priority": 9,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Ibrox Stadium",
           "home": {
             "name": "Rangers",
@@ -1838,14 +1788,14 @@
             "id": "254",
             "record": "7-3-4",
             "form": "DWWWW",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 550.0,
             "away": null,
-            "raw": "RAN -425"
+            "raw": "RAN -450"
           },
           "name": "Rangers vs Falkirk"
         },
@@ -1857,7 +1807,7 @@
           "priority": 9,
           "kickoff": "15:00",
           "kickoff_iso": "2026-11-28T15:00Z",
-          "status": "pre",
+          "status": "in",
           "venue": "The SMISA Stadium",
           "home": {
             "name": "St Mirren",
@@ -1865,7 +1815,7 @@
             "id": "250",
             "record": "4-2-8",
             "form": "LLLDW",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -1874,14 +1824,14 @@
             "id": "260",
             "record": "2-3-9",
             "form": "DLDLL",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 260.0,
+            "draw": 265.0,
             "away": null,
-            "raw": "STM +120"
+            "raw": "STM +125"
           },
           "name": "St Mirren vs Kilmarnock"
         },
@@ -1915,9 +1865,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 255.0,
+            "draw": 250.0,
             "away": null,
-            "raw": "HIBS +155"
+            "raw": "MOT +160"
           },
           "name": "Motherwell vs Hibernian"
         }
@@ -1937,14 +1887,14 @@
           "priority": 20,
           "kickoff": "13:00",
           "kickoff_iso": "2026-11-28T13:00Z",
-          "status": "pre",
+          "status": "post",
           "venue": "Estadio La Cartuja",
           "home": {
             "name": "Real Betis",
             "short": "BET",
             "id": "244",
-            "record": "8-3-2",
-            "form": "WDWWL",
+            "record": "8-3-3",
+            "form": "LWDWW",
             "score": "0",
             "winner": false
           },
@@ -1952,17 +1902,12 @@
             "name": "Rayo Vallecano",
             "short": "RAY",
             "id": "101",
-            "record": "3-3-6",
-            "form": "LLWWL",
-            "score": "0",
-            "winner": false
+            "record": "4-3-6",
+            "form": "WLLWW",
+            "score": "1",
+            "winner": true
           },
-          "odds": {
-            "home": null,
-            "draw": 340.0,
-            "away": null,
-            "raw": "BET -165"
-          },
+          "odds": null,
           "name": "Real Betis vs Rayo Vallecano"
         },
         {
@@ -1973,7 +1918,7 @@
           "priority": 20,
           "kickoff": "15:15",
           "kickoff_iso": "2026-11-28T15:15Z",
-          "status": "pre",
+          "status": "in",
           "venue": "La Rosaleda",
           "home": {
             "name": "M\u00e1laga",
@@ -1981,7 +1926,7 @@
             "id": "99",
             "record": "0-5-8",
             "form": "LLLWD",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "away": {
@@ -1990,14 +1935,14 @@
             "id": "93",
             "record": "4-4-4",
             "form": "LDWWW",
-            "score": "0",
+            "score": "3",
             "winner": false
           },
           "odds": {
             "home": null,
             "draw": 285.0,
             "away": null,
-            "raw": "ATH -135"
+            "raw": "ATH -140"
           },
           "name": "M\u00e1laga vs Athletic Club"
         },
@@ -2031,9 +1976,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 380.0,
+            "draw": 340.0,
             "away": null,
-            "raw": "ATM -215"
+            "raw": "ATM -200"
           },
           "name": "Elche vs Atl\u00e9tico Madrid"
         },
@@ -2067,9 +2012,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 900.0,
+            "draw": 800.0,
             "away": null,
-            "raw": "RMA -800"
+            "raw": "RMA -700"
           },
           "name": "Real Madrid vs Alav\u00e9s"
         }
@@ -2089,32 +2034,27 @@
           "priority": 21,
           "kickoff": "14:00",
           "kickoff_iso": "2026-11-28T14:00Z",
-          "status": "pre",
+          "status": "post",
           "venue": "Stadio Benito Stirpe",
           "home": {
             "name": "Frosinone",
             "short": "FRO",
             "id": "4057",
-            "record": "6-2-4",
-            "form": "LLWWD",
-            "score": "0",
-            "winner": false
+            "record": "7-2-4",
+            "form": "WLLWW",
+            "score": "3",
+            "winner": true
           },
           "away": {
             "name": "Parma",
             "short": "PAR",
             "id": "115",
-            "record": "2-2-8",
-            "form": "LLWDL",
+            "record": "2-2-9",
+            "form": "LLLWD",
             "score": "0",
             "winner": false
           },
-          "odds": {
-            "home": null,
-            "draw": 380.0,
-            "away": null,
-            "raw": "FRO -215"
-          },
+          "odds": null,
           "name": "Frosinone vs Parma"
         },
         {
@@ -2149,7 +2089,7 @@
             "home": null,
             "draw": 230.0,
             "away": null,
-            "raw": "LAZ +110"
+            "raw": "LAZ +105"
           },
           "name": "Torino vs Lazio"
         },
@@ -2185,7 +2125,7 @@
             "home": null,
             "draw": 450.0,
             "away": null,
-            "raw": "INT -350"
+            "raw": "INT -360"
           },
           "name": "Internazionale vs Genoa"
         }
@@ -2205,7 +2145,7 @@
           "priority": 22,
           "kickoff": "14:30",
           "kickoff_iso": "2026-11-28T14:30Z",
-          "status": "pre",
+          "status": "in",
           "venue": "RheinEnergieStadion",
           "home": {
             "name": "FC Cologne",
@@ -2213,7 +2153,7 @@
             "id": "122",
             "record": "2-4-4",
             "form": "DLDWD",
-            "score": "0",
+            "score": "5",
             "winner": false
           },
           "away": {
@@ -2227,7 +2167,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 270.0,
+            "draw": 255.0,
             "away": null,
             "raw": "KOE +100"
           },
@@ -2241,7 +2181,7 @@
           "priority": 22,
           "kickoff": "14:30",
           "kickoff_iso": "2026-11-28T14:30Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Volksparkstadion",
           "home": {
             "name": "Hamburg SV",
@@ -2263,9 +2203,9 @@
           },
           "odds": {
             "home": null,
-            "draw": null,
+            "draw": 400.0,
             "away": null,
-            "raw": ""
+            "raw": "MUN -270"
           },
           "name": "Hamburg SV vs Bayern Munich"
         },
@@ -2277,7 +2217,7 @@
           "priority": 22,
           "kickoff": "14:30",
           "kickoff_iso": "2026-11-28T14:30Z",
-          "status": "pre",
+          "status": "in",
           "venue": "MEWA ARENA",
           "home": {
             "name": "Mainz",
@@ -2294,14 +2234,14 @@
             "id": "598",
             "record": "1-4-5",
             "form": "LLDLD",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 350.0,
+            "draw": 360.0,
             "away": null,
-            "raw": "M05 -220"
+            "raw": "M05 -240"
           },
           "name": "Mainz vs 1. FC Union Berlin"
         },
@@ -2313,7 +2253,7 @@
           "priority": 22,
           "kickoff": "14:30",
           "kickoff_iso": "2026-11-28T14:30Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Home Deluxe Arena",
           "home": {
             "name": "SC Paderborn 07",
@@ -2321,7 +2261,7 @@
             "id": "3307",
             "record": "2-4-4",
             "form": "LDDLW",
-            "score": "0",
+            "score": "5",
             "winner": false
           },
           "away": {
@@ -2330,14 +2270,14 @@
             "id": "133",
             "record": "1-4-5",
             "form": "DLLLD",
-            "score": "0",
+            "score": "1",
             "winner": false
           },
           "odds": {
             "home": null,
-            "draw": 235.0,
+            "draw": 240.0,
             "away": null,
-            "raw": "SCP +145"
+            "raw": "S04 +140"
           },
           "name": "SC Paderborn 07 vs Schalke 04"
         },
@@ -2373,7 +2313,7 @@
             "home": null,
             "draw": 330.0,
             "away": null,
-            "raw": "VFB -125"
+            "raw": "VFB -130"
           },
           "name": "VfB Stuttgart vs Eintracht Frankfurt"
         }
@@ -2415,9 +2355,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 310.0,
+            "draw": 300.0,
             "away": null,
-            "raw": "RCL -145"
+            "raw": "RCL -150"
           },
           "name": "Angers vs Lens"
         },
@@ -2451,7 +2391,7 @@
           },
           "odds": {
             "home": null,
-            "draw": 255.0,
+            "draw": 250.0,
             "away": null,
             "raw": "STR +120"
           },
@@ -2487,9 +2427,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 240.0,
+            "draw": 255.0,
             "away": null,
-            "raw": "LILL +105"
+            "raw": "LILL -105"
           },
           "name": "Le Mans vs Lille"
         },
@@ -2523,9 +2463,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 310.0,
+            "draw": 290.0,
             "away": null,
-            "raw": "NICE -150"
+            "raw": "NICE -135"
           },
           "name": "Nice vs Troyes"
         },
@@ -2561,7 +2501,7 @@
             "home": null,
             "draw": 650.0,
             "away": null,
-            "raw": "PSG -475"
+            "raw": "PSG -525"
           },
           "name": "Paris Saint-Germain vs Lorient"
         }
@@ -2581,7 +2521,7 @@
           "priority": 24,
           "kickoff": "15:30",
           "kickoff_iso": "2026-11-28T15:30Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Stadion Woudestein",
           "home": {
             "name": "Excelsior",
@@ -2603,9 +2543,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 260.0,
+            "draw": 250.0,
             "away": null,
-            "raw": "EXC +100"
+            "raw": "EXC +115"
           },
           "name": "Excelsior vs Telstar"
         },
@@ -2639,9 +2579,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 650.0,
+            "draw": 700.0,
             "away": null,
-            "raw": "PSV -450"
+            "raw": "PSV -525"
           },
           "name": "PSV Eindhoven vs Go Ahead Eagles"
         },
@@ -2675,9 +2615,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 290.0,
+            "draw": 310.0,
             "away": null,
-            "raw": "CAM +110"
+            "raw": "CAM -115"
           },
           "name": "SC Cambuur vs Sparta Rotterdam"
         }
@@ -2697,7 +2637,7 @@
           "priority": 25,
           "kickoff": "15:30",
           "kickoff_iso": "2026-11-28T15:30Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Est\u00e1dio Municipal de Arouca",
           "home": {
             "name": "Arouca",
@@ -2719,9 +2659,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 280.0,
+            "draw": 290.0,
             "away": null,
-            "raw": "FCA -145"
+            "raw": "FCA -155"
           },
           "name": "Arouca vs Rio Ave"
         },
@@ -2733,7 +2673,7 @@
           "priority": 25,
           "kickoff": "15:30",
           "kickoff_iso": "2026-11-28T15:30Z",
-          "status": "pre",
+          "status": "in",
           "venue": "Est\u00e1dio Comendador Joaquim de Almeida Freitas",
           "home": {
             "name": "Moreirense",
@@ -2755,9 +2695,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 205.0,
+            "draw": 195.0,
             "away": null,
-            "raw": "CDSC +145"
+            "raw": "MFC +175"
           },
           "name": "Moreirense vs Santa Clara"
         },
@@ -2793,7 +2733,7 @@
             "home": null,
             "draw": 215.0,
             "away": null,
-            "raw": "ACV +155"
+            "raw": "ACV +170"
           },
           "name": "Acad\u00e9mico de Viseu vs Alverca"
         },
@@ -2827,9 +2767,9 @@
           },
           "odds": {
             "home": null,
-            "draw": 280.0,
+            "draw": 275.0,
             "away": null,
-            "raw": "VSC -145"
+            "raw": "VSC -120"
           },
           "name": "Vit\u00f3ria de Guimaraes vs Estrela"
         }

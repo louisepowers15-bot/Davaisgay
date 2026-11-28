@@ -1,0 +1,1124 @@
+{
+  "date": "2026-11-29",
+  "generated_at": "2026-11-28T15:59:12.681969+00:00",
+  "source": "espn_scoreboard",
+  "leagues": [
+    {
+      "name": "Premier League",
+      "code": "eng.1",
+      "region": "UK",
+      "priority": 1,
+      "matches": [
+        {
+          "id": "401879229",
+          "league": "Premier League",
+          "league_code": "eng.1",
+          "region": "UK",
+          "priority": 1,
+          "kickoff": "12:00",
+          "kickoff_iso": "2026-11-29T12:00Z",
+          "status": "pre",
+          "venue": "Hill Dickinson Stadium",
+          "home": {
+            "name": "Everton",
+            "short": "EVE",
+            "id": "368",
+            "record": "4-4-3",
+            "form": "LWWWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Liverpool",
+            "short": "LIV",
+            "id": "364",
+            "record": "6-3-2",
+            "form": "WWWLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 285.0,
+            "away": null,
+            "raw": "LIV -135"
+          },
+          "name": "Everton vs Liverpool"
+        },
+        {
+          "id": "401879231",
+          "league": "Premier League",
+          "league_code": "eng.1",
+          "region": "UK",
+          "priority": 1,
+          "kickoff": "14:05",
+          "kickoff_iso": "2026-11-29T14:05Z",
+          "status": "pre",
+          "venue": "American Express Stadium",
+          "home": {
+            "name": "Brighton & Hove Albion",
+            "short": "BHA",
+            "id": "331",
+            "record": "7-1-3",
+            "form": "WLWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Newcastle United",
+            "short": "NEW",
+            "id": "361",
+            "record": "3-4-4",
+            "form": "DDLLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 350.0,
+            "away": null,
+            "raw": "BHA -180"
+          },
+          "name": "Brighton & Hove Albion vs Newcastle United"
+        },
+        {
+          "id": "401879230",
+          "league": "Premier League",
+          "league_code": "eng.1",
+          "region": "UK",
+          "priority": 1,
+          "kickoff": "14:05",
+          "kickoff_iso": "2026-11-29T14:05Z",
+          "status": "pre",
+          "venue": "Selhurst Park",
+          "home": {
+            "name": "Crystal Palace",
+            "short": "CRY",
+            "id": "384",
+            "record": "2-1-8",
+            "form": "WLLDL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Hull City",
+            "short": "HUL",
+            "id": "306",
+            "record": "3-5-3",
+            "form": "DLDDL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 275.0,
+            "away": null,
+            "raw": "CRY -110"
+          },
+          "name": "Crystal Palace vs Hull City"
+        },
+        {
+          "id": "401879228",
+          "league": "Premier League",
+          "league_code": "eng.1",
+          "region": "UK",
+          "priority": 1,
+          "kickoff": "14:05",
+          "kickoff_iso": "2026-11-29T14:05Z",
+          "status": "pre",
+          "venue": "Craven Cottage",
+          "home": {
+            "name": "Fulham",
+            "short": "FUL",
+            "id": "370",
+            "record": "2-5-4",
+            "form": "DDDLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "AFC Bournemouth",
+            "short": "BOU",
+            "id": "349",
+            "record": "5-3-3",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 250.0,
+            "away": null,
+            "raw": "BOU +150"
+          },
+          "name": "Fulham vs AFC Bournemouth"
+        },
+        {
+          "id": "401879224",
+          "league": "Premier League",
+          "league_code": "eng.1",
+          "region": "UK",
+          "priority": 1,
+          "kickoff": "14:05",
+          "kickoff_iso": "2026-11-29T14:05Z",
+          "status": "pre",
+          "venue": "Stadium of Light",
+          "home": {
+            "name": "Sunderland",
+            "short": "SUN",
+            "id": "366",
+            "record": "2-3-6",
+            "form": "DDWLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Tottenham Hotspur",
+            "short": "TOT",
+            "id": "367",
+            "record": "4-3-4",
+            "form": "WLWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 245.0,
+            "away": null,
+            "raw": "TOT -105"
+          },
+          "name": "Sunderland vs Tottenham Hotspur"
+        },
+        {
+          "id": "401878753",
+          "league": "Premier League",
+          "league_code": "eng.1",
+          "region": "UK",
+          "priority": 1,
+          "kickoff": "16:30",
+          "kickoff_iso": "2026-11-29T16:30Z",
+          "status": "pre",
+          "venue": "Emirates Stadium",
+          "home": {
+            "name": "Arsenal",
+            "short": "ARS",
+            "id": "359",
+            "record": "9-1-1",
+            "form": "DDWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Manchester City",
+            "short": "MNC",
+            "id": "382",
+            "record": "7-1-3",
+            "form": "DDLWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 265.0,
+            "away": null,
+            "raw": "ARS +105"
+          },
+          "name": "Arsenal vs Manchester City"
+        }
+      ]
+    },
+    {
+      "name": "Championship",
+      "code": "eng.2",
+      "region": "UK",
+      "priority": 2,
+      "matches": [
+        {
+          "id": "401880128",
+          "league": "Championship",
+          "league_code": "eng.2",
+          "region": "UK",
+          "priority": 2,
+          "kickoff": "12:00",
+          "kickoff_iso": "2026-11-29T12:00Z",
+          "status": "pre",
+          "venue": "Swansea.com Stadium",
+          "home": {
+            "name": "Swansea City",
+            "short": "SWA",
+            "id": "318",
+            "record": "8-3-6",
+            "form": "DDLLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Cardiff City",
+            "short": "CAR",
+            "id": "347",
+            "record": "4-6-7",
+            "form": "LLWDL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 295.0,
+            "away": null,
+            "raw": "SWA +115"
+          },
+          "name": "Swansea City vs Cardiff City"
+        }
+      ]
+    },
+    {
+      "name": "Scottish Premiership",
+      "code": "sco.1",
+      "region": "UK",
+      "priority": 9,
+      "matches": [
+        {
+          "id": "401878330",
+          "league": "Scottish Premiership",
+          "league_code": "sco.1",
+          "region": "UK",
+          "priority": 9,
+          "kickoff": "15:00",
+          "kickoff_iso": "2026-11-29T15:00Z",
+          "status": "pre",
+          "venue": "Tynecastle Park",
+          "home": {
+            "name": "Heart of Midlothian",
+            "short": "HOM",
+            "id": "262",
+            "record": "7-2-4",
+            "form": "LWLLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Celtic",
+            "short": "CEL",
+            "id": "256",
+            "record": "11-1-2",
+            "form": "DWWWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 300.0,
+            "away": null,
+            "raw": "CEL -110"
+          },
+          "name": "Heart of Midlothian vs Celtic"
+        }
+      ]
+    },
+    {
+      "name": "La Liga",
+      "code": "esp.1",
+      "region": "Europe",
+      "priority": 20,
+      "matches": [
+        {
+          "id": "401882787",
+          "league": "La Liga",
+          "league_code": "esp.1",
+          "region": "Europe",
+          "priority": 20,
+          "kickoff": "13:00",
+          "kickoff_iso": "2026-11-29T13:00Z",
+          "status": "pre",
+          "venue": "Mestalla Stadium",
+          "home": {
+            "name": "Valencia",
+            "short": "VAL",
+            "id": "94",
+            "record": "3-3-7",
+            "form": "WWLWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Osasuna",
+            "short": "OSA",
+            "id": "97",
+            "record": "4-3-6",
+            "form": "WDLWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 220.0,
+            "away": null,
+            "raw": "VAL +115"
+          },
+          "name": "Valencia vs Osasuna"
+        },
+        {
+          "id": "401882794",
+          "league": "La Liga",
+          "league_code": "esp.1",
+          "region": "Europe",
+          "priority": 20,
+          "kickoff": "15:15",
+          "kickoff_iso": "2026-11-29T15:15Z",
+          "status": "pre",
+          "venue": "Riazor",
+          "home": {
+            "name": "Deportivo",
+            "short": "DEP",
+            "id": "90",
+            "record": "3-6-4",
+            "form": "LDWWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Barcelona",
+            "short": "BAR",
+            "id": "83",
+            "record": "12-0-1",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 650.0,
+            "away": null,
+            "raw": "BAR -450"
+          },
+          "name": "Deportivo vs Barcelona"
+        },
+        {
+          "id": "401882795",
+          "league": "La Liga",
+          "league_code": "esp.1",
+          "region": "Europe",
+          "priority": 20,
+          "kickoff": "17:30",
+          "kickoff_iso": "2026-11-29T17:30Z",
+          "status": "pre",
+          "venue": "Balaidos",
+          "home": {
+            "name": "Celta Vigo",
+            "short": "CEL",
+            "id": "85",
+            "record": "2-7-4",
+            "form": "LLWDL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Villarreal",
+            "short": "VIL",
+            "id": "102",
+            "record": "4-3-6",
+            "form": "WLWLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 255.0,
+            "away": null,
+            "raw": "VIL +150"
+          },
+          "name": "Celta Vigo vs Villarreal"
+        },
+        {
+          "id": "401882788",
+          "league": "La Liga",
+          "league_code": "esp.1",
+          "region": "Europe",
+          "priority": 20,
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-29T20:00Z",
+          "status": "pre",
+          "venue": "Reale Arena",
+          "home": {
+            "name": "Real Sociedad",
+            "short": "RSO",
+            "id": "89",
+            "record": "7-1-5",
+            "form": "LLWDL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Sevilla",
+            "short": "SEV",
+            "id": "243",
+            "record": "5-4-4",
+            "form": "DDLWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 265.0,
+            "away": null,
+            "raw": "RSO +115"
+          },
+          "name": "Real Sociedad vs Sevilla"
+        }
+      ]
+    },
+    {
+      "name": "Serie A",
+      "code": "ita.1",
+      "region": "Europe",
+      "priority": 21,
+      "matches": [
+        {
+          "id": "401875031",
+          "league": "Serie A",
+          "league_code": "ita.1",
+          "region": "Europe",
+          "priority": 21,
+          "kickoff": "11:30",
+          "kickoff_iso": "2026-11-29T11:30Z",
+          "status": "pre",
+          "venue": "Stadio Friuli",
+          "home": {
+            "name": "Udinese",
+            "short": "UDI",
+            "id": "118",
+            "record": "1-3-8",
+            "form": "DLLDL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Fiorentina",
+            "short": "FIO",
+            "id": "109",
+            "record": "2-3-7",
+            "form": "LDWDL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 240.0,
+            "away": null,
+            "raw": "FIO +120"
+          },
+          "name": "Udinese vs Fiorentina"
+        },
+        {
+          "id": "401874992",
+          "league": "Serie A",
+          "league_code": "ita.1",
+          "region": "Europe",
+          "priority": 21,
+          "kickoff": "14:00",
+          "kickoff_iso": "2026-11-29T14:00Z",
+          "status": "pre",
+          "venue": "Mapei Stadium",
+          "home": {
+            "name": "Sassuolo",
+            "short": "SAS",
+            "id": "3997",
+            "record": "2-2-8",
+            "form": "LLLLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Napoli",
+            "short": "NAP",
+            "id": "114",
+            "record": "5-3-4",
+            "form": "DWDLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 320.0,
+            "away": null,
+            "raw": "NAP -160"
+          },
+          "name": "Sassuolo vs Napoli"
+        },
+        {
+          "id": "401874769",
+          "league": "Serie A",
+          "league_code": "ita.1",
+          "region": "Europe",
+          "priority": 21,
+          "kickoff": "17:00",
+          "kickoff_iso": "2026-11-29T17:00Z",
+          "status": "pre",
+          "venue": "Olimpico",
+          "home": {
+            "name": "AS Roma",
+            "short": "ROMA",
+            "id": "104",
+            "record": "9-3-0",
+            "form": "DWWLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Monza",
+            "short": "MON",
+            "id": "4007",
+            "record": "3-1-8",
+            "form": "WLLLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 600.0,
+            "away": null,
+            "raw": "ROMA -550"
+          },
+          "name": "AS Roma vs Monza"
+        },
+        {
+          "id": "401874994",
+          "league": "Serie A",
+          "league_code": "ita.1",
+          "region": "Europe",
+          "priority": 21,
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-29T19:45Z",
+          "status": "pre",
+          "venue": "Giuseppe Sinigaglia",
+          "home": {
+            "name": "Como",
+            "short": "COMO",
+            "id": "2572",
+            "record": "8-2-2",
+            "form": "WWLWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Juventus",
+            "short": "JUV",
+            "id": "111",
+            "record": "6-3-3",
+            "form": "DWDWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 245.0,
+            "away": null,
+            "raw": "COMO -105"
+          },
+          "name": "Como vs Juventus"
+        }
+      ]
+    },
+    {
+      "name": "Bundesliga",
+      "code": "ger.1",
+      "region": "Europe",
+      "priority": 22,
+      "matches": [
+        {
+          "id": "401884724",
+          "league": "Bundesliga",
+          "league_code": "ger.1",
+          "region": "Europe",
+          "priority": 22,
+          "kickoff": "14:30",
+          "kickoff_iso": "2026-11-29T14:30Z",
+          "status": "pre",
+          "venue": "Europa-Park Stadion",
+          "home": {
+            "name": "SC Freiburg",
+            "short": "SCF",
+            "id": "126",
+            "record": "7-1-2",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "RB Leipzig",
+            "short": "RBL",
+            "id": "11420",
+            "record": "7-0-3",
+            "form": "DWWLW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 270.0,
+            "away": null,
+            "raw": "RBL +130"
+          },
+          "name": "SC Freiburg vs RB Leipzig"
+        },
+        {
+          "id": "401884725",
+          "league": "Bundesliga",
+          "league_code": "ger.1",
+          "region": "Europe",
+          "priority": 22,
+          "kickoff": "16:30",
+          "kickoff_iso": "2026-11-29T16:30Z",
+          "status": "pre",
+          "venue": "PreZero Arena",
+          "home": {
+            "name": "TSG Hoffenheim",
+            "short": "TSG",
+            "id": "7911",
+            "record": "4-0-6",
+            "form": "WLWDL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "FC Augsburg",
+            "short": "FCA",
+            "id": "3841",
+            "record": "3-3-4",
+            "form": "WLLWD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 350.0,
+            "away": null,
+            "raw": "TSG -150"
+          },
+          "name": "TSG Hoffenheim vs FC Augsburg"
+        },
+        {
+          "id": "401884727",
+          "league": "Bundesliga",
+          "league_code": "ger.1",
+          "region": "Europe",
+          "priority": 22,
+          "kickoff": "18:30",
+          "kickoff_iso": "2026-11-29T18:30Z",
+          "status": "pre",
+          "venue": "Signal Iduna Park",
+          "home": {
+            "name": "Borussia Dortmund",
+            "short": "DOR",
+            "id": "124",
+            "record": "7-3-0",
+            "form": "DWWWD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Bayer Leverkusen",
+            "short": "B04",
+            "id": "131",
+            "record": "6-1-3",
+            "form": "WWWLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 280.0,
+            "away": null,
+            "raw": "DOR +105"
+          },
+          "name": "Borussia Dortmund vs Bayer Leverkusen"
+        }
+      ]
+    },
+    {
+      "name": "Ligue 1",
+      "code": "fra.1",
+      "region": "Europe",
+      "priority": 23,
+      "matches": [
+        {
+          "id": "401876393",
+          "league": "Ligue 1",
+          "league_code": "fra.1",
+          "region": "Europe",
+          "priority": 23,
+          "kickoff": "14:00",
+          "kickoff_iso": "2026-11-29T14:00Z",
+          "status": "pre",
+          "venue": "Stade de l'Abb\u00e9-Deschamps",
+          "home": {
+            "name": "AJ Auxerre",
+            "short": "AUX",
+            "id": "172",
+            "record": "3-2-6",
+            "form": "DLLDW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Marseille",
+            "short": "OLM",
+            "id": "176",
+            "record": "6-0-5",
+            "form": "DLWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 280.0,
+            "away": null,
+            "raw": "OLM +100"
+          },
+          "name": "AJ Auxerre vs Marseille"
+        },
+        {
+          "id": "401876386",
+          "league": "Ligue 1",
+          "league_code": "fra.1",
+          "region": "Europe",
+          "priority": 23,
+          "kickoff": "16:15",
+          "kickoff_iso": "2026-11-29T16:15Z",
+          "status": "pre",
+          "venue": "Stadium Municipal de Toulouse",
+          "home": {
+            "name": "Toulouse",
+            "short": "TOU",
+            "id": "179",
+            "record": "3-5-3",
+            "form": "DWLDW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Stade Rennais",
+            "short": "REN",
+            "id": "169",
+            "record": "5-2-4",
+            "form": "LDLDL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 265.0,
+            "away": null,
+            "raw": "TOU +135"
+          },
+          "name": "Toulouse vs Stade Rennais"
+        },
+        {
+          "id": "401876389",
+          "league": "Ligue 1",
+          "league_code": "fra.1",
+          "region": "Europe",
+          "priority": 23,
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-29T19:45Z",
+          "status": "pre",
+          "venue": "Groupama Stadium",
+          "home": {
+            "name": "Lyon",
+            "short": "LYON",
+            "id": "167",
+            "record": "6-2-3",
+            "form": "DWLDW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "AS Monaco",
+            "short": "MON",
+            "id": "174",
+            "record": "4-5-2",
+            "form": "WDDWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 235.0,
+            "away": null,
+            "raw": "LYON +140"
+          },
+          "name": "Lyon vs AS Monaco"
+        }
+      ]
+    },
+    {
+      "name": "Eredivisie",
+      "code": "ned.1",
+      "region": "Europe",
+      "priority": 24,
+      "matches": [
+        {
+          "id": "401875538",
+          "league": "Eredivisie",
+          "league_code": "ned.1",
+          "region": "Europe",
+          "priority": 24,
+          "kickoff": "11:15",
+          "kickoff_iso": "2026-11-29T11:15Z",
+          "status": "pre",
+          "venue": "ADO Den Haag Stadium",
+          "home": {
+            "name": "ADO Den Haag",
+            "short": "ADO",
+            "id": "2726",
+            "record": "2-3-8",
+            "form": "LWLLL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "FC Utrecht",
+            "short": "UTR",
+            "id": "153",
+            "record": "3-3-7",
+            "form": "LLLWD",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 270.0,
+            "away": null,
+            "raw": "UTR +140"
+          },
+          "name": "ADO Den Haag vs FC Utrecht"
+        },
+        {
+          "id": "401875535",
+          "league": "Eredivisie",
+          "league_code": "ned.1",
+          "region": "Europe",
+          "priority": 24,
+          "kickoff": "13:30",
+          "kickoff_iso": "2026-11-29T13:30Z",
+          "status": "pre",
+          "venue": "De Kuip",
+          "home": {
+            "name": "Feyenoord Rotterdam",
+            "short": "FEY",
+            "id": "142",
+            "record": "7-4-2",
+            "form": "LLLLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Ajax Amsterdam",
+            "short": "AJA",
+            "id": "139",
+            "record": "8-4-1",
+            "form": "WWDWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 300.0,
+            "away": null,
+            "raw": "FEY +120"
+          },
+          "name": "Feyenoord Rotterdam vs Ajax Amsterdam"
+        },
+        {
+          "id": "401875534",
+          "league": "Eredivisie",
+          "league_code": "ned.1",
+          "region": "Europe",
+          "priority": 24,
+          "kickoff": "13:30",
+          "kickoff_iso": "2026-11-29T13:30Z",
+          "status": "pre",
+          "venue": "Fortuna Sittard Stadion",
+          "home": {
+            "name": "Fortuna Sittard",
+            "short": "FOR",
+            "id": "143",
+            "record": "6-5-2",
+            "form": "DDDWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Heerenveen",
+            "short": "HEE",
+            "id": "146",
+            "record": "7-3-3",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 280.0,
+            "away": null,
+            "raw": "HEE -105"
+          },
+          "name": "Fortuna Sittard vs Heerenveen"
+        },
+        {
+          "id": "401875532",
+          "league": "Eredivisie",
+          "league_code": "ned.1",
+          "region": "Europe",
+          "priority": 24,
+          "kickoff": "15:45",
+          "kickoff_iso": "2026-11-29T15:45Z",
+          "status": "pre",
+          "venue": "MAC\u00b3PARK Stadion",
+          "home": {
+            "name": "PEC Zwolle",
+            "short": "PEC",
+            "id": "2565",
+            "record": "4-3-6",
+            "form": "WDWLD",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "AZ Alkmaar",
+            "short": "AZ",
+            "id": "140",
+            "record": "8-2-3",
+            "form": "DWWLL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 360.0,
+            "away": null,
+            "raw": "AZ -185"
+          },
+          "name": "PEC Zwolle vs AZ Alkmaar"
+        },
+        {
+          "id": "401875533",
+          "league": "Eredivisie",
+          "league_code": "ned.1",
+          "region": "Europe",
+          "priority": 24,
+          "kickoff": "19:00",
+          "kickoff_iso": "2026-11-29T19:00Z",
+          "status": "pre",
+          "venue": "Goffertstadion",
+          "home": {
+            "name": "NEC Nijmegen",
+            "short": "NEC",
+            "id": "147",
+            "record": "3-5-5",
+            "form": "WLWWL",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "FC Twente",
+            "short": "TWE",
+            "id": "152",
+            "record": "8-3-2",
+            "form": "LWDWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 320.0,
+            "away": null,
+            "raw": "TWE -135"
+          },
+          "name": "NEC Nijmegen vs FC Twente"
+        }
+      ]
+    },
+    {
+      "name": "Primeira Liga",
+      "code": "por.1",
+      "region": "Europe",
+      "priority": 25,
+      "matches": [
+        {
+          "id": "401885390",
+          "league": "Primeira Liga",
+          "league_code": "por.1",
+          "region": "Europe",
+          "priority": 25,
+          "kickoff": "18:00",
+          "kickoff_iso": "2026-11-29T18:00Z",
+          "status": "pre",
+          "venue": "Est\u00e1dio Cidade de Barcelos",
+          "home": {
+            "name": "Gil Vicente",
+            "short": "GVFC",
+            "id": "3699",
+            "record": "5-3-3",
+            "form": "WWDLW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Estoril",
+            "short": "EPF",
+            "id": "12216",
+            "record": "0-2-8",
+            "form": "LLLWL",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 265.0,
+            "away": null,
+            "raw": "GVFC -125"
+          },
+          "name": "Gil Vicente vs Estoril"
+        },
+        {
+          "id": "401885387",
+          "league": "Primeira Liga",
+          "league_code": "por.1",
+          "region": "Europe",
+          "priority": 25,
+          "kickoff": "20:30",
+          "kickoff_iso": "2026-11-29T20:30Z",
+          "status": "pre",
+          "venue": "Est\u00e1dio do Drag\u00e3o",
+          "home": {
+            "name": "FC Porto",
+            "short": "FCP",
+            "id": "437",
+            "record": "11-0-0",
+            "form": "WWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "away": {
+            "name": "Sporting CP",
+            "short": "SCP",
+            "id": "2250",
+            "record": "7-3-1",
+            "form": "DWWWW",
+            "score": "0",
+            "winner": false
+          },
+          "odds": {
+            "home": null,
+            "draw": 230.0,
+            "away": null,
+            "raw": "FCP -110"
+          },
+          "name": "FC Porto vs Sporting CP"
+        }
+      ]
+    }
+  ],
+  "match_count": 29
+}
