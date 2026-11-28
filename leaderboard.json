@@ -1,56 +1,99 @@
 {
-  "updated_at": "2026-11-27T20:02:16.172500+00:00",
-  "last_settled": null,
+  "updated_at": "2026-11-28T03:29:07.505369+00:00",
+  "last_settled": "2026-11-27",
   "stake_unit": 1.0,
   "bots": {
     "FormFox": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "profit": 0.0,
-      "roi": 0.0,
-      "win_pct": 0.0
+      "tips": 46,
+      "wins": 22,
+      "stake": 46.0,
+      "returns": 60.599999999999994,
+      "odds_sum": 134.2,
+      "win_pct": 47.8,
+      "roi": 31.7,
+      "avg_odds": 2.92,
+      "pnl": 14.6
     },
     "HomeStrong": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "profit": 0.0,
-      "roi": 0.0,
-      "win_pct": 0.0
+      "tips": 46,
+      "wins": 22,
+      "stake": 46.0,
+      "returns": 55.8,
+      "odds_sum": 120.19999999999999,
+      "win_pct": 47.8,
+      "roi": 21.3,
+      "avg_odds": 2.61,
+      "pnl": 9.8
     },
     "AwayHunter": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "profit": 0.0,
-      "roi": 0.0,
-      "win_pct": 0.0
+      "tips": 46,
+      "wins": 18,
+      "stake": 46.0,
+      "returns": 54.19999999999999,
+      "odds_sum": 140.20000000000002,
+      "win_pct": 39.1,
+      "roi": 17.8,
+      "avg_odds": 3.05,
+      "pnl": 8.2
     },
     "ValueSeeker": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "profit": 0.0,
-      "roi": 0.0,
-      "win_pct": 0.0
+      "tips": 46,
+      "wins": 8,
+      "stake": 46.0,
+      "returns": 24.8,
+      "odds_sum": 146.99999999999991,
+      "win_pct": 17.4,
+      "roi": -46.1,
+      "avg_odds": 3.2,
+      "pnl": -21.2
     },
     "GoalsGuru": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "profit": 0.0,
-      "roi": 0.0,
-      "win_pct": 0.0
+      "tips": 46,
+      "wins": 9,
+      "stake": 46.0,
+      "returns": 27.3,
+      "odds_sum": 146.5999999999999,
+      "win_pct": 19.6,
+      "roi": -40.7,
+      "avg_odds": 3.19,
+      "pnl": -18.7
     },
     "DevilAdvocate": {
-      "tips": 0,
-      "wins": 0,
-      "stake": 0.0,
-      "profit": 0.0,
-      "roi": 0.0,
-      "win_pct": 0.0
+      "tips": 46,
+      "wins": 7,
+      "stake": 46.0,
+      "returns": 22.3,
+      "odds_sum": 147.39999999999992,
+      "win_pct": 15.2,
+      "roi": -51.5,
+      "avg_odds": 3.2,
+      "pnl": -23.7
     }
   },
-  "note": "Wiped clean \u2014 rebuilds from evening settle."
+  "consensus": {
+    "tips": 46,
+    "wins": 8,
+    "stake": 46.0,
+    "returns": 24.8,
+    "odds_sum": 0.0,
+    "win_pct": 17.4,
+    "roi": -46.1,
+    "avg_odds": 0.0,
+    "pnl": -21.2
+  },
+  "daily_pnl": [
+    {
+      "date": "2026-11-25",
+      "pnl": 0.0
+    },
+    {
+      "date": "2026-11-26",
+      "pnl": -26.8
+    },
+    {
+      "date": "2026-11-27",
+      "pnl": -4.2
+    }
+  ],
+  "note": "Level \u00a31 win stakes on 1X2 tips. ROI = (returns - stake) / stake."
 }

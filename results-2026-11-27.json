@@ -1,8 +1,523 @@
 {
   "date": "2026-11-27",
-  "generated_at": "2026-11-27T18:55:45.965425+00:00",
+  "generated_at": "2026-11-28T03:28:59.661215+00:00",
   "source": "espn_scoreboard",
-  "leagues": [],
-  "matches": [],
-  "match_count": 0
+  "leagues": [
+    {
+      "name": "Premier League",
+      "code": "eng.1",
+      "region": "UK",
+      "matches": [
+        {
+          "id": "401879225",
+          "league": "Premier League",
+          "league_code": "eng.1",
+          "region": "UK",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-27T20:00Z",
+          "home": {
+            "name": "Nottingham Forest",
+            "id": "393",
+            "score": 3,
+            "winner": true
+          },
+          "away": {
+            "name": "Chelsea",
+            "id": "363",
+            "score": 2,
+            "winner": false
+          },
+          "home_score": 3,
+          "away_score": 2,
+          "outcome": "home",
+          "name": "Nottingham Forest vs Chelsea",
+          "ft": "3-2"
+        }
+      ]
+    },
+    {
+      "name": "Championship",
+      "code": "eng.2",
+      "region": "UK",
+      "matches": [
+        {
+          "id": "401880129",
+          "league": "Championship",
+          "league_code": "eng.2",
+          "region": "UK",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-27T20:00Z",
+          "home": {
+            "name": "Southampton",
+            "id": "376",
+            "score": 2,
+            "winner": true
+          },
+          "away": {
+            "name": "Middlesbrough",
+            "id": "369",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 2,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Southampton vs Middlesbrough",
+          "ft": "2-0"
+        }
+      ]
+    },
+    {
+      "name": "National League",
+      "code": "eng.5",
+      "region": "UK",
+      "matches": [
+        {
+          "id": "401889179",
+          "league": "National League",
+          "league_code": "eng.5",
+          "region": "UK",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-27T19:45Z",
+          "home": {
+            "name": "Scunthorpe United",
+            "id": "313",
+            "score": 4,
+            "winner": true
+          },
+          "away": {
+            "name": "Wealdstone",
+            "id": "3887",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 4,
+          "away_score": 1,
+          "outcome": "home",
+          "name": "Scunthorpe United vs Wealdstone",
+          "ft": "4-1"
+        }
+      ]
+    },
+    {
+      "name": "La Liga",
+      "code": "esp.1",
+      "region": "Europe",
+      "matches": [
+        {
+          "id": "401882791",
+          "league": "La Liga",
+          "league_code": "esp.1",
+          "region": "Europe",
+          "kickoff": "20:00",
+          "kickoff_iso": "2026-11-27T20:00Z",
+          "home": {
+            "name": "Levante",
+            "id": "1538",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "Racing Santander",
+            "id": "87",
+            "score": 3,
+            "winner": true
+          },
+          "home_score": 1,
+          "away_score": 3,
+          "outcome": "away",
+          "name": "Levante vs Racing Santander",
+          "ft": "1-3"
+        }
+      ]
+    },
+    {
+      "name": "Serie A",
+      "code": "ita.1",
+      "region": "Europe",
+      "matches": [
+        {
+          "id": "401875004",
+          "league": "Serie A",
+          "league_code": "ita.1",
+          "region": "Europe",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-27T19:45Z",
+          "home": {
+            "name": "Venezia",
+            "id": "17530",
+            "score": 0,
+            "winner": false
+          },
+          "away": {
+            "name": "Bologna",
+            "id": "107",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 0,
+          "away_score": 0,
+          "outcome": "draw",
+          "name": "Venezia vs Bologna",
+          "ft": "0-0"
+        }
+      ]
+    },
+    {
+      "name": "Bundesliga",
+      "code": "ger.1",
+      "region": "Europe",
+      "matches": [
+        {
+          "id": "401884720",
+          "league": "Bundesliga",
+          "league_code": "ger.1",
+          "region": "Europe",
+          "kickoff": "19:30",
+          "kickoff_iso": "2026-11-27T19:30Z",
+          "home": {
+            "name": "Werder Bremen",
+            "id": "137",
+            "score": 3,
+            "winner": false
+          },
+          "away": {
+            "name": "Borussia M\u00f6nchengladbach",
+            "id": "268",
+            "score": 3,
+            "winner": false
+          },
+          "home_score": 3,
+          "away_score": 3,
+          "outcome": "draw",
+          "name": "Werder Bremen vs Borussia M\u00f6nchengladbach",
+          "ft": "3-3"
+        }
+      ]
+    },
+    {
+      "name": "Ligue 1",
+      "code": "fra.1",
+      "region": "Europe",
+      "matches": [
+        {
+          "id": "401876392",
+          "league": "Ligue 1",
+          "league_code": "fra.1",
+          "region": "Europe",
+          "kickoff": "19:45",
+          "kickoff_iso": "2026-11-27T19:45Z",
+          "home": {
+            "name": "Brest",
+            "id": "6997",
+            "score": 1,
+            "winner": true
+          },
+          "away": {
+            "name": "Paris FC",
+            "id": "6851",
+            "score": 0,
+            "winner": false
+          },
+          "home_score": 1,
+          "away_score": 0,
+          "outcome": "home",
+          "name": "Brest vs Paris FC",
+          "ft": "1-0"
+        }
+      ]
+    },
+    {
+      "name": "Eredivisie",
+      "code": "ned.1",
+      "region": "Europe",
+      "matches": [
+        {
+          "id": "401875536",
+          "league": "Eredivisie",
+          "league_code": "ned.1",
+          "region": "Europe",
+          "kickoff": "19:00",
+          "kickoff_iso": "2026-11-27T19:00Z",
+          "home": {
+            "name": "FC Groningen",
+            "id": "145",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "Willem II",
+            "id": "156",
+            "score": 1,
+            "winner": false
+          },
+          "home_score": 1,
+          "away_score": 1,
+          "outcome": "draw",
+          "name": "FC Groningen vs Willem II",
+          "ft": "1-1"
+        }
+      ]
+    },
+    {
+      "name": "Primeira Liga",
+      "code": "por.1",
+      "region": "Europe",
+      "matches": [
+        {
+          "id": "401885389",
+          "league": "Primeira Liga",
+          "league_code": "por.1",
+          "region": "Europe",
+          "kickoff": "20:15",
+          "kickoff_iso": "2026-11-27T20:15Z",
+          "home": {
+            "name": "Maritimo",
+            "id": "552",
+            "score": 1,
+            "winner": false
+          },
+          "away": {
+            "name": "C.D. Nacional",
+            "id": "3472",
+            "score": 2,
+            "winner": true
+          },
+          "home_score": 1,
+          "away_score": 2,
+          "outcome": "away",
+          "name": "Maritimo vs C.D. Nacional",
+          "ft": "1-2"
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "401879225",
+      "league": "Premier League",
+      "league_code": "eng.1",
+      "region": "UK",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-27T20:00Z",
+      "home": {
+        "name": "Nottingham Forest",
+        "id": "393",
+        "score": 3,
+        "winner": true
+      },
+      "away": {
+        "name": "Chelsea",
+        "id": "363",
+        "score": 2,
+        "winner": false
+      },
+      "home_score": 3,
+      "away_score": 2,
+      "outcome": "home",
+      "name": "Nottingham Forest vs Chelsea",
+      "ft": "3-2"
+    },
+    {
+      "id": "401880129",
+      "league": "Championship",
+      "league_code": "eng.2",
+      "region": "UK",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-27T20:00Z",
+      "home": {
+        "name": "Southampton",
+        "id": "376",
+        "score": 2,
+        "winner": true
+      },
+      "away": {
+        "name": "Middlesbrough",
+        "id": "369",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 2,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Southampton vs Middlesbrough",
+      "ft": "2-0"
+    },
+    {
+      "id": "401889179",
+      "league": "National League",
+      "league_code": "eng.5",
+      "region": "UK",
+      "kickoff": "19:45",
+      "kickoff_iso": "2026-11-27T19:45Z",
+      "home": {
+        "name": "Scunthorpe United",
+        "id": "313",
+        "score": 4,
+        "winner": true
+      },
+      "away": {
+        "name": "Wealdstone",
+        "id": "3887",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 4,
+      "away_score": 1,
+      "outcome": "home",
+      "name": "Scunthorpe United vs Wealdstone",
+      "ft": "4-1"
+    },
+    {
+      "id": "401882791",
+      "league": "La Liga",
+      "league_code": "esp.1",
+      "region": "Europe",
+      "kickoff": "20:00",
+      "kickoff_iso": "2026-11-27T20:00Z",
+      "home": {
+        "name": "Levante",
+        "id": "1538",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "Racing Santander",
+        "id": "87",
+        "score": 3,
+        "winner": true
+      },
+      "home_score": 1,
+      "away_score": 3,
+      "outcome": "away",
+      "name": "Levante vs Racing Santander",
+      "ft": "1-3"
+    },
+    {
+      "id": "401875004",
+      "league": "Serie A",
+      "league_code": "ita.1",
+      "region": "Europe",
+      "kickoff": "19:45",
+      "kickoff_iso": "2026-11-27T19:45Z",
+      "home": {
+        "name": "Venezia",
+        "id": "17530",
+        "score": 0,
+        "winner": false
+      },
+      "away": {
+        "name": "Bologna",
+        "id": "107",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 0,
+      "away_score": 0,
+      "outcome": "draw",
+      "name": "Venezia vs Bologna",
+      "ft": "0-0"
+    },
+    {
+      "id": "401884720",
+      "league": "Bundesliga",
+      "league_code": "ger.1",
+      "region": "Europe",
+      "kickoff": "19:30",
+      "kickoff_iso": "2026-11-27T19:30Z",
+      "home": {
+        "name": "Werder Bremen",
+        "id": "137",
+        "score": 3,
+        "winner": false
+      },
+      "away": {
+        "name": "Borussia M\u00f6nchengladbach",
+        "id": "268",
+        "score": 3,
+        "winner": false
+      },
+      "home_score": 3,
+      "away_score": 3,
+      "outcome": "draw",
+      "name": "Werder Bremen vs Borussia M\u00f6nchengladbach",
+      "ft": "3-3"
+    },
+    {
+      "id": "401876392",
+      "league": "Ligue 1",
+      "league_code": "fra.1",
+      "region": "Europe",
+      "kickoff": "19:45",
+      "kickoff_iso": "2026-11-27T19:45Z",
+      "home": {
+        "name": "Brest",
+        "id": "6997",
+        "score": 1,
+        "winner": true
+      },
+      "away": {
+        "name": "Paris FC",
+        "id": "6851",
+        "score": 0,
+        "winner": false
+      },
+      "home_score": 1,
+      "away_score": 0,
+      "outcome": "home",
+      "name": "Brest vs Paris FC",
+      "ft": "1-0"
+    },
+    {
+      "id": "401875536",
+      "league": "Eredivisie",
+      "league_code": "ned.1",
+      "region": "Europe",
+      "kickoff": "19:00",
+      "kickoff_iso": "2026-11-27T19:00Z",
+      "home": {
+        "name": "FC Groningen",
+        "id": "145",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "Willem II",
+        "id": "156",
+        "score": 1,
+        "winner": false
+      },
+      "home_score": 1,
+      "away_score": 1,
+      "outcome": "draw",
+      "name": "FC Groningen vs Willem II",
+      "ft": "1-1"
+    },
+    {
+      "id": "401885389",
+      "league": "Primeira Liga",
+      "league_code": "por.1",
+      "region": "Europe",
+      "kickoff": "20:15",
+      "kickoff_iso": "2026-11-27T20:15Z",
+      "home": {
+        "name": "Maritimo",
+        "id": "552",
+        "score": 1,
+        "winner": false
+      },
+      "away": {
+        "name": "C.D. Nacional",
+        "id": "3472",
+        "score": 2,
+        "winner": true
+      },
+      "home_score": 1,
+      "away_score": 2,
+      "outcome": "away",
+      "name": "Maritimo vs C.D. Nacional",
+      "ft": "1-2"
+    }
+  ],
+  "match_count": 9
 }
